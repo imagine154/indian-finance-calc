@@ -189,7 +189,7 @@ export function LoanCalculator() {
                                             value={prepaymentAmount === 0 ? '' : prepaymentAmount}
                                             onChange={(e) => setPrepaymentAmount(Number(e.target.value))}
                                             placeholder="e.g. 5000"
-                                            className="w-full pl-8 pr-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none"
+                                            className="w-full pl-8 pr-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none text-slate-900"
                                         />
                                     </div>
                                 </div>
