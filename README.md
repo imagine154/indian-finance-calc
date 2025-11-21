@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Indian Finance Calculator
 
-## Getting Started
+A high-performance Financial Calculator website for the Indian market built with Next.js 15, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🏗️ Architecture
+
+This project follows a **strict separation of concerns** architecture:
+
+### 📁 Project Structure
+
+```
+src/
+├── core/
+│   └── logic/              # Pure TypeScript financial calculation logic
+│       ├── sip.ts          # SIP calculator
+│       ├── tax.ts          # Tax calculators (Old & New Regime)
+│       └── [others].ts     # Other financial calculators
+│
+├── app/
+│   ├── calculators/        # Next.js App Router pages
+│   │   ├── sip/
+│   │   ├── tax/
+│   │   └── [others]/
+│   ├── sitemap.ts          # SEO sitemap
+│   ├── robots.ts           # Robots.txt configuration
+│   └── layout.tsx          # Root layout
+│
+└── components/
+    └── calculators/        # React UI components
+        ├── SipCalculator/
+        ├── TaxCalculator/
+        └── [others]/
+```
+
+### 🎯 Key Principles
+
+1. **Logic Separation**: All financial calculations are in `src/core/logic/` as pure TypeScript functions
+2. **No React in Logic**: Core logic files contain zero React code - fully testable and reusable
+3. **Type Safety**: Full TypeScript coverage with proper interfaces and types
+4. **SEO Ready**: Configured with sitemap and robots.txt for search engine optimization
+
+## 🚀 Getting Started
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📊 Available Calculators (Planned)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **SIP Calculator** - Systematic Investment Plan calculator
+- **Tax Calculator** - Income tax calculator (Old & New Regime)
+- **EMI Calculator** - Loan EMI calculator
+- **FD Calculator** - Fixed Deposit calculator
+- **PPF Calculator** - Public Provident Fund calculator
 
-## Deploy on Vercel
+## 🛠️ Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS (ready for shadcn/ui)
+- **Package Manager**: npm
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Adding New Calculators
+
+1. Create logic in `src/core/logic/[name].ts`
+2. Create route in `src/app/calculators/[name]/page.tsx`
+3. Create components in `src/components/calculators/[Name]/`
+4. Update sitemap in `src/app/sitemap.ts`
+
+## 🎨 Styling
+
+This project is configured with Tailwind CSS and is ready for **shadcn/ui** integration.
+
+To add shadcn/ui:
+```bash
+npx shadcn@latest init
+```
+
+## 📄 License
+
+MIT
