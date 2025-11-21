@@ -1,31 +1,13 @@
-import type { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
-/**
- * Robots.txt configuration for SEO
- * Controls how search engines crawl and index the website
- */
 export default function robots(): MetadataRoute.Robots {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://yourfinancecalc.com';
+    const baseUrl = "https://indian-finance-calc-zo9cf43zg-ganamurthys-projects.vercel.app";
 
     return {
-        rules: [
-            {
-                userAgent: '*',
-                allow: '/',
-                disallow: [
-                    '/api/',
-                    '/admin/',
-                    '/_next/',
-                    '/static/',
-                ],
-            },
-            // Special rule for Google bot - allow everything except private areas
-            {
-                userAgent: 'Googlebot',
-                allow: '/',
-                disallow: ['/api/', '/admin/'],
-            },
-        ],
+        rules: {
+            userAgent: "*",
+            allow: "/",
+        },
         sitemap: `${baseUrl}/sitemap.xml`,
     };
 }

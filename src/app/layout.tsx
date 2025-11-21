@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://indian-finance-calc-zo9cf43zg-ganamurthys-projects.vercel.app"),
   title: "Indian Finance Tools - SIP, Tax & Salary Calculators",
   description: "Free, accurate financial calculators for Indian investors.",
 };
