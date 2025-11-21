@@ -14,6 +14,7 @@ const navLinks = [
     { name: "NPS", href: "/calculators/nps" },
     { name: "SSY", href: "/calculators/ssy" },
     { name: "Goal Planner", href: "/calculators/goal" },
+    { name: "Advisor", href: "/calculators/investment-advisor" },
 ];
 
 export default function Navbar() {
@@ -48,8 +49,8 @@ export default function Navbar() {
                                     key={link.href}
                                     href={link.href}
                                     className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive
-                                            ? "bg-blue-50 text-blue-700"
-                                            : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                                        ? "bg-blue-50 text-blue-700"
+                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                                         }`}
                                 >
                                     {link.name}
@@ -86,8 +87,8 @@ export default function Navbar() {
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
                                     className={`block px-3 py-2 rounded-md text-base font-medium ${isActive
-                                            ? "bg-blue-50 text-blue-700"
-                                            : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                                        ? "bg-blue-50 text-blue-700"
+                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                                         }`}
                                 >
                                     {link.name}

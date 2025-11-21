@@ -40,5 +40,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/calculators/goal`,
             lastModified: new Date(),
         },
+        {
+            url: `${baseUrl}/calculators/investment-advisor`,
+            lastModified: new Date(),
+        },
     ];
 }
