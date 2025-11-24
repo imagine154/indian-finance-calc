@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Mutual Fund & ETF SIP Return Calculator</title>
+    <style>
+        :root {
+            --accent-1: #4fc3f7;
+            --accent-2: #4db6ac;
+            --muted: #6b7280;
+            --card-bg: #fff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            --controls-offset: 88px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, "Segoe UI", Roboto, Arial;
+            background: radial-gradient(1200px 600px at 10% -10%, #e0f2fe 0%, transparent 60%),
+            radial-gradient(1000px 500px at 110% -10%, #eafaf3 0%, transparent 60%),
+            linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 100%);
+            color: #0f1724;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 34px auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 14px;
+            padding: 18px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+            backdrop-filter: saturate(120%) blur(6px);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 14px;
+            flex-wrap: nowrap;
+        }
+
+        .col {
+            flex: 1 1 0;
+            min-width: 180px;
+            max-width: 220px;
+        }
+
+        .top-controls {
+            display: flex;
+            gap: 16px;
+            align-items: flex-end;
+            transition: all .25s ease-in-out;
+        }
+
+        .label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            color: #111827;
+            line-height: 20px;
+            height: 20px;
+        }
+
+        .select,
+        .multi-toggle {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 10px;
+            border: 1px solid #e6e9ef;
+            font-size: 14px;
+            background: #fff;
+            height: 44px;
+            box-sizing: border-box;
+            transition: border-color .2s ease, box-shadow .2s ease, transform .05s ease;
+        }
+
+        .select:focus,
+        .multi-toggle:focus {
+            outline: none;
+            box-shadow: 0 0 0 4px rgba(79, 195, 247, 0.25);
+            border-color: #93c5fd;
+        }
+
+        .multi-toggle:hover {
+            border-color: #cbd5e1;
+        }
+
+        .multi {
+            position: relative;
+        }
+
+        .multi-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            cursor: pointer;
+            min-height: 44px;
+        }
+
+        .multi-placeholder {
+            color: var(--muted);
+        }
+
+        .multi-panel {
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            max-height: 260px;
+            overflow: auto;
+            z-index: 40;
+            border: 1px solid rgba(14, 20, 30, 0.06);
+            padding: 6px;
+            animation: dropdownFade .2s ease-in-out;
+            display: none;
+        }
+
+        .multi-item {
+            padding: 8px 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .multi-item:hover {
+            background: #f5f7ff;
+        }
+
+        .chips {
+            margin-top: 8px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .chip {
+            background: #f8fafc;
+            border: 1px solid #e6eefb;
+            color: #0f1724;
+            padding: 4px 8px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 1.2;
+        }
+
+        .chip .remove {
+            background: #ef4444;
+            color: white;
+            width: 16px;
+            height: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 10px;
+            line-height: 1;
+        }
+
+        .autocomplete-list {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid rgba(14, 20, 30, 0.06);
+            box-shadow: var(--shadow);
+            z-index: 60;
+            max-height: 300px;
+            overflow: auto;
+            display: none;
+        }
+
+        .autocomplete-item {
+            padding: 10px 12px;
+            cursor: pointer;
+        }
+
+        .btn {
+            padding: 12px 16px;
+            background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            width: 220px;
+            transition: transform .05s ease, box-shadow .2s ease;
+        }
+
+        .btn:hover {
+            box-shadow: 0 8px 18px rgba(77, 182, 172, .35);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .btn-outline {
+            background: #fff;
+            border: 1px solid #e6e9ef;
+            color: #111827;
+            padding: 10px 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background .2s ease, border-color .2s ease;
+        }
+
+        .btn-outline:hover {
+            background: #f8fafc;
+            border-color: #dbe4f0;
+        }
+
+        .results-container {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-top: 14px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+            scroll-behavior: smooth;
+            padding-top: 6px;
+        }
+
+        /* Mobile cards are hidden by default (desktop) */
+        .mobile-cards {
+            display: none;
+        }
+
+        .results-container table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        .results-container th,
+        .results-container td {
+            white-space: nowrap;
+            text-align: center;
+            padding: 10px 12px;
+            vertical-align: middle;
+            border: 1px solid #e9eef6;
+        }
+
+        .results-container td:first-child {
+            text-align: left;
+            white-space: normal;
+            word-break: break-word;
+            max-width: 320px;
+        }
+
+        .results-container th {
+            background: #fbfdff;
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            z-index: 30;
+        }
+
+        .best {
+            font-weight: 900;
+            color: var(--accent-1);
+        }
+
+        .summary {
+            margin-top: 10px;
+            color: #374151;
+            font-weight: 600;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .empty {
+            color: #6b7280;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .multi-search {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 6px;
+            border-radius: 8px;
+            border: 1px solid #e6e9ef;
+            box-sizing: border-box;
+        }
+
+        @keyframes dropdownFade {
+            from {
+                opacity: 0;
+                transform: scale(.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width:880px) {
+            .row {
+                flex-wrap: wrap;
+                gap: 8px
+            }
+
+            .col {
+                flex: 1 1 45%;
+                min-width: 150px
+            }
+
+            .btn {
+                width: 100%
+            }
+
+            .top-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .top-controls>div {
+                width: 100%;
+            }
+
+            .btn-group {
+                display: flex;
+                gap: 8px;
+            }
+        }
+
+        /* Ultra small devices */
+        @media (max-width:640px) {
+            .container {
+                padding: 14px;
+            }
+
+            .header h1 {
+                font-size: 1.3rem;
+            }
+
+            .label {
+                height: auto;
+                margin-bottom: 6px;
+            }
+
+            .results-container {
+                padding-top: 0;
+                overflow-x: hidden;
+            }
+
+            /* Hide desktop table, show mobile cards */
+            .results-container table {
+                display: none;
+            }
+
+            .mobile-cards {
+                display: grid;
+                gap: 12px;
+            }
+
+            .mobile-card {
+                background: #fff;
+                border: 1px solid #e9eef6;
+                border-radius: 12px;
+                box-shadow: 0 2px 10px rgba(15, 23, 36, 0.06);
+                overflow: hidden;
+            }
+
+            .mobile-card-header {
+                padding: 12px 14px;
+                font-weight: 700;
+                color: #111827;
+                background: #fbfdff;
+                border-bottom: 1px solid #eef2f7;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+            }
+
+            .mobile-metrics {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 0;
+            }
+
+            .mobile-metric {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 14px;
+                border-bottom: 1px solid #eef2f7;
+            }
+
+            .mobile-metric:nth-child(odd) {
+                border-right: 1px solid #eef2f7;
+            }
+
+            .mobile-metric-label {
+                font-weight: 600;
+                color: #6b7280;
+            }
+
+            .mobile-metric-value.best {
+                color: #2563eb;
+                font-weight: 800;
+            }
+
+            .mobile-metric:last-child,
+            .mobile-metric:nth-last-child(2) {
+                border-bottom: 0;
+            }
+
+            .mobile-badge {
+                font-size: 12px;
+                font-weight: 700;
+                color: #1f2937;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                background: #fff8dc;
+                border: 1px solid #f2e8b6;
+                padding: 4px 8px;
+                border-radius: 999px;
+            }
+
+            .mobile-card.consistent-row .mobile-badge {
+                background: #fff8dc;
+                border-color: #f2e8b6;
+            }
+
+            .mobile-card.emerging-row .mobile-badge {
+                background: #f0f8ff;
+                border-color: #cfe9ff;
+            }
+
+            .mobile-card.consistent-row {
+                background-color: #fff8dc;
+            }
+
+            .mobile-card.emerging-row {
+                background-color: #f0f8ff;
+            }
+        }
+
+        /* Top Performers Section */
+        .top-performers {
+            margin-bottom: 20px;
+        }
+
+        .top-performers h2 {
+            text-align: center;
+            color: #111827;
+            margin-bottom: 16px;
+        }
+
+        .top-performers h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin: 20px 0 12px 0;
+            padding: 8px 12px;
+            background: linear-gradient(90deg, #f0f9ff, #e0f2fe);
+            border-left: 4px solid var(--accent-1);
+            border-radius: 6px;
+        }
+
+        .top-performers-table-container {
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            margin-bottom: 16px;
+        }
+
+        .top-performers-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+            font-size: 13px;
+        }
+
+        .top-performers-table th {
+            background: linear-gradient(180deg, #fbfdff 0%, #f8fafc 100%);
+            color: #374151;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 2px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+        }
+
+        .top-performers-table td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid #f1f5f9;
+            color: #1f2937;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .top-performers-table tbody tr {
+            transition: background-color 0.15s ease;
+        }
+
+        .top-performers-table tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .top-performers-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .top-performers-table td:first-child {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .top-performers-table td:nth-child(3),
+        .top-performers-table td:nth-child(5) {
+            font-weight: 600;
+            color: var(--accent-1);
+        }
+
+        @media (max-width: 640px) {
+            .top-performers-table {
+                font-size: 11px;
+            }
+
+            .top-performers-table th {
+                font-size: 10px;
+                padding: 8px 10px;
+            }
+
+            .top-performers-table td {
+                padding: 8px 10px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h1 style="display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap"><svg
+                fill="#2563eb" height="16" viewbox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M3 3v18h18v-2H5V3H3zm17.293 4.707L13 15l-4-4-6 6 1.414 1.414L9 13.828l4 4 8.707-8.707-1.414-1.414z" />
+        </svg> Mutual Fund &amp; ETF SIP Return Analyzer
+        </h1>
+        <p style="color: #2563eb"> Calculate periodic SIP returns for Mutual Funds and ETFs — intuitive filters &
+            instant insights</p>
+
+    </div>
+
+    <div class="panel">
+        <div class="controls">
+            <div class="top-controls">
+                <div>
+                    <label class="label">Investment Type</label>
+                    <select id="investmentType" class="select" aria-label="Investment Type">
+                        <option value="Mutual Fund" selected>Mutual Funds</option>
+                        <option value="ETF">ETFs</option>
+                    </select>
+                </div>
+
+                <div class="search-section" style="flex:1">
+                    <label class="label">Search / Select Schemes</label>
+                    <div id="searchArea" style="position:relative">
+                        <!-- Keep a hidden input for backward compatibility (not used) -->
+                        <input id="schemeSearch" class="search-input" style="display:none"
+                               aria-label="Scheme search" placeholder="Type to search schemes..." />
+                        <!-- Always show the searchable multi-select dropdown -->
+                        <div id="schemeDropdownContainer" style="display:block; margin-top:8px;">
+                            <div class="multi" id="schemeMulti"></div>
+                        </div>
+                        <div id="autocompleteList" class="autocomplete-list" aria-label="Search suggestions"></div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button id="clearAllBtn" class="btn-outline" title="Reset all filters">🧹 Reset All</button>
+                    <button id="calculateBtn" class="btn">Calculate Returns</button>
+                </div>
+            </div>
+
+            <div class="schemes-section" style="margin-top:12px">
+                <div id="selectedChips" class="chips"></div>
+                <div id="schemeSummary" class="summary" style="margin-top:8px; color:#111827; font-weight:600">No
+                    schemes selected yet — search or filter to begin.</div>
+            </div>
+
+            <div class="row" style="margin-top:14px">
+                <div class="col">
+                    <label class="label">AMC</label>
+                    <div id="amcMulti" class="multi"></div>
+                </div>
+                <div class="col">
+                    <label class="label">Category</label>
+                    <div id="catMulti" class="multi"></div>
+                </div>
+                <div class="col">
+                    <label class="label">Sub-Category</label>
+                    <div id="subcatMulti" class="multi"></div>
+                </div>
+                <div class="col">
+                    <label class="label">Plan</label>
+                    <div id="planMulti" class="multi"></div>
+                </div>
+            </div>
+
+            <div id="filterStatus" class="summary" style="margin-top:10px; color:#374151; font-weight:600"></div>
+
+            <div id="tipBanner"
+                 style="margin-top:12px; background:linear-gradient(90deg,#eef2ff,#f5f3ff); padding:10px 14px; border-radius:8px; color:#4b5563; font-weight:500;">
+                🛈 Tip: Use the searchable dropdown above to quickly find schemes. You can also filter by AMC /
+                Category / Plan.
+            </div>
+        </div>
+
+        <div id="resultsSection" style="margin-top:28px;">
+            <div
+                    style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
+                <h3
+                        style="font-size:1.25rem; font-weight:700; color:#1f2937; margin:0; display:flex; align-items:center; gap:8px;">
+                    <svg fill="#2563eb" height="16" viewbox="0 0 24 24" width="16"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M3 3v18h18v-2H5V3H3zm17.293 4.707L13 15l-4-4-6 6 1.414 1.414L9 13.828l4 4 8.707-8.707-1.414-1.414z" />
+                    </svg>
+                    Return Calculation Results
+                </h3>
+                <button id="downloadBtn" class="btn-outline" style="display:none;">Download CSV</button>
+            </div>
+
+            <div class="results-container">
+                <div id="resultsArea" class="results"></div>
+            </div>
+
+            <div class="top-performers">
+                <div id="topPerformersContainer">
+                    <p>Loading top performers...</p>
+                </div>
+            </div>
+
+            <!-- Calculation note -->
+            <div id="calcNote"
+                 style="margin-top:12px; font-size:13px; color:#374151; background:#fff9; padding:10px 12px; border-radius:8px;">
+                <strong>How calculations are done:</strong>
+                <p style="margin:6px 0 0 0;">
+                    Returns are computed using a simulated SIP of <strong>₹10,000 deposited on the 1st day of each
+                    month</strong> across the selected period to validate periodic returns. If a scheme does not
+                    have sufficient history for a period, it will show <em>NA</em>. Percentages shown are annualised
+                    where appropriate (for multi-year periods).
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    const API_BASE = "https://periodic-return-api.onrender.com/api";
+    let allSchemes = [], filteredSchemes = [], selectedSchemes = [];
+    let widgets = {};
+
+    function $(id) { return document.getElementById(id); }
+    function createEl(tag, props = {}, children = []) {
+        const e = document.createElement(tag); Object.assign(e, props);
+        children.forEach(c => typeof c === 'string' ? e.appendChild(document.createTextNode(c)) : e.appendChild(c));
+        return e;
+    }
+
+    function getFilterParams() {
+        const type = $("investmentType").value;
+        const params = new URLSearchParams();
+        if (type === "Mutual Fund") { params.append("type", "Mutual Fund"); params.append("plan", "Direct"); params.append("option", "Growth"); }
+        else if (type === "ETF") { params.append("type", "ETF"); params.append("option", "ETF"); }
+        return params;
+    }
+
+    /* Multi-select widget with built-in search inside panel */
+    function makeMultiSelect(containerId, placeholder, opts = [], selected = [], onChange) {
+        const container = $(containerId);
+        container.innerHTML = '';
+        const toggle = createEl('div', { className: 'multi-toggle', tabIndex: 0 });
+        const labelSpan = createEl('span', { className: 'multi-placeholder' }, [placeholder]);
+        toggle.appendChild(labelSpan);
+        toggle.appendChild(createEl('i', { style: 'color:#64748b' }, []));
+        const panel = createEl('div', { className: 'multi-panel', style: 'display:none' });
+        // internal search box inside panel
+        const searchBox = createEl('input', { type: 'text', placeholder: 'Search...', className: 'multi-search' });
+        panel.appendChild(searchBox);
+
+        container.appendChild(toggle); container.appendChild(panel);
+
+        let isDisabled = false;
+
+        function updateLabel() {
+            if (isDisabled && containerId === 'planMulti') { labelSpan.textContent = 'ETF'; labelSpan.style.color = '#6b7280'; return; }
+            if (selected.length === 0) { labelSpan.textContent = placeholder; labelSpan.style.color = '#6b7280'; }
+            else if (containerId === 'amcMulti' && selected.includes('All AMCs')) { labelSpan.textContent = 'All AMCs'; labelSpan.style.color = '#111827'; }
+            else if (selected.length === 1) { labelSpan.textContent = selected[0]; labelSpan.style.color = '#111827'; }
+            else { labelSpan.textContent = `Multiple selected (${selected.length})`; labelSpan.style.color = '#111827'; }
+        }
+
+        function renderOptions(list) {
+            // keep searchBox at top
+            panel.querySelectorAll('.multi-item').forEach(el => el.remove());
+            const q = searchBox.value.trim().toLowerCase();
+            const visible = (list || []).filter(o => !q || o.toLowerCase().includes(q));
+
+            if (visible.length === 0) {
+                // Intentionally render nothing instead of a 'No options' placeholder
+                return;
+            }
+
+            visible.forEach(opt => {
+                const item = createEl('div', { className: 'multi-item' });
+                const chk = createEl('input', { type: 'checkbox' });
+                chk.checked = selected.includes(opt);
+                chk.readOnly = true;
+                item.appendChild(chk);
+                item.appendChild(document.createTextNode(opt));
+
+                item.onclick = (e) => {
+                    if (isDisabled) return;
+                    e.stopPropagation();
+                    if (containerId === 'planMulti') {
+                        selected = [opt];
+                        renderOptions(list); updateLabel(); onChange && onChange(selected.slice()); return;
+                    }
+                    if (containerId === 'amcMulti' && opt === 'All AMCs') {
+                        if (selected.includes('All AMCs')) selected = []; else selected = list.slice();
+                        renderOptions(list); updateLabel(); onChange && onChange(selected.slice()); return;
+                    }
+                    if (selected.includes(opt)) selected = selected.filter(x => x !== opt); else selected.push(opt);
+
+                    if (containerId === 'amcMulti') {
+                        const allIndex = selected.indexOf('All AMCs');
+                        if (allIndex > -1 && selected.length < list.length) selected = selected.filter(x => x !== 'All AMCs');
+                        if (selected.length === list.length - 1 && !selected.includes('All AMCs')) selected.push('All AMCs');
+                    }
+
+                    renderOptions(list); updateLabel(); onChange && onChange(selected.slice());
+                };
+
+                if (opt === 'All AMCs') { item.style.fontWeight = '600'; item.style.color = '#4b5563'; }
+                panel.appendChild(item);
+            });
+        }
+
+        // search input filtering
+        searchBox.addEventListener('input', () => { renderOptions(opts); });
+
+        toggle.onclick = (e) => { if (isDisabled) return; e.stopPropagation(); document.querySelectorAll('.multi-panel').forEach(p => { if (p !== panel) p.style.display = 'none'; }); panel.style.display = panel.style.display === 'block' ? 'none' : 'block'; updateControlsOffset(); };
+        document.addEventListener('click', (e) => { if (!container.contains(e.target)) panel.style.display = 'none'; });
+
+        function clearSearch() { searchBox.value = ''; renderOptions(opts); }
+        function updateOptions(newOpts) { opts = Array.isArray(newOpts) ? newOpts.slice() : []; selected = selected.filter(x => opts.includes(x)); clearSearch(); updateLabel(); }
+        function setSelected(sel) { selected = Array.isArray(sel) ? sel.slice() : []; clearSearch(); updateLabel(); }
+        function getSelected() { return selected.slice(); }
+        function setDisabled(flag) {
+            isDisabled = !!flag;
+            if (isDisabled) {
+                panel.style.display = 'none';
+                toggle.style.background = '#f3f4f6';
+                toggle.style.color = '#9ca3af';
+                toggle.style.cursor = 'not-allowed';
+                if (containerId === 'planMulti') { labelSpan.textContent = 'ETF'; labelSpan.style.color = '#6b7280'; }
+            } else {
+                toggle.style.background = '#fff';
+                toggle.style.color = '';
+                toggle.style.cursor = 'pointer';
+                updateLabel();
+            }
+        }
+
+        updateOptions(opts);
+        return { updateOptions, setSelected, getSelected, updateLabel, setDisabled, clearSearch };
+    }
+
+    function buildWidgets() {
+        widgets.amcWidget = makeMultiSelect("amcMulti", "All AMCs", [], [], onFilterChange);
+        widgets.catWidget = makeMultiSelect("catMulti", "All Categories", [], [], onFilterChange);
+        widgets.subcatWidget = makeMultiSelect("subcatMulti", "All Sub-Categories", [], [], onFilterChange);
+        widgets.planWidget = makeMultiSelect("planMulti", "Plan (Direct/Regular)", ["Defunct", "Direct", "Institutional", "Regular", "Retail", "Standard"], ["Direct"], onFilterChange);
+        // scheme dropdown (always visible searchable)
+        widgets.schemeWidget = makeMultiSelect("schemeMulti", "Select schemes...", [], [], (selected) => {
+            // incoming selected are strings like "Name (CODE)" if we populate that way
+            selected.forEach(n => {
+                // try to match with filteredSchemes by string or code
+                const match = filteredSchemes.find(s => `${s.schemeName} (${s.schemeCode})` === n) ||
+                    filteredSchemes.find(s => s.schemeCode === n) ||
+                    filteredSchemes.find(s => s.schemeName === n);
+                if (match) addSelectedScheme({ code: match.schemeCode, name: match.schemeName });
+            });
+        });
+    }
+
+    async function loadStats() {
+        const type = $("investmentType").value;
+        $("filterStatus").textContent = "Loading filters...";
+        try {
+            const params = getFilterParams();
+            const res = await fetch(`${API_BASE}/stats?${params.toString()}`);
+            const data = res.ok ? await res.json() : {};
+            let amcList = data.amcs || [];
+            if (!amcList.includes("All AMCs")) amcList = ["All AMCs", ...amcList];
+            widgets.amcWidget.updateOptions(amcList);
+            widgets.catWidget.updateOptions(data.categories || []);
+            widgets.subcatWidget.updateOptions(data.subcategories || []);
+            // Always show the fixed plan list, regardless of API response
+            widgets.planWidget.updateOptions(["Defunct", "Direct", "Institutional", "Regular", "Retail", "Standard"]);
+            // Clear any internal search terms after repopulating
+            widgets.amcWidget.clearSearch && widgets.amcWidget.clearSearch();
+            widgets.catWidget.clearSearch && widgets.catWidget.clearSearch();
+            widgets.subcatWidget.clearSearch && widgets.subcatWidget.clearSearch();
+            widgets.planWidget.clearSearch && widgets.planWidget.clearSearch();
+            widgets.amcWidget.setSelected([]);
+            widgets.catWidget.setSelected([]);
+            widgets.subcatWidget.setSelected([]);
+            if (type === "ETF") { widgets.planWidget.setSelected([]); widgets.planWidget.setDisabled(true); }
+            else { widgets.planWidget.setDisabled(false); widgets.planWidget.setSelected(["Direct"]); }
+            $("filterStatus").textContent = "Filters loaded.";
+        } catch (err) { console.error("loadStats error", err); $("filterStatus").textContent = "Error loading filters"; }
+    }
+
+    async function loadSchemeNames() {
+        const params = getFilterParams();
+        try {
+            const res = await fetch(`${API_BASE}/schemes?${params.toString()}`);
+            const data = await res.json();
+            allSchemes = Array.isArray(data) ? data : [];
+            filteredSchemes = allSchemes.slice();
+            // populate schemeWidget with human readable "Name (CODE)"
+            const names = filteredSchemes.map(s => `${s.schemeName} (${s.schemeCode})`);
+            if (widgets.schemeWidget) widgets.schemeWidget.updateOptions(names);
+        } catch (e) { console.error("loadSchemeNames failed", e); allSchemes = []; filteredSchemes = []; widgets.schemeWidget.updateOptions([]); }
+    }
+
+    async function onFilterChange() {
+        const type = $("investmentType").value;
+        const params = new URLSearchParams();
+        if (type === "Mutual Fund") { params.append("type", "Mutual Fund"); params.append("plan", "Direct"); params.append("option", "Growth"); }
+        else if (type === "ETF") { params.append("type", "ETF"); params.append("option", "ETF"); }
+
+        const amc = widgets.amcWidget.getSelected().filter(a => a !== 'All AMCs');
+        const cat = widgets.catWidget.getSelected();
+        const subcat = widgets.subcatWidget.getSelected();
+        const plan = widgets.planWidget.getSelected();
+
+        ["amc", "category", "subcategory", "plan", "option"].forEach(k => params.delete(k));
+        if (amc.length) params.append("amc", amc.join(","));
+        if (cat.length) params.append("category", cat.join(","));
+        if (subcat.length) params.append("subcategory", subcat.join(","));
+        if (plan.length && type !== "ETF") params.append("plan", plan.join(","));
+
+        $("filterStatus").innerHTML = "Filtering schemes...";
+        try {
+            const res = await fetch(`${API_BASE}/schemes?${params.toString()}`);
+            const data = await res.json();
+            filteredSchemes = Array.isArray(data) ? data : [];
+            // update dependent filters defensively
+            try {
+                const depRes = await fetch(`${API_BASE}/dependent_filters?${params.toString()}`);
+                const depData = await depRes.json();
+                if (widgets.subcatWidget) widgets.subcatWidget.updateOptions(depData.subcategories || []);
+                if (widgets.planWidget) widgets.planWidget.updateOptions(["Defunct", "Direct", "Institutional", "Regular", "Retail", "Standard"]);
+                // Clear searches after dependent updates
+                widgets.amcWidget && widgets.amcWidget.clearSearch && widgets.amcWidget.clearSearch();
+                widgets.catWidget && widgets.catWidget.clearSearch && widgets.catWidget.clearSearch();
+                widgets.subcatWidget && widgets.subcatWidget.clearSearch && widgets.subcatWidget.clearSearch();
+                widgets.planWidget && widgets.planWidget.clearSearch && widgets.planWidget.clearSearch();
+            } catch (e) { console.warn("dependent filters fetch failed", e); }
+
+            updateStatusText(filteredSchemes.length, type, true);
+
+            // keep selected chips (preserve)
+            renderChips();
+
+            // update schemeWidget always (searchable dropdown)
+            const names = filteredSchemes.map(s => `${s.schemeName} (${s.schemeCode})`);
+            if (widgets.schemeWidget) widgets.schemeWidget.updateOptions(names);
+            if (widgets.schemeWidget && widgets.schemeWidget.clearSearch) widgets.schemeWidget.clearSearch();
+
+        } catch (err) { console.error("onFilterChange error", err); $("filterStatus").textContent = "Error filtering schemes."; }
+    }
+
+    // autocomplete on legacy hidden input (optional, harmless)
+    let searchDebounce;
+    if ($("schemeSearch")) {
+        $("schemeSearch").addEventListener("input", (e) => { clearTimeout(searchDebounce); const q = e.target.value.trim(); searchDebounce = setTimeout(() => doAutocomplete(q), 200); });
+    }
+    function doAutocomplete(q) {
+        const list = $("autocompleteList");
+        if (!list) return;
+        list.innerHTML = ""; list.style.display = "none";
+        if (!q || q.length < 2) return;
+        const matches = filteredSchemes.filter(s => s.schemeName.toLowerCase().includes(q.toLowerCase())).slice(0, 40);
+        matches.forEach(s => { const item = createEl('div', { className: 'autocomplete-item' }, [`${s.schemeName} (${s.schemeCode})`]); item.onclick = () => { addSelectedScheme({ code: s.schemeCode, name: s.schemeName }); if (list) list.style.display = 'none'; }; list.appendChild(item); });
+        if (matches.length) list.style.display = 'block';
+    }
+    document.addEventListener('click', (e) => { const al = $("autocompleteList"); if (al && !al.contains(e.target) && e.target !== $("schemeSearch")) al.style.display = 'none'; });
+
+    function renderChips() {
+        const box = $("selectedChips"); if (!box) return; box.innerHTML = '';
+        selectedSchemes.forEach(s => {
+            const chip = createEl('div', { className: 'chip' }); chip.appendChild(document.createTextNode(s.name));
+            const rem = createEl('div', { className: 'remove' }, ['×']); rem.onclick = () => { selectedSchemes = selectedSchemes.filter(x => x.code !== s.code); renderChips(); };
+            chip.appendChild(rem); box.appendChild(chip);
+        });
+        const summary = $("schemeSummary");
+        if (summary) {
+            const c = selectedSchemes.length;
+            summary.textContent = c === 0 ? "No schemes selected yet — search or filter to begin." : c === 1 ? "1 scheme selected — click Calculate to view returns." : `${c} schemes selected — click Calculate to view returns.`;
+        }
+    }
+
+    function addSelectedScheme(obj) {
+        if (!obj || (!obj.code && !obj.schemeCode)) return;
+        const code = obj.code || obj.schemeCode; const name = obj.name || obj.schemeName || '';
+        if (selectedSchemes.find(x => x.code === code)) return;
+        selectedSchemes.push({ code, name }); renderChips();
+    }
+
+    $("clearAllBtn").addEventListener("click", async () => {
+        $("clearAllBtn").disabled = true;
+        allSchemes = []; filteredSchemes = []; selectedSchemes = []; renderChips();
+        if ($("schemeSearch")) $("schemeSearch").value = '';
+        if ($("autocompleteList")) $("autocompleteList").style.display = 'none';
+        if ($("schemeDropdownContainer")) $("schemeDropdownContainer").style.display = 'block';
+        // Clear any internal search on all widgets
+        widgets.amcWidget && widgets.amcWidget.clearSearch && widgets.amcWidget.clearSearch();
+        widgets.catWidget && widgets.catWidget.clearSearch && widgets.catWidget.clearSearch();
+        widgets.subcatWidget && widgets.subcatWidget.clearSearch && widgets.subcatWidget.clearSearch();
+        widgets.planWidget && widgets.planWidget.clearSearch && widgets.planWidget.clearSearch();
+        widgets.schemeWidget && widgets.schemeWidget.clearSearch && widgets.schemeWidget.clearSearch();
+        $("resultsArea").innerHTML = ''; $("downloadBtn").style.display = 'none'; $("filterStatus").textContent = "Resetting to default Mutual Fund view...";
+        try { $("investmentType").value = "Mutual Fund"; if (widgets.planWidget) { widgets.planWidget.setDisabled(false); widgets.planWidget.setSelected(["Direct"]); } widgets.amcWidget.setSelected(["All AMCs"]); widgets.catWidget.setSelected([]); widgets.subcatWidget.setSelected([]); await loadStats(); await loadSchemeNames(); onFilterChange(); $("filterStatus").textContent = "Currently loaded with Mutual Funds (Direct & Growth) — use filters for more granular results."; } catch (err) { console.error("reset failed", err); $("filterStatus").textContent = "Error resetting filters."; }
+        $("clearAllBtn").disabled = false;
+    });
+
+    $("calculateBtn").addEventListener("click", async () => {
+        if (selectedSchemes.length === 0) { alert("Please select at least one scheme."); return; }
+        $("calculateBtn").disabled = true; $("resultsArea").innerHTML = ''; $("filterStatus").textContent = "Fetching returns...";
+        const results = [];
+        for (const s of selectedSchemes) {
+            try {
+                const res = await fetch(`${API_BASE}/periodic_returns?code=${encodeURIComponent(s.code)}`);
+                const j = await res.json();
+                results.push({ name: s.name, results: j.results || {} });
+            } catch (e) {
+                results.push({ name: s.name, error: true });
+            }
+        }
+        renderTable(results);
+        $("downloadBtn").style.display = 'inline-block';
+        $("downloadBtn").onclick = () => downloadCSV("periodic_returns.csv", results);
+        $("filterStatus").textContent = ""; $("calculateBtn").disabled = false;
+    });
+
+    function renderTable(items) {
+        const out = $("resultsArea"); out.innerHTML = '';
+        if (!items || items.length === 0) { out.innerHTML = '<div class="empty">No results to show</div>'; return; }
+        const tfs = ["1M", "3M", "6M", "1Y", "3Y", "5Y", "7Y", "10Y"];
+        const max = {}; tfs.forEach(tf => max[tf] = Math.max(...items.map(i => i.results?.[tf] || -Infinity)));
+
+        // Desktop table (visible on >= 641px)
+        let tableHtml = "<table><thead><tr><th>Scheme</th>" + tfs.map(tf => `<th>${tf}</th>`).join("") + "</tr></thead><tbody>";
+        items.forEach(i => {
+            tableHtml += `<tr><td style="text-align:left" data-label="Scheme">${i.name}</td>`;
+            tfs.forEach(tf => {
+                const v = i.results?.[tf];
+                const d = v != null && !isNaN(v) ? v.toFixed(2) + "%" : "NA";
+                tableHtml += `<td class="${v === max[tf] ? 'best' : ''}" data-label="${tf}">${d}</td>`;
+            });
+            tableHtml += "</tr>";
+        });
+        tableHtml += "</tbody></table>";
+
+        // Mobile cards (visible on <= 640px)
+        let cardsHtml = '<div class="mobile-cards">';
+        items.forEach(i => {
+            cardsHtml += `<div class="mobile-card">`;
+            cardsHtml += `<div class="mobile-card-header">${i.name}</div>`;
+            cardsHtml += `<div class="mobile-metrics">`;
+            tfs.forEach(tf => {
+                const v = i.results?.[tf];
+                const d = v != null && !isNaN(v) ? v.toFixed(2) + "%" : "NA";
+                const best = (v === max[tf]) ? 'best' : '';
+                cardsHtml += `<div class="mobile-metric"><span class="mobile-metric-label">${tf}</span><span class="mobile-metric-value ${best}">${d}</span></div>`;
+            });
+            cardsHtml += `</div></div>`;
+        });
+        cardsHtml += '</div>';
+
+        out.innerHTML = tableHtml + cardsHtml;
+        resetResultsScroll(); updateControlsOffset();
+    }
+
+    function convertToCSV(items) {
+        const tfs = ["1M", "3M", "6M", "1Y", "3Y", "5Y", "7Y", "10Y"];
+        const headers = ["Scheme", ...tfs];
+        const rows = items.map(i => [i.name, ...tfs.map(tf => i.results?.[tf] != null ? i.results[tf].toFixed(2) + "%" : "—")]);
+        return [headers.join(","), ...rows.map(r => r.join(","))].join("\n");
+    }
+    function downloadCSV(filename, items) {
+        const blob = new Blob([convertToCSV(items)], { type: "text/csv;charset=utf-8;" });
+        const link = document.createElement("a"); const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url); link.setAttribute("download", filename); document.body.appendChild(link); link.click(); document.body.removeChild(link); URL.revokeObjectURL(url);
+    }
+
+    function updateStatusText(count, investmentType, isFilter = false) {
+        const filterStatus = $("filterStatus"); if (!filterStatus) return; filterStatus.textContent = "";
+        if (isFilter) { if (count === 0) filterStatus.textContent = "No schemes matching your selection — please play with filters."; else if (count <= 50) filterStatus.textContent = `${count} schemes matched — please select from the dropdown above.`; else filterStatus.textContent = `${count} schemes matched — please start searching the scheme name or filter for more granular results.`; return; }
+        if (count === 0) filterStatus.textContent = "No schemes found — please check your filters.";
+        else if (investmentType === "Mutual Fund") filterStatus.textContent = `Currently we have ${count} Mutual Funds — use filters for more granular results.`;
+        else if (investmentType === "ETF") filterStatus.textContent = `Currently we have ${count} ETFs — use filters for more granular results.`;
+        else filterStatus.textContent = `Currently we have ${count} Mutual Funds & ETFs — use filters for more granular results.`;
+    }
+
+    function updateControlsOffset() {
+        try {
+            const controls = document.querySelector(".controls"); if (!controls) return;
+            const rect = controls.getBoundingClientRect(); let offsetPx = Math.ceil(rect.bottom) + 8;
+            const maxAllowed = Math.max(window.innerHeight - 100, 80); if (offsetPx > maxAllowed) offsetPx = maxAllowed;
+            document.documentElement.style.setProperty("--controls-offset", `${offsetPx}px`);
+        } catch (e) { console.warn("updateControlsOffset err", e); }
+    }
+    window.addEventListener("load", updateControlsOffset); window.addEventListener("resize", updateControlsOffset);
+
+    function resetResultsScroll() { const container = document.querySelector(".results-container"); if (container) { try { container.scrollTo({ left: 0, behavior: 'smooth' }); } catch (e) { container.scrollLeft = 0; } } }
+
+    async function loadTopPerformers() {
+        const type = $("investmentType").value;
+        const container = $('topPerformersContainer');
+        container.innerHTML = '<p>Loading top performers...</p>';
+
+        try {
+            const res = await fetch(`${API_BASE}/top_performers?type=${type}`);
+            const data = await res.json();
+            container.innerHTML = '';
+
+            for (const period of ["3Y", "5Y", "10Y"]) {
+                const tableContainer = createEl('div', { className: 'top-performers-table-container' });
+                const table = createEl('table', { className: 'top-performers-table' });
+                const header = createEl('thead');
+                const headerRow = createEl('tr');
+                headerRow.innerHTML = `<th>Category</th><th>Scheme Name 1</th><th>${period} Return</th><th>Scheme Name 2</th><th>${period} Return</th>`;
+                header.appendChild(headerRow);
+                table.appendChild(header);
+
+                const body = createEl('tbody');
+                const categories = type === "Mutual Fund"
+                    ? ["Debt Scheme", "Equity Scheme", "Gold & Silver Scheme", "Hybrid Scheme", "Index Funds", "Solution Oriented Scheme"]
+                    : ["Debt Scheme", "Equity Scheme", "Gold & Silver Scheme"];
+
+                for (const category of categories) {
+                    const row = createEl('tr');
+                    const performers = data[period] && data[period][category] ? data[period][category] : [];
+                    const scheme1 = performers[0] ? performers[0].scheme_name : 'N/A';
+                    const return1 = performers[0] ? `${parseFloat(performers[0].return).toFixed(2)}%` : 'N/A';
+                    const scheme2 = performers[1] ? performers[1].scheme_name : 'N/A';
+                    const return2 = performers[1] ? `${parseFloat(performers[1].return).toFixed(2)}%` : 'N/A';
+                    row.innerHTML = `<td>${category}</td><td>${scheme1}</td><td>${return1}</td><td>${scheme2}</td><td>${return2}</td>`;
+                    body.appendChild(row);
+                }
+                table.appendChild(body);
+                tableContainer.appendChild(table);
+
+                const label = createEl('h3', {}, [`${period} Top Performers`]);
+                container.appendChild(label);
+                container.appendChild(tableContainer);
+            }
+        } catch (e) {
+            console.error("loadTopPerformers failed", e);
+            container.innerHTML = '<p>Could not load top performers.</p>';
+        }
+    }
+
+    async function init() {
+        buildWidgets();
+
+        $("filterStatus").textContent = "Loading mutual funds and filters...";
+        try {
+            // Load all data (stats, scheme list, and top performers)
+            await Promise.all([loadStats(), loadSchemeNames(), loadTopPerformers()]);
+        } catch (e) {
+            console.error("parallel load failed", e);
+            $("filterStatus").textContent = "Error loading data. Please refresh.";
+        }
+
+        // ✅ Move Plan column only after everything has loaded
+        try {
+            const planMulti = document.getElementById('planMulti');
+            const planCol = planMulti ? planMulti.closest('.col') : null;
+            const filterRow = document.querySelector('.panel .row') || document.querySelector('.row');
+
+            if (planCol && filterRow && filterRow.contains(planCol)) {
+                if (filterRow.firstElementChild !== planCol) {
+                    filterRow.insertBefore(planCol, filterRow.firstElementChild);
+                }
+            } else {
+                console.warn('Plan column reorder skipped — could not find matching filter row.');
+            }
+        } catch (e) {
+            console.warn('reorder plan column failed', e);
+        }
+
+        // ✅ Attach event listener for switching Mutual Fund ↔ ETF
+        $("investmentType").addEventListener("change", async () => {
+            widgets.amcWidget.setSelected([]);
+            widgets.catWidget.setSelected([]);
+            widgets.subcatWidget.setSelected([]);
+            const newType = $("investmentType").value;
+
+            if (newType === 'ETF') {
+                widgets.planWidget.setSelected([]);
+                widgets.planWidget.setDisabled(true);
+            } else {
+                widgets.planWidget.setDisabled(false);
+                widgets.planWidget.setSelected(['Direct']);
+            }
+
+            // Clear search boxes
+            [widgets.amcWidget, widgets.catWidget, widgets.subcatWidget, widgets.planWidget, widgets.schemeWidget]
+                .forEach(w => w && w.clearSearch && w.clearSearch());
+
+            renderChips();
+            if ($("schemeSearch")) $("schemeSearch").value = '';
+
+            $("filterStatus").textContent = "Loading mutual funds and filters...";
+            try {
+                await Promise.all([loadStats(), loadSchemeNames(), loadTopPerformers()]);
+                filteredSchemes = allSchemes.slice();
+                if (widgets.schemeWidget) {
+                    widgets.schemeWidget.updateOptions(filteredSchemes.map(s => `${s.schemeName} (${s.schemeCode})`));
+                }
+            } catch (e) {
+                console.error("reload after type change failed", e);
+                $("filterStatus").textContent = "Error loading data after change.";
+            }
+        });
+    }
+
+
+    init();
+</script>
+
+<!-- (Theme toggle removed) -->
+
+<!-- ================== CONSISTENT PERFORMER HIGHLIGHT & SUMMARY ================== -->
+<style>
+    .consistent-row {
+        background-color: #fff8dc !important;
+        font-weight: 600;
+    }
+
+    .emerging-row {
+        background-color: #f0f8ff !important;
+        font-weight: 600;
+    }
+
+    #consistencySummary {
+        margin: 10px 0;
+        padding: 8px 12px;
+        background-color: #fffae5;
+        border-left: 5px solid #f2c94c;
+        border-radius: 6px;
+        font-size: 15px;
+        color: #444;
+        display: none;
+    }
+</style>
+
+<script>
+    function calculateConsistencyScores(funds) {
+        const weights = {
+            "1M": 0.05, "3M": 0.08, "6M": 0.12, "1Y": 0.15,
+            "3Y": 0.20, "5Y": 0.20, "7Y": 0.12, "10Y": 0.08
+        };
+
+        const eligible = funds.filter(f => f.results && f.results["5Y"] !== undefined);
+        if (eligible.length === 0) return [];
+
+        const allPeriods = Object.keys(weights);
+        const periodMinMax = {};
+        for (const p of allPeriods) {
+            const vals = eligible.map(f => f.results[p]).filter(v => v !== undefined && !isNaN(v));
+            if (vals.length) periodMinMax[p] = [Math.min(...vals), Math.max(...vals)];
+        }
+
+        const scored = [];
+        for (const f of eligible) {
+            const validPeriods = allPeriods.filter(p => f.results[p] !== undefined && periodMinMax[p]);
+            const totalWeight = validPeriods.reduce((sum, p) => sum + weights[p], 0);
+            if (totalWeight === 0) continue;
+
+            let score = 0;
+            for (const p of validPeriods) {
+                const [min, max] = periodMinMax[p];
+                const normalized = (f.results[p] - min) / ((max - min) || 1);
+                const effWeight = weights[p] / totalWeight;
+                score += normalized * effWeight;
+            }
+            scored.push({ scheme_name: f.scheme_name || f.name, name: f.name, score });
+        }
+
+        scored.sort((a, b) => b.score - a.score);
+        const maxScore = scored[0]?.score || 0;
+        const consistent = scored.filter(r => r.score >= maxScore * 0.95);
+        const emerging = scored.filter(r => r.score >= maxScore * 0.85 && r.score < maxScore * 0.95);
+
+        for (const s of scored) {
+            if (consistent.some(c => c.scheme_name === s.scheme_name)) s.label = "🏆 Consistent Performer";
+            else if (emerging.some(e => e.scheme_name === s.scheme_name)) s.label = "🏅 Emerging Performer";
+            else s.label = "";
+        }
+        return scored;
+    }
+
+    const originalRenderTable = renderTable;
+    renderTable = function (results) {
+        originalRenderTable(results);
+
+        try {
+            const consistencyData = calculateConsistencyScores(results);
+            const table = document.querySelector("#resultsArea table");
+            if (!table) return;
+            const thead = table.querySelector("thead tr");
+            if (thead && !thead.querySelector('th.consistency-header')) {
+                const th = document.createElement('th');
+                th.className = 'consistency-header';
+                th.textContent = 'Consistency';
+                thead.appendChild(th);
+            }
+
+            if (!consistencyData || consistencyData.length === 0) {
+                return;
+            }
+
+            const map = new Map(consistencyData.map(f => [(f.scheme_name || f.name || '').toLowerCase(), f]));
+            const rows = document.querySelectorAll("#resultsArea table tbody tr");
+            let consistentCount = 0, emergingCount = 0;
+
+            rows.forEach(row => {
+                const schemeCell = row.querySelector("td:first-child");
+                if (!schemeCell) return;
+                const schemeName = schemeCell.textContent.trim().toLowerCase();
+                const fund = map.get(schemeName);
+                const existingBadge = row.querySelector('td.consistency-badge');
+                if (existingBadge) existingBadge.remove();
+                const badgeCell = document.createElement("td");
+                badgeCell.className = 'consistency-badge';
+                badgeCell.style.textAlign = "center";
+                if (fund && fund.label) {
+                    badgeCell.textContent = fund.label;
+                    if (fund.label.includes("Consistent")) { row.classList.add("consistent-row"); row.classList.remove("emerging-row"); consistentCount++; }
+                    else if (fund.label.includes("Emerging")) { row.classList.add("emerging-row"); row.classList.remove("consistent-row"); emergingCount++; }
+                } else {
+                    badgeCell.textContent = '';
+                    row.classList.remove("consistent-row");
+                    row.classList.remove("emerging-row");
+                }
+                row.appendChild(badgeCell);
+            });
+
+            const total = results.length;
+            let legend = document.getElementById("consistencyLegend");
+            if (!legend) {
+                legend = document.createElement("div");
+                legend.id = "consistencyLegend";
+                legend.style.marginTop = "10px";
+                legend.style.padding = "8px 12px";
+                legend.style.backgroundColor = "#f8f9fa";
+                legend.style.borderRadius = "6px";
+                legend.style.fontSize = "14px";
+                legend.style.color = "#333";
+                const tableContainer = document.querySelector("#resultsArea table");
+                if (tableContainer && tableContainer.parentNode) {
+                    tableContainer.parentNode.appendChild(legend);
+                }
+            }
+            legend.innerHTML = `
+          <b>Legend:</b><br>
+          🏆 <b>Consistent Performer</b>: Funds demonstrating stable returns across short, medium, and long-term periods (5Y+).<br>
+          🏅 <b>Emerging Performer</b>: Funds showing strong recent momentum and improving consistency across multiple time frames.
+        `;
+
+            // Tag mobile cards as well
+            try {
+                const mapLower = new Map(consistencyData.map(f => [(f.scheme_name || f.name || '').toLowerCase(), f]));
+                document.querySelectorAll('.mobile-card').forEach(card => {
+                    const header = card.querySelector('.mobile-card-header');
+                    if (!header) return;
+                    const nameText = header.childNodes[0] ? String(header.childNodes[0].textContent || '').trim().toLowerCase() : header.textContent.trim().toLowerCase();
+                    const fund = mapLower.get(nameText);
+                    const old = header.querySelector('.mobile-badge');
+                    if (old) old.remove();
+                    card.classList.remove('consistent-row', 'emerging-row');
+                    if (fund && fund.label) {
+                        const badge = document.createElement('span');
+                        badge.className = 'mobile-badge';
+                        badge.textContent = fund.label;
+                        header.appendChild(badge);
+                        if (fund.label.includes('Consistent')) card.classList.add('consistent-row');
+                        else if (fund.label.includes('Emerging')) card.classList.add('emerging-row');
+                    }
+                });
+            } catch (e) { console.warn('mobile card consistency tagging failed', e); }
+
+        } catch (err) {
+            console.error("Error tagging consistent performers:", err);
+        }
+    };
+</script>
+
+</body>
+
+</html>

@@ -137,6 +137,20 @@ export default function Home() {
               Get expert asset allocation advice based on your time horizon.
             </p>
           </Link>
+
+          {/* Card 10: Mutual Fund Analyzer */}
+          <Link
+            href="/calculators/mutual-fund"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600 font-bold">
+              📈
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">MF Analyzer</h2>
+            <p className="text-slate-500 text-sm">
+              Analyze historical returns of 3000+ Mutual Funds & ETFs.
+            </p>
+          </Link>
         </div>
       </div>
     </main>
