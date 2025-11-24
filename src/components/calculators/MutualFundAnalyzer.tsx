@@ -362,7 +362,7 @@ export default function MutualFundAnalyzer() {
             if (!s.consistencyScore) return s;
             let label = '';
             if (s.consistencyScore >= maxScore * 0.95) label = 'Consistent Performer';
-            else if (s.consistencyScore >= maxScore * 0.85) label = 'Emerging Performer';
+            else if (s.consistencyScore >= maxScore * 0.75) label = 'Emerging Performer';
             return { ...s, consistencyLabel: label };
         });
     };
@@ -653,8 +653,8 @@ export default function MutualFundAnalyzer() {
                                     <table className="w-full text-sm text-left">
                                         <thead className="text-xs text-slate-500 uppercase bg-slate-50/50 border-b border-slate-100">
                                             <tr>
-                                                <th className="px-5 py-3 min-w-[200px]">Scheme</th>
-                                                {PERIODS.map(p => <th key={p} className="px-3 py-3 text-center">{p}</th>)}
+                                                <th className="px-3 py-3 min-w-[180px]">Scheme</th>
+                                                {PERIODS.map(p => <th key={p} className="px-2 py-3 text-center">{p}</th>)}
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-slate-50">
@@ -667,8 +667,8 @@ export default function MutualFundAnalyzer() {
                                                         key={scheme.code}
                                                         className={`hover:bg-slate-50 transition-colors ${isConsistent ? 'bg-yellow-50/30' : isEmerging ? 'bg-blue-50/30' : ''}`}
                                                     >
-                                                        <td className="px-5 py-3">
-                                                            <div className="font-medium text-slate-800">{scheme.name}</div>
+                                                        <td className="px-3 py-3">
+                                                            <div className="font-medium text-slate-800 text-sm">{scheme.name}</div>
                                                             {scheme.consistencyLabel && (
                                                                 <div className={`text-[10px] font-bold mt-1 inline-block px-1.5 py-0.5 rounded border ${isConsistent ? 'text-yellow-700 border-yellow-200 bg-yellow-50' : 'text-blue-700 border-blue-200 bg-blue-50'}`}>
                                                                     {isConsistent ? '🏆 Consistent' : '🏅 Emerging'}
@@ -691,7 +691,7 @@ export default function MutualFundAnalyzer() {
                                                             }
 
                                                             return (
-                                                                <td key={p} className={`px-3 py-3 text-center ${isMax ? 'bg-purple-50' : ''}`}>
+                                                                <td key={p} className={`px-2 py-3 text-center ${isMax ? 'bg-purple-50' : ''}`}>
                                                                     {val !== undefined ? (
                                                                         <span className={`font-semibold ${isMax ? 'text-purple-700 font-bold' : val >= 0 ? 'text-emerald-600' : 'text-red-500'}`}>
                                                                             {val}%
