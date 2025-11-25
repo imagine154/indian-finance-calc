@@ -40,6 +40,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 2.5: Freelance Tax */}
+          <Link
+            href="/calculators/freelance"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-teal-600 font-bold">
+              💻
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Freelance Tax</h2>
+            <p className="text-slate-500 text-sm">
+              Save 50% tax with Section 44ADA. For developers & professionals.
+            </p>
+          </Link>
+
           {/* Card 3: Salary Calculator */}
           <Link
             href="/calculators/salary"

@@ -151,6 +151,8 @@ function calculateEngine(input: TaxInput, regime: 'Old' | 'New'): TaxCalculation
 
     // --- 3. DEDUCTIONS ---
     let standardDeduction = regime === 'Old' ? STANDARD_DEDUCTION_OLD : STANDARD_DEDUCTION_NEW;
+    // Cap Standard Deduction to Gross Salary (Cannot exceed salary)
+    standardDeduction = Math.min(standardDeduction, input.grossSalary);
     let totalDeductions = standardDeduction;
 
     // NPS 80CCD(2) (Employer) - Allowed in BOTH
