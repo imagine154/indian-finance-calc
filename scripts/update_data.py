@@ -34,8 +34,67 @@ PERIODS = {
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 # ==========================================
-# CORE LOGIC (From periodic_return.py)
+# CORE LOGIC
 # ==========================================
+
+def clean_nav_data(nav_df):
+    """
+    Detects and adjusts for stock splits and reverse splits in NAV data.
+    Logic ported from periodic_return.py.
+    """
+    if nav_df is None or nav_df.empty:
+        return nav_df
+
+    # Sort by date just in case
+    nav_df = nav_df.sort_index()
+    
+    # Get values as numpy array for fast iteration
+    nav_series = nav_df["nav"].values
+    
+    # We iterate through the array to find sudden jumps
+    for i in range(1, len(nav_series)):
+        prev = nav_series[i - 1]
+        curr = nav_series[i]
+        
+        if prev <= 0 or curr <= 0:
+            continue
+            
+        ratio = prev / curr
+        rev_ratio = curr / prev
+        
+        # Split ratios to check (e.g., 1:10 split means price drops 10x)
+        possible_splits = [2, 3, 4, 5, 10, 50, 100]
+        
+        # Detect forward split (NAV drops sharply, e.g. 100 -> 10)
+        # Ratio prev/curr will be close to N (e.g. 10)
+        found_split = False
+        for possible in possible_splits:
+            if abs(ratio - possible) / possible < 0.05: # 5% tolerance
+                print(f"🔧 Detected forward stock split ×{possible} at index {i} ({nav_df.index[i].date()}) NAV: {prev:.2f} -> {curr:.2f}")
+                # Adjust all SUBSEQUENT NAVs to match the pre-split scale? 
+                # Actually, `periodic_return.py` multiplied the *subsequent* data.
+                # "nav_df.loc[nav_df.index[i]:, "nav"] *= possible"
+                # This normalizes the *new* lower prices UP to the old higher prices.
+                nav_df.iloc[i:, nav_df.columns.get_loc("nav")] *= possible
+                
+                # Update our local array so next iteration sees adjusted values
+                nav_series[i:] *= possible
+                found_split = True
+                break
+        
+        if found_split: continue
+
+        # Detect reverse split (NAV jumps sharply, e.g. 10 -> 100)
+        # Ratio curr/prev will be close to N
+        for possible in possible_splits:
+            if abs(rev_ratio - possible) / possible < 0.05:
+                print(f"🔄 Detected reverse stock split ÷{possible} at index {i} ({nav_df.index[i].date()}) NAV: {prev:.2f} -> {curr:.2f}")
+                # Adjust subsequent NAVs DOWN
+                nav_df.iloc[i:, nav_df.columns.get_loc("nav")] /= possible
+                nav_series[i:] /= possible
+                break
+
+    return nav_df
 
 def xirr(cashflows, dates, guess=0.1):
     """Compute XIRR using Newton–Raphson method."""
@@ -67,9 +126,10 @@ def fetch_nav_history(scheme_code):
                 df = pd.read_csv(cache_path)
                 df["date"] = pd.to_datetime(df["date"], format="%d-%m-%Y")
                 df.set_index("date", inplace=True)
-                return df, None # Name not stored in simple cache
+                # Note: We don't adjust for splits in cache, we adjust in memory after load
+                return df, None 
             except:
-                pass # Invalid cache, fetch fresh
+                pass # Invalid cache
 
     # 2. Fetch from API
     url = f"{MFAPI_BASE}{scheme_code}"
@@ -86,7 +146,7 @@ def fetch_nav_history(scheme_code):
         df["nav"] = pd.to_numeric(df["nav"], errors="coerce")
         df = df.dropna().sort_values("date")
         
-        # Save to Cache
+        # Save to Cache (Raw Data)
         df.to_csv(cache_path, index=False, date_format="%d-%m-%Y")
         
         df.set_index("date", inplace=True)
@@ -98,6 +158,10 @@ def fetch_nav_history(scheme_code):
 def calculate_returns(nav_df):
     """Calculate Absolute and XIRR returns for all periods."""
     if nav_df is None or nav_df.empty: return {}
+    
+    # --- APPLY SPLIT CORRECTION ---
+    # This ensures 'latest_nav' is comparable to 'start_nav' even if a split occurred
+    nav_df = clean_nav_data(nav_df)
     
     end_date = nav_df.index[-1]
     start_date_limit = nav_df.index[0]
@@ -129,8 +193,11 @@ def calculate_returns(nav_df):
             abs_ret = ((latest_nav - start_nav) / start_nav) * 100
             results[label] = round(abs_ret, 2)
         else:
-            cagr = ((latest_nav / start_nav) ** (1 / years) - 1) * 100
-            results[label] = round(cagr, 2)
+            try:
+                cagr = ((latest_nav / start_nav) ** (1 / years) - 1) * 100
+                results[label] = round(cagr, 2)
+            except:
+                results[label] = None
 
     return results
 
@@ -140,15 +207,14 @@ def calculate_returns(nav_df):
 def process_scheme(row):
     code = str(row["schemeCode"])
     name = row["schemeName"]
-    category = row.get("schemeCategory", "")
     
     try:
         nav_df, api_name = fetch_nav_history(code)
         if nav_df is None: return None
 
+        # 'calculate_returns' now handles split cleaning internally
         returns = calculate_returns(nav_df)
         
-        # Structure for CSV
         return {
             "scheme_code": code,
             "scheme_name": name,
@@ -163,9 +229,11 @@ def process_scheme(row):
             "return_5y": returns.get("5Y"),
             "return_7y": returns.get("7Y"),
             "return_10y": returns.get("10Y"),
-            "results_json": json.dumps(returns) # Full object for frontend
+            "results_json": json.dumps(returns),
+            "updated_at": datetime.now().strftime("%Y-%m-%d")
         }
     except Exception as e:
+        # print(f"Error processing {code}: {e}") # Optional: uncomment for debugging
         return None
 
 # ==========================================
@@ -186,6 +254,7 @@ def main():
     results = []
     processed = 0
     
+    # Adjust max_workers based on your CPU/Network limits
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = [executor.submit(process_scheme, row) for _, row in schemes.iterrows()]
         
@@ -198,14 +267,12 @@ def main():
             if processed % 50 == 0:
                 print(f"✅ Processed {processed}/{total}...")
 
-    # Save to CSV
     if results:
         df_out = pd.DataFrame(results)
         df_out.to_csv(OUTPUT_FILE, index=False)
         print(f"\n🎉 Success! Updated {OUTPUT_FILE} with {len(results)} records.")
-        print("Next Step: Run 'python scripts/convert_mf_data.py' to update the JSON for the app.")
     else:
-        print("\n⚠️ No results generated. Check internet connection or API limits.")
+        print("\n⚠️ No results generated.")
 
 if __name__ == "__main__":
     main()
