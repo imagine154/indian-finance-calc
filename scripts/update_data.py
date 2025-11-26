@@ -13,10 +13,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # ==========================================
 INPUT_FILE = "schemeswithcodes.csv"
 OUTPUT_FILE = "precomputed_clean.csv"
-CACHE_DIR = "scripts/cache"  # Stores NAV data to speed up re-runs
-MAX_WORKERS = 10             # Parallel threads
+CACHE_DIR = "scripts/cache"
+MAX_WORKERS = 10
 MFAPI_BASE = "https://api.mfapi.in/mf/"
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
+SIP_AMOUNT = 10000
+SIP_DAY = 1
 
 # Periods to calculate
 PERIODS = {
@@ -30,71 +32,11 @@ PERIODS = {
     "10Y": 365 * 10,
 }
 
-# Ensure cache directory exists
 os.makedirs(CACHE_DIR, exist_ok=True)
 
 # ==========================================
 # CORE LOGIC
 # ==========================================
-
-def clean_nav_data(nav_df):
-    """
-    Detects and adjusts for stock splits and reverse splits in NAV data.
-    Logic ported from periodic_return.py.
-    """
-    if nav_df is None or nav_df.empty:
-        return nav_df
-
-    # Sort by date just in case
-    nav_df = nav_df.sort_index()
-    
-    # Get values as numpy array for fast iteration
-    nav_series = nav_df["nav"].values
-    
-    # We iterate through the array to find sudden jumps
-    for i in range(1, len(nav_series)):
-        prev = nav_series[i - 1]
-        curr = nav_series[i]
-        
-        if prev <= 0 or curr <= 0:
-            continue
-            
-        ratio = prev / curr
-        rev_ratio = curr / prev
-        
-        # Split ratios to check (e.g., 1:10 split means price drops 10x)
-        possible_splits = [2, 3, 4, 5, 10, 50, 100]
-        
-        # Detect forward split (NAV drops sharply, e.g. 100 -> 10)
-        # Ratio prev/curr will be close to N (e.g. 10)
-        found_split = False
-        for possible in possible_splits:
-            if abs(ratio - possible) / possible < 0.05: # 5% tolerance
-                print(f"🔧 Detected forward stock split ×{possible} at index {i} ({nav_df.index[i].date()}) NAV: {prev:.2f} -> {curr:.2f}")
-                # Adjust all SUBSEQUENT NAVs to match the pre-split scale? 
-                # Actually, `periodic_return.py` multiplied the *subsequent* data.
-                # "nav_df.loc[nav_df.index[i]:, "nav"] *= possible"
-                # This normalizes the *new* lower prices UP to the old higher prices.
-                nav_df.iloc[i:, nav_df.columns.get_loc("nav")] *= possible
-                
-                # Update our local array so next iteration sees adjusted values
-                nav_series[i:] *= possible
-                found_split = True
-                break
-        
-        if found_split: continue
-
-        # Detect reverse split (NAV jumps sharply, e.g. 10 -> 100)
-        # Ratio curr/prev will be close to N
-        for possible in possible_splits:
-            if abs(rev_ratio - possible) / possible < 0.05:
-                print(f"🔄 Detected reverse stock split ÷{possible} at index {i} ({nav_df.index[i].date()}) NAV: {prev:.2f} -> {curr:.2f}")
-                # Adjust subsequent NAVs DOWN
-                nav_df.iloc[i:, nav_df.columns.get_loc("nav")] /= possible
-                nav_series[i:] /= possible
-                break
-
-    return nav_df
 
 def xirr(cashflows, dates, guess=0.1):
     """Compute XIRR using Newton–Raphson method."""
@@ -102,7 +44,7 @@ def xirr(cashflows, dates, guess=0.1):
         return sum([cf / ((1 + rate) ** ((d - dates[0]).days / 365)) for cf, d in zip(cashflows, dates)])
 
     rate = guess
-    for _ in range(100): # Limit iterations
+    for _ in range(100):
         try:
             f_value = npv(rate)
             f_derivative = sum([-cf * ((d - dates[0]).days / 365) / ((1 + rate) ** (((d - dates[0]).days / 365) + 1)) for cf, d in zip(cashflows, dates)])
@@ -111,27 +53,16 @@ def xirr(cashflows, dates, guess=0.1):
             if abs(new_rate - rate) < 1e-6: return new_rate
             rate = new_rate
         except:
-            return None # Calculation error
+            return None
     return rate
 
 def fetch_nav_history(scheme_code):
-    """Fetch NAV from API or Cache."""
+    """Fetch NAV from API (Forced Refresh)."""
     cache_path = os.path.join(CACHE_DIR, f"{scheme_code}.csv")
     
-    # 1. Check Cache (Valid for 24 hours)
-    if os.path.exists(cache_path):
-        file_age = time.time() - os.path.getmtime(cache_path)
-        if file_age < 86400: # 24 hours
-            try:
-                df = pd.read_csv(cache_path)
-                df["date"] = pd.to_datetime(df["date"], format="%d-%m-%Y")
-                df.set_index("date", inplace=True)
-                # Note: We don't adjust for splits in cache, we adjust in memory after load
-                return df, None 
-            except:
-                pass # Invalid cache
+    # NOTE: Cache read is DISABLED to force fresh data
+    # if os.path.exists(cache_path): ...
 
-    # 2. Fetch from API
     url = f"{MFAPI_BASE}{scheme_code}"
     try:
         response = requests.get(url, headers=HTTP_HEADERS, timeout=10)
@@ -140,64 +71,116 @@ def fetch_nav_history(scheme_code):
         data = response.json()
         if "data" not in data or not data["data"]: return None, None
 
-        # Process
         df = pd.DataFrame(data["data"])
-        df["date"] = pd.to_datetime(df["date"], format="%d-%m-%Y", errors="coerce")
+        df["date"] = pd.to_datetime(df["date"], dayfirst=True, errors="coerce")
         df["nav"] = pd.to_numeric(df["nav"], errors="coerce")
-        df = df.dropna().sort_values("date")
+        df = df.dropna(subset=["date", "nav"])
+        df = df[df["nav"] > 0].sort_values("date").reset_index(drop=True)
         
-        # Save to Cache (Raw Data)
-        df.to_csv(cache_path, index=False, date_format="%d-%m-%Y")
+        # We still save to cache as a backup
+        df.to_csv(cache_path, index=False)
         
-        df.set_index("date", inplace=True)
+        df = df.set_index("date")
         return df, data.get("meta", {}).get("scheme_name")
     except Exception as e:
         print(f"Error fetching {scheme_code}: {e}")
         return None, None
 
+def simulate_sip(nav_df, start_date, end_date):
+    """Simulate monthly SIP investments and handle split adjustments."""
+    if nav_df is None or nav_df.empty:
+        return None, None, None, None
+
+    # Generate SIP Dates
+    months = pd.date_range(start=start_date.replace(day=1), end=end_date, freq="MS")
+    sip_dates = []
+    for m in months:
+        try:
+            candidate = m.replace(day=SIP_DAY)
+            if candidate <= end_date:
+                sip_dates.append(candidate)
+        except ValueError:
+            continue
+
+    # --- SPLIT DETECTION LOGIC (From periodic_return.py) ---
+    nav_series = nav_df["nav"].sort_index().values
+    for i in range(1, len(nav_series)):
+        prev_nav, curr_nav = nav_series[i - 1], nav_series[i]
+        if prev_nav <= 0 or curr_nav <= 0:
+            continue
+            
+        ratio = prev_nav / curr_nav
+        rev_ratio = curr_nav / prev_nav
+        
+        # Forward Split (Price drops)
+        for possible in [2, 3, 4, 5, 10, 50, 100]:
+            if abs(ratio - possible) / possible < 0.05:
+                print(f"🔧 Forward split ×{possible} detected: {prev_nav:.2f} -> {curr_nav:.2f}")
+                nav_df.iloc[i:, nav_df.columns.get_loc("nav")] *= possible
+                nav_series[i:] *= possible # Update local array for next iteration
+                break
+        
+        # Reverse Split (Price jumps)
+        for possible in [2, 3, 4, 5, 10, 50, 100]:
+            if abs(rev_ratio - possible) / possible < 0.05:
+                print(f"🔄 Reverse split ÷{possible} detected: {prev_nav:.2f} -> {curr_nav:.2f}")
+                nav_df.iloc[i:, nav_df.columns.get_loc("nav")] /= possible
+                nav_series[i:] /= possible
+                break
+
+    # --- SIP CALCULATION ---
+    units, cashflows, dates = [], [], []
+    for d in sip_dates:
+        df_sel = nav_df[nav_df.index >= d]
+        if df_sel.empty:
+            continue
+        nav = float(df_sel["nav"].iloc[0])
+        units.append(SIP_AMOUNT / nav)
+        cashflows.append(-SIP_AMOUNT)
+        dates.append(df_sel.index[0])
+
+    if not units:
+        return None, None, None, None
+
+    total_units = sum(units)
+    total_invested = len(units) * SIP_AMOUNT
+    latest_nav = float(nav_df["nav"].iloc[-1])
+    current_value = total_units * latest_nav
+
+    cashflows.append(current_value)
+    dates.append(nav_df.index[-1])
+
+    return total_invested, current_value, dates, cashflows
+
 def calculate_returns(nav_df):
-    """Calculate Absolute and XIRR returns for all periods."""
+    """Calculate SIP returns (Absolute/XIRR)."""
     if nav_df is None or nav_df.empty: return {}
     
-    # --- APPLY SPLIT CORRECTION ---
-    # This ensures 'latest_nav' is comparable to 'start_nav' even if a split occurred
-    nav_df = clean_nav_data(nav_df)
-    
     end_date = nav_df.index[-1]
-    start_date_limit = nav_df.index[0]
-    latest_nav = nav_df["nav"].iloc[-1]
-    
+    first_date = nav_df.index[0]
     results = {}
-    
+
     for label, days in PERIODS.items():
-        target_date = end_date - timedelta(days=days)
-        if target_date < start_date_limit:
+        start_date = end_date - timedelta(days=days)
+        
+        if start_date < first_date:
             results[label] = None
             continue
-            
-        # Find NAV on or closest after target_date
-        idx = nav_df.index.searchsorted(target_date)
-        if idx >= len(nav_df): 
+
+        # Important: Pass a COPY so simulate_sip's split logic doesn't compound 
+        # if we were running it multiple times (though here it cleans it once per call)
+        invested, value, dates, cashflows = simulate_sip(nav_df.copy(), start_date, end_date)
+        
+        if invested is None:
             results[label] = None
             continue
-            
-        start_nav = nav_df["nav"].iloc[idx]
-        start_real_date = nav_df.index[idx]
-        
-        # 1. Lumpsum Return (CAGR/Absolute)
-        # For < 1Y use Absolute, > 1Y use CAGR
-        years = (end_date - start_real_date).days / 365
-        if years == 0: years = 0.001
-        
-        if days <= 365:
-            abs_ret = ((latest_nav - start_nav) / start_nav) * 100
-            results[label] = round(abs_ret, 2)
+
+        if label in ["1M", "3M", "6M", "1Y"]:
+            returns = ((value / invested) - 1) * 100 # Absolute
         else:
-            try:
-                cagr = ((latest_nav / start_nav) ** (1 / years) - 1) * 100
-                results[label] = round(cagr, 2)
-            except:
-                results[label] = None
+            returns = xirr(cashflows, dates) * 100 # XIRR
+
+        results[label] = round(returns, 2) if returns is not None else None
 
     return results
 
@@ -212,7 +195,7 @@ def process_scheme(row):
         nav_df, api_name = fetch_nav_history(code)
         if nav_df is None: return None
 
-        # 'calculate_returns' now handles split cleaning internally
+        # Calculate using the SIP Logic
         returns = calculate_returns(nav_df)
         
         return {
@@ -233,18 +216,16 @@ def process_scheme(row):
             "updated_at": datetime.now().strftime("%Y-%m-%d")
         }
     except Exception as e:
-        # print(f"Error processing {code}: {e}") # Optional: uncomment for debugging
         return None
 
 # ==========================================
 # MAIN EXECUTION
 # ==========================================
 def main():
-    print(f"🚀 Starting Data Update...")
-    print(f"Reading {INPUT_FILE}...")
+    print(f"🚀 Starting Data Update (Forced Fresh Fetch)...")
     
     if not os.path.exists(INPUT_FILE):
-        print(f"❌ Error: {INPUT_FILE} not found in root directory.")
+        print(f"❌ Error: {INPUT_FILE} not found.")
         return
 
     schemes = pd.read_csv(INPUT_FILE)
@@ -254,7 +235,6 @@ def main():
     results = []
     processed = 0
     
-    # Adjust max_workers based on your CPU/Network limits
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = [executor.submit(process_scheme, row) for _, row in schemes.iterrows()]
         
