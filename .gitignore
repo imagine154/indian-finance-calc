@@ -42,3 +42,22 @@ next-env.d.ts
 
 # local verification scripts
 verify_*.ts
+
+# ----------------------
+# PYTHON IGNORE RULES
+# ----------------------
+
+# Byte-compiled / Optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments (Keep your local env out of Git)
+venv/
+.venv/
+env/
+.env
+.DS_Store
+
+# Scripts cache
+scripts/cache/
