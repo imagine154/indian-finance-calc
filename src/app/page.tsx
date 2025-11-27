@@ -171,6 +171,20 @@ export default function Home() {
               Analyze historical returns of 3000+ Mutual Funds & ETFs.
             </p>
           </Link>
+
+          {/* Card 11: Position Size Calculator */}
+          <Link
+            href="/calculators/position-size"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600 font-bold">
+              ⚖️
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Position Size</h2>
+            <p className="text-slate-500 text-sm">
+              Calculate exact share quantity for risk management.
+            </p>
+          </Link>
         </div>
       </div>
     </main>

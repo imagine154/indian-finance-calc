@@ -90,9 +90,10 @@ export function TaxCompare() {
                                 <IndianRupee className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                                 <input
                                     type="number"
+                                    step="1000"
                                     value={grossSalary}
                                     onChange={e => setGrossSalary(Number(e.target.value))}
-                                    className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                                    className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-slate-900"
                                 />
                             </div>
                             {/* 👇 The missing text is here */}
@@ -103,16 +104,16 @@ export function TaxCompare() {
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">Interest Income</label>
-                                <input type="number" value={interestIncome} onChange={e => setInterestIncome(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                <input type="number" step="500" value={interestIncome} onChange={e => setInterestIncome(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" />
                             </div>
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">Other Income</label>
-                                <input type="number" value={otherIncome} onChange={e => setOtherIncome(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                <input type="number" step="500" value={otherIncome} onChange={e => setOtherIncome(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" />
                             </div>
                         </div>
                         <div>
                             <label className="text-sm text-slate-600 flex items-center gap-1 mb-1"><Bitcoin className="w-3 h-3" /> Digital Assets (Crypto)</label>
-                            <input type="number" value={digitalAssets} onChange={e => setDigitalAssets(Number(e.target.value))} className="w-full px-3 py-2 border border-orange-200 rounded-lg bg-orange-50 focus:ring-orange-500" placeholder="Flat 30% Tax" />
+                            <input type="number" step="500" value={digitalAssets} onChange={e => setDigitalAssets(Number(e.target.value))} className="w-full px-3 py-2 border border-orange-200 rounded-lg bg-orange-50 focus:ring-orange-500 text-slate-900" placeholder="Flat 30% Tax" />
                             <p className="text-xs text-orange-600 mt-1">Taxed flat @ 30%. No slab benefit.</p>
                         </div>
                     </div>
@@ -126,16 +127,16 @@ export function TaxCompare() {
                     <div className="space-y-4">
                         <div>
                             <label className="text-sm text-slate-600 mb-1 block">Interest (Self Occupied)</label>
-                            <input type="number" value={homeLoanSelf} onChange={e => setHomeLoanSelf(Math.min(Number(e.target.value), 200000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" placeholder="Max 2L (Old Regime)" />
+                            <input type="number" step="500" value={homeLoanSelf} onChange={e => setHomeLoanSelf(Math.min(Number(e.target.value), 200000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" placeholder="Max 2L (Old Regime)" />
                         </div>
                         <div className="grid grid-cols-2 gap-4 border-t pt-4">
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">Rent Received</label>
-                                <input type="number" value={rentalIncome} onChange={e => setRentalIncome(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                <input type="number" step="500" value={rentalIncome} onChange={e => setRentalIncome(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" />
                             </div>
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">Interest (Let Out)</label>
-                                <input type="number" value={homeLoanLetOut} onChange={e => setHomeLoanLetOut(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                <input type="number" step="500" value={homeLoanLetOut} onChange={e => setHomeLoanLetOut(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" />
                             </div>
                         </div>
                     </div>
@@ -150,7 +151,7 @@ export function TaxCompare() {
                     {/* Shared Deduction */}
                     <div className="mb-6">
                         <label className="text-sm font-semibold text-slate-700 mb-1 block">NPS Employer (80CCD(2))</label>
-                        <input type="number" value={npsEmployer} onChange={e => setNpsEmployer(Number(e.target.value))} className="w-full px-3 py-2 border border-green-200 bg-green-50/50 rounded-lg focus:ring-green-500" placeholder="Allowed in BOTH Regimes" />
+                        <input type="number" step="500" value={npsEmployer} onChange={e => setNpsEmployer(Number(e.target.value))} className="w-full px-3 py-2 border border-green-200 bg-green-50/50 rounded-lg focus:ring-green-500 text-slate-900" placeholder="Allowed in BOTH Regimes" />
                         <p className="text-xs text-slate-500 mt-1">Valid for both Old & New regimes.</p>
                     </div>
 
@@ -160,19 +161,19 @@ export function TaxCompare() {
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">Section 80C</label>
-                                <input type="number" value={section80C} onChange={e => setSection80C(Math.min(Number(e.target.value), 150000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" max={150000} />
+                                <input type="number" step="500" value={section80C} onChange={e => setSection80C(Math.min(Number(e.target.value), 150000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" max={150000} />
                             </div>
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">NPS Self (80CCD 1B)</label>
-                                <input type="number" value={npsSelf} onChange={e => setNpsSelf(Math.min(Number(e.target.value), 50000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" max={50000} />
+                                <input type="number" step="500" value={npsSelf} onChange={e => setNpsSelf(Math.min(Number(e.target.value), 50000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" max={50000} />
                             </div>
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">HRA Exemption</label>
-                                <input type="number" value={hraExemption} onChange={e => setHraExemption(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                <input type="number" step="500" value={hraExemption} onChange={e => setHraExemption(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" />
                             </div>
                             <div>
                                 <label className="text-sm text-slate-600 mb-1 block">Section 80D (Medical)</label>
-                                <input type="number" value={section80D} onChange={e => setSection80D(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                <input type="number" step="500" value={section80D} onChange={e => setSection80D(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg text-slate-900" />
                             </div>
                         </div>
                     </div>

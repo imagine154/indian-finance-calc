@@ -79,6 +79,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.7,
         },
+        {
+            url: `${baseUrl}/calculators/position-size`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
         // --- Static Pages (Lower Priority) ---
         {
             url: `${baseUrl}/about`,

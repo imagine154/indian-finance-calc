@@ -8,6 +8,7 @@ export interface AssetAllocation {
     name: string;
     percentage: number;
     type: 'Equity' | 'Debt' | 'Gold' | 'Hybrid';
+    [key: string]: any;
 }
 
 export interface InvestmentAdvice {
