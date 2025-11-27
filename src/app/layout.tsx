@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.rupeetools.in'),
-  title: 'Indian Finance Tools - SIP, Tax & Salary Calculators',
-  description: 'Free financial tools for Indian investors. Calculate Income Tax, Salary, SIP, PF, and Loans with accuracy.',
+  metadataBase: new URL('https://rupeetools.in'),
+  title: 'RupeeTools - Indian Finance Calculators (Tax, SIP, Salary)',
+  description: 'Free, accurate financial tools for Indians. Calculate Income Tax (FY 2025-26), Home Loan Pre-payment, SIP Returns, and Retirement Corpus.',
 };
 
 export default function RootLayout({

@@ -2,16 +2,15 @@ import type { Metadata } from 'next';
 import { SipCalculator } from '@/components/calculators/SipCalculator';
 
 export const metadata: Metadata = {
-    title: 'SIP Calculator - Calculate Mutual Fund Returns | Indian Finance Tools',
-    description: 'Free SIP (Systematic Investment Plan) calculator for Indian investors. Calculate your mutual fund returns, plan your investments, and visualize your wealth growth over time.',
+    title: 'SIP Calculator - Calculate SIP Returns & Mutual Fund Growth',
+    description: 'Free SIP Calculator for India. Calculate SIP Returns, visualize wealth growth, and plan your mutual fund investments with accuracy.',
     keywords: [
-        'SIP calculator',
-        'mutual fund calculator',
-        'investment calculator India',
-        'SIP returns',
-        'mutual fund SIP',
-        'investment planning',
-        'wealth calculator',
+        'SIP Calculator',
+        'SIP Returns',
+        'Mutual Fund Calculator',
+        'Systematic Investment Plan',
+        'Investment Planner India',
+        'Wealth Calculator',
     ],
 };
 

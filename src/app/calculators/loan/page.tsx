@@ -2,15 +2,15 @@ import type { Metadata } from 'next';
 import { LoanCalculator } from '@/components/calculators/LoanCalculator';
 
 export const metadata: Metadata = {
-    title: 'Home Loan EMI Calculator with Pre-payment Analysis | Indian Finance Tools',
-    description: 'Calculate your Home Loan EMI and see how much you can save with smart pre-payments. Visualize your amortization schedule and interest savings.',
+    title: 'Home Loan Prepayment Calculator & EMI Analysis',
+    description: 'Calculate Home Loan Prepayment savings. See how extra EMI payments reduce your tenure and interest. Best Home Loan EMI Calculator for India.',
     keywords: [
+        'Home Loan Prepayment',
         'Home Loan EMI Calculator',
-        'Prepayment Calculator',
+        'Loan Prepayment Calculator',
+        'Reduce Loan Tenure',
         'Home Loan Interest Saver',
-        'EMI Calculator India',
-        'Housing Loan Calculator',
-        'Loan Amortization Schedule',
+        'Housing Loan EMI',
     ],
 };
 

@@ -2,17 +2,16 @@ import type { Metadata } from 'next';
 import { TaxCompare } from '@/components/calculators/TaxCompare';
 
 export const metadata: Metadata = {
-    title: 'Income Tax Calculator - Old vs New Regime Comparison | Indian Finance Tools',
-    description: 'Compare Old and New Income Tax Regimes for FY 2025-26. Calculate your tax liability, get smart recommendations, and see which regime saves you more money.',
+    title: 'Income Tax Calculator FY 2025-26 (Old vs New Regime)',
+    description: 'Calculate Income Tax for FY 2025-26. Compare Old vs New Regime tax liability, check 87A rebate eligibility, and maximize your tax savings.',
     keywords: [
-        'income tax calculator',
-        'tax regime comparison',
-        'old vs new tax regime',
-        'FY 2025-26 tax',
-        'India tax calculator',
-        'Section 87A rebate',
-        '80C deduction',
-        'tax savings',
+        'Income Tax Calculator',
+        'FY 2025-26 Tax',
+        'Old vs New Tax Regime',
+        'Tax Calculator India',
+        'Income Tax Slabs 2025-26',
+        'Section 87A Rebate',
+        'Tax Saving Calculator',
     ],
 };
 

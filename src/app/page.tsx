@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'RupeeTools - Best Indian Finance Calculators (SIP, Tax, Salary)',
+  description: 'All-in-one financial toolkit for Indians. Calculate SIP Returns, In-hand Salary, Income Tax (FY 2025-26), and Home Loan Prepayment. Free & Accurate.',
+};
 
 export default function Home() {
   return (

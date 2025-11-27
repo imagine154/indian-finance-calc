@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import { SalaryCalculator } from '@/components/calculators/SalaryCalculator';
 
 export const metadata: Metadata = {
-    title: 'Take Home Salary Calculator India (FY 2025-26) | In-Hand Pay',
-    description: 'Calculate your monthly in-hand salary from CTC. Accurate breakdown of Basic, HRA, PF, and Income Tax for Old vs New Regime.',
+    title: 'In-hand Salary Calculator India (FY 2025-26) | Take Home Pay',
+    description: 'Calculate your monthly In-hand Salary from CTC. Accurate breakdown of Basic, HRA, PF, and Income Tax for FY 2025-26 (Old vs New Regime).',
 };
 
 export default function SalaryCalculatorPage() {
