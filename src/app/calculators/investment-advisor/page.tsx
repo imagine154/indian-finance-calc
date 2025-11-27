@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import InvestmentAdvisor from "@/components/calculators/InvestmentAdvisor";
 
+// ✅ Updated SEO Metadata
 export const metadata: Metadata = {
-    title: "Investment Horizon Planner - Where to Invest?",
+    title: "Investment Advisor – Investment Horizon Planner | RupeeTools",
     description:
-        "Robo-advisory tool to suggest the best investment options based on your time horizon and risk appetite.",
+        "Free investment advisor tool that recommends the right asset allocation based on your time horizon and risk profile. Optimized for Indian investors with charts, projections and actionable insights.",
     keywords: [
         "investment advisor",
         "asset allocation",
-        "where to invest",
-        "mutual fund advisor",
-        "financial planning",
-    ],
+        "investment horizon tool",
+        "risk profile calculator",
+        "financial planning India",
+        "RupeeTools"
+    ]
 };
 
 export default function InvestmentAdvisorPage() {
@@ -33,17 +35,9 @@ export default function InvestmentAdvisorPage() {
                 <InvestmentAdvisor />
 
                 {/* Info Section */}
-                <div className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-indigo-100">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                        Why Asset Allocation Matters?
-                    </h2>
-                    <p className="text-slate-600 mb-4">
-                        Asset allocation is the strategy of dividing your investment portfolio
-                        across various asset categories like stocks, bonds, and gold. It is
-                        the single most important determinant of your investment returns.
-                    </p>
-
-                    <div className="grid md:grid-cols-3 gap-8 mt-8">
+                <div className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">How It Works</h2>
+                    <div className="grid md:grid-cols-3 gap-8">
                         <div>
                             <h3 className="text-xl font-semibold text-slate-900 mb-3">
                                 Time Horizon
