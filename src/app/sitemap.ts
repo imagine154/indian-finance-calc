@@ -1,49 +1,85 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://indian-finance-calc-zo9cf43zg-ganamurthys-projects.vercel.app";
+    // 👇 CRITICAL: Must match your Google Search Console property exactly
+    const baseUrl = "https://rupeetools.in";
 
     return [
         {
             url: baseUrl,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 1,
         },
+        // --- High Priority Calculators ---
         {
             url: `${baseUrl}/calculators/salary`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
         },
         {
             url: `${baseUrl}/calculators/income-tax`,
             lastModified: new Date(),
+            changeFrequency: 'weekly', // Changes often with budget
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/calculators/home-loan`, // Note: Check if folder is 'loan' or 'home-loan'
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         },
         {
             url: `${baseUrl}/calculators/sip`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         },
         {
-            url: `${baseUrl}/calculators/loan`,
+            url: `${baseUrl}/calculators/mutual-fund`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         },
+        // --- Other Calculators ---
         {
             url: `${baseUrl}/calculators/pf`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
         },
         {
             url: `${baseUrl}/calculators/nps`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
         },
         {
             url: `${baseUrl}/calculators/ssy`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
         },
         {
             url: `${baseUrl}/calculators/goal`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+        },
+        {
+            url: `${baseUrl}/calculators/freelance`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
         },
         {
             url: `${baseUrl}/calculators/investment-advisor`,
             lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
         },
+        // --- Static Pages (Lower Priority) ---
         {
             url: `${baseUrl}/about`,
             lastModified: new Date(),
@@ -60,13 +96,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
             url: `${baseUrl}/privacy`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
-            priority: 0.5,
+            priority: 0.3,
         },
         {
             url: `${baseUrl}/terms`,
             lastModified: new Date(),
             changeFrequency: 'yearly',
-            priority: 0.5,
+            priority: 0.3,
         },
     ];
 }
