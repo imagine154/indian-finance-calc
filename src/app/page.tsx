@@ -46,6 +46,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 1.6: SWP Calculator */}
+          <Link
+            href="/calculators/swp"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 font-bold">
+              💸
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">SWP Calculator</h2>
+            <p className="text-slate-500 text-sm">
+              Plan your monthly income withdrawals from mutual funds.
+            </p>
+          </Link>
+
           {/* Card 2: Income Tax */}
           <Link
             href="/calculators/income-tax"
