@@ -74,6 +74,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 1.8: Capital Gains Calculator */}
+          <Link
+            href="/calculators/capital-gains"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600 font-bold">
+              📊
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Capital Gains</h2>
+            <p className="text-slate-500 text-sm">
+              Calculate LTCG & STCG on Equity, Real Estate, and Gold.
+            </p>
+          </Link>
+
           {/* Card 2: Income Tax */}
           <Link
             href="/calculators/income-tax"
