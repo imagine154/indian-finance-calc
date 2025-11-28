@@ -72,8 +72,8 @@ export function CapitalGainsCalculator() {
                                 key={option.id}
                                 onClick={() => setAssetType(option.id)}
                                 className={`flex flex-col items-center justify-center p-3 rounded-xl border transition-all ${assetType === option.id
-                                        ? 'bg-indigo-50 border-indigo-500 text-indigo-700 shadow-sm'
-                                        : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                                    ? 'bg-indigo-50 border-indigo-500 text-indigo-700 shadow-sm'
+                                    : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
                                     }`}
                             >
                                 <option.icon className={`w-6 h-6 mb-2 ${assetType === option.id ? 'text-indigo-600' : 'text-slate-400'}`} />
@@ -145,7 +145,7 @@ export function CapitalGainsCalculator() {
                     <div>
                         <label className="text-xs font-semibold text-slate-700 mb-2 block">Your Income Tax Slab</label>
                         <div className="relative">
-                            <Percent className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                            <div className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                             <select
                                 value={userIncomeSlab}
                                 onChange={e => setUserIncomeSlab(Number(e.target.value))}
