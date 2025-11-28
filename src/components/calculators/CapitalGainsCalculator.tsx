@@ -145,7 +145,7 @@ export function CapitalGainsCalculator() {
                     <div>
                         <label className="text-xs font-semibold text-slate-700 mb-2 block">Your Income Tax Slab</label>
                         <div className="relative">
-                            <div className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                            <Percent className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                             <select
                                 value={userIncomeSlab}
                                 onChange={e => setUserIncomeSlab(Number(e.target.value))}
