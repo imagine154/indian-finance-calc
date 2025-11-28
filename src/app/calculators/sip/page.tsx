@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
-import { SipCalculator } from '@/components/calculators/SipCalculator';
+import { SipLumpsumWrapper } from '@/components/calculators/SipLumpsumWrapper';
 
 export const metadata: Metadata = {
-    title: 'SIP Calculator - Calculate SIP Returns & Mutual Fund Growth',
-    description: 'Free SIP Calculator for India. Calculate SIP Returns, visualize wealth growth, and plan your mutual fund investments with accuracy.',
+    title: 'SIP & Lumpsum Calculator - Calculate Mutual Fund Returns',
+    description: 'Calculate returns for both SIP (Systematic Investment Plan) and Lumpsum investments. Visualize wealth growth and plan your financial goals.',
     keywords: [
         'SIP Calculator',
-        'SIP Returns',
-        'Mutual Fund Calculator',
-        'Systematic Investment Plan',
-        'Investment Planner India',
+        'Lumpsum Calculator',
+        'Mutual Fund Returns',
+        'SIP vs Lumpsum',
+        'Investment Planner',
         'Wealth Calculator',
     ],
 };
@@ -29,7 +29,7 @@ export default function SipCalculatorPage() {
                 </div>
 
                 {/* Calculator Component */}
-                <SipCalculator />
+                <SipLumpsumWrapper />
 
                 {/* Info Section */}
                 <div className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
