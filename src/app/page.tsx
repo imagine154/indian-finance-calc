@@ -186,6 +186,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 6.6: Balance Transfer Calculator */}
+          <Link
+            href="/calculators/balance-transfer"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600 font-bold">
+              🔄
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Balance Transfer</h2>
+            <p className="text-slate-500 text-sm">
+              Check if switching your loan saves money.
+            </p>
+          </Link>
+
           {/* Card 7: SSY Calculator */}
           <Link
             href="/calculators/ssy"
