@@ -172,6 +172,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 6.5: Rent vs Buy Calculator */}
+          <Link
+            href="/calculators/rent-vs-buy"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-orange-600 font-bold">
+              ⚖️
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Rent vs Buy</h2>
+            <p className="text-slate-500 text-sm">
+              Should you rent or buy? Compare financial impact over 20 years.
+            </p>
+          </Link>
+
           {/* Card 7: SSY Calculator */}
           <Link
             href="/calculators/ssy"

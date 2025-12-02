@@ -31,6 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: `${baseUrl}/calculators/rent-vs-buy`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/calculators/sip`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
