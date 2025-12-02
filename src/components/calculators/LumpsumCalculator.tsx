@@ -64,6 +64,9 @@ export function LumpsumCalculator() {
                                     step="1000"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(investmentAmount)}
+                            </p>
                             <input
                                 type="range" min="500" max="10000000" step="500"
                                 value={investmentAmount}

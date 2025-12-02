@@ -71,6 +71,9 @@ export function FdCalculator() {
                                     step="1000"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(investmentAmount)}
+                            </p>
                             <input
                                 type="range" min="1000" max="10000000" step="1000"
                                 value={investmentAmount}
@@ -119,6 +122,7 @@ export function FdCalculator() {
                                     className="w-full pl-9 pr-4 py-2 text-slate-900 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     min="1"
                                     max="25"
+                                    step="1"
                                 />
                             </div>
                             <input
@@ -217,6 +221,6 @@ export function FdCalculator() {
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 }

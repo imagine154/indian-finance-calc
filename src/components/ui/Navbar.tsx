@@ -6,15 +6,16 @@ import { Calculator, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-    { name: "Salary", href: "/calculators/salary" },
-    { name: "Income Tax", href: "/calculators/income-tax" },
     { name: "SIP", href: "/calculators/sip" },
+    { name: "SWP", href: "/calculators/swp" },
+    { name: "Lumpsum", href: "/calculators/lumpsum" },
+    { name: "Income Tax", href: "/calculators/income-tax" },
+    { name: "Salary", href: "/calculators/salary" },
     { name: "Home Loan", href: "/calculators/loan" },
-    { name: "PF", href: "/calculators/pf" },
+    { name: "FD", href: "/calculators/fd" },
+    { name: "PPF", href: "/calculators/ppf" },
     { name: "NPS", href: "/calculators/nps" },
     { name: "SSY", href: "/calculators/ssy" },
-    { name: "Goal Planner", href: "/calculators/goal" },
-    { name: "Advisor", href: "/calculators/investment-advisor" },
 ];
 
 export default function Navbar() {
@@ -22,7 +23,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-50 bg-white border-b border-slate-200">
+        <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/60">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                     {/* Logo Section */}
@@ -31,7 +32,7 @@ export default function Navbar() {
                             <div className="bg-blue-600 p-1.5 rounded-lg">
                                 <Calculator className="w-5 h-5 text-white" />
                             </div>
-                            <span className="font-bold text-xl text-slate-900 hidden sm:block">
+                            <span className="font-bold text-xl bg-gradient-to-r from-blue-700 to-indigo-600 bg-clip-text text-transparent hidden sm:block">
                                 Indian Finance Tools
                             </span>
                             <span className="font-bold text-xl text-slate-900 sm:hidden">
@@ -48,9 +49,9 @@ export default function Navbar() {
                                 <Link
                                     key={link.href}
                                     href={link.href}
-                                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive
-                                        ? "bg-blue-50 text-blue-700"
-                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+                                    className={`px-3.5 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out ${isActive
+                                        ? "bg-blue-50 text-blue-700 ring-1 ring-blue-200 shadow-sm"
+                                        : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
                                         }`}
                                 >
                                     {link.name}
@@ -86,7 +87,7 @@ export default function Navbar() {
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive
+                                    className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${isActive
                                         ? "bg-blue-50 text-blue-700"
                                         : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                                         }`}

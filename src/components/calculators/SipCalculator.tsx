@@ -158,9 +158,12 @@ export function SipCalculator() {
                                     value={lumpsum === 0 ? '' : lumpsum}
                                     onChange={(e) => setLumpsum(Number(e.target.value))}
                                     placeholder="0"
-                                    className="w-full pl-8 pr-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                                    className="w-full pl-8 pr-4 py-2 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-slate-900"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCompact(lumpsum)}
+                            </p>
                         </div>
 
                         {/* Step-Up Slider */}

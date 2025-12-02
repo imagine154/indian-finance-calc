@@ -67,6 +67,7 @@ export function PfCalculator() {
                                         value={currentAge}
                                         onChange={e => setCurrentAge(Number(e.target.value))}
                                         className="w-full px-3 py-2 text-slate-900 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        step="1"
                                     />
                                 </div>
                             </div>
@@ -78,6 +79,7 @@ export function PfCalculator() {
                                         value={retirementAge}
                                         onChange={e => setRetirementAge(Number(e.target.value))}
                                         className="w-full px-3 py-2 text-slate-900 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        step="1"
                                     />
                                 </div>
                             </div>
@@ -98,11 +100,11 @@ export function PfCalculator() {
                                     value={ctc}
                                     onChange={e => setCtc(Number(e.target.value))}
                                     className="w-full pl-9 pr-4 py-2 text-slate-900 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    step="10000"
+                                    step="1000"
                                 />
                             </div>
-                            <p className="text-xs text-slate-500 mt-1 text-right">
-                                {ctc >= 10000000 ? `${(ctc / 10000000).toFixed(2)} Cr` : `${(ctc / 100000).toFixed(2)} Lakh`} / year
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(ctc)}
                             </p>
                         </div>
 
@@ -146,9 +148,12 @@ export function PfCalculator() {
                                     value={currentBalance}
                                     onChange={e => setCurrentBalance(Number(e.target.value))}
                                     className="w-full pl-9 pr-4 py-2 text-slate-900 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                                    step="10000"
+                                    step="1000"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(currentBalance)}
+                            </p>
                         </div>
 
                         {/* Hike & VPF */}
@@ -162,6 +167,7 @@ export function PfCalculator() {
                                         value={annualIncrease}
                                         onChange={e => setAnnualIncrease(Number(e.target.value))}
                                         className="w-full pl-8 pr-3 py-2 text-slate-900 border border-slate-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        step="1"
                                     />
                                 </div>
                             </div>
@@ -177,6 +183,9 @@ export function PfCalculator() {
                                         step="500"
                                     />
                                 </div>
+                                <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                    {formatCurrency(vpfAmount)}
+                                </p>
                             </div>
                         </div>
 
@@ -259,6 +268,6 @@ export function PfCalculator() {
                 </div>
 
             </div>
-        </div>
+        </div >
     );
 }

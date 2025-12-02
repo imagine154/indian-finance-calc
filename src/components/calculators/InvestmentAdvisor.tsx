@@ -78,8 +78,12 @@ export default function InvestmentAdvisor() {
                                 const val = e.target.value;
                                 setAmount(val === "" ? 0 : Number(val));
                             }}
-                            className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                            className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-slate-900"
+                            step="1000"
                         />
+                        <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                            {formatCurrency(amount)}
+                        </p>
                     </div>
 
                     {/* Time Horizon */}

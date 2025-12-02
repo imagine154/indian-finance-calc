@@ -100,6 +100,9 @@ export function SwpCalculator() {
                                     step="10000"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(totalInvestment)}
+                            </p>
                             <input
                                 type="range" min="100000" max="50000000" step="10000"
                                 value={totalInvestment}
@@ -124,6 +127,9 @@ export function SwpCalculator() {
                                     step="500"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(withdrawalAmount)}
+                            </p>
                             <input
                                 type="range" min="500" max="500000" step="500"
                                 value={withdrawalAmount}

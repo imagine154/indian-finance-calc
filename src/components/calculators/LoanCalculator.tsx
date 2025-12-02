@@ -188,6 +188,9 @@ export function LoanCalculator() {
                                             className="w-full pl-8 pr-4 py-2 border border-slate-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:outline-none text-slate-900"
                                         />
                                     </div>
+                                    <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                        {formatCompact(prepaymentAmount)}
+                                    </p>
                                 </div>
 
                                 <div>

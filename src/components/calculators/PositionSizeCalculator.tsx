@@ -60,6 +60,9 @@ export function PositionSizeCalculator() {
                                 placeholder="Enter your total capital"
                             />
                         </div>
+                        <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                            {formatCurrency(accountCapital)}
+                        </p>
                     </div>
 
                     {/* Risk Percentage */}

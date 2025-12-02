@@ -127,7 +127,7 @@ const RentVsBuyCalculator = () => {
                                         type="number"
                                         value={inputs.propertyPrice}
                                         onChange={(e) => handleInputChange('propertyPrice', Number(e.target.value))}
-                                        className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                        className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                                 <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
@@ -144,7 +144,7 @@ const RentVsBuyCalculator = () => {
                                             type="number"
                                             value={inputs.downPaymentAmount}
                                             onChange={(e) => handleInputChange('downPaymentAmount', Number(e.target.value))}
-                                            className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                            className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                         />
                                     </div>
                                     <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
@@ -160,7 +160,7 @@ const RentVsBuyCalculator = () => {
                                         type="number"
                                         value={inputs.loanTenureYears}
                                         onChange={(e) => handleInputChange('loanTenureYears', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                             </div>
@@ -173,7 +173,7 @@ const RentVsBuyCalculator = () => {
                                         step="0.1"
                                         value={inputs.loanInterestRate}
                                         onChange={(e) => handleInputChange('loanInterestRate', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                                 <div>
@@ -183,7 +183,7 @@ const RentVsBuyCalculator = () => {
                                         step="0.1"
                                         value={inputs.propertyAppreciationRate}
                                         onChange={(e) => handleInputChange('propertyAppreciationRate', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                             </div>
@@ -205,9 +205,12 @@ const RentVsBuyCalculator = () => {
                                         type="number"
                                         value={inputs.currentMonthlyRent}
                                         onChange={(e) => handleInputChange('currentMonthlyRent', Number(e.target.value))}
-                                        className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none font-medium text-slate-700"
+                                        className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
+                                <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                    {formatCompact(inputs.currentMonthlyRent)}
+                                </p>
                             </div>
 
                             <div className="grid grid-cols-2 gap-4">
@@ -218,7 +221,7 @@ const RentVsBuyCalculator = () => {
                                         step="0.1"
                                         value={inputs.rentInflationRate}
                                         onChange={(e) => handleInputChange('rentInflationRate', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                                 <div>
@@ -228,7 +231,7 @@ const RentVsBuyCalculator = () => {
                                         step="0.1"
                                         value={inputs.investmentReturnRate}
                                         onChange={(e) => handleInputChange('investmentReturnRate', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                             </div>

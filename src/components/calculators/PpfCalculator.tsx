@@ -69,6 +69,9 @@ export function PpfCalculator() {
                                     max="150000"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
+                                {formatCurrency(yearlyInvestment)}
+                            </p>
                             <input
                                 type="range" min="500" max="150000" step="500"
                                 value={yearlyInvestment}
