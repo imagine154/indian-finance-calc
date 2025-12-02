@@ -1,19 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import {
-    PieChart,
-    Pie,
-    Cell,
-    ResponsiveContainer,
-    Tooltip as RechartsTooltip,
-    Legend,
-    AreaChart,
-    Area,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-} from "recharts";
+import dynamic from 'next/dynamic';
 import { Shield, Rocket, Info, Wallet } from "lucide-react";
 import {
     getInvestmentAdvice,
@@ -21,7 +9,15 @@ import {
     InvestmentAdvice,
 } from "@/core/logic/investment-advisor";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884d8"];
+const AdvisorAllocationChart = dynamic(() => import('@/components/charts/AdvisorResultChart').then(mod => mod.AdvisorAllocationChart), {
+    ssr: false,
+    loading: () => <div className="h-[250px] w-full bg-slate-50 rounded-lg animate-pulse"></div>
+});
+
+const AdvisorGrowthChart = dynamic(() => import('@/components/charts/AdvisorResultChart').then(mod => mod.AdvisorGrowthChart), {
+    ssr: false,
+    loading: () => <div className="h-[250px] w-full bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 // ✅ Defined Strict Type
 type GrowthPoint = {
@@ -125,8 +121,8 @@ export default function InvestmentAdvisor() {
                             <button
                                 onClick={() => setRiskProfile("Conservative")}
                                 className={`p-3 rounded-xl border-2 flex flex-col items-center justify-center gap-2 transition-all ${riskProfile === "Conservative"
-                                        ? "border-blue-600 bg-blue-50 text-blue-700"
-                                        : "border-slate-200 hover:border-slate-300 text-slate-600"
+                                    ? "border-blue-600 bg-blue-50 text-blue-700"
+                                    : "border-slate-200 hover:border-slate-300 text-slate-600"
                                     }`}
                             >
                                 <Shield className="w-6 h-6" />
@@ -136,8 +132,8 @@ export default function InvestmentAdvisor() {
                             <button
                                 onClick={() => setRiskProfile("Aggressive")}
                                 className={`p-3 rounded-xl border-2 flex flex-col items-center justify-center gap-2 transition-all ${riskProfile === "Aggressive"
-                                        ? "border-orange-500 bg-orange-50 text-orange-700"
-                                        : "border-slate-200 hover:border-slate-300 text-slate-600"
+                                    ? "border-orange-500 bg-orange-50 text-orange-700"
+                                    : "border-slate-200 hover:border-slate-300 text-slate-600"
                                     }`}
                             >
                                 <Rocket className="w-6 h-6" />
@@ -168,76 +164,13 @@ export default function InvestmentAdvisor() {
                     {/* Asset Allocation (Pie) */}
                     <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col">
                         <h3 className="font-bold text-slate-900 mb-4">Recommended Allocation</h3>
-                        <div className="flex-1 h-[250px] w-full relative">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <PieChart>
-                                    <Pie
-                                        data={advice.allocation}
-                                        cx="50%"
-                                        cy="50%"
-                                        innerRadius={60}
-                                        outerRadius={80}
-                                        paddingAngle={5}
-                                        dataKey="percentage"
-                                    >
-                                        {advice.allocation.map((entry, index) => (
-                                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                        ))}
-                                    </Pie>
-                                    <RechartsTooltip />
-                                    <Legend verticalAlign="bottom" height={36} />
-                                </PieChart>
-                            </ResponsiveContainer>
-                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
-                                <span className="text-xs text-slate-400 block">Equity/Debt</span>
-                            </div>
-                        </div>
+                        <AdvisorAllocationChart data={advice.allocation} />
                     </div>
 
                     {/* Wealth Growth (Area) */}
                     <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col">
                         <h3 className="font-bold text-slate-900 mb-4">Wealth Projection</h3>
-                        <div className="flex-1 h-[250px] w-full">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <AreaChart data={growthData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                                    <defs>
-                                        <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="5%" stopColor="#3B82F6" stopOpacity={0.3} />
-                                            <stop offset="95%" stopColor="#3B82F6" stopOpacity={0} />
-                                        </linearGradient>
-                                    </defs>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-
-                                    {/* ✅ Smart X-Axis Interval Logic */}
-                                    <XAxis
-                                        dataKey="year"
-                                        axisLine={false}
-                                        tickLine={false}
-                                        tick={{ fontSize: 12, fill: '#64748b' }}
-                                        interval={horizonYears <= 10 ? 0 : Math.ceil(horizonYears / 5)}
-                                    />
-
-                                    <YAxis
-                                        axisLine={false}
-                                        tickLine={false}
-                                        tick={{ fontSize: 12, fill: '#64748b' }}
-                                        tickFormatter={(val) => `${(val / 100000).toFixed(0)}L`}
-                                    />
-                                    <RechartsTooltip
-                                        formatter={(value: number) => formatCurrency(value)}
-                                        contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                    />
-                                    <Area
-                                        type="monotone"
-                                        dataKey="value"
-                                        stroke="#3B82F6"
-                                        fillOpacity={1}
-                                        fill="url(#colorValue)"
-                                        name="Corpus"
-                                    />
-                                </AreaChart>
-                            </ResponsiveContainer>
-                        </div>
+                        <AdvisorGrowthChart data={growthData} horizonYears={horizonYears} formatCurrency={formatCurrency} />
                     </div>
                 </div>
 

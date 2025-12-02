@@ -2,8 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import { calculateNPS, type NpsInput, type NpsResult } from '@/core/logic/nps';
+import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingUp, PieChart as PieIcon, Wallet, PiggyBank, Percent, Calendar, Settings } from 'lucide-react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, PieChart, Pie, Cell } from 'recharts';
+
+const NpsPieChart = dynamic(() => import('@/components/charts/NpsResultChart').then(mod => mod.NpsPieChart), { ssr: false, loading: () => <div className="h-[250px] w-full bg-slate-50 rounded-lg animate-pulse"></div> });
+const NpsAreaChart = dynamic(() => import('@/components/charts/NpsResultChart').then(mod => mod.NpsAreaChart), { ssr: false, loading: () => <div className="h-[250px] w-full bg-slate-50 rounded-lg animate-pulse"></div> });
 
 export function NpsCalculator() {
     // --- INPUTS ---
@@ -15,23 +18,18 @@ export function NpsCalculator() {
     const [annuityRate, setAnnuityRate] = useState(6);
 
     const [result, setResult] = useState<NpsResult | null>(null);
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => { setMounted(true); }, []);
 
     useEffect(() => {
-        if (mounted) {
-            const input: NpsInput = {
-                currentAge,
-                retirementAge,
-                monthlyContribution,
-                expectedReturn,
-                annuityPercentage,
-                annuityRate
-            };
-            setResult(calculateNPS(input));
-        }
-    }, [mounted, currentAge, retirementAge, monthlyContribution, expectedReturn, annuityPercentage, annuityRate]);
+        const input: NpsInput = {
+            currentAge,
+            retirementAge,
+            monthlyContribution,
+            expectedReturn,
+            annuityPercentage,
+            annuityRate
+        };
+        setResult(calculateNPS(input));
+    }, [currentAge, retirementAge, monthlyContribution, expectedReturn, annuityPercentage, annuityRate]);
 
     const formatCurrency = (val: number) => {
         if (val >= 10000000) return `₹${(val / 10000000).toFixed(2)} Cr`;
@@ -41,7 +39,7 @@ export function NpsCalculator() {
 
     const formatCurrencyFull = (val: number) => `₹${Math.round(val).toLocaleString('en-IN')}`;
 
-    if (!mounted || !result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
+    if (!result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
 
     const pieData = [
         { name: 'Lump Sum (Cash)', value: result.lumpSumValue, color: '#10B981' }, // Green
@@ -214,32 +212,7 @@ export function NpsCalculator() {
                         <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
                             <PieIcon className="w-5 h-5 text-slate-500" /> Withdrawal Split
                         </h3>
-                        <div className="h-[250px] w-full relative">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <PieChart>
-                                    <Pie
-                                        data={pieData}
-                                        cx="50%"
-                                        cy="50%"
-                                        innerRadius={60}
-                                        outerRadius={80}
-                                        paddingAngle={5}
-                                        dataKey="value"
-                                    >
-                                        {pieData.map((entry, index) => (
-                                            <Cell key={`cell-${index}`} fill={entry.color} />
-                                        ))}
-                                    </Pie>
-                                    <Tooltip formatter={(value: number) => formatCurrencyFull(value)} />
-                                    <Legend verticalAlign="bottom" height={36} />
-                                </PieChart>
-                            </ResponsiveContainer>
-                            {/* Center Text */}
-                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
-                                <span className="text-xs text-slate-400 block">Total</span>
-                                <span className="text-sm font-bold text-slate-700">{formatCurrency(result.totalCorpus)}</span>
-                            </div>
-                        </div>
+                        <NpsPieChart data={pieData} formatCurrencyFull={formatCurrencyFull} formatCurrency={formatCurrency} totalCorpus={result.totalCorpus} />
                     </div>
 
                     {/* Area Chart: Growth */}
@@ -247,54 +220,7 @@ export function NpsCalculator() {
                         <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
                             <TrendingUp className="w-5 h-5 text-slate-500" /> Wealth Growth
                         </h3>
-                        <div className="h-[250px] w-full">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <AreaChart data={result.yearlyData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-                                    <defs>
-                                        <linearGradient id="colorNpsInterest" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="5%" stopColor="#10B981" stopOpacity={0.3} />
-                                            <stop offset="95%" stopColor="#10B981" stopOpacity={0} />
-                                        </linearGradient>
-                                        <linearGradient id="colorNpsInvested" x1="0" y1="0" x2="0" y2="1">
-                                            <stop offset="5%" stopColor="#3B82F6" stopOpacity={0.3} />
-                                            <stop offset="95%" stopColor="#3B82F6" stopOpacity={0} />
-                                        </linearGradient>
-                                    </defs>
-                                    <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" />
-                                    <XAxis dataKey="age" hide />
-                                    <YAxis
-                                        axisLine={false}
-                                        tickLine={false}
-                                        tick={{ fill: '#64748B', fontSize: 10 }}
-                                        tickFormatter={(val) => `${val / 100000}L`}
-                                    />
-                                    <Tooltip
-                                        cursor={{ stroke: '#94A3B8', strokeWidth: 1, strokeDasharray: '4 4' }}
-                                        content={({ active, payload, label }) => {
-                                            if (active && payload && payload.length) {
-                                                return (
-                                                    <div className="bg-white p-3 rounded-xl shadow-lg border border-slate-100">
-                                                        <p className="text-slate-900 font-bold mb-2 text-base">Age: {label}</p>
-                                                        <div className="space-y-1">
-                                                            {payload.map((entry: any, index: number) => (
-                                                                <div key={index} className="flex items-center gap-3 text-sm">
-                                                                    <div className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
-                                                                    <span className="text-slate-500">{entry.name}:</span>
-                                                                    <span className="font-bold text-slate-900">{formatCurrencyFull(entry.value)}</span>
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                    </div>
-                                                );
-                                            }
-                                            return null;
-                                        }}
-                                    />
-                                    <Area type="monotone" dataKey="balance" name="Corpus" stroke="#10B981" fillOpacity={1} fill="url(#colorNpsInterest)" strokeWidth={2} />
-                                    <Area type="monotone" dataKey="invested" name="Invested" stroke="#3B82F6" fillOpacity={1} fill="url(#colorNpsInvested)" strokeWidth={2} />
-                                </AreaChart>
-                            </ResponsiveContainer>
-                        </div>
+                        <NpsAreaChart data={result.yearlyData} formatCurrencyFull={formatCurrencyFull} />
                     </div>
                 </div>
 

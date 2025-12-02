@@ -1,10 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import {
-    XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar
-} from 'recharts';
+import dynamic from 'next/dynamic';
 import { Search, TrendingUp, Info, X, Check, ChevronDown, Filter, PieChart, ArrowRight, RefreshCw, Download } from 'lucide-react';
+
+const MfResultChart = dynamic(() => import('@/components/charts/MfResultChart'), {
+    ssr: false,
+    loading: () => <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 // --- Types ---
 interface Scheme {
@@ -611,21 +614,7 @@ export default function MutualFundAnalyzer() {
                             {/* Chart */}
                             <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
                                 <h4 className="text-lg font-bold text-slate-800 mb-6">Performance Comparison (3Y)</h4>
-                                <div className="h-[300px] w-full">
-                                    <ResponsiveContainer width="100%" height="100%">
-                                        <BarChart data={comparisonResults.map(s => ({ name: s.name.substring(0, 15) + '...', full: s.name, return: s.results['3Y'] || 0 }))}>
-                                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e2e8f0" />
-                                            <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fill: '#475569', fontSize: 12, fontWeight: 500 }} />
-                                            <YAxis axisLine={false} tickLine={false} tick={{ fill: '#475569', fontSize: 12, fontWeight: 500 }} unit="%" />
-                                            <Tooltip
-                                                cursor={{ fill: '#f1f5f9' }}
-                                                contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', color: '#1e293b' }}
-                                                formatter={(val: number) => [`${val}%`, '3Y Return']}
-                                            />
-                                            <Bar dataKey="return" fill="#3b82f6" radius={[6, 6, 0, 0]} barSize={40} />
-                                        </BarChart>
-                                    </ResponsiveContainer>
-                                </div>
+                                <MfResultChart data={comparisonResults.map(s => ({ name: s.name.substring(0, 15) + '...', full: s.name, return: s.results['3Y'] || 0 }))} />
                             </div>
 
                             {/* Detailed Table */}

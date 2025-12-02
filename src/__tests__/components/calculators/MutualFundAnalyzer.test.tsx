@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import MutualFundAnalyzer from '@/components/calculators/MutualFundAnalyzer';
 
 // Mock fetch
@@ -14,41 +14,41 @@ describe('MutualFundAnalyzer', () => {
         });
     });
 
-    it('renders the main component structure', () => {
+    it('renders the main component structure', async () => {
         render(<MutualFundAnalyzer />);
-        expect(screen.getByText('Investment Type')).toBeInTheDocument();
+        await waitFor(() => expect(screen.getByText('Investment Type')).toBeInTheDocument());
     });
 
-    it('renders investment type toggle buttons', () => {
+    it('renders investment type toggle buttons', async () => {
         render(<MutualFundAnalyzer />);
-        expect(screen.getByText('Mutual Funds')).toBeInTheDocument();
+        await waitFor(() => expect(screen.getByText('Mutual Funds')).toBeInTheDocument());
         expect(screen.getByText('ETFs')).toBeInTheDocument();
     });
 
-    it('renders the search input field', () => {
+    it('renders the search input field', async () => {
         render(<MutualFundAnalyzer />);
-        expect(screen.getByPlaceholderText(/Search from \d+ Funds.../)).toBeInTheDocument();
+        await waitFor(() => expect(screen.getByPlaceholderText(/Search from \d+ Funds.../)).toBeInTheDocument());
     });
 
-    it('renders filter sections', () => {
+    it('renders filter sections', async () => {
         render(<MutualFundAnalyzer />);
-        expect(screen.getByText('Investment Type')).toBeInTheDocument();
+        await waitFor(() => expect(screen.getByText('Investment Type')).toBeInTheDocument());
         expect(screen.getByText('Search Scheme')).toBeInTheDocument();
         expect(screen.getByText('Filters')).toBeInTheDocument();
     });
 
-    it('renders the calculate button', () => {
+    it('renders the calculate button', async () => {
         render(<MutualFundAnalyzer />);
-        expect(screen.getByText('Calculate Returns')).toBeInTheDocument();
+        await waitFor(() => expect(screen.getByText('Calculate Returns')).toBeInTheDocument());
     });
 
-    it('calls fetch on component mount', () => {
+    it('calls fetch on component mount', async () => {
         render(<MutualFundAnalyzer />);
-        expect(global.fetch).toHaveBeenCalled();
+        await waitFor(() => expect(global.fetch).toHaveBeenCalled());
     });
 
-    it('fetches schemes with correct URL', () => {
+    it('fetches schemes with correct URL', async () => {
         render(<MutualFundAnalyzer />);
-        expect(global.fetch).toHaveBeenCalledWith(expect.stringContaining('/api/mutual-fund/schemes'));
+        await waitFor(() => expect(global.fetch).toHaveBeenCalledWith(expect.stringContaining('/api/mutual-fund/schemes')));
     });
 });

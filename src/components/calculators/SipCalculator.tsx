@@ -8,8 +8,13 @@
 
 import { useState, useEffect } from 'react';
 import { calculateSIP } from '@/core/logic/sip';
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import dynamic from 'next/dynamic';
 import { TrendingUp, Wallet, Target } from 'lucide-react';
+
+const SipResultChart = dynamic(() => import('@/components/charts/SipResultChart'), {
+    ssr: false,
+    loading: () => <div className="w-full h-[250px] flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 export function SipCalculator() {
     // State for inputs
@@ -18,13 +23,6 @@ export function SipCalculator() {
     const [timePeriod, setTimePeriod] = useState(10);
     const [lumpsum, setLumpsum] = useState(0);
     const [stepUp, setStepUp] = useState(0);
-
-    // Prevent hydration mismatch - only render chart on client
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
 
     // Calculate results
     const result = calculateSIP(monthlyInvestment, expectedReturn, timePeriod, stepUp, lumpsum);
@@ -223,39 +221,7 @@ export function SipCalculator() {
 
                     {/* Donut Chart */}
                     <div className="flex-1 flex items-center justify-center">
-                        {mounted ? (
-                            <ResponsiveContainer width="100%" height={250}>
-                                <PieChart>
-                                    <Pie
-                                        data={chartData}
-                                        cx="50%"
-                                        cy="50%"
-                                        innerRadius={60}
-                                        outerRadius={80}
-                                        paddingAngle={5}
-                                        dataKey="value"
-                                        label={({ name, percent }) => `${name}: ${((percent ?? 0) * 100).toFixed(0)}%`}
-                                        labelLine={false}
-                                    >
-                                        {chartData.map((entry, index) => (
-                                            <Cell key={`cell-${index}`} fill={entry.color} />
-                                        ))}
-                                    </Pie>
-                                    <Tooltip
-                                        formatter={(value: number) => formatCurrency(value)}
-                                        contentStyle={{
-                                            backgroundColor: 'white',
-                                            border: '1px solid #e2e8f0',
-                                            borderRadius: '0.5rem',
-                                        }}
-                                    />
-                                </PieChart>
-                            </ResponsiveContainer>
-                        ) : (
-                            <div className="w-full h-[250px] flex items-center justify-center">
-                                <div className="w-[160px] h-[160px] rounded-full border-8 border-slate-100 border-t-blue-100 animate-spin"></div>
-                            </div>
-                        )}
+                        <SipResultChart data={chartData} formatCurrency={formatCurrency} />
                     </div>
 
                     {/* Legend */}

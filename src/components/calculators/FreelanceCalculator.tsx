@@ -2,8 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { calculateFreelanceTax, type FreelanceTaxResult } from '@/core/logic/freelance';
+import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingDown, Award, AlertTriangle, Briefcase, PieChart, ChevronDown, ChevronUp } from 'lucide-react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
+
+const FreelanceResultChart = dynamic(() => import('@/components/charts/FreelanceResultChart'), {
+    ssr: false,
+    loading: () => <div className="h-48 w-full md:w-1/2 bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 export function FreelanceCalculator() {
     // --- 1. INPUT STATES ---
@@ -18,25 +23,20 @@ export function FreelanceCalculator() {
 
     const [showDeductions, setShowDeductions] = useState(false);
     const [result, setResult] = useState<FreelanceTaxResult | null>(null);
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => { setMounted(true); }, []);
 
     useEffect(() => {
-        if (mounted) {
-            const res = calculateFreelanceTax({
-                annualRevenue,
-                otherIncome,
-                deductions: {
-                    section80C,
-                    section80D,
-                    section80CCD1B: npsSelf,
-                    otherDeductions
-                }
-            });
-            setResult(res);
-        }
-    }, [mounted, annualRevenue, otherIncome, section80C, section80D, npsSelf, otherDeductions]);
+        const res = calculateFreelanceTax({
+            annualRevenue,
+            otherIncome,
+            deductions: {
+                section80C,
+                section80D,
+                section80CCD1B: npsSelf,
+                otherDeductions
+            }
+        });
+        setResult(res);
+    }, [annualRevenue, otherIncome, section80C, section80D, npsSelf, otherDeductions]);
 
     const formatCurrency = (val: number) => `₹${val.toLocaleString('en-IN')}`;
     const formatCompact = (value: number) => {
@@ -45,7 +45,7 @@ export function FreelanceCalculator() {
         return `₹${value.toLocaleString('en-IN')}`;
     };
 
-    if (!mounted || !result) return null;
+    if (!result) return null;
 
     const isEligible = annualRevenue <= 7500000;
     const chartData = [
@@ -167,24 +167,7 @@ export function FreelanceCalculator() {
 
                     <div className="flex flex-col md:flex-row items-center gap-8">
                         {/* Chart */}
-                        <div className="h-48 w-full md:w-1/2">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <BarChart data={chartData} layout="vertical" margin={{ top: 0, right: 30, left: 0, bottom: 0 }}>
-                                    <CartesianGrid strokeDasharray="3 3" horizontal={false} />
-                                    <XAxis type="number" hide />
-                                    <YAxis dataKey="name" type="category" width={100} tick={{ fontSize: 12 }} />
-                                    <Tooltip
-                                        formatter={(value: number) => formatCurrency(value)}
-                                        cursor={{ fill: 'transparent' }}
-                                    />
-                                    <Bar dataKey="amount" radius={[0, 4, 4, 0]} barSize={32}>
-                                        {chartData.map((entry, index) => (
-                                            <Cell key={`cell-${index}`} fill={entry.color} />
-                                        ))}
-                                    </Bar>
-                                </BarChart>
-                            </ResponsiveContainer>
-                        </div>
+                        <FreelanceResultChart data={chartData} formatCurrency={formatCurrency} />
 
                         {/* Stats */}
                         <div className="w-full md:w-1/2 space-y-4">

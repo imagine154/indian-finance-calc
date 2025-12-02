@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { calculateLoan, PrepaymentFrequency } from '@/core/logic/loan';
-import {
-    BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, Legend, ResponsiveContainer,
-    PieChart, Pie, Cell
-} from 'recharts';
+import dynamic from 'next/dynamic';
 import { Wallet, Percent, Calendar, TrendingDown, Info, CheckCircle2 } from 'lucide-react';
+
+const LoanResultChart = dynamic(() => import('@/components/charts/LoanResultChart'), {
+    ssr: false,
+    loading: () => <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 export function LoanCalculator() {
     // State
@@ -21,12 +23,6 @@ export function LoanCalculator() {
 
     // UI State
     const [showSchedule, setShowSchedule] = useState(false);
-
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
 
     // Calculate
     const result = calculateLoan({
@@ -302,39 +298,7 @@ export function LoanCalculator() {
                             </div>
                         </div>
 
-                        {mounted ? (
-                            <div className="h-[300px] w-full">
-                                <ResponsiveContainer width="100%" height="100%">
-                                    <BarChart data={barData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                                        <XAxis
-                                            dataKey="year"
-                                            axisLine={false}
-                                            tickLine={false}
-                                            tick={{ fontSize: 12, fill: '#64748b' }}
-                                            tickFormatter={(value) => `Y${value}`}
-                                        />
-                                        <YAxis
-                                            axisLine={false}
-                                            tickLine={false}
-                                            tick={{ fontSize: 12, fill: '#64748b' }}
-                                            tickFormatter={(value) => `₹${value / 100000}L`}
-                                        />
-                                        <RechartsTooltip
-                                            cursor={{ fill: '#f8fafc' }}
-                                            contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                            formatter={(value: number) => [formatCurrency(value), '']}
-                                        />
-                                        <Bar dataKey="principalPaid" stackId="a" fill="#3B82F6" radius={[0, 0, 4, 4]} />
-                                        <Bar dataKey="interestPaid" stackId="a" fill="#F59E0B" radius={[4, 4, 0, 0]} />
-                                    </BarChart>
-                                </ResponsiveContainer>
-                            </div>
-                        ) : (
-                            <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg">
-                                <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-                            </div>
-                        )}
+                        <LoanResultChart data={barData} formatCurrency={formatCurrency} />
                     </div>
 
                     {/* Monthly Schedule Table (Conditional) */}

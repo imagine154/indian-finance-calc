@@ -3,8 +3,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { calculateEPFCorpus, type EpfInput, type EpfResult } from '@/core/logic/pf';
+import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingUp, Calendar, Wallet, PiggyBank, Percent } from 'lucide-react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
+
+const PfResultChart = dynamic(() => import('@/components/charts/PfResultChart'), {
+    ssr: false,
+    loading: () => <div className="h-[350px] w-full flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 export function PfCalculator() {
     // --- INPUTS ---
@@ -18,27 +23,22 @@ export function PfCalculator() {
     const [interestRate, setInterestRate] = useState(8.25);
 
     const [result, setResult] = useState<EpfResult | null>(null);
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => { setMounted(true); }, []);
 
     useEffect(() => {
-        if (mounted) {
-            // Calculate monthly basic from CTC
-            const monthlyBasic = (ctc * (basicPercentage / 100)) / 12;
+        // Calculate monthly basic from CTC
+        const monthlyBasic = (ctc * (basicPercentage / 100)) / 12;
 
-            const input: EpfInput = {
-                currentAge,
-                retirementAge,
-                basicSalary: monthlyBasic,
-                vpfAmount,
-                annualIncrease,
-                currentBalance,
-                interestRate
-            };
-            setResult(calculateEPFCorpus(input));
-        }
-    }, [mounted, currentAge, retirementAge, ctc, basicPercentage, vpfAmount, annualIncrease, currentBalance, interestRate]);
+        const input: EpfInput = {
+            currentAge,
+            retirementAge,
+            basicSalary: monthlyBasic,
+            vpfAmount,
+            annualIncrease,
+            currentBalance,
+            interestRate
+        };
+        setResult(calculateEPFCorpus(input));
+    }, [currentAge, retirementAge, ctc, basicPercentage, vpfAmount, annualIncrease, currentBalance, interestRate]);
 
     const formatCurrency = (val: number) => {
         if (val >= 10000000) return `₹${(val / 10000000).toFixed(2)} Cr`;
@@ -48,7 +48,7 @@ export function PfCalculator() {
 
     const formatCurrencyFull = (val: number) => `₹${Math.round(val).toLocaleString('en-IN')}`;
 
-    if (!mounted || !result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
+    if (!result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
 
     return (
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -230,77 +230,7 @@ export function PfCalculator() {
                     <h3 className="font-bold text-slate-900 mb-6 flex items-center gap-2">
                         <TrendingUp className="w-5 h-5 text-slate-500" /> Growth Projection
                     </h3>
-                    <div className="h-[350px] w-full">
-                        <ResponsiveContainer width="100%" height="100%">
-                            <AreaChart data={result.yearlyData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
-                                <defs>
-                                    <linearGradient id="colorInterest" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="5%" stopColor="#10B981" stopOpacity={0.3} />
-                                        <stop offset="95%" stopColor="#10B981" stopOpacity={0} />
-                                    </linearGradient>
-                                    <linearGradient id="colorInvested" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="5%" stopColor="#3B82F6" stopOpacity={0.3} />
-                                        <stop offset="95%" stopColor="#3B82F6" stopOpacity={0} />
-                                    </linearGradient>
-                                </defs>
-                                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#E2E8F0" />
-                                <XAxis
-                                    dataKey="age"
-                                    axisLine={false}
-                                    tickLine={false}
-                                    tick={{ fill: '#64748B', fontSize: 12 }}
-                                    dy={10}
-                                />
-                                <YAxis
-                                    axisLine={false}
-                                    tickLine={false}
-                                    tick={{ fill: '#64748B', fontSize: 12 }}
-                                    tickFormatter={(val) => `${val / 100000}L`}
-                                />
-                                <Tooltip
-                                    cursor={{ stroke: '#94A3B8', strokeWidth: 1, strokeDasharray: '4 4' }}
-                                    content={({ active, payload, label }) => {
-                                        if (active && payload && payload.length) {
-                                            return (
-                                                <div className="bg-white p-3 rounded-xl shadow-lg border border-slate-100">
-                                                    <p className="text-slate-900 font-bold mb-2 text-base">Age: {label}</p>
-                                                    <div className="space-y-1">
-                                                        {payload.map((entry: any, index: number) => (
-                                                            <div key={index} className="flex items-center gap-3 text-sm">
-                                                                <div className="w-2 h-2 rounded-full" style={{ backgroundColor: entry.color }} />
-                                                                <span className="text-slate-500">{entry.name}:</span>
-                                                                <span className="font-bold text-slate-900">{formatCurrencyFull(entry.value)}</span>
-                                                            </div>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            );
-                                        }
-                                        return null;
-                                    }}
-                                />
-                                <Legend iconType="circle" wrapperStyle={{ paddingTop: '20px' }} />
-                                <Area
-                                    type="monotone"
-                                    dataKey="balance"
-                                    name="Total Corpus"
-                                    stroke="#10B981"
-                                    fillOpacity={1}
-                                    fill="url(#colorInterest)"
-                                    strokeWidth={2}
-                                />
-                                <Area
-                                    type="monotone"
-                                    dataKey="invested"
-                                    name="Invested Amount"
-                                    stroke="#3B82F6"
-                                    fillOpacity={1}
-                                    fill="url(#colorInvested)"
-                                    strokeWidth={2}
-                                />
-                            </AreaChart>
-                        </ResponsiveContainer>
-                    </div>
+                    <PfResultChart data={result.yearlyData} formatCurrencyFull={formatCurrencyFull} />
                 </div>
 
                 {/* Growth Table */}

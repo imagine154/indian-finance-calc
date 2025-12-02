@@ -2,10 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import { calculateSSY } from '@/core/logic/ssy';
-import {
-    AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer
-} from 'recharts';
+import dynamic from 'next/dynamic';
 import { Wallet, Calendar, GraduationCap, TrendingUp, Info, Baby } from 'lucide-react';
+
+const SsyResultChart = dynamic(() => import('@/components/charts/SsyResultChart'), {
+    ssr: false,
+    loading: () => <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 export function SsyCalculator() {
     // State
@@ -17,12 +20,6 @@ export function SsyCalculator() {
     const [planEducation, setPlanEducation] = useState(false);
     const [withdrawalAge, setWithdrawalAge] = useState(18);
     const [withdrawalPercentage, setWithdrawalPercentage] = useState(50);
-
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
 
     // Calculate
     const result = calculateSSY({
@@ -293,51 +290,7 @@ export function SsyCalculator() {
                     <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
                         <h3 className="text-lg font-bold text-slate-800 mb-6">Growth Chart</h3>
 
-                        {mounted ? (
-                            <div className="h-[300px] w-full">
-                                <ResponsiveContainer width="100%" height="100%">
-                                    <AreaChart data={result.yearlyBreakdown} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
-                                        <defs>
-                                            <linearGradient id="colorBalance" x1="0" y1="0" x2="0" y2="1">
-                                                <stop offset="5%" stopColor="#e11d48" stopOpacity={0.1} />
-                                                <stop offset="95%" stopColor="#e11d48" stopOpacity={0} />
-                                            </linearGradient>
-                                        </defs>
-                                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
-                                        <XAxis
-                                            dataKey="age"
-                                            axisLine={false}
-                                            tickLine={false}
-                                            tick={{ fontSize: 12, fill: '#64748b' }}
-                                            tickFormatter={(value) => `${value}y`}
-                                        />
-                                        <YAxis
-                                            axisLine={false}
-                                            tickLine={false}
-                                            tick={{ fontSize: 12, fill: '#64748b' }}
-                                            tickFormatter={(value) => `₹${value / 100000}L`}
-                                        />
-                                        <RechartsTooltip
-                                            cursor={{ stroke: '#e11d48', strokeWidth: 1, strokeDasharray: '4 4' }}
-                                            contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                            formatter={(value: number) => [formatCurrency(value), '']}
-                                        />
-                                        <Area
-                                            type="monotone"
-                                            dataKey="closingBalance"
-                                            stroke="#e11d48"
-                                            fillOpacity={1}
-                                            fill="url(#colorBalance)"
-                                            name="Balance"
-                                        />
-                                    </AreaChart>
-                                </ResponsiveContainer>
-                            </div>
-                        ) : (
-                            <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg">
-                                <div className="w-8 h-8 border-4 border-rose-500 border-t-transparent rounded-full animate-spin"></div>
-                            </div>
-                        )}
+                        <SsyResultChart data={result.yearlyBreakdown} formatCurrency={formatCurrency} />
                     </div>
 
                 </div>
