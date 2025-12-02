@@ -6,7 +6,7 @@
 
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { calculateSIP } from '@/core/logic/sip';
 import dynamic from 'next/dynamic';
 import { TrendingUp, Wallet, Target } from 'lucide-react';

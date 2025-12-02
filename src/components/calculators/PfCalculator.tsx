@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { calculateEPFCorpus, type EpfInput, type EpfResult } from '@/core/logic/pf';
 import dynamic from 'next/dynamic';
@@ -22,23 +22,21 @@ export function PfCalculator() {
     const [currentBalance, setCurrentBalance] = useState(0);
     const [interestRate, setInterestRate] = useState(8.25);
 
-    const [result, setResult] = useState<EpfResult | null>(null);
+    // Calculate monthly basic from CTC
+    const monthlyBasic = (ctc * (basicPercentage / 100)) / 12;
 
-    useEffect(() => {
-        // Calculate monthly basic from CTC
-        const monthlyBasic = (ctc * (basicPercentage / 100)) / 12;
+    const input: EpfInput = {
+        currentAge,
+        retirementAge,
+        basicSalary: monthlyBasic,
+        vpfAmount,
+        annualIncrease,
+        currentBalance,
+        interestRate
+    };
 
-        const input: EpfInput = {
-            currentAge,
-            retirementAge,
-            basicSalary: monthlyBasic,
-            vpfAmount,
-            annualIncrease,
-            currentBalance,
-            interestRate
-        };
-        setResult(calculateEPFCorpus(input));
-    }, [currentAge, retirementAge, ctc, basicPercentage, vpfAmount, annualIncrease, currentBalance, interestRate]);
+    // ✅ Derived State (Calculated on every render, SSR friendly)
+    const result = calculateEPFCorpus(input);
 
     const formatCurrency = (val: number) => {
         if (val >= 10000000) return `₹${(val / 10000000).toFixed(2)} Cr`;
@@ -47,8 +45,6 @@ export function PfCalculator() {
     };
 
     const formatCurrencyFull = (val: number) => `₹${Math.round(val).toLocaleString('en-IN')}`;
-
-    if (!result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
 
     return (
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { calculateFreelanceTax, type FreelanceTaxResult } from '@/core/logic/freelance';
 import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingDown, Award, AlertTriangle, Briefcase, PieChart, ChevronDown, ChevronUp } from 'lucide-react';
@@ -22,21 +22,18 @@ export function FreelanceCalculator() {
     const [otherDeductions, setOtherDeductions] = useState(0);
 
     const [showDeductions, setShowDeductions] = useState(false);
-    const [result, setResult] = useState<FreelanceTaxResult | null>(null);
 
-    useEffect(() => {
-        const res = calculateFreelanceTax({
-            annualRevenue,
-            otherIncome,
-            deductions: {
-                section80C,
-                section80D,
-                section80CCD1B: npsSelf,
-                otherDeductions
-            }
-        });
-        setResult(res);
-    }, [annualRevenue, otherIncome, section80C, section80D, npsSelf, otherDeductions]);
+    // ✅ Derived State (Calculated on every render, SSR friendly)
+    const result = calculateFreelanceTax({
+        annualRevenue,
+        otherIncome,
+        deductions: {
+            section80C,
+            section80D,
+            section80CCD1B: npsSelf,
+            otherDeductions
+        }
+    });
 
     const formatCurrency = (val: number) => `₹${val.toLocaleString('en-IN')}`;
     const formatCompact = (value: number) => {

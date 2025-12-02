@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import dynamic from 'next/dynamic';
 import { Shield, Rocket, Info, Wallet } from "lucide-react";
 import {
@@ -30,31 +30,22 @@ export default function InvestmentAdvisor() {
     const [amount, setAmount] = useState<number>(500000);
     const [horizonYears, setHorizonYears] = useState<number>(5);
     const [riskProfile, setRiskProfile] = useState<"Conservative" | "Aggressive">("Conservative");
-    const [advice, setAdvice] = useState<InvestmentAdvice | null>(null);
+    // ✅ Derived State (Calculated on every render, SSR friendly)
+    const input: InvestmentInput = { amount, horizonYears, riskProfile };
+    const advice = getInvestmentAdvice(input);
 
-    // ✅ Applied Type Safety
-    const [growthData, setGrowthData] = useState<GrowthPoint[]>([]);
+    // Generate Growth Chart Data
+    const currentYear = new Date().getFullYear();
+    const growthData: GrowthPoint[] = [];
 
-    useEffect(() => {
-        const input: InvestmentInput = { amount, horizonYears, riskProfile };
-        const result = getInvestmentAdvice(input);
-        setAdvice(result);
-
-        // Generate Growth Chart Data
-        const currentYear = new Date().getFullYear();
-        const data: GrowthPoint[] = [];
-
-        for (let i = 0; i <= horizonYears; i++) {
-            const value = amount * Math.pow(1 + result.expectedReturnRate / 100, i);
-            data.push({
-                year: currentYear + i,
-                value: Math.round(value),
-                label: `Year ${i}`,
-            });
-        }
-        setGrowthData(data);
-
-    }, [amount, horizonYears, riskProfile]);
+    for (let i = 0; i <= horizonYears; i++) {
+        const value = amount * Math.pow(1 + advice.expectedReturnRate / 100, i);
+        growthData.push({
+            year: currentYear + i,
+            value: Math.round(value),
+            label: `Year ${i}`,
+        });
+    }
 
     const formatCurrency = (val: number) =>
         new Intl.NumberFormat("en-IN", {
@@ -62,8 +53,6 @@ export default function InvestmentAdvisor() {
             currency: "INR",
             maximumFractionDigits: 0,
         }).format(val);
-
-    if (!advice) return <div>Loading...</div>;
 
     return (
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">

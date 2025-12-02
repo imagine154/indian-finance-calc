@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { compareTaxRegimes, type TaxInput, type TaxComparisonResult } from '@/core/logic/tax';
 import { IndianRupee, TrendingDown, Award, Calculator, Building, Wallet, Bitcoin } from 'lucide-react';
 
@@ -24,8 +24,6 @@ export function TaxCompare() {
     const [section80D, setSection80D] = useState(0);
     const [npsSelf, setNpsSelf] = useState(0); // 80CCD(1B)
 
-    const [result, setResult] = useState<TaxComparisonResult | null>(null);
-    const [mounted, setMounted] = useState(false);
     // Add this helper function
     const formatCompact = (value: number) => {
         if (value >= 10000000) return `₹${(value / 10000000).toFixed(2)} Cr`;
@@ -33,41 +31,29 @@ export function TaxCompare() {
         return `₹${value.toLocaleString('en-IN')}`;
     };
 
-    useEffect(() => { setMounted(true); }, []);
+    const input: TaxInput = {
+        grossSalary,
+        interestIncome: interestIncome || undefined,
+        rentalIncome: rentalIncome || undefined,
+        digitalAssetsIncome: digitalAssets || undefined,
+        otherIncome: otherIncome || undefined,
 
-    useEffect(() => {
-        if (mounted) {
-            const input: TaxInput = {
-                grossSalary,
-                interestIncome: interestIncome || undefined,
-                rentalIncome: rentalIncome || undefined,
-                digitalAssetsIncome: digitalAssets || undefined,
-                otherIncome: otherIncome || undefined,
+        homeLoanSelfOccupied: homeLoanSelf || undefined,
+        homeLoanLetOut: homeLoanLetOut || undefined,
 
-                homeLoanSelfOccupied: homeLoanSelf || undefined,
-                homeLoanLetOut: homeLoanLetOut || undefined,
+        npsEmployer80CCD2: npsEmployer || undefined,
 
-                npsEmployer80CCD2: npsEmployer || undefined,
+        hraExemption: hraExemption || undefined,
+        ltaExemption: ltaExemption || undefined,
+        section80C: section80C || undefined,
+        section80D: section80D || undefined,
+        section80CCD1B: npsSelf || undefined,
+    };
 
-                hraExemption: hraExemption || undefined,
-                ltaExemption: ltaExemption || undefined,
-                section80C: section80C || undefined,
-                section80D: section80D || undefined,
-                section80CCD1B: npsSelf || undefined,
-            };
-            setResult(compareTaxRegimes(input));
-        }
-    }, [mounted, grossSalary, interestIncome, rentalIncome, digitalAssets, otherIncome, homeLoanSelf, homeLoanLetOut, npsEmployer, hraExemption, ltaExemption, section80C, section80D, npsSelf]);
+    // ✅ Derived State (Calculated on every render, SSR friendly)
+    const result = compareTaxRegimes(input);
 
     const formatCurrency = (val: number) => `₹${val.toLocaleString('en-IN')}`;
-
-    if (!mounted || !result) {
-        return (
-            <div className="flex items-center justify-center min-h-[400px]">
-                <div className="animate-pulse text-slate-400">Loading calculator...</div>
-            </div>
-        );
-    }
 
     const isOldBetter = result.recommendation.betterRegime === 'Old';
     const isNewBetter = result.recommendation.betterRegime === 'New';

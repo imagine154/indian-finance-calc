@@ -1,10 +1,15 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import { calculateSalaryBreakdown, type SalaryInput, type SalaryResult } from '@/core/logic/salary';
-import { IndianRupee, Calculator, Settings, ChevronDown, ChevronUp, PieChart as PieChartIcon, Wallet, Building, Banknote } from 'lucide-react';
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
+import { calculateSalaryBreakdown, type SalaryInput } from '@/core/logic/salary';
+import { IndianRupee, Calculator, Settings, ChevronDown, ChevronUp, PieChart as PieChartIcon, Banknote } from 'lucide-react';
+import dynamic from 'next/dynamic';
+
+const SalaryResultChart = dynamic(() => import('@/components/charts/SalaryResultChart'), {
+    ssr: false,
+    loading: () => <div className="h-[200px] w-full bg-slate-50 rounded-lg animate-pulse"></div>
+});
 
 export function SalaryCalculator() {
     // --- INPUTS ---
@@ -22,31 +27,22 @@ export function SalaryCalculator() {
     const [taxRegime, setTaxRegime] = useState<'Old' | 'New'>('New');
     const [showSettings, setShowSettings] = useState(false);
 
-    const [result, setResult] = useState<SalaryResult | null>(null);
-    const [mounted, setMounted] = useState(false);
+    const input: SalaryInput = {
+        ctc,
+        basicPercentage,
+        vpfAmount,
+        professionalTax,
+        foodCoupon,
+        superAnnuation,
+        npsEmployer,
+        isMetro,
+        taxRegime
+    };
 
-    useEffect(() => { setMounted(true); }, []);
-
-    useEffect(() => {
-        if (mounted) {
-            const input: SalaryInput = {
-                ctc,
-                basicPercentage,
-                vpfAmount,
-                professionalTax,
-                foodCoupon,
-                superAnnuation,
-                npsEmployer,
-                isMetro,
-                taxRegime
-            };
-            setResult(calculateSalaryBreakdown(input));
-        }
-    }, [mounted, ctc, basicPercentage, vpfAmount, professionalTax, foodCoupon, superAnnuation, npsEmployer, isMetro, taxRegime]);
+    // ✅ Derived State (Calculated on every render, SSR friendly)
+    const result = calculateSalaryBreakdown(input);
 
     const formatCurrency = (val: number) => `₹${Math.round(val).toLocaleString('en-IN')}`;
-
-    if (!mounted || !result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
 
     // Chart Data
     const chartData = [
@@ -280,30 +276,7 @@ export function SalaryCalculator() {
                         <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
                             <PieChartIcon className="w-5 h-5 text-slate-500" /> Distribution
                         </h3>
-                        <div className="flex-1 min-h-[200px]">
-                            <ResponsiveContainer width="100%" height="100%">
-                                <PieChart>
-                                    <Pie
-                                        data={chartData}
-                                        cx="50%"
-                                        cy="50%"
-                                        innerRadius={60}
-                                        outerRadius={80}
-                                        paddingAngle={5}
-                                        dataKey="value"
-                                    >
-                                        {chartData.map((entry, index) => (
-                                            <Cell key={`cell-${index}`} fill={entry.color} />
-                                        ))}
-                                    </Pie>
-                                    <Tooltip
-                                        formatter={(value: number) => formatCurrency(value)}
-                                        contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-                                    />
-                                    <Legend verticalAlign="bottom" height={36} iconType="circle" />
-                                </PieChart>
-                            </ResponsiveContainer>
-                        </div>
+                        <SalaryResultChart data={chartData} formatCurrency={formatCurrency} />
                     </div>
                 </div>
             </div>

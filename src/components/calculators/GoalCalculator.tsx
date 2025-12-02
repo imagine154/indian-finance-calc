@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { calculateGoalSIP } from '@/core/logic/goal';
 import dynamic from 'next/dynamic';
 import { Target, Calendar, TrendingUp, Wallet, ArrowRight, Info } from 'lucide-react';

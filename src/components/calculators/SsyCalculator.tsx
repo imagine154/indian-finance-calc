@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { calculateSSY } from '@/core/logic/ssy';
 import dynamic from 'next/dynamic';
 import { Wallet, Calendar, GraduationCap, TrendingUp, Info, Baby } from 'lucide-react';

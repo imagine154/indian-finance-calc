@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { calculateLoan, PrepaymentFrequency } from '@/core/logic/loan';
 import dynamic from 'next/dynamic';
 import { Wallet, Percent, Calendar, TrendingDown, Info, CheckCircle2 } from 'lucide-react';

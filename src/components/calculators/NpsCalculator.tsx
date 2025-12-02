@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { calculateNPS, type NpsInput, type NpsResult } from '@/core/logic/nps';
 import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingUp, PieChart as PieIcon, Wallet, PiggyBank, Percent, Calendar, Settings } from 'lucide-react';
@@ -17,19 +17,16 @@ export function NpsCalculator() {
     const [annuityPercentage, setAnnuityPercentage] = useState(40);
     const [annuityRate, setAnnuityRate] = useState(6);
 
-    const [result, setResult] = useState<NpsResult | null>(null);
-
-    useEffect(() => {
-        const input: NpsInput = {
-            currentAge,
-            retirementAge,
-            monthlyContribution,
-            expectedReturn,
-            annuityPercentage,
-            annuityRate
-        };
-        setResult(calculateNPS(input));
-    }, [currentAge, retirementAge, monthlyContribution, expectedReturn, annuityPercentage, annuityRate]);
+    // ✅ Derived State (Calculated on every render, SSR friendly)
+    const input: NpsInput = {
+        currentAge,
+        retirementAge,
+        monthlyContribution,
+        expectedReturn,
+        annuityPercentage,
+        annuityRate
+    };
+    const result = calculateNPS(input);
 
     const formatCurrency = (val: number) => {
         if (val >= 10000000) return `₹${(val / 10000000).toFixed(2)} Cr`;
@@ -38,8 +35,6 @@ export function NpsCalculator() {
     };
 
     const formatCurrencyFull = (val: number) => `₹${Math.round(val).toLocaleString('en-IN')}`;
-
-    if (!result) return <div className="p-8 text-center text-slate-400">Loading calculator...</div>;
 
     const pieData = [
         { name: 'Lump Sum (Cash)', value: result.lumpSumValue, color: '#10B981' }, // Green
