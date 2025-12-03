@@ -116,6 +116,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 2.8: HRA Calculator */}
+          <Link
+            href="/calculators/hra"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600 font-bold">
+              🏠
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">HRA Calculator</h2>
+            <p className="text-slate-500 text-sm">
+              Calculate tax-exempt HRA. Metro vs Non-Metro rules.
+            </p>
+          </Link>
+
           {/* Card 3: Salary Calculator */}
           <Link
             href="/calculators/salary"
