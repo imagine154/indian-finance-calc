@@ -1,344 +1,271 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import {
+  Briefcase,
+  Landmark,
+  TrendingUp,
+  Home as HomeIcon,
+  IndianRupee,
+  PiggyBank,
+  Baby,
+  Coins,
+  LineChart,
+  Target,
+  Wallet,
+  PieChart,
+  Scale,
+  Building,
+  ArrowRightLeft,
+  Percent,
+  Laptop
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: 'RupeeTools - Best Indian Finance Calculators (SIP, Tax, Salary)',
   description: 'All-in-one financial toolkit for Indians. Calculate SIP Returns, In-hand Salary, Income Tax (FY 2025-26), and Home Loan Prepayment. Free & Accurate.',
 };
 
+const categories = [
+  {
+    title: "Income & Tax",
+    icon: <IndianRupee className="w-6 h-6 text-blue-600" />,
+    calculators: [
+      {
+        name: "Income Tax",
+        href: "/calculators/income-tax",
+        desc: "Old vs New Regime comparison.",
+        icon: <Percent className="w-6 h-6 text-orange-600" />,
+        iconBg: "bg-orange-100"
+      },
+      {
+        name: "Salary",
+        href: "/calculators/salary",
+        desc: "In-hand salary from CTC.",
+        icon: <Briefcase className="w-6 h-6 text-green-600" />,
+        iconBg: "bg-green-100"
+      },
+      {
+        name: "Freelance Tax",
+        href: "/calculators/freelance",
+        desc: "Section 44ADA for professionals.",
+        icon: <Laptop className="w-6 h-6 text-teal-600" />,
+        iconBg: "bg-teal-100"
+      },
+      {
+        name: "Capital Gains",
+        href: "/calculators/capital-gains",
+        desc: "LTCG & STCG on Stocks/Property.",
+        icon: <LineChart className="w-6 h-6 text-indigo-600" />,
+        iconBg: "bg-indigo-100"
+      },
+      {
+        name: "HRA Calculator",
+        href: "/calculators/hra",
+        desc: "Calculate tax-exempt HRA.",
+        icon: <HomeIcon className="w-6 h-6 text-amber-600" />,
+        iconBg: "bg-amber-100"
+      }
+    ]
+  },
+  {
+    title: "Government Schemes",
+    icon: <Landmark className="w-6 h-6 text-emerald-600" />,
+    calculators: [
+      {
+        name: "PPF",
+        href: "/calculators/ppf",
+        desc: "Public Provident Fund (Tax Free).",
+        icon: <PiggyBank className="w-6 h-6 text-blue-600" />,
+        iconBg: "bg-blue-100"
+      },
+      {
+        name: "EPF",
+        href: "/calculators/pf",
+        desc: "Employee Provident Fund corpus.",
+        icon: <Building className="w-6 h-6 text-emerald-600" />,
+        iconBg: "bg-emerald-100"
+      },
+      {
+        name: "NPS",
+        href: "/calculators/nps",
+        desc: "National Pension System.",
+        icon: <Umbrella className="w-6 h-6 text-teal-600" />,
+        iconBg: "bg-teal-100"
+      },
+      {
+        name: "SSY",
+        href: "/calculators/ssy",
+        desc: "Sukanya Samriddhi for girl child.",
+        icon: <Baby className="w-6 h-6 text-rose-600" />,
+        iconBg: "bg-rose-100"
+      },
+      {
+        name: "Gratuity",
+        href: "/calculators/gratuity",
+        desc: "Resignation benefit calculator.",
+        icon: <Handshake className="w-6 h-6 text-cyan-600" />,
+        iconBg: "bg-cyan-100"
+      },
+      {
+        name: "Mahila Samman",
+        href: "/calculators/mssc",
+        desc: "Mahila Samman Savings.",
+        icon: <User className="w-6 h-6 text-fuchsia-600" />,
+        iconBg: "bg-fuchsia-100"
+      },
+      {
+        name: "APY",
+        href: "/calculators/apy",
+        desc: "Atal Pension Yojana premiums.",
+        icon: <Umbrella className="w-6 h-6 text-orange-600" />,
+        iconBg: "bg-orange-100"
+      }
+    ]
+  },
+  {
+    title: "Investments & Planning",
+    icon: <TrendingUp className="w-6 h-6 text-indigo-600" />,
+    calculators: [
+      {
+        name: "SIP",
+        href: "/calculators/sip",
+        desc: "Mutual Fund returns with Step-Up.",
+        icon: <Coins className="w-6 h-6 text-blue-600" />,
+        iconBg: "bg-blue-100"
+      },
+      {
+        name: "Goal Planner",
+        href: "/calculators/goal",
+        desc: "Reverse SIP with inflation.",
+        icon: <Target className="w-6 h-6 text-indigo-600" />,
+        iconBg: "bg-indigo-100"
+      },
+      {
+        name: "SWP",
+        href: "/calculators/swp",
+        desc: "Monthly withdrawal planning.",
+        icon: <Wallet className="w-6 h-6 text-green-600" />,
+        iconBg: "bg-green-100"
+      },
+      {
+        name: "MF Analyzer",
+        href: "/calculators/mutual-fund",
+        desc: "Historical returns of 3000+ funds.",
+        icon: <LineChart className="w-6 h-6 text-indigo-600" />,
+        iconBg: "bg-indigo-100"
+      },
+      {
+        name: "Investment Advisor",
+        href: "/calculators/investment-advisor",
+        desc: "Asset allocation logic.",
+        icon: <PieChart className="w-6 h-6 text-cyan-600" />,
+        iconBg: "bg-cyan-100"
+      },
+      {
+        name: "Position Size",
+        href: "/calculators/position-size",
+        desc: "Stock trading risk management.",
+        icon: <Scale className="w-6 h-6 text-amber-600" />,
+        iconBg: "bg-amber-100"
+      },
+      {
+        name: "Lumpsum",
+        href: "/calculators/lumpsum",
+        desc: "One-time investment returns.",
+        icon: <Coins className="w-6 h-6 text-blue-600" />,
+        iconBg: "bg-blue-100"
+      },
+      {
+        name: "FD Calculator",
+        href: "/calculators/fd",
+        desc: "Fixed Deposit returns.",
+        icon: <Landmark className="w-6 h-6 text-blue-600" />,
+        iconBg: "bg-blue-100"
+      }
+    ]
+  },
+  {
+    title: "Loans & Property",
+    icon: <HomeIcon className="w-6 h-6 text-purple-600" />,
+    calculators: [
+      {
+        name: "Home Loan",
+        href: "/calculators/loan",
+        desc: "EMI with pre-payment analysis.",
+        icon: <HomeIcon className="w-6 h-6 text-purple-600" />,
+        iconBg: "bg-purple-100"
+      },
+      {
+        name: "Rent vs Buy",
+        href: "/calculators/rent-vs-buy",
+        desc: "Buy a house or rent & invest?",
+        icon: <Scale className="w-6 h-6 text-orange-600" />,
+        iconBg: "bg-orange-100"
+      },
+      {
+        name: "Balance Transfer",
+        href: "/calculators/balance-transfer",
+        desc: "Switch loan to save interest.",
+        icon: <ArrowRightLeft className="w-6 h-6 text-green-600" />,
+        iconBg: "bg-green-100"
+      }
+    ]
+  }
+];
+
+// Helper components for icons that might not be directly available or need custom mapping
+// Using lucide-react icons directly where possible.
+// Note: Some icons like 'Umbrella' might need to be imported if used.
+// Let's ensure all used icons are imported.
+import { Umbrella, Handshake, User } from "lucide-react";
+
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 p-10">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-slate-900 mb-2">
-          Indian Finance Tools
-        </h1>
-        <p className="text-slate-600 mb-10">
-          Free, accurate financial calculators for Indian investors.
-        </p>
+    <main className="min-h-screen bg-slate-50 p-6 md:p-10">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-slate-900 mb-4">
+            Indian Finance Tools
+          </h1>
+          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+            Free, accurate financial calculators for Indian investors. Plan your taxes, investments, and loans with ease.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Card 1: SIP Calculator */}
-          <Link
-            href="/calculators/sip"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 font-bold">
-              ₹
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">SIP Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate returns on your monthly mutual fund investments.
-            </p>
-          </Link>
+        <div className="space-y-16">
+          {categories.map((category, index) => (
+            <section key={index}>
+              <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-2">
+                <div className="p-2 bg-white rounded-lg shadow-sm border border-slate-100">
+                  {category.icon}
+                </div>
+                <h2 className="text-2xl font-bold text-slate-800">
+                  {category.title}
+                </h2>
+              </div>
 
-          {/* Card 1.5: Lumpsum Calculator */}
-          <Link
-            href="/calculators/lumpsum"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 font-bold">
-              💰
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Lumpsum Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate future value of your one-time investment.
-            </p>
-          </Link>
-
-          {/* Card 1.6: SWP Calculator */}
-          <Link
-            href="/calculators/swp"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 font-bold">
-              💸
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">SWP Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Plan your monthly income withdrawals from mutual funds.
-            </p>
-          </Link>
-
-          {/* Card 1.7: FD Calculator */}
-          <Link
-            href="/calculators/fd"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 font-bold">
-              🏦
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">FD Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate maturity amount and interest for Fixed Deposits.
-            </p>
-          </Link>
-
-          {/* Card 1.8: Capital Gains Calculator */}
-          <Link
-            href="/calculators/capital-gains"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600 font-bold">
-              📊
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Capital Gains</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate LTCG & STCG on Equity, Real Estate, and Gold.
-            </p>
-          </Link>
-
-          {/* Card 2: Income Tax */}
-          <Link
-            href="/calculators/income-tax"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-orange-600 font-bold">
-              %
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Income Tax</h2>
-            <p className="text-slate-500 text-sm">
-              Compare Old vs New regime and find the best option for you.
-            </p>
-          </Link>
-
-          {/* Card 2.5: Freelance Tax */}
-          <Link
-            href="/calculators/freelance"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-teal-600 font-bold">
-              💻
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Freelance Tax</h2>
-            <p className="text-slate-500 text-sm">
-              Save 50% tax with Section 44ADA. For developers & professionals.
-            </p>
-          </Link>
-
-          {/* Card 2.8: HRA Calculator */}
-          <Link
-            href="/calculators/hra"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600 font-bold">
-              🏠
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">HRA Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate tax-exempt HRA. Metro vs Non-Metro rules.
-            </p>
-          </Link>
-
-          {/* Card 3: Salary Calculator */}
-          <Link
-            href="/calculators/salary"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600 font-bold">
-              ₹
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Salary Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate monthly in-hand salary from your annual CTC.
-            </p>
-          </Link>
-
-          {/* Card 4: EPF Calculator */}
-          <Link
-            href="/calculators/pf"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-emerald-100 rounded-lg flex items-center justify-center mb-4 text-emerald-600 font-bold">
-              PF
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">EPF Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Project your retirement corpus with compound interest.
-            </p>
-          </Link>
-
-          {/* Card 5: NPS Calculator */}
-          <Link
-            href="/calculators/nps"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-teal-100 rounded-lg flex items-center justify-center mb-4 text-teal-600 font-bold">
-              NPS
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">NPS Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Estimate pension & lump sum from National Pension System.
-            </p>
-          </Link>
-
-          {/* Card 6: Home Loan Calculator */}
-          <Link
-            href="/calculators/loan"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-purple-600 font-bold">
-              🏠
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Home Loan EMI</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate EMI and see how pre-payments save you lakhs.
-            </p>
-          </Link>
-
-          {/* Card 6.5: Rent vs Buy Calculator */}
-          <Link
-            href="/calculators/rent-vs-buy"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-orange-600 font-bold">
-              ⚖️
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Rent vs Buy</h2>
-            <p className="text-slate-500 text-sm">
-              Should you rent or buy? Compare financial impact over 20 years.
-            </p>
-          </Link>
-
-          {/* Card 6.6: Balance Transfer Calculator */}
-          <Link
-            href="/calculators/balance-transfer"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600 font-bold">
-              🔄
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Balance Transfer</h2>
-            <p className="text-slate-500 text-sm">
-              Check if switching your loan saves money.
-            </p>
-          </Link>
-
-          {/* Card 7: SSY Calculator */}
-          <Link
-            href="/calculators/ssy"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-rose-100 rounded-lg flex items-center justify-center mb-4 text-rose-600 font-bold">
-              👧
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">SSY Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Sukanya Samriddhi Yojana maturity & education planning.
-            </p>
-          </Link>
-
-          {/* Card 8: Goal Planner */}
-          <Link
-            href="/calculators/goal"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600 font-bold">
-              🎯
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Goal Planner</h2>
-            <p className="text-slate-500 text-sm">
-              Reverse SIP calculator. Plan for goals with inflation adjustment.
-            </p>
-          </Link>
-
-          {/* Card 9: Investment Advisor */}
-          <Link
-            href="/calculators/investment-advisor"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-cyan-100 rounded-lg flex items-center justify-center mb-4 text-cyan-600 font-bold">
-              🧠
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Robo Advisor</h2>
-            <p className="text-slate-500 text-sm">
-              Get expert asset allocation advice based on your time horizon.
-            </p>
-          </Link>
-
-          {/* Card 10: Mutual Fund Analyzer */}
-          <Link
-            href="/calculators/mutual-fund"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600 font-bold">
-              📈
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">MF Analyzer</h2>
-            <p className="text-slate-500 text-sm">
-              Analyze historical returns of 3000+ Mutual Funds & ETFs.
-            </p>
-          </Link>
-
-          {/* Card 11: Position Size Calculator */}
-          <Link
-            href="/calculators/position-size"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-amber-100 rounded-lg flex items-center justify-center mb-4 text-amber-600 font-bold">
-              ⚖️
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Position Size</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate exact share quantity for risk management.
-            </p>
-          </Link>
-
-          {/* Card 11.5: Gratuity Calculator */}
-          <Link
-            href="/calculators/gratuity"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-cyan-100 rounded-lg flex items-center justify-center mb-4 text-cyan-600 font-bold">
-              🤝
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Gratuity Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Estimate gratuity payout. Updated for ₹20 Lakh tax-free limit.
-            </p>
-          </Link>
-
-          {/* Card 12: PPF Calculator */}
-          <Link
-            href="/calculators/ppf"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600 font-bold">
-              🏦
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">PPF Calculator</h2>
-            <p className="text-slate-500 text-sm">
-              Calculate tax-free returns on your Public Provident Fund.
-            </p>
-          </Link>
-
-          {/* Card 13: MSSC Calculator */}
-          <Link
-            href="/calculators/mssc"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-fuchsia-100 rounded-lg flex items-center justify-center mb-4 text-fuchsia-600 font-bold">
-              👩
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Mahila Samman</h2>
-            <p className="text-slate-500 text-sm">
-              7.5% interest scheme for women (Max ₹2L).
-            </p>
-          </Link>
-
-          {/* Card 14: APY Calculator */}
-          <Link
-            href="/calculators/apy"
-            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
-          >
-            <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-orange-600 font-bold">
-              ☂️
-            </div>
-            <h2 className="text-xl font-semibold text-slate-800 mb-2">Atal Pension Yojana</h2>
-            <p className="text-slate-500 text-sm">
-              Pension scheme for unorganized sector workers.
-            </p>
-          </Link>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {category.calculators.map((calc, calcIndex) => (
+                  <Link
+                    key={calcIndex}
+                    href={calc.href}
+                    className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-200 border border-slate-200 hover:-translate-y-1"
+                  >
+                    <div className={`h-12 w-12 ${calc.iconBg} rounded-xl flex items-center justify-center mb-4 transition-colors`}>
+                      {calc.icon}
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-800 mb-2">
+                      {calc.name}
+                    </h3>
+                    <p className="text-slate-500 text-sm leading-relaxed">
+                      {calc.desc}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          ))}
         </div>
       </div>
     </main>
