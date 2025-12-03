@@ -325,6 +325,20 @@ export default function Home() {
               7.5% interest scheme for women (Max ₹2L).
             </p>
           </Link>
+
+          {/* Card 14: APY Calculator */}
+          <Link
+            href="/calculators/apy"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-orange-100 rounded-lg flex items-center justify-center mb-4 text-orange-600 font-bold">
+              ☂️
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Atal Pension Yojana</h2>
+            <p className="text-slate-500 text-sm">
+              Pension scheme for unorganized sector workers.
+            </p>
+          </Link>
         </div>
       </div>
     </main>
