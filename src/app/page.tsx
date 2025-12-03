@@ -284,6 +284,20 @@ export default function Home() {
             </p>
           </Link>
 
+          {/* Card 11.5: Gratuity Calculator */}
+          <Link
+            href="/calculators/gratuity"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-cyan-100 rounded-lg flex items-center justify-center mb-4 text-cyan-600 font-bold">
+              🤝
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Gratuity Calculator</h2>
+            <p className="text-slate-500 text-sm">
+              Estimate gratuity payout. Updated for ₹20 Lakh tax-free limit.
+            </p>
+          </Link>
+
           {/* Card 12: PPF Calculator */}
           <Link
             href="/calculators/ppf"
