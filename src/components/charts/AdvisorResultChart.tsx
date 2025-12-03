@@ -13,7 +13,7 @@ interface AdvisorAllocationChartProps {
 
 export const AdvisorAllocationChart = ({ data }: AdvisorAllocationChartProps) => {
     return (
-        <div className="flex-1 h-[250px] w-full relative">
+        <div className="h-[250px] min-h-[250px] w-full relative">
             <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                     <Pie
@@ -30,12 +30,10 @@ export const AdvisorAllocationChart = ({ data }: AdvisorAllocationChartProps) =>
                         ))}
                     </Pie>
                     <RechartsTooltip />
-                    <Legend verticalAlign="bottom" height={36} />
+                    <Legend verticalAlign="bottom" height={36} wrapperStyle={{ paddingTop: '20px' }} />
                 </PieChart>
             </ResponsiveContainer>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
-                <span className="text-xs text-slate-400 block">Equity/Debt</span>
-            </div>
+
         </div>
     );
 };
@@ -48,7 +46,7 @@ interface AdvisorGrowthChartProps {
 
 export const AdvisorGrowthChart = ({ data, horizonYears, formatCurrency }: AdvisorGrowthChartProps) => {
     return (
-        <div className="flex-1 h-[250px] w-full">
+        <div className="h-[250px] min-h-[250px] w-full">
             <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                     <defs>

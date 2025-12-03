@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import ClientOnly from "@/components/utils/ClientOnly";
 import dynamic from 'next/dynamic';
 import { Shield, Rocket, Info, Wallet } from "lucide-react";
 import {
@@ -54,6 +55,16 @@ export default function InvestmentAdvisor() {
             maximumFractionDigits: 0,
         }).format(val);
 
+    const formatCompact = (value: number) => {
+        if (value >= 10000000) {
+            return `₹${(value / 10000000).toFixed(2)} Cr`;
+        } else if (value >= 100000) {
+            return `₹${(value / 100000).toFixed(2)} L`;
+        } else {
+            return formatCurrency(value);
+        }
+    };
+
     return (
         <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* LEFT PANEL: INPUTS */}
@@ -82,7 +93,9 @@ export default function InvestmentAdvisor() {
                             step="1000"
                         />
                         <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
-                            {formatCurrency(amount)}
+                            <ClientOnly fallback={<span>...</span>}>
+                                {formatCompact(amount)}
+                            </ClientOnly>
                         </p>
                     </div>
 
@@ -144,7 +157,11 @@ export default function InvestmentAdvisor() {
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                         <div>
                             <p className="text-slate-300 text-sm font-medium mb-1">Projected Corpus</p>
-                            <h2 className="text-4xl font-bold mb-2">{formatCurrency(advice.projectedValue)}</h2>
+                            <h2 className="text-4xl font-bold mb-2">
+                                <ClientOnly fallback={<span>...</span>}>
+                                    {formatCurrency(advice.projectedValue)}
+                                </ClientOnly>
+                            </h2>
                             <p className="text-xs text-slate-400">
                                 @ {advice.expectedReturnRate}% average annual return
                             </p>
@@ -165,6 +182,44 @@ export default function InvestmentAdvisor() {
                         <h3 className="font-bold text-slate-900 mb-4">Wealth Projection</h3>
                         <AdvisorGrowthChart data={growthData} horizonYears={horizonYears} formatCurrency={formatCurrency} />
                     </div>
+
+                    {/* Allocation Details Table */}
+                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col md:col-span-2">
+                        <h3 className="font-bold text-slate-900 mb-4">Allocation Details</h3>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm text-left text-slate-600">
+                                <thead className="text-xs text-slate-700 uppercase bg-slate-50">
+                                    <tr>
+                                        <th scope="col" className="px-6 py-3 rounded-l-lg">Asset Class</th>
+                                        <th scope="col" className="px-6 py-3">Allocation</th>
+                                        <th scope="col" className="px-6 py-3 rounded-r-lg text-right">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {advice.allocation.map((item, index) => (
+                                        <tr key={index} className="bg-white border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors">
+                                            <td className="px-6 py-4 font-medium text-slate-900 flex items-center gap-2">
+                                                <span className={`w-2 h-2 rounded-full`} style={{ backgroundColor: ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "#8884d8"][index % 5] }}></span>
+                                                {item.name}
+                                            </td>
+                                            <td className="px-6 py-4">
+                                                <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                                    {item.percentage}%
+                                                </span>
+                                            </td>
+                                            <td className="px-6 py-4 text-right font-bold text-slate-900">
+                                                <ClientOnly fallback={<span>...</span>}>
+                                                    {formatCurrency((item.percentage / 100) * amount)}
+                                                </ClientOnly>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
                 </div>
 
                 {/* Reasoning Section */}
