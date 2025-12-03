@@ -311,6 +311,20 @@ export default function Home() {
               Calculate tax-free returns on your Public Provident Fund.
             </p>
           </Link>
+
+          {/* Card 13: MSSC Calculator */}
+          <Link
+            href="/calculators/mssc"
+            className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-200"
+          >
+            <div className="h-10 w-10 bg-fuchsia-100 rounded-lg flex items-center justify-center mb-4 text-fuchsia-600 font-bold">
+              👩
+            </div>
+            <h2 className="text-xl font-semibold text-slate-800 mb-2">Mahila Samman</h2>
+            <p className="text-slate-500 text-sm">
+              7.5% interest scheme for women (Max ₹2L).
+            </p>
+          </Link>
         </div>
       </div>
     </main>
