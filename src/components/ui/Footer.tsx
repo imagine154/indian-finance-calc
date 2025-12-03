@@ -110,7 +110,6 @@ export default function Footer() {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-slate-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-4">
                     <p>© 2025 Indian Finance Tools. All rights reserved.</p>
-                    <p>Built with Next.js</p>
                 </div>
             </div>
         </footer>
