@@ -17,7 +17,8 @@ import {
   Building,
   ArrowRightLeft,
   Percent,
-  Laptop
+  Laptop,
+  Receipt
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -64,6 +65,13 @@ const categories = [
         desc: "Calculate tax-exempt HRA.",
         icon: <HomeIcon className="w-6 h-6 text-amber-600" />,
         iconBg: "bg-amber-100"
+      },
+      {
+        name: "GST Calculator",
+        href: "/calculators/gst",
+        desc: "Inclusive & Exclusive GST.",
+        icon: <Receipt className="w-6 h-6 text-cyan-600" />,
+        iconBg: "bg-cyan-100"
       }
     ]
   },

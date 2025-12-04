@@ -25,6 +25,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/calculators/gst`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/calculators/home-loan`, // Note: Check if folder is 'loan' or 'home-loan'
             lastModified: new Date(),
             changeFrequency: 'monthly',

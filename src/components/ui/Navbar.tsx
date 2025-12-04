@@ -14,6 +14,7 @@ const navGroups = [
             { name: "Freelance Tax", href: "/calculators/freelance" },
             { name: "Capital Gains", href: "/calculators/capital-gains" },
             { name: "HRA Calculator", href: "/calculators/hra" },
+            { name: "GST Calculator", href: "/calculators/gst" },
         ]
     },
     {
