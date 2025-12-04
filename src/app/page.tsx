@@ -224,13 +224,32 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-slate-50 p-6 md:p-10">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">
-            Indian Finance Tools
+        {/* Hero Section */}
+        <div className="text-center mb-16 py-12 md:py-20 relative">
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+
+          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+            Master Your <span className="bg-gradient-to-r from-blue-600 to-teal-500 bg-clip-text text-transparent">Money.</span>
           </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-            Free, accurate financial calculators for Indian investors. Plan your taxes, investments, and loans with ease.
+
+          <p className="text-slate-600 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            Free, accurate financial tools for Indians. Plan your <span className="font-semibold text-slate-800">Tax</span>, <span className="font-semibold text-slate-800">SIPs</span>, <span className="font-semibold text-slate-800">Loans</span>, and <span className="font-semibold text-slate-800">Retirement</span> in seconds.
           </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="/calculators/income-tax"
+              className="px-8 py-3.5 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200 hover:shadow-blue-300 hover:-translate-y-0.5"
+            >
+              Calculate Tax
+            </Link>
+            <Link
+              href="/calculators/sip"
+              className="px-8 py-3.5 bg-white text-slate-700 border border-slate-200 rounded-full font-semibold hover:bg-slate-50 hover:text-blue-600 transition-all hover:border-blue-200"
+            >
+              Plan SIP
+            </Link>
+          </div>
         </div>
 
         <div className="space-y-16">
