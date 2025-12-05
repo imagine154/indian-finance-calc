@@ -18,7 +18,8 @@ import {
   ArrowRightLeft,
   Percent,
   Laptop,
-  Receipt
+  Receipt,
+  Flame
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -189,6 +190,13 @@ const categories = [
         desc: "Fixed Deposit returns.",
         icon: <Landmark className="w-6 h-6 text-blue-600" />,
         iconBg: "bg-blue-100"
+      },
+      {
+        name: "FIRE Calculator",
+        href: "/calculators/fire",
+        desc: "Lean, Fat & Coast FIRE.",
+        icon: <Flame className="w-6 h-6 text-orange-600" />,
+        iconBg: "bg-orange-100"
       }
     ]
   },

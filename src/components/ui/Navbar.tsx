@@ -22,6 +22,7 @@ const navGroups = [
         items: [
             { name: "SIP Calculator", href: "/calculators/sip" },
             { name: "Goal Planner", href: "/calculators/goal" },
+            { name: "FIRE Calculator", href: "/calculators/fire" },
             { name: "Explore Mutual Funds", href: "/explore-mutual-funds" },
             { name: "MF Analyzer", href: "/calculators/mutual-fund" },
             { name: "Investment Advisor", href: "/calculators/investment-advisor" },
