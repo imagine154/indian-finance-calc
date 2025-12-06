@@ -330,11 +330,11 @@ export default function SipAnalyzer() {
                                 <thead className="bg-slate-50 text-slate-500 font-medium border-b border-slate-200">
                                     <tr>
                                         <th className="p-3">Category</th>
-                                        <th className="p-3">Alloc. %</th>
+                                        <th className="p-3 hidden sm:table-cell">Alloc. %</th>
                                         <th className="p-3 hidden sm:table-cell">Mo. Inv.</th>
                                         <th className="p-3 hidden sm:table-cell">Return</th>
                                         <th className="p-3 text-right">Total Inv.</th>
-                                        <th className="p-3 text-right">Proj. Return</th>
+                                        <th className="p-3 text-right hidden sm:table-cell">Proj. Return</th>
                                         <th className="p-3 text-right">Proj. Value</th>
                                     </tr>
                                 </thead>
@@ -343,8 +343,13 @@ export default function SipAnalyzer() {
                                         const projReturn = stats.projectedValue - stats.totalInvestedAmount;
                                         return (
                                             <tr key={category} className="hover:bg-slate-50/50 transition-colors">
-                                                <td className="p-3 font-medium text-slate-700">{category}</td>
-                                                <td className="p-3 text-slate-600">
+                                                <td className="p-3 font-medium text-slate-700">
+                                                    <div className="flex items-center gap-2">
+                                                        <div className="w-1.5 h-1.5 rounded-full sm:hidden" style={{ backgroundColor: COLORS[CATEGORY_TYPE[category] || 'Equity'] }}></div>
+                                                        {category}
+                                                    </div>
+                                                </td>
+                                                <td className="p-3 text-slate-600 hidden sm:table-cell">
                                                     <div className="flex items-center gap-2">
                                                         <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: COLORS[CATEGORY_TYPE[category] || 'Equity'] }}></div>
                                                         {stats.allocationPercent.toFixed(1)}%
@@ -353,7 +358,7 @@ export default function SipAnalyzer() {
                                                 <td className="p-3 text-slate-600 hidden sm:table-cell">{formatCurrency(stats.totalMonthlyInvestment)}</td>
                                                 <td className="p-3 text-slate-600 hidden sm:table-cell">{stats.expectedReturnRate}%</td>
                                                 <td className="p-3 text-right text-slate-600">{formatCurrency(stats.totalInvestedAmount)}</td>
-                                                <td className="p-3 text-right text-emerald-600">
+                                                <td className="p-3 text-right text-emerald-600 hidden sm:table-cell">
                                                     +{formatCurrency(projReturn)}
                                                 </td>
                                                 <td className="p-3 text-right font-medium text-indigo-600">{formatCurrency(stats.projectedValue)}</td>
