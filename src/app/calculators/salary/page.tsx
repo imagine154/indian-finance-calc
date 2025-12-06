@@ -21,16 +21,16 @@ export default function SalaryCalculatorPage() {
 
                 <SalaryCalculator />
 
-                <div className="mt-16 max-w-4xl prose prose-slate">
-                    <h3 className="text-slate-900">How is In-Hand Salary Calculated?</h3>
+                <div className="mt-16 max-w-4xl mx-auto bg-white rounded-2xl p-8 shadow-sm border border-slate-200 prose prose-slate">
+                    <h3 className="text-slate-900 mt-0">How is In-Hand Salary Calculated?</h3>
                     <p className="text-slate-700">
                         Your "In-Hand" or "Net Salary" is what remains after all deductions are subtracted from your Gross Salary.
                         The formula is:
                     </p>
-                    <div className="bg-white p-4 rounded-lg border border-slate-200 font-mono text-sm my-4 text-slate-800">
+                    <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 font-mono text-sm my-4 text-slate-800">
                         Net Salary = Gross Salary - (PF + Professional Tax + Income Tax)
                     </div>
-                    <ul className="text-slate-700">
+                    <ul className="text-slate-700 mb-0">
                         <li><strong className="text-slate-900">Gross Salary:</strong> Sum of Basic, HRA, and Special Allowances.</li>
                         <li><strong className="text-slate-900">PF (Provident Fund):</strong> 12% of your Basic Salary.</li>
                         <li><strong className="text-slate-900">Professional Tax:</strong> A state-level tax, usually ₹200/month in states like Karnataka and Maharashtra.</li>

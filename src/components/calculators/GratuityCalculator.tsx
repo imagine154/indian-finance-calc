@@ -95,7 +95,7 @@ const GratuityCalculator = () => {
                                 step="1000"
                                 value={basicSalary}
                                 onChange={(e) => setBasicSalary(Number(e.target.value))}
-                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all"
+                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all text-slate-900"
                             />
                             <p className="text-xs text-slate-500 mt-1">
                                 {formatCompact(basicSalary)}
@@ -112,7 +112,7 @@ const GratuityCalculator = () => {
                                 step="1"
                                 value={yearsOfService}
                                 onChange={(e) => setYearsOfService(Number(e.target.value))}
-                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all"
+                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 outline-none transition-all text-slate-900"
                             />
                             {!result?.isEligible && (
                                 <p className="text-xs text-amber-600 mt-1 font-medium">

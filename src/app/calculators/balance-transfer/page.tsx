@@ -29,31 +29,36 @@ export default function BalanceTransferPage() {
                 <BalanceTransferCalculator />
 
                 {/* Guide Section */}
-                <div className="max-w-4xl mx-auto mt-16 space-y-8 text-slate-600 leading-relaxed">
-                    <h2 className="text-2xl font-bold text-slate-800">When should you switch your Home Loan?</h2>
+                {/* Guide Section */}
+                <div className="mt-16 bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">When should you switch your Home Loan?</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                            <h3 className="font-bold text-lg text-slate-800 mb-3">✅ Consider Switching If:</h3>
-                            <ul className="space-y-2 text-sm">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="bg-green-50/50 p-6 rounded-xl border border-green-100">
+                            <h3 className="font-bold text-lg text-green-900 mb-4 flex items-center gap-2">
+                                <span className="bg-green-200 text-green-800 p-1 rounded">✅</span> Consider Switching If:
+                            </h3>
+                            <ul className="space-y-3 text-slate-700">
                                 <li className="flex items-start gap-2">
-                                    <span className="text-green-500 font-bold">•</span>
+                                    <span className="text-green-600 font-bold">•</span>
                                     <span>The interest rate difference is at least <strong>0.5% to 0.75%</strong>.</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-green-500 font-bold">•</span>
+                                    <span className="text-green-600 font-bold">•</span>
                                     <span>You are in the early stages of your loan tenure (first 5-7 years).</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-green-500 font-bold">•</span>
+                                    <span className="text-green-600 font-bold">•</span>
                                     <span>The total savings are significantly higher than the processing fees.</span>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                            <h3 className="font-bold text-lg text-slate-800 mb-3">❌ Avoid Switching If:</h3>
-                            <ul className="space-y-2 text-sm">
+                        <div className="bg-red-50/50 p-6 rounded-xl border border-red-100">
+                            <h3 className="font-bold text-lg text-red-900 mb-4 flex items-center gap-2">
+                                <span className="bg-red-200 text-red-800 p-1 rounded">❌</span> Avoid Switching If:
+                            </h3>
+                            <ul className="space-y-3 text-slate-700">
                                 <li className="flex items-start gap-2">
                                     <span className="text-red-500 font-bold">•</span>
                                     <span>You have less than 5 years remaining on your loan.</span>
@@ -70,9 +75,9 @@ export default function BalanceTransferPage() {
                         </div>
                     </div>
 
-                    <p className="text-sm bg-yellow-50 p-4 rounded-lg border border-yellow-100 text-yellow-800">
+                    <div className="mt-8 p-4 bg-yellow-50 rounded-lg border border-yellow-100 text-yellow-800 text-sm">
                         <strong>Note:</strong> While this calculator gives you a financial picture, also consider the "hassle cost" of paperwork and time involved in switching banks.
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -66,7 +66,7 @@ export function LoanCalculator() {
     });
 
     return (
-        <div className="w-full max-w-6xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Left Panel: Inputs (5 Cols) */}
                 <div className="lg:col-span-5 space-y-6">

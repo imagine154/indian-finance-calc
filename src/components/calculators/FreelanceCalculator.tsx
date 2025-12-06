@@ -99,7 +99,7 @@ export function FreelanceCalculator() {
                                 type="number"
                                 value={otherIncome}
                                 onChange={e => setOtherIncome(Number(e.target.value))}
-                                className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500"
+                                className="w-full pl-10 pr-4 py-2 text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500"
                             />
                         </div>
                     </div>
@@ -123,21 +123,21 @@ export function FreelanceCalculator() {
                             <div className="grid grid-cols-2 gap-4">
                                 <div>
                                     <label className="text-sm text-slate-600 mb-1 block">80C (LIC/PPF)</label>
-                                    <input type="number" value={section80C} onChange={e => setSection80C(Math.min(Number(e.target.value), 150000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" max={150000} />
+                                    <input type="number" value={section80C} onChange={e => setSection80C(Math.min(Number(e.target.value), 150000))} className="w-full px-3 py-2 text-slate-900 border border-slate-300 rounded-lg" max={150000} />
                                     <p className="text-[10px] text-slate-400 mt-0.5">Max 1.5L</p>
                                 </div>
                                 <div>
                                     <label className="text-sm text-slate-600 mb-1 block">80D (Health)</label>
-                                    <input type="number" value={section80D} onChange={e => setSection80D(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                    <input type="number" value={section80D} onChange={e => setSection80D(Number(e.target.value))} className="w-full px-3 py-2 text-slate-900 border border-slate-300 rounded-lg" />
                                 </div>
                                 <div>
                                     <label className="text-sm text-slate-600 mb-1 block">NPS (80CCD 1B)</label>
-                                    <input type="number" value={npsSelf} onChange={e => setNpsSelf(Math.min(Number(e.target.value), 50000))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" max={50000} />
+                                    <input type="number" value={npsSelf} onChange={e => setNpsSelf(Math.min(Number(e.target.value), 50000))} className="w-full px-3 py-2 text-slate-900 border border-slate-300 rounded-lg" max={50000} />
                                     <p className="text-[10px] text-slate-400 mt-0.5">Max 50k</p>
                                 </div>
                                 <div>
                                     <label className="text-sm text-slate-600 mb-1 block">Other</label>
-                                    <input type="number" value={otherDeductions} onChange={e => setOtherDeductions(Number(e.target.value))} className="w-full px-3 py-2 border border-slate-300 rounded-lg" />
+                                    <input type="number" value={otherDeductions} onChange={e => setOtherDeductions(Number(e.target.value))} className="w-full px-3 py-2 text-slate-900 border border-slate-300 rounded-lg" />
                                 </div>
                             </div>
                             <div className="bg-amber-50 border border-amber-100 rounded-lg p-3 text-xs text-amber-800">

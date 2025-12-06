@@ -23,7 +23,7 @@ export default function SipCalculatorPage() {
                     <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
                         SIP Calculator
                     </h1>
-                    <p className="text-lg text-slate-600 max-w-1xl mx-auto">
+                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Calculate your Systematic Investment Plan returns and plan your financial future with confidence
                     </p>
                 </div>

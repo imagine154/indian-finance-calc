@@ -119,7 +119,7 @@ const HraCalculator = () => {
                                 step="1000"
                                 value={basicSalary}
                                 onChange={(e) => setBasicSalary(Number(e.target.value))}
-                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
+                                className="w-full p-3 text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
                             />
                             <p className="text-xs text-slate-500 mt-1">
                                 {formatCompact(basicSalary)}
@@ -136,7 +136,7 @@ const HraCalculator = () => {
                                 step="1000"
                                 value={da}
                                 onChange={(e) => setDa(Number(e.target.value))}
-                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
+                                className="w-full p-3 text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
                             />
                             <p className="text-xs text-slate-500 mt-1">
                                 {formatCompact(da)}
@@ -153,7 +153,7 @@ const HraCalculator = () => {
                                 step="1000"
                                 value={hraReceived}
                                 onChange={(e) => setHraReceived(Number(e.target.value))}
-                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
+                                className="w-full p-3 text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
                             />
                             <p className="text-xs text-slate-500 mt-1">
                                 {formatCompact(hraReceived)}
@@ -170,7 +170,7 @@ const HraCalculator = () => {
                                 step="1000"
                                 value={rentPaid}
                                 onChange={(e) => setRentPaid(Number(e.target.value))}
-                                className="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
+                                className="w-full p-3 text-slate-900 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all"
                             />
                             <p className="text-xs text-slate-500 mt-1">
                                 {formatCompact(rentPaid)}

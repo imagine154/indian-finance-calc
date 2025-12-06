@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function MsscPage() {
     return (
         <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-10">
                     <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">
                         Mahila Samman Savings Calculator
@@ -27,22 +27,24 @@ export default function MsscPage() {
                 <MsscCalculator />
 
                 {/* FAQ Section */}
-                <div className="mt-16 max-w-4xl mx-auto prose prose-slate">
-                    <h2 className="text-2xl font-bold text-slate-800">About Mahila Samman Savings Certificate (MSSC)</h2>
-                    <p className="text-slate-700">
-                        The Mahila Samman Savings Certificate is a one-time small savings scheme for women and girls,
-                        announced in the 2023 Budget. It is available for a two-year period up to March 2025.
-                    </p>
+                <div className="mt-16 bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">About Mahila Samman Savings Certificate (MSSC)</h2>
+                    <div className="prose text-slate-600 max-w-none">
+                        <p className="mb-4">
+                            The Mahila Samman Savings Certificate is a one-time small savings scheme for women and girls,
+                            announced in the 2023 Budget. It is available for a two-year period up to March 2025.
+                        </p>
 
-                    <h3 className="text-xl font-semibold text-slate-800 mt-6">Key Features</h3>
-                    <ul className="list-disc pl-5 space-y-2 text-slate-700">
-                        <li><strong>Interest Rate:</strong> 7.5% per annum.</li>
-                        <li><strong>Compounding:</strong> Quarterly.</li>
-                        <li><strong>Tenure:</strong> 2 Years fixed.</li>
-                        <li><strong>Investment Limit:</strong> Minimum ₹1,000 and Maximum ₹2 Lakhs.</li>
-                        <li><strong>Partial Withdrawal:</strong> Up to 40% of the balance is allowed after 1 year.</li>
-                        <li><strong>Taxation:</strong> Interest is taxable as per your income tax slab. TDS applies only if total interest exceeds ₹40,000 (or ₹50,000 for seniors).</li>
-                    </ul>
+                        <h3 className="text-xl font-semibold text-slate-900 mb-3 mt-6">Key Features</h3>
+                        <ul className="list-disc pl-5 mb-4 space-y-2">
+                            <li><strong>Interest Rate:</strong> 7.5% per annum.</li>
+                            <li><strong>Compounding:</strong> Quarterly.</li>
+                            <li><strong>Tenure:</strong> 2 Years fixed.</li>
+                            <li><strong>Investment Limit:</strong> Minimum ₹1,000 and Maximum ₹2 Lakhs.</li>
+                            <li><strong>Partial Withdrawal:</strong> Up to 40% of the balance is allowed after 1 year.</li>
+                            <li><strong>Taxation:</strong> Interest is taxable as per your income tax slab. TDS applies only if total interest exceeds ₹40,000 (or ₹50,000 for seniors).</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

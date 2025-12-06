@@ -67,7 +67,7 @@ const BalanceTransferCalculator = () => {
     ];
 
     return (
-        <div className="w-full max-w-6xl mx-auto font-sans">
+        <div className="w-full max-w-7xl mx-auto font-sans">
 
             {/* Hero Verdict */}
             <div className={`mb-8 p-8 rounded-3xl shadow-lg border-2 text-center relative overflow-hidden ${result.isProfitable ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
@@ -121,7 +121,7 @@ const BalanceTransferCalculator = () => {
                                         step="50000"
                                         value={inputs.outstandingPrincipal}
                                         onChange={(e) => handleInputChange('outstandingPrincipal', Number(e.target.value))}
-                                        className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                        className="w-full pl-8 pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                                 <p className="text-xs text-slate-500 mt-1 font-medium pl-1">
@@ -135,7 +135,7 @@ const BalanceTransferCalculator = () => {
                                     type="number"
                                     value={inputs.remainingTenure}
                                     onChange={(e) => handleInputChange('remainingTenure', Number(e.target.value))}
-                                    className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                    className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                 />
                             </div>
 
@@ -147,7 +147,7 @@ const BalanceTransferCalculator = () => {
                                         step="0.1"
                                         value={inputs.existingRate}
                                         onChange={(e) => handleInputChange('existingRate', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                                 <div>
@@ -157,7 +157,7 @@ const BalanceTransferCalculator = () => {
                                         step="0.1"
                                         value={inputs.newRate}
                                         onChange={(e) => handleInputChange('newRate', Number(e.target.value))}
-                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 outline-none font-medium text-slate-700"
+                                        className="w-full px-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 outline-none font-medium text-slate-900"
                                     />
                                 </div>
                             </div>
@@ -197,7 +197,7 @@ const BalanceTransferCalculator = () => {
                                         step={inputs.processingFeeType === 'percentage' ? "0.1" : "100"}
                                         value={inputs.processingFee}
                                         onChange={(e) => handleInputChange('processingFee', Number(e.target.value))}
-                                        className={`w-full ${inputs.processingFeeType === 'flat' ? 'pl-8' : 'pl-4'} pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-700`}
+                                        className={`w-full ${inputs.processingFeeType === 'flat' ? 'pl-8' : 'pl-4'} pr-4 py-2.5 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none font-medium text-slate-900`}
                                     />
                                     {inputs.processingFeeType === 'percentage' && <span className="absolute right-3 top-3 text-slate-400">%</span>}
                                 </div>

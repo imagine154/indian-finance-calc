@@ -90,7 +90,7 @@ const RentVsBuyCalculator = () => {
     const isBuyWinner = result.finalVerdict.winner === 'buy';
 
     return (
-        <div className="w-full max-w-6xl mx-auto font-sans">
+        <div className="w-full max-w-7xl mx-auto font-sans">
 
             {/* Hero Verdict */}
             <div className={`mb-8 p-8 rounded-3xl shadow-lg border-2 text-center relative overflow-hidden ${isBuyWinner ? 'bg-blue-50 border-blue-200' : 'bg-orange-50 border-orange-200'}`}>

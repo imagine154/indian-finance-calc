@@ -22,13 +22,13 @@ export default function FreelanceTaxPage() {
 
                 <FreelanceCalculator />
 
-                <div className="mt-16 max-w-4xl mx-auto prose prose-slate">
-                    <h3>What is Section 44ADA?</h3>
-                    <p>
+                <div className="mt-16 max-w-4xl mx-auto bg-white rounded-2xl p-8 shadow-sm border border-slate-200 prose prose-slate">
+                    <h3 className="text-slate-900 mt-0">What is Section 44ADA?</h3>
+                    <p className="text-slate-700">
                         Section 44ADA is a presumptive taxation scheme for professionals in India. It allows you to declare
                         <strong> 50% of your gross receipts</strong> as your taxable income, assuming the remaining 50% covers your professional expenses.
                     </p>
-                    <ul>
+                    <ul className="text-slate-700 mb-0">
                         <li><strong>Eligibility:</strong> Gross receipts must be less than ₹75 Lakhs (FY 2025-26).</li>
                         <li><strong>Who can use it?</strong> Software Developers, Architects, Doctors, Lawyers, Interior Designers, etc.</li>
                         <li><strong>Benefit:</strong> You don't need to maintain detailed books of accounts or get an audit.</li>

@@ -10,36 +10,48 @@ export const metadata: Metadata = {
 export default function PositionSizeCalculatorPage() {
     return (
         <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-                <div className="text-center mb-10">
-                    <h1 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+            <div className="max-w-7xl mx-auto">
+                {/* Header */}
+                <div className="text-center mb-12">
+                    <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">
                         Position Size Calculator
                     </h1>
-                    <p className="mt-3 max-w-2xl mx-auto text-xl text-slate-500 sm:mt-4">
-                        Determine exactly how many shares to buy to stay within your risk limits.
+                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                        Calculate the optimal number of shares to buy based on your risk appetite and stop loss.
                     </p>
                 </div>
 
-                <PositionSizeCalculator />
+                <div className="grid gap-8 lg:grid-cols-12">
+                    {/* Calculator Component */}
+                    <div className="lg:col-span-12">
+                        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8">
+                            <PositionSizeCalculator />
+                        </div>
+                    </div>
+                </div>
 
-                {/* How it works section */}
-                <div className="mt-16 max-w-4xl mx-auto prose prose-slate">
-                    <h2 className="text-2xl font-bold text-slate-800">Why is Position Sizing Important?</h2>
-                    <p className="text-slate-600">
-                        Position sizing is the most critical aspect of risk management in trading. It ensures that a single losing trade does not wipe out a significant portion of your trading capital. By calculating the correct position size, you can survive a string of losses and stay in the game long enough to be profitable.
-                    </p>
-
-                    <h3 className="text-xl font-bold text-slate-800 mt-6">How to use this calculator:</h3>
-                    <ul className="list-disc pl-5 space-y-2 text-slate-600">
-                        <li><strong>Account Capital:</strong> Enter your total trading capital available.</li>
-                        <li><strong>Risk Percentage:</strong> Decide how much of your capital you are willing to lose on a single trade (usually 1% to 2%).</li>
-                        <li><strong>Entry Price:</strong> The price at which you plan to buy the stock.</li>
-                        <li><strong>Stop Loss:</strong> The price at which you will exit if the trade goes against you.</li>
-                    </ul>
-
-                    <p className="text-slate-600 mt-4">
-                        The calculator will tell you exactly how many shares to buy so that if your stop loss is hit, you only lose the pre-defined risk amount.
-                    </p>
+                {/* SEO Content */}
+                <div className="mt-16 bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">
+                        Why Position Sizing is Important?
+                    </h2>
+                    <div className="prose text-slate-600 max-w-none">
+                        <p className="mb-4">
+                            Position sizing is one of the most critical aspects of risk management in trading. It determines how many shares or contracts you should trade to ensure you don't lose more than a specific percentage of your capital on a single trade.
+                        </p>
+                        <p className="mb-4">
+                            <strong>Key Benefits:</strong>
+                        </p>
+                        <ul className="list-disc pl-5 mb-4 space-y-2">
+                            <li>Protects your trading capital from significant drawdowns</li>
+                            <li>Helps you stay in the game long enough to be profitable</li>
+                            <li>Removes emotional decision-making from trade sizing</li>
+                            <li>Allows you to survive a string of losing trades</li>
+                        </ul>
+                        <p>
+                            By sticking to a consistent risk percentage (e.g., 1% or 2% per trade), you ensure that no single loss can severely damage your portfolio.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

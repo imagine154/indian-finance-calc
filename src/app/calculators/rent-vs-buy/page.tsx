@@ -29,19 +29,22 @@ export default function RentVsBuyPage() {
                 <RentVsBuyCalculator />
 
                 {/* SEO Content / FAQ Section could go here */}
-                <div className="max-w-4xl mx-auto mt-16 space-y-8 text-slate-600 leading-relaxed">
-                    <h2 className="text-2xl font-bold text-slate-800">How does this calculator work?</h2>
-                    <p>
-                        This tool simulates your net wealth over a period of time (e.g., 20 years) for two scenarios:
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2">
-                        <li>
-                            <strong>Buying:</strong> We calculate the cost of the loan (EMI), down payment, and maintenance, while accounting for tax benefits under Section 24(b) and 80C. The final wealth is the property value minus any outstanding loan.
-                        </li>
-                        <li>
-                            <strong>Renting:</strong> We assume you pay rent (increasing with inflation) and invest the money you saved (Down Payment + difference between EMI and Rent) into an investment instrument like Mutual Funds. The final wealth is your investment corpus.
-                        </li>
-                    </ul>
+                {/* SEO Content / FAQ Section */}
+                <div className="mt-16 bg-white rounded-2xl p-8 shadow-sm border border-slate-200">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">How does this calculator work?</h2>
+                    <div className="prose text-slate-600 max-w-none">
+                        <p className="mb-4">
+                            This tool simulates your net wealth over a period of time (e.g., 20 years) for two scenarios:
+                        </p>
+                        <ul className="list-disc pl-5 mb-4 space-y-2">
+                            <li>
+                                <strong>Buying:</strong> We calculate the cost of the loan (EMI), down payment, and maintenance, while accounting for tax benefits under Section 24(b) and 80C. The final wealth is the property value minus any outstanding loan.
+                            </li>
+                            <li>
+                                <strong>Renting:</strong> We assume you pay rent (increasing with inflation) and invest the money you saved (Down Payment + difference between EMI and Rent) into an investment instrument like Mutual Funds. The final wealth is your investment corpus.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
