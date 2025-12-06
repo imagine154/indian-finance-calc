@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import MutualFundAnalyzer from '@/components/calculators/MutualFundAnalyzer';
 
 export const metadata: Metadata = {
-    title: 'Mutual Fund Historical Returns - 1M to 10Y Analysis | SmartEquity',
+    title: 'Mutual Fund Historical Returns - 1M to 10Y Analysis | RupeeTools',
     description: 'Analyze past performance of 3000+ Indian Mutual Funds and ETFs. Compare returns across different time periods.',
     keywords: [
         'Mutual Fund Returns',

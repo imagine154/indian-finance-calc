@@ -199,7 +199,7 @@ export function SwpCalculator() {
                     <p className="text-slate-600 text-sm mb-4">{suggestion.desc}</p>
 
                     <Link
-                        href="/calculators/mutual-fund"
+                        href="/calculators/mutual-fund-analyzer"
                         className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 hover:underline"
                     >
                         Analyze Funds <ArrowRight className="w-4 h-4" />

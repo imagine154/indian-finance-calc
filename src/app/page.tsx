@@ -19,7 +19,8 @@ import {
   Percent,
   Laptop,
   Receipt,
-  Flame
+  Flame,
+  Microscope
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -158,10 +159,17 @@ const categories = [
       },
       {
         name: "MF Analyzer",
-        href: "/calculators/mutual-fund",
+        href: "/calculators/mutual-fund-analyzer",
         desc: "Historical returns of 3000+ funds.",
         icon: <LineChart className="w-6 h-6 text-indigo-600" />,
         iconBg: "bg-indigo-100"
+      },
+      {
+        name: "Explore Funds",
+        href: "/explore-mutual-funds",
+        desc: "Browse & Filter 1500+ Funds.",
+        icon: <Microscope className="w-6 h-6 text-teal-600" />,
+        iconBg: "bg-teal-100"
       },
       {
         name: "Investment Advisor",
@@ -197,6 +205,13 @@ const categories = [
         desc: "Lean, Fat & Coast FIRE.",
         icon: <Flame className="w-6 h-6 text-orange-600" />,
         iconBg: "bg-orange-100"
+      },
+      {
+        name: "SIP Analyzer",
+        href: "/calculators/sip-analyzer",
+        desc: "Check if your SIPs meet your goals.",
+        icon: <Microscope className="w-6 h-6 text-purple-600" />,
+        iconBg: "bg-purple-100"
       }
     ]
   },
