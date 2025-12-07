@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { Search, TrendingUp, Info, X, Check, ChevronDown, Filter, PieChart, ArrowRight, RefreshCw, Download } from 'lucide-react';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const MfResultChart = dynamic(() => import('@/components/charts/MfResultChart'), {
     ssr: false,
@@ -721,6 +722,7 @@ export default function MutualFundAnalyzer() {
 
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/mutual-fund-analyzer" category="investments" />
         </div>
     );
 }

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { calculateMSSC } from '@/core/logic/mssc';
 import { Wallet, TrendingUp, Info } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 export function MsscCalculator() {
     const [investmentAmount, setInvestmentAmount] = useState(200000);
@@ -31,7 +32,7 @@ export function MsscCalculator() {
     };
 
     return (
-        <div className="w-full max-w-6xl mx-auto">
+        <div className="w-full max-w-6xl mx-auto space-y-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Left Panel: Inputs (5 Cols) */}
                 <div className="lg:col-span-5 space-y-6">
@@ -181,6 +182,7 @@ export function MsscCalculator() {
                     </div>
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/mssc" category="govt" />
         </div>
     );
 }

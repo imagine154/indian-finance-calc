@@ -9,7 +9,9 @@
 import { useState } from 'react';
 import { calculateSIP } from '@/core/logic/sip';
 import dynamic from 'next/dynamic';
-import { TrendingUp, Wallet, Target } from 'lucide-react';
+import { Target, TrendingUp, Wallet } from 'lucide-react';
+
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const SipResultChart = dynamic(() => import('@/components/charts/SipResultChart'), {
     ssr: false,
@@ -58,10 +60,10 @@ export function SipCalculator() {
     };
 
     return (
-        <div className="w-full max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="w-full max-w-6xl mx-auto space-y-8">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                 {/* Left Panel: Inputs */}
-                <div className="space-y-4">
+                <div className="lg:col-span-4 space-y-4">
                     {/* Monthly Investment Slider */}
                     <div className="bg-white rounded-xl p-4 shadow-sm border border-slate-200">
                         <div className="flex justify-between items-center mb-2">
@@ -219,7 +221,7 @@ export function SipCalculator() {
                 </div>
 
                 {/* Right Panel: Chart */}
-                <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col">
+                <div className="lg:col-span-8 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col">
                     <h3 className="text-xl font-bold text-slate-800 mb-6">Investment Breakdown</h3>
 
                     {/* Donut Chart */}
@@ -286,6 +288,9 @@ export function SipCalculator() {
                     Actual returns may vary depending on market conditions. Past performance is not indicative of future results.
                 </p>
             </div>
+
+            <RelatedCalculators currentPath="/calculators/sip" category="investments" />
         </div>
     );
 }
+

@@ -13,6 +13,7 @@ import {
 } from 'recharts';
 import { ArrowLeftRight, PiggyBank, Clock, Percent, Info, CheckCircle, XCircle } from 'lucide-react';
 import { calculateBalanceTransfer, BalanceTransferInput, BalanceTransferResult } from '../../core/logic/balance-transfer';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const BalanceTransferCalculator = () => {
     const [inputs, setInputs] = useState<BalanceTransferInput>({
@@ -24,11 +25,7 @@ const BalanceTransferCalculator = () => {
         processingFeeType: 'flat'
     });
 
-    const [result, setResult] = useState<BalanceTransferResult | null>(null);
-
-    useEffect(() => {
-        setResult(calculateBalanceTransfer(inputs));
-    }, [inputs]);
+    const result = calculateBalanceTransfer(inputs);
 
     const handleInputChange = (key: keyof BalanceTransferInput, value: any) => {
         setInputs(prev => ({
@@ -51,7 +48,7 @@ const BalanceTransferCalculator = () => {
         return `₹${value.toLocaleString('en-IN')}`;
     };
 
-    if (!result) return <div>Loading...</div>;
+
 
     const chartData = [
         {
@@ -283,6 +280,7 @@ const BalanceTransferCalculator = () => {
 
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/balance-transfer" category="loans" />
         </div>
     );
 };

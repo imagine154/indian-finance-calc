@@ -7,6 +7,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip as RechartsTooltip, L
 import { analyzePortfolio, UserSip, CATEGORY_TYPE } from '@/core/logic/sip-analyzer';
 import { CATEGORY_RETURNS } from '@/core/data/category-returns';
 import { getInvestmentAdvice } from '@/core/logic/investment-advisor';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const COLORS = {
     Equity: '#10B981', // Emerald 500
@@ -411,6 +412,7 @@ export default function SipAnalyzer() {
                     </div>
                 </div>
             </div>
-        </div>
+            <RelatedCalculators currentPath="/calculators/sip-analyzer" category="investments" />
+        </div >
     );
 }

@@ -14,6 +14,7 @@ import {
     Info
 } from "lucide-react";
 import { calculateFireStats, FireGoal, FireInputs } from "@/core/logic/fire";
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const formatCurrency = (amount: number) => {
     if (amount >= 10000000) {
@@ -389,7 +390,8 @@ const FireCalculator = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            <RelatedCalculators currentPath="/calculators/fire" category="investments" />
+        </div >
     );
 };
 

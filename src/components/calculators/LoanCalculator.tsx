@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { calculateLoan, PrepaymentFrequency } from '@/core/logic/loan';
 import dynamic from 'next/dynamic';
 import { Wallet, Percent, Calendar, TrendingDown, Info, CheckCircle2 } from 'lucide-react';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const LoanResultChart = dynamic(() => import('@/components/charts/LoanResultChart'), {
     ssr: false,
@@ -349,6 +350,7 @@ export function LoanCalculator() {
 
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/loan" category="loans" />
         </div>
     );
 }

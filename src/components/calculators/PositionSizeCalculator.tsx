@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { calculatePositionSize } from '@/core/logic/position-size';
 import { AlertTriangle, DollarSign, Target, TrendingDown, Wallet } from 'lucide-react';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 export function PositionSizeCalculator() {
     // State for inputs
@@ -10,11 +11,7 @@ export function PositionSizeCalculator() {
     const [riskPercentage, setRiskPercentage] = useState(1);
     const [entryPrice, setEntryPrice] = useState(100);
     const [stopLossPrice, setStopLossPrice] = useState(95);
-    const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
 
     // Calculate results
     const result = calculatePositionSize({
@@ -196,6 +193,7 @@ export function PositionSizeCalculator() {
                     </div>
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/position-size" category="trading" />
         </div>
     );
 }

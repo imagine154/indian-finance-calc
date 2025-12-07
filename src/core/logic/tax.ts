@@ -90,7 +90,7 @@ const NEW_REGIME_SLABS = [
 
 // --- HELPER: Slab Calculator ---
 function calculateSlabTax(taxableIncome: number, slabs: typeof OLD_REGIME_SLABS) {
-    let remaining = taxableIncome;
+    const remaining = taxableIncome;
     let tax = 0;
     const breakdown = [];
 
@@ -190,7 +190,7 @@ function calculateEngine(input: TaxInput, regime: 'Old' | 'New'): TaxCalculation
     // Special Tax: Crypto (30% Flat)
     const taxFromCrypto = cryptoIncome * 0.30;
 
-    let totalTaxBeforeRebate = taxFromSlabs + taxFromCrypto;
+    const totalTaxBeforeRebate = taxFromSlabs + taxFromCrypto;
 
     // --- 6. REBATE 87A ---
     // Rebate applies to TOTAL tax, provided Total Income is within limits.

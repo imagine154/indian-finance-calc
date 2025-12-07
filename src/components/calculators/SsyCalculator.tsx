@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { calculateSSY } from '@/core/logic/ssy';
 import dynamic from 'next/dynamic';
 import { Wallet, Calendar, GraduationCap, TrendingUp, Info, Baby } from 'lucide-react';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const SsyResultChart = dynamic(() => import('@/components/charts/SsyResultChart'), {
     ssr: false,
@@ -295,6 +296,7 @@ export function SsyCalculator() {
 
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/ssy" category="govt" />
         </div>
     );
 }

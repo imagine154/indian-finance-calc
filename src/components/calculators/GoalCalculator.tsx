@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { calculateGoalSIP } from '@/core/logic/goal';
 import dynamic from 'next/dynamic';
 import { Target, Calendar, TrendingUp, Wallet, ArrowRight, Info } from 'lucide-react';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const GoalResultChart = dynamic(() => import('@/components/charts/GoalResultChart'), {
     ssr: false,
@@ -292,6 +293,7 @@ export function GoalCalculator() {
 
                 </div>
             </div>
-        </div>
+            <RelatedCalculators currentPath="/calculators/goal" category="investments" />
+        </div >
     );
 }

@@ -13,6 +13,7 @@ import {
 } from 'recharts';
 import { Home, Building, Info, TrendingUp, IndianRupee, ArrowRight, CheckCircle } from 'lucide-react';
 import { calculateRentVsBuy, RentVsBuyInput, RentVsBuyResult } from '../../core/logic/rent-vs-buy';
+import { RelatedCalculators } from "../ui/RelatedCalculators";
 
 const RentVsBuyCalculator = () => {
     // --- State ---
@@ -28,8 +29,6 @@ const RentVsBuyCalculator = () => {
         durationYears: 20
     });
 
-    const [result, setResult] = useState<RentVsBuyResult | null>(null);
-
     // --- Handlers ---
     const handleInputChange = (key: keyof RentVsBuyInput, value: number) => {
         setInputs(prev => ({
@@ -38,11 +37,8 @@ const RentVsBuyCalculator = () => {
         }));
     };
 
-    // --- Effects ---
-    useEffect(() => {
-        const res = calculateRentVsBuy(inputs);
-        setResult(res);
-    }, [inputs]);
+    // --- Calculation ---
+    const result = calculateRentVsBuy(inputs);
 
     // --- Formatters ---
     const formatCurrency = (amount: number) => {
@@ -85,7 +81,7 @@ const RentVsBuyCalculator = () => {
         });
     };
 
-    if (!result) return <div>Loading...</div>;
+
 
     const isBuyWinner = result.finalVerdict.winner === 'buy';
 
@@ -334,6 +330,7 @@ const RentVsBuyCalculator = () => {
 
                 </div>
             </div>
+            <RelatedCalculators currentPath="/calculators/rent-vs-buy" category="loans" />
         </div>
     );
 };
