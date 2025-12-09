@@ -20,7 +20,8 @@ import {
   Laptop,
   Receipt,
   Flame,
-  Microscope
+  Microscope,
+  Crosshair
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -178,13 +179,7 @@ const categories = [
         icon: <PieChart className="w-6 h-6 text-cyan-600" />,
         iconBg: "bg-cyan-100"
       },
-      {
-        name: "Position Size",
-        href: "/calculators/position-size",
-        desc: "Stock trading risk management.",
-        icon: <Scale className="w-6 h-6 text-amber-600" />,
-        iconBg: "bg-amber-100"
-      },
+
       {
         name: "Lumpsum",
         href: "/calculators/lumpsum",
@@ -213,18 +208,13 @@ const categories = [
         icon: <Microscope className="w-6 h-6 text-purple-600" />,
         iconBg: "bg-purple-100"
       },
-      {
-        name: "Stock Average",
-        href: "/calculators/stock-average",
-        desc: "Average Down & Target Price.",
-        icon: <Target className="w-6 h-6 text-amber-600" />,
-        iconBg: "bg-amber-100"
-      }
+
     ]
   },
   {
     title: "Loans & Property",
     icon: <HomeIcon className="w-6 h-6 text-purple-600" />,
+
     calculators: [
       {
         name: "Home Loan",
@@ -246,6 +236,33 @@ const categories = [
         desc: "Switch loan to save interest.",
         icon: <ArrowRightLeft className="w-6 h-6 text-green-600" />,
         iconBg: "bg-green-100"
+      }
+    ]
+  },
+  {
+    title: "Trading Tools",
+    icon: <Target className="w-6 h-6 text-amber-600" />,
+    calculators: [
+      {
+        name: "Pivot Points",
+        href: "/calculators/pivot-point",
+        desc: "Find intraday support & resistance levels (Standard, Fibonacci, Camarilla).",
+        icon: <Crosshair className="w-6 h-6 text-amber-500" />,
+        iconBg: "bg-amber-100"
+      },
+      {
+        name: "Position Size",
+        href: "/calculators/position-size",
+        desc: "Stock trading risk management.",
+        icon: <Scale className="w-6 h-6 text-amber-600" />,
+        iconBg: "bg-amber-100"
+      },
+      {
+        name: "Stock Average",
+        href: "/calculators/stock-average",
+        desc: "Average Down & Target Price.",
+        icon: <Target className="w-6 h-6 text-amber-600" />,
+        iconBg: "bg-amber-100"
       }
     ]
   }

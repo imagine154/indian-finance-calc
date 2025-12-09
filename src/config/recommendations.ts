@@ -2,7 +2,8 @@ export type ToolId =
     | 'salary' | 'income-tax' | 'pf' | 'rent-vs-buy' | 'nps' | 'hra' | 'ppf'
     | 'home-loan' | 'balance-transfer' | 'sip' | 'lumpsum' | 'sip-analyzer'
     | 'goal' | 'swp' | 'fire' | 'freelance' | 'gst' | 'ssy'
-    | 'position-size' | 'capital-gains' | 'investment-advisor' | 'apy' | 'mssc' | 'fd' | 'gratuity' | 'mutual-fund-analyzer';
+    | 'position-size' | 'capital-gains' | 'investment-advisor' | 'apy' | 'mssc' | 'fd' | 'gratuity' | 'mutual-fund-analyzer'
+    | 'pivot-point' | 'stock-average';
 
 interface Recommendation {
     id: ToolId;
@@ -55,5 +56,9 @@ export const RECOMMENDATIONS: Record<string, Recommendation[]> = {
     'position-size': [
         { id: 'capital-gains', text: "Calculate tax on your trading profits." },
         { id: 'investment-advisor', text: "Diversify your risk with asset allocation." },
+    ],
+    'pivot-point': [
+        { id: 'position-size', text: "Calculate safe lot size for this trade." },
+        { id: 'stock-average', text: "Plan your averaging entries." },
     ],
 };

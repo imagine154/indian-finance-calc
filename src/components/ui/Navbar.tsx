@@ -27,11 +27,11 @@ const navGroups = [
             { name: "MF Analyzer", href: "/calculators/mutual-fund-analyzer" },
             { name: "SIP Analyzer", href: "/calculators/sip-analyzer" },
             { name: "Investment Advisor", href: "/calculators/investment-advisor" },
-            { name: "Position Size", href: "/calculators/position-size" },
+
             { name: "SWP Calculator", href: "/calculators/swp" },
             { name: "Lumpsum", href: "/calculators/lumpsum" },
             { name: "FD Calculator", href: "/calculators/fd" },
-            { name: "Stock Average", href: "/calculators/stock-average" },
+
         ]
     },
     {
@@ -52,6 +52,14 @@ const navGroups = [
             { name: "Home Loan EMI", href: "/calculators/loan" },
             { name: "Rent vs Buy", href: "/calculators/rent-vs-buy" },
             { name: "Balance Transfer", href: "/calculators/balance-transfer" },
+        ]
+    },
+    {
+        label: "Trading & Risk",
+        items: [
+            { name: "Pivot Point Calculator", href: "/calculators/pivot-point" },
+            { name: "Position Size", href: "/calculators/position-size" },
+            { name: "Stock Average", href: "/calculators/stock-average" },
         ]
     }
 ];
