@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import RentVsBuyCalculator from '@/components/calculators/RentVsBuyCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Rent vs Buy Calculator India - Financial Decision Tool | RupeeTools',
@@ -46,6 +47,11 @@ export default function RentVsBuyPage() {
                         </ul>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Rent vs Buy Calculator India"
+                    description="Should you buy a home or live on rent? Calculate the financial impact of buying vs renting with opportunity cost and tax benefits."
+                    calculatorPath="/calculators/rent-vs-buy"
+                />
             </div>
         </div>
     );

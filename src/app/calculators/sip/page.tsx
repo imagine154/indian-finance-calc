@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SipLumpsumWrapper } from '@/components/calculators/SipLumpsumWrapper';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'SIP & Lumpsum Calculator - Calculate Mutual Fund Returns',
@@ -63,6 +64,11 @@ export default function SipCalculatorPage() {
                         </li>
                     </ul>
                 </div>
+                <SoftwareAppJsonLd
+                    name="SIP calculator - Systematic Investment Plan"
+                    description="Calculate your Systematic Investment Plan returns and plan your financial future with confidence."
+                    calculatorPath="/calculators/sip"
+                />
             </div>
         </main>
     );

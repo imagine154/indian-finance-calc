@@ -1,4 +1,5 @@
 import { FreelanceCalculator } from '@/components/calculators/FreelanceCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -34,6 +35,11 @@ export default function FreelanceTaxPage() {
                         <li><strong>Benefit:</strong> You don't need to maintain detailed books of accounts or get an audit.</li>
                     </ul>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Freelancer Income Tax Calculator (44ADA)"
+                    description="Calculate income tax for Indian Freelancers & Professionals under Section 44ADA. Save tax by declaring only 50% of your gross receipts."
+                    calculatorPath="/calculators/freelance"
+                />
             </div>
         </div>
     );

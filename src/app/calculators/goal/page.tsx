@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { GoalCalculator } from '@/components/calculators/GoalCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Financial Goal Planner - Inflation Adjusted Calculator | Indian Finance Tools',
@@ -63,6 +64,11 @@ export default function GoalCalculatorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Financial Goal Planner"
+                    description="Plan for your financial goals like child education, marriage, or retirement. Calculate required monthly SIP with inflation adjustment and step-up planning."
+                    calculatorPath="/calculators/goal"
+                />
             </div>
         </main>
     );

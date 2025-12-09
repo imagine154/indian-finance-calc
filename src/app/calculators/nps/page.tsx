@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { NpsCalculator } from '@/components/calculators/NpsCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'NPS Calculator - Pension & Lump Sum Estimator | Indian Finance Calc',
@@ -57,7 +58,12 @@ export default function NpsPage() {
                             </ul>
                         </div>
                     </div>
-                </div>            </div>
+                </div>                <SoftwareAppJsonLd
+                    name="NPS Calculator - National Pension System"
+                    description="Calculate your National Pension System (NPS) corpus, monthly pension, and lump sum withdrawal amount."
+                    calculatorPath="/calculators/nps"
+                />
+            </div>
         </main>
     );
 }

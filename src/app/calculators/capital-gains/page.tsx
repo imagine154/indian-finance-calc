@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CapitalGainsCalculator } from '@/components/calculators/CapitalGainsCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Capital Gains Tax Calculator FY 2025-26 (Equity, Debt, Property) | RupeeTools',
@@ -63,6 +64,11 @@ export default function CapitalGainsPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Capital Gains Tax Calculator FY 2025-26"
+                    description="Calculate tax on Stock Market, Mutual Fund, and Property gains. Updated with latest Budget 2024-25 rules (12.5% LTCG)."
+                    calculatorPath="/calculators/capital-gains"
+                />
             </div>
         </main>
     );

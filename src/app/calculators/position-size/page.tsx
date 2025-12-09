@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { PositionSizeCalculator } from '@/components/calculators/PositionSizeCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Position Size Calculator - Stock Trading Risk Management | RupeeTools',
@@ -53,6 +54,11 @@ export default function PositionSizeCalculatorPage() {
                         </p>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Position Size Calculator - Stock Trading Risk Management"
+                    description="Calculate the perfect position size for stock trading. Manage risk by defining entry price, stop loss, and risk percentage per trade."
+                    calculatorPath="/calculators/position-size"
+                />
             </div>
         </div>
     );

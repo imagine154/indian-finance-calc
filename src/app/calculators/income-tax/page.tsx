@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { TaxCompare } from '@/components/calculators/TaxCompare';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Income Tax Calculator FY 2025-26 (Old vs New Regime)',
@@ -94,6 +95,11 @@ export default function IncomeTaxCalculatorPage() {
                         Actual tax liability may vary based on additional factors. Please consult a tax professional for personalized advice.
                     </p>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Income Tax Calculator FY 2025-26"
+                    description="Compare Old vs New Tax Regime for FY 2025-26. Enter your income and deductions to see which regime saves you more money."
+                    calculatorPath="/calculators/income-tax"
+                />
             </div>
         </main>
     );

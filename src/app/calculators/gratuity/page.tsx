@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import GratuityCalculator from "@/components/calculators/GratuityCalculator";
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: "Gratuity Calculator India (2025) - Check Tax Free Limit | RupeeTools",
@@ -57,6 +58,11 @@ export default function GratuityCalculatorPage() {
                         </ul>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Gratuity Calculator India"
+                    description="Calculate your Gratuity amount based on Basic Salary and Years of Service. Updated for the new ₹20 Lakh tax-free limit."
+                    calculatorPath="/calculators/gratuity"
+                />
             </div>
         </main>
     );

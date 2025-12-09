@@ -1,4 +1,5 @@
 import { PfCalculator } from '@/components/calculators/PfCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -40,6 +41,11 @@ export default function PfCalculatorPage() {
                         </p>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="EPF Corpus Calculator"
+                    description="Calculate your Employee Provident Fund (EPF) corpus at retirement with annual salary hikes and compound interest."
+                    calculatorPath="/calculators/pf"
+                />
             </div>
         </div>
     );

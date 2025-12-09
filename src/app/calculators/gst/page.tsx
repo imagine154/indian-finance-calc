@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { GstCalculator } from '@/components/calculators/GstCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'GST Calculator India - Inclusive & Exclusive GST | RupeeTools',
@@ -43,6 +44,11 @@ export default function GstCalculatorPage() {
                         <li><strong>0% (Nil):</strong> Dairy, lifesaving drugs, educational materials.</li>
                     </ul>
                 </div>
+                <SoftwareAppJsonLd
+                    name="GST Calculator India - Inclusive & Exclusive"
+                    description="Calculate Goods & Services Tax (GST) effortlessly. Add GST to your base price or remove GST from the total amount."
+                    calculatorPath="/calculators/gst"
+                />
             </div>
         </main>
     );

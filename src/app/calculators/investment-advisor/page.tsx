@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import InvestmentAdvisor from "@/components/calculators/InvestmentAdvisor";
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 // ✅ Updated SEO Metadata
 export const metadata: Metadata = {
@@ -72,6 +73,11 @@ export default function InvestmentAdvisorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Investment Horizon Planner"
+                    description="Not sure where to invest? Tell us how long you want to invest and your risk style, and we'll suggest the perfect asset mix for you."
+                    calculatorPath="/calculators/investment-advisor"
+                />
             </div>
         </main>
     );

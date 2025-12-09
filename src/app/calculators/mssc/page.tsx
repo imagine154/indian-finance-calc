@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { MsscCalculator } from "@/components/calculators/MsscCalculator";
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Mahila Samman Savings Certificate Calculator (2025) | RupeeTools',
@@ -46,6 +47,11 @@ export default function MsscPage() {
                         </ul>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Mahila Samman Savings Calculator"
+                    description="Calculate maturity amount for the government's 7.5% interest scheme for women. Fixed 2-year tenure with quarterly compounding."
+                    calculatorPath="/calculators/mssc"
+                />
             </div>
         </div>
     );

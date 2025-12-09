@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { LoanCalculator } from '@/components/calculators/LoanCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Home Loan Prepayment Calculator & EMI Analysis',
@@ -62,6 +63,11 @@ export default function LoanCalculatorPage() {
                         </ul>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Home Loan Prepayment Calculator"
+                    description="Calculate Home Loan Prepayment savings. See how extra EMI payments reduce your tenure and interest."
+                    calculatorPath="/calculators/loan"
+                />
             </div>
         </main>
     );

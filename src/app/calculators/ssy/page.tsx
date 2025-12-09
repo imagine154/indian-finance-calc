@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SsyCalculator } from '@/components/calculators/SsyCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'SSY Calculator - Sukanya Samriddhi Yojana | Indian Finance Tools',
@@ -82,6 +83,11 @@ export default function SsyCalculatorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="SSY Calculator - Sukanya Samriddhi Yojana"
+                    description="Calculate Sukanya Samriddhi Yojana (SSY) maturity value and plan for your daughter's education. Features partial withdrawal planning and yearly breakdown."
+                    calculatorPath="/calculators/ssy"
+                />
             </div>
         </main>
     );

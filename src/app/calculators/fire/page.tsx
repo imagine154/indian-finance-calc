@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import FireCalculator from "@/components/calculators/FireCalculator";
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: "FIRE Calculator India - Lean, Fat & Coast FIRE | RupeeTools",
@@ -58,6 +59,11 @@ export default function FireCalculatorPage() {
                         </li>
                     </ul>
                 </div>
+                <SoftwareAppJsonLd
+                    name="FIRE Calculator India - Financial Independence Retire Early"
+                    description="Calculate your Financial Independence number. Check Coast FIRE status and plan for life goals like Kids' Education and Marriage."
+                    calculatorPath="/calculators/fire"
+                />
             </div>
         </main>
     );

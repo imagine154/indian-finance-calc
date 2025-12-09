@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HraCalculator from "@/components/calculators/HraCalculator";
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: "HRA Exemption Calculator - Calculate Tax Free Rent Allowance | RupeeTools",
@@ -59,7 +60,12 @@ export default function HraCalculatorPage() {
                         <strong>Note:</strong> You cannot claim HRA exemption if you live in your own house or if you don't pay any rent.
                         Also, PAN of the landlord is mandatory if annual rent exceeds ₹1,00,000.
                     </div>
-                </div>            </div>
+                </div>                <SoftwareAppJsonLd
+                    name="HRA Exemption Calculator - Tax Free Rent Allowance"
+                    description="Calculate your HRA tax exemption accurately. Check if your city counts as Metro (50%) or Non-Metro (40%) under Income Tax rules."
+                    calculatorPath="/calculators/hra"
+                />
+            </div>
         </main>
     );
 }

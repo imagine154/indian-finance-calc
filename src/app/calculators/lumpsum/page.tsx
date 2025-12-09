@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { LumpsumCalculator } from '@/components/calculators/LumpsumCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Lumpsum Calculator - Mutual Fund Returns Calculator',
@@ -78,6 +79,11 @@ export default function LumpsumCalculatorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Lumpsum Calculator - Mutual Fund Returns"
+                    description="Calculate the wealth you can create by investing a lump sum amount in Mutual Funds today."
+                    calculatorPath="/calculators/lumpsum"
+                />
             </div>
         </main>
     );

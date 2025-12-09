@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import MutualFundAnalyzer from '@/components/calculators/MutualFundAnalyzer';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Mutual Fund Historical Returns - 1M to 10Y Analysis | RupeeTools',
@@ -93,6 +94,11 @@ export default function MutualFundPage() {
                         Past performance is not an indicator of future returns. The data provided here is for informational purposes only and should not be construed as investment advice.
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Mutual Fund & ETF Analyzer"
+                    description="Analyze past performance of 3000+ Indian Mutual Funds and ETFs. Compare returns across different time periods."
+                    calculatorPath="/calculators/mutual-fund-analyzer"
+                />
             </div>
         </main>
     );

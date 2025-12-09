@@ -2,6 +2,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import SipAnalyzer from '@/components/calculators/SipAnalyzer';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: "SIP Portfolio Analyzer - Are you on track for your goal? | RupeeTools",
@@ -49,6 +50,13 @@ export default function SipAnalyzerPage() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="max-w-6xl mx-auto px-4 mt-8">
+                <SoftwareAppJsonLd
+                    name="SIP Portfolio Analyzer"
+                    description="Analyze your mutual fund portfolio. Check if your current SIPs are enough to reach your financial goals based on category-wise expected returns."
+                    calculatorPath="/calculators/sip-analyzer"
+                />
             </div>
         </div>
     );

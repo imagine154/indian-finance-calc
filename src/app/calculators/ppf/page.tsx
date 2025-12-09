@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { PpfCalculator } from '@/components/calculators/PpfCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'PPF Calculator - Public Provident Fund Interest & Maturity Calculator',
@@ -82,6 +83,11 @@ export default function PpfCalculatorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="PPF Calculator - Public Provident Fund"
+                    description="Calculate returns on your Public Provident Fund (PPF) investment. Secure your future with tax-free returns."
+                    calculatorPath="/calculators/ppf"
+                />
             </div>
         </main>
     );

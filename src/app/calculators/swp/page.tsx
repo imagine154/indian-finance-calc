@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SwpCalculator } from '@/components/calculators/SwpCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'SWP Calculator - Systematic Withdrawal Plan Calculator',
@@ -78,6 +79,11 @@ export default function SwpCalculatorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="SWP Calculator - Systematic Withdrawal Plan"
+                    description="Calculate your monthly income from mutual funds with our free SWP Calculator. Plan your retirement withdrawals and visualize capital depletion."
+                    calculatorPath="/calculators/swp"
+                />
             </div>
         </main>
     );

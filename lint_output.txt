@@ -1,0 +1,577 @@
+
+> indian-finance-calc@0.1.0 lint
+> eslint
+
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/__tests__/explore-mutual-funds.test.tsx
+  42:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  48:62  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/api/mutual-fund/schemes/route.ts
+  36:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  41:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  51:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  56:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  61:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/api/mutual-fund/top-performers/route.ts
+  21:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:68  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:61  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  55:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  58:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  58:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/balance-transfer/page.tsx
+  79:119  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  79:131  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/fire/page.tsx
+  27:98  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/freelance/page.tsx
+  34:62  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/goal/page.tsx
+  28:28  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  54:36  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/hra/page.tsx
+  59:122  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/investment-advisor/page.tsx
+  30:43  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/lumpsum/page.tsx
+  39:51  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  39:60  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/mssc/page.tsx
+  22:69  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/mutual-fund-analyzer/page.tsx
+  63:90   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  63:112  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  63:118  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  63:133  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  81:77   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  81:95   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/position-size/page.tsx
+  40:189  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/salary/page.tsx
+  27:30  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  27:38  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  27:43  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  27:54  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/sip-analyzer/page.tsx
+  47:71  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  47:82  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/ssy/page.tsx
+  28:45  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/calculators/swp/page.tsx
+  57:122  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/contact/page.tsx
+  24:69  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/app/privacy/page.tsx
+  27:238  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  36:104  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  39:31   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/ApyCalculator.tsx
+   27:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/ApyCalculator.tsx:27:13
+  25 |                 desiredPension,
+  26 |             });
+> 27 |             setResult(res);
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |         } catch (error) {
+  29 |             console.error("Calculation Error:", error);
+  30 |         }  react-hooks/set-state-in-effect
+  122:80  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/BalanceTransferCalculator.tsx
+   14:26   warning  'PiggyBank' is defined but never used                            @typescript-eslint/no-unused-vars
+   14:37   warning  'Clock' is defined but never used                                @typescript-eslint/no-unused-vars
+   14:59   warning  'CheckCircle' is defined but never used                          @typescript-eslint/no-unused-vars
+   14:72   warning  'XCircle' is defined but never used                              @typescript-eslint/no-unused-vars
+   34:72   error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  281:177  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/CapitalGainsCalculator.tsx
+   5:35  warning  'Calendar' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  20:23  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/CapitalGainsCalculator.tsx:20:23
+  18 |     const [mounted, setMounted] = useState(false);
+  19 |
+> 20 |     useEffect(() => { setMounted(true); }, []);
+     |                       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  21 |
+  22 |     useEffect(() => {
+  23 |         if (mounted) {                                                 react-hooks/set-state-in-effect
+  31:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/CapitalGainsCalculator.tsx:31:13
+  29 |                 userIncomeSlab
+  30 |             };
+> 31 |             setResult(calculateCapitalGains(input));
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  32 |         }
+  33 |     }, [mounted, assetType, purchasePrice, salePrice, holdingPeriodMonths, userIncomeSlab]);
+  34 |  react-hooks/set-state-in-effect
+  51:63  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/FdCalculator.tsx
+   5:23  warning  'TrendingUp' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  19:23  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/FdCalculator.tsx:19:23
+  17 |     const [mounted, setMounted] = useState(false);
+  18 |
+> 19 |     useEffect(() => { setMounted(true); }, []);
+     |                       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  20 |
+  21 |     useEffect(() => {
+  22 |         if (mounted) {                                        react-hooks/set-state-in-effect
+  29:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/FdCalculator.tsx:29:13
+  27 |                 compoundingFrequency
+  28 |             };
+> 29 |             setResult(calculateFD(input));
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  30 |         }
+  31 |     }, [mounted, investmentAmount, interestRate, durationYears, compoundingFrequency]);
+  32 |  react-hooks/set-state-in-effect
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/FireCalculator.tsx
+   6:5   warning  'TrendingUp' is defined but never used                  @typescript-eslint/no-unused-vars
+   8:5   warning  'Umbrella' is defined but never used                    @typescript-eslint/no-unused-vars
+  35:24  warning  'setPostReturn' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  36:28  warning  'setLifeExpectancy' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/FreelanceCalculator.tsx
+  4:38  warning  'FreelanceTaxResult' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/GoalCalculator.tsx
+  6:48  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/GratuityCalculator.tsx
+  10:5  warning  'Legend' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  27:9  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/GratuityCalculator.tsx:27:9
+  25 |             isCoveredByAct,
+  26 |         });
+> 27 |         setResult(res);
+     |         ^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |     }, [basicSalary, yearsOfService, isCoveredByAct]);
+  29 |
+  30 |     const formatCurrency = (amount: number) => {  react-hooks/set-state-in-effect
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/GstCalculator.tsx
+  16:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/GstCalculator.tsx:16:9
+  14 |
+  15 |     useEffect(() => {
+> 16 |         setMounted(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  17 |     }, []);
+  18 |
+  19 |     useEffect(() => {                                                                                                    react-hooks/set-state-in-effect
+  22:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/GstCalculator.tsx:22:13
+  20 |         if (mounted) {
+  21 |             const input: GstInput = { amount, rate, type };
+> 22 |             setResult(calculateGST(input));
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  23 |         }
+  24 |     }, [amount, rate, type, mounted]);
+  25 |  react-hooks/set-state-in-effect
+  39:11  warning  'themeColor' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  46:11  warning  'accentTheme' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/HraCalculator.tsx
+  33:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/HraCalculator.tsx:33:9
+  31 |             isMetro,
+  32 |         });
+> 33 |         setResult(res);
+     |         ^^^^^^^^^ Avoid calling setState() directly within an effect
+  34 |     }, [basicSalary, da, hraReceived, rentPaid, isMetro]);
+  35 |
+  36 |     const formatCurrency = (amount: number) => {  react-hooks/set-state-in-effect
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/InvestmentAdvisor.tsx
+  10:5  warning  'InvestmentAdvice' is defined but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/LoanCalculator.tsx
+   6:51  warning  'Info' is defined but never used              @typescript-eslint/no-unused-vars
+  57:11  warning  'pieData' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/LumpsumCalculator.tsx
+   18:23  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/LumpsumCalculator.tsx:18:23
+  16 |     const [mounted, setMounted] = useState(false);
+  17 |
+> 18 |     useEffect(() => { setMounted(true); }, []);
+     |                       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  19 |
+  20 |     useEffect(() => {
+  21 |         if (mounted) {        react-hooks/set-state-in-effect
+   27:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/LumpsumCalculator.tsx:27:13
+  25 |                 duration
+  26 |             };
+> 27 |             setResult(calculateLumpsum(input));
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |         }
+  29 |     }, [mounted, investmentAmount, expectedReturn, duration]);
+  30 |  react-hooks/set-state-in-effect
+  199:82  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/MutualFundAnalyzer.tsx
+   69:33  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  188:56  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  194:8   warning  React Hook useEffect has a missing dependency: 'loadInitialData'. Either include it or remove the dependency array                        react-hooks/exhaustive-deps
+  283:8   warning  React Hook useEffect has missing dependencies: 'loading' and 'updateDropdownOptions'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  335:42  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  336:24  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  341:29  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  343:69  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/NpsCalculator.tsx
+  4:44  warning  'NpsResult' is defined but never used  @typescript-eslint/no-unused-vars
+  6:75  warning  'Percent' is defined but never used    @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/PfCalculator.tsx
+  5:50  warning  'EpfResult' is defined but never used  @typescript-eslint/no-unused-vars
+  7:45  warning  'Wallet' is defined but never used     @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/PositionSizeCalculator.tsx
+   5:25  warning  'DollarSign' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  14:12  warning  'mounted' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  17:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/PositionSizeCalculator.tsx:17:9
+  15 |
+  16 |     useEffect(() => {
+> 17 |         setMounted(true);
+     |         ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  18 |     }, []);
+  19 |
+  20 |     // Calculate results  react-hooks/set-state-in-effect
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/PpfCalculator.tsx
+   18:23  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/PpfCalculator.tsx:18:23
+  16 |     const [mounted, setMounted] = useState(false);
+  17 |
+> 18 |     useEffect(() => { setMounted(true); }, []);
+     |                       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  19 |
+  20 |     useEffect(() => {
+  21 |         if (mounted) {      react-hooks/set-state-in-effect
+   27:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/PpfCalculator.tsx:27:13
+  25 |                 interestRate
+  26 |             };
+> 27 |             setResult(calculatePPF(input));
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |         }
+  29 |     }, [mounted, yearlyInvestment, duration, interestRate]);
+  30 |  react-hooks/set-state-in-effect
+  195:78  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/RentVsBuyCalculator.tsx
+  14:44  warning  'IndianRupee' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  14:57  warning  'ArrowRight' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+  14:69  warning  'CheckCircle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  45:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/RentVsBuyCalculator.tsx:45:9
+  43 |     useEffect(() => {
+  44 |         const res = calculateRentVsBuy(inputs);
+> 45 |         setResult(res);
+     |         ^^^^^^^^^ Avoid calling setState() directly within an effect
+  46 |     }, [inputs]);
+  47 |
+  48 |     // --- Formatters ---  react-hooks/set-state-in-effect
+  58:11  warning  'formatCurrencyFull' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/SipAnalyzer.tsx
+   48:65  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  150:41  warning  'index' is defined but never used                                @typescript-eslint/no-unused-vars
+  218:65  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  218:75  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/SsyCalculator.tsx
+   6:43  warning  'TrendingUp' is defined but never used                           @typescript-eslint/no-unused-vars
+   6:55  warning  'Info' is defined but never used                                 @typescript-eslint/no-unused-vars
+  66:37  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/SwpCalculator.tsx
+   20:23  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/SwpCalculator.tsx:20:23
+  18 |     const [mounted, setMounted] = useState(false);
+  19 |
+> 20 |     useEffect(() => { setMounted(true); }, []);
+     |                       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  21 |
+  22 |     useEffect(() => {
+  23 |         if (mounted) {                     react-hooks/set-state-in-effect
+   30:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/SwpCalculator.tsx:30:13
+  28 |                 duration
+  29 |             };
+> 30 |             setResult(calculateSWP(input));
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  31 |         }
+  32 |     }, [mounted, totalInvestment, withdrawalAmount, expectedReturn, duration]);
+  33 |  react-hooks/set-state-in-effect
+  278:82  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/calculators/TaxCompare.tsx
+   4:49  warning  'TaxComparisonResult' is defined but never used       @typescript-eslint/no-unused-vars
+   5:44  warning  'Calculator' is defined but never used                @typescript-eslint/no-unused-vars
+  23:26  warning  'setLtaExemption' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  59:11  warning  'isOldBetter' is assigned a value but never used      @typescript-eslint/no-unused-vars
+  60:11  warning  'isNewBetter' is assigned a value but never used      @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/AdvisorResultChart.tsx
+  11:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  42:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/FreelanceResultChart.tsx
+  8:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/GoalResultChart.tsx
+  8:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/LoanResultChart.tsx
+  8:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/MfResultChart.tsx
+  8:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/NpsResultChart.tsx
+   6:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  26:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  44:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  79:66  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/PfResultChart.tsx
+   6:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  47:66  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/SalaryResultChart.tsx
+  6:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/charts/SsyResultChart.tsx
+  8:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/explorers/FundCard.tsx
+   2:16  warning  'TrendingUp' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  36:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/explorers/ManagerCard.tsx
+   2:10  warning  'TrendingUp' is defined but never used                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+  34:29  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/explorers/MutualFundExplorer.tsx
+    4:39  warning  'Loader2' is defined but never used                              @typescript-eslint/no-unused-vars
+   75:89  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  199:56  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  280:78  error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+  302:47  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/ui/Navbar.tsx
+  79:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/ui/Navbar.tsx:79:9
+  77 |     // Close mobile menu when route changes
+  78 |     useEffect(() => {
+> 79 |         setIsOpen(false);
+     |         ^^^^^^^^^ Avoid calling setState() directly within an effect
+  80 |         setActiveDropdown(null);
+  81 |     }, [pathname]);
+  82 |  react-hooks/set-state-in-effect
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/utils/ClientOnly.tsx
+  14:9  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/components/utils/ClientOnly.tsx:14:9
+  12 |
+  13 |     useEffect(() => {
+> 14 |         setHasMounted(true);
+     |         ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  15 |     }, []);
+  16 |
+  17 |     if (!hasMounted) {  react-hooks/set-state-in-effect
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/investment-advisor.ts
+  11:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/pf.ts
+  101:13  error  'yearOpeningBalance' is never reassigned. Use 'const' instead  prefer-const
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/sip-analyzer.ts
+  31:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/sip.ts
+  91:7  warning  'yearlyInvestedAccumulator' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/ssy.ts
+  44:9  error    'totalInterestBeforeWithdrawal' is never reassigned. Use 'const' instead  prefer-const
+  44:9  warning  'totalInterestBeforeWithdrawal' is assigned a value but never used        @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/swp.ts
+  56:13  warning  'yearlyWithdrawn' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/tax.ts
+   72:7  warning  'CESS_RATE' is assigned a value but never used                   @typescript-eslint/no-unused-vars
+   93:9  error    'remaining' is never reassigned. Use 'const' instead             prefer-const
+  193:9  error    'totalTaxBeforeRebate' is never reassigned. Use 'const' instead  prefer-const
+
+/Users/gana-mac-mini-m2pro/IdeaProjects/indian-finance-calc/src/core/logic/tax.verify.ts
+  16:29  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  17:32  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 156 problems (109 errors, 47 warnings)
+  4 errors and 0 warnings potentially fixable with the `--fix` option.
+

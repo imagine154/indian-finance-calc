@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { FdCalculator } from '@/components/calculators/FdCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'FD Calculator - Fixed Deposit Interest Calculator India',
@@ -77,6 +78,11 @@ export default function FdCalculatorPage() {
                         </div>
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="FD Calculator - Fixed Deposit Interest"
+                    description="Calculate maturity amount and interest earned on your Fixed Deposits (FD). Supports monthly, quarterly, and yearly compounding frequencies."
+                    calculatorPath="/calculators/fd"
+                />
             </div>
         </main>
     );

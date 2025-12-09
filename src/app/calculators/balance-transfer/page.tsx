@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import BalanceTransferCalculator from '@/components/calculators/BalanceTransferCalculator';
+import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
     title: 'Home Loan Balance Transfer Calculator - Switch & Save | RupeeTools',
@@ -79,6 +80,11 @@ export default function BalanceTransferPage() {
                         <strong>Note:</strong> While this calculator gives you a financial picture, also consider the "hassle cost" of paperwork and time involved in switching banks.
                     </div>
                 </div>
+                <SoftwareAppJsonLd
+                    name="Home Loan Balance Transfer Calculator"
+                    description="Should you switch your home loan? Calculate total interest savings after processing fees. Check if balance transfer is profitable."
+                    calculatorPath="/calculators/balance-transfer"
+                />
             </div>
         </div>
     );
