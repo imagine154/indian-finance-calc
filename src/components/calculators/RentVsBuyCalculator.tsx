@@ -330,7 +330,7 @@ const RentVsBuyCalculator = () => {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/rent-vs-buy" category="loans" />
+            <RelatedCalculators toolId="rent-vs-buy" category="loans" />
         </div>
     );
 };

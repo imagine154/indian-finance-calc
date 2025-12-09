@@ -262,7 +262,7 @@ export function NpsCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/nps" category="govt" />
+            <RelatedCalculators toolId="nps" category="income" />
         </div>
     );
 }

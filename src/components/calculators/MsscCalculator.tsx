@@ -182,7 +182,7 @@ export function MsscCalculator() {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/mssc" category="govt" />
+            <RelatedCalculators toolId="mssc" category="govt" />
         </div>
     );
 }

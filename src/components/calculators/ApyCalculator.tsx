@@ -235,7 +235,7 @@ const ApyCalculator = () => {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/apy" category="govt" />
+            <RelatedCalculators toolId="apy" category="govt" />
         </div >
     );
 };

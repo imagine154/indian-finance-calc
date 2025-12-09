@@ -306,7 +306,7 @@ export function SsyCalculator({
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/ssy" category="govt" />
+            <RelatedCalculators toolId="ssy" category="govt" />
         </div>
     );
 }

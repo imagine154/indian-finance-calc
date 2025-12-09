@@ -193,7 +193,7 @@ export function PositionSizeCalculator() {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/position-size" category="trading" />
+            <RelatedCalculators toolId="position-size" category="investments" />
         </div>
     );
 }

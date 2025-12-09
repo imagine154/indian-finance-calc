@@ -250,7 +250,7 @@ export function FreelanceCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/freelance" category="income" />
+            <RelatedCalculators toolId="freelance" category="income" />
         </div>
     );
 }

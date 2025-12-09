@@ -412,7 +412,7 @@ export default function SipAnalyzer() {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/sip-analyzer" category="investments" />
+            <RelatedCalculators toolId="sip-analyzer" category="investments" />
         </div >
     );
 }

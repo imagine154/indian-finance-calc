@@ -722,7 +722,7 @@ export default function MutualFundAnalyzer() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/mutual-fund-analyzer" category="investments" />
+            <RelatedCalculators toolId="mutual-fund-analyzer" category="investments" />
         </div>
     );
 }

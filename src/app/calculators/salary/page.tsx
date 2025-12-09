@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { SalaryCalculator } from '@/components/calculators/SalaryCalculator';
+import { RelatedCalculators } from '@/components/ui/RelatedCalculators';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
@@ -38,6 +39,9 @@ export default function SalaryCalculatorPage() {
                         <li><strong className="text-slate-900">Income Tax (TDS):</strong> Tax Deducted at Source based on your chosen tax regime (Old vs New).</li>
                     </ul>
                 </div>
+
+                <RelatedCalculators toolId="salary" />
+
                 <SoftwareAppJsonLd
                     name="In-hand Salary Calculator India"
                     description="Calculate your monthly In-hand Salary from CTC. Accurate breakdown of Basic, HRA, PF, and Income Tax for FY 2025-26."

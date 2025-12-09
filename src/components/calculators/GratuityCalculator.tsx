@@ -194,7 +194,7 @@ const GratuityCalculator = () => {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/gratuity" category="income" />
+            <RelatedCalculators toolId="gratuity" category="income" />
         </div>
     );
 };

@@ -390,7 +390,7 @@ const FireCalculator = () => {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/fire" category="investments" />
+            <RelatedCalculators toolId="fire" category="investments" />
         </div >
     );
 };

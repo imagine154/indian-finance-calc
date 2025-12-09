@@ -280,7 +280,7 @@ const BalanceTransferCalculator = () => {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/balance-transfer" category="loans" />
+            <RelatedCalculators toolId="balance-transfer" category="loans" />
         </div>
     );
 };

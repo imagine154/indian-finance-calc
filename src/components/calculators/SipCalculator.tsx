@@ -299,7 +299,7 @@ export function SipCalculator({
                 </p>
             </div>
 
-            <RelatedCalculators currentPath="/calculators/sip" category="investments" />
+            <RelatedCalculators toolId="sip" category="investments" />
         </div>
     );
 }

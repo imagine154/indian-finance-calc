@@ -225,7 +225,7 @@ export function FdCalculator({
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/fd" category="investments" />
+            <RelatedCalculators toolId="fd" category="investments" />
         </div>
     );
 }

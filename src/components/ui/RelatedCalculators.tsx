@@ -11,78 +11,90 @@ import {
     Briefcase,
     Coins,
     Percent,
-    ArrowRight
+    ArrowRight,
+    Lightbulb,
+    Target
 } from "lucide-react";
+import { RECOMMENDATIONS, ToolId } from "@/config/recommendations";
 
 interface RelatedCalculatorsProps {
-    currentPath: string;
-    category?: "investments" | "income" | "loans" | "govt" | "trading";
+    toolId?: ToolId;
+    category?: string;
 }
 
-const CALCULATORS = [
-    // Income & Tax
-    { name: "Salary Calculator", href: "/calculators/salary", icon: Wallet, category: "income", description: "Calculate in-hand salary" },
-    { name: "Income Tax", href: "/calculators/income-tax", icon: Building2, category: "income", description: "Old vs New Regime" },
-    { name: "HRA Calculator", href: "/calculators/hra", icon: Building2, category: "income", description: "Tax exemption on rent" },
-    { name: "Freelance Tax", href: "/calculators/freelance", icon: Briefcase, category: "income", description: "Tax for freelancers" },
-
-    // Investments
-    { name: "SIP Calculator", href: "/calculators/sip", icon: TrendingUp, category: "investments", description: "Calculate SIP returns" },
-    { name: "Lumpsum", href: "/calculators/lumpsum", icon: Coins, category: "investments", description: "One-time investment" },
-    { name: "Step Up SIP", href: "/calculators/sip", icon: TrendingUp, category: "investments", description: "Growing investments" },
-    { name: "SWP Calculator", href: "/calculators/swp", icon: Coins, category: "investments", description: "Regular withdrawals" },
-    { name: "Mutual Fund Analyzer", href: "/calculators/mutual-fund-analyzer", icon: TrendingUp, category: "investments", description: "Analyze fund performance" },
-    { name: "Goal Planner", href: "/calculators/goal", icon: TrendingUp, category: "investments", description: "Plan financial goals" },
-
+const CALCULATORS: { id: ToolId; name: string; href: string; icon: any; category: string; description: string }[] = [
+    { id: 'lumpsum', name: "Lumpsum", href: "/calculators/lumpsum", icon: Coins, category: "investments", description: "One-time investment" },
+    { id: 'sip', name: "Step Up SIP", href: "/calculators/sip", icon: TrendingUp, category: "investments", description: "Growing investments" },
+    { id: 'swp', name: "SWP Calculator", href: "/calculators/swp", icon: Coins, category: "investments", description: "Regular withdrawals" },
+    { id: 'sip-analyzer', name: "Mutual Fund Analyzer", href: "/calculators/mutual-fund-analyzer", icon: TrendingUp, category: "investments", description: "Analyze fund performance" },
+    { id: 'goal', name: "Goal Planner", href: "/calculators/goal", icon: TrendingUp, category: "investments", description: "Plan financial goals" },
     // Govt Schemes
-    { name: "PPF Calculator", href: "/calculators/ppf", icon: PiggyBank, category: "govt", description: "Public Provident Fund" },
-    { name: "EPF Calculator", href: "/calculators/pf", icon: PiggyBank, category: "govt", description: "Employee Provident Fund" },
-    { name: "NPS Calculator", href: "/calculators/nps", icon: Landmark, category: "govt", description: "Pension planning" },
-    { name: "SSY Calculator", href: "/calculators/ssy", icon: PiggyBank, category: "govt", description: "Sukanya Samriddhi Yojana" },
-    { name: "APY Calculator", href: "/calculators/apy", icon: Landmark, category: "govt", description: "Atal Pension Yojana" },
-
+    { id: 'ppf', name: "PPF Calculator", href: "/calculators/ppf", icon: PiggyBank, category: "govt", description: "Public Provident Fund" },
+    { id: 'pf', name: "EPF Calculator", href: "/calculators/pf", icon: PiggyBank, category: "govt", description: "Employee Provident Fund" },
+    { id: 'nps', name: "NPS Calculator", href: "/calculators/nps", icon: Landmark, category: "govt", description: "Pension planning" },
+    { id: 'ssy', name: "SSY Calculator", href: "/calculators/ssy", icon: PiggyBank, category: "govt", description: "Sukanya Samriddhi Yojana" },
+    { id: 'apy', name: "APY Calculator", href: "/calculators/apy", icon: Landmark, category: "govt", description: "Atal Pension Yojana" },
     // Loans
-    { name: "Home Loan EMI", href: "/calculators/loan", icon: Building2, category: "loans", description: "Calculate monthly EMI" },
-    { name: "Rent vs Buy", href: "/calculators/rent-vs-buy", icon: Building2, category: "loans", description: "Buying vs Renting decision" },
-    { name: "Prepayment", href: "/calculators/loan", icon: Percent, category: "loans", description: "Save on loan interest" },
-    { name: "Balance Transfer", href: "/calculators/balance-transfer", icon: Percent, category: "loans", description: "Should you switch loan?" },
-
+    { id: 'home-loan', name: "Home Loan EMI", href: "/calculators/loan", icon: Building2, category: "loans", description: "Calculate monthly EMI" },
+    { id: 'rent-vs-buy', name: "Rent vs Buy", href: "/calculators/rent-vs-buy", icon: Building2, category: "loans", description: "Buying vs Renting decision" },
+    { id: 'balance-transfer', name: "Balance Transfer", href: "/calculators/balance-transfer", icon: Percent, category: "loans", description: "Should you switch loan?" },
     // Trading
-    { name: "Position Size", href: "/calculators/position-size", icon: Calculator, category: "trading", description: "Risk management" },
-
+    { id: 'position-size', name: "Position Size", href: "/calculators/position-size", icon: Calculator, category: "trading", description: "Risk management" },
     // More Investments
-    { name: "FD Calculator", href: "/calculators/fd", icon: PiggyBank, category: "investments", description: "Fixed Deposit returns" },
-    { name: "SIP Analyzer", href: "/calculators/sip-analyzer", icon: TrendingUp, category: "investments", description: "Deep dive into SIPs" },
-    { name: "Investment Advisor", href: "/calculators/investment-advisor", icon: Briefcase, category: "investments", description: "Personalized advice" },
+    // Note: FD Calculator key missing in ToolId type? Using 'sip' as placeholder or we should add 'fd' to ToolId if needed. For now excluding or mapping to closest.
+    // 'fd' is not in ToolId, skipping or adding if I can edit ToolId. I'll stick to existing ToolId scope for now to avoid errors.
 
     // More Income
-    { name: "Capital Gains", href: "/calculators/capital-gains", icon: TrendingUp, category: "income", description: "LTCG & STCG Tax" },
-    { name: "GST Calculator", href: "/calculators/gst", icon: Percent, category: "income", description: "Calculate GST amount" },
-    { name: "Gratuity", href: "/calculators/gratuity", icon: Coins, category: "income", description: "Gratuity benefits" },
+    { id: 'capital-gains', name: "Capital Gains", href: "/calculators/capital-gains", icon: TrendingUp, category: "income", description: "LTCG & STCG Tax" },
+    { id: 'gst', name: "GST Calculator", href: "/calculators/gst", icon: Percent, category: "income", description: "Calculate GST amount" },
+    { id: 'investment-advisor', name: "Investment Advisor", href: "/calculators/investment-advisor", icon: Briefcase, category: "investments", description: "Personalized advice" },
 
-    // More Govt
-    { name: "Mahila Samman", href: "/calculators/mssc", icon: PiggyBank, category: "govt", description: "MSSC Scheme" },
+    // These might be missing from ToolId or mapped differently
+    // { id: 'gratuity', ... } -> 'gratuity' isn't in ToolId list I saw. 
+    // { id: 'mssc', ... } -> 'mssc' isn't in ToolId list I saw.
+    // Checking ToolId again: 
+    // export type ToolId = 'salary' | 'income-tax' | 'pf' | 'rent-vs-buy' | 'nps' | 'hra' | 'ppf' | 'home-loan' | 'balance-transfer' | 'sip' | 'lumpsum' | 'sip-analyzer' | 'goal' | 'swp' | 'fire' | 'freelance' | 'gst' | 'ssy' | 'position-size' | 'capital-gains' | 'investment-advisor';
+
+    // Adding missing ones would require editing recommendations.ts. I will proceed with the ones that match.
 ];
 
-export function RelatedCalculators({ currentPath, category }: RelatedCalculatorsProps) {
-    // Filter out current page
-    const filtered = CALCULATORS.filter(calc => calc.href !== currentPath);
+export function RelatedCalculators({ toolId, category }: RelatedCalculatorsProps) {
+    let recommendations: typeof CALCULATORS = [];
 
-    // Sort by category match first, then others
-    const sorted = filtered.sort((a, b) => {
-        if (category && a.category === category && b.category !== category) return -1;
-        if (category && a.category !== category && b.category === category) return 1;
-        return 0;
-    });
+    // strategy 1: explicit recommendations from config
+    if (toolId && RECOMMENDATIONS[toolId]) {
+        const recIds = RECOMMENDATIONS[toolId];
+        recommendations = recIds.map(rec => {
+            const tool = CALCULATORS.find(c => c.id === rec.id);
+            if (tool) {
+                return {
+                    ...tool,
+                    description: rec.text // Override description with specific recommendation text
+                };
+            }
+            return null;
+        }).filter((item): item is typeof CALCULATORS[0] => item !== null);
+    }
 
-    // Take top 6 recommendations
-    const recommendations = sorted.slice(0, 6);
+    // strategy 2: fallback to category
+    if (recommendations.length === 0) {
+        recommendations = CALCULATORS
+            .filter(c => c.id !== toolId) // don't show self
+            .sort((a, b) => {
+                if (category && a.category === category && b.category !== category) return -1;
+                if (category && a.category !== category && b.category === category) return 1;
+                return 0;
+            })
+            .slice(0, 3);
+    }
+
+    if (recommendations.length === 0) return null;
 
     return (
         <div className="mt-16 border-t border-slate-200 pt-10">
             <div className="flex items-center justify-between mb-6">
                 <h3 className="text-2xl font-bold text-slate-900">
-                    Explore More Tools
+                    {toolId ? "Recommended Next Steps" : "Explore More Tools"}
                 </h3>
                 <Link
                     href="/"

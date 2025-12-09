@@ -271,7 +271,7 @@ export function PfCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/pf" category="govt" />
+            <RelatedCalculators toolId="pf" category="income" />
         </div>
     );
 }

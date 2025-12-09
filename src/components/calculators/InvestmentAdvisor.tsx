@@ -239,7 +239,7 @@ export default function InvestmentAdvisor() {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/investment-advisor" category="investments" />
+            <RelatedCalculators toolId="investment-advisor" category="investments" />
         </div>
     );
 }

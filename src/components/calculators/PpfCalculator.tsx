@@ -263,7 +263,7 @@ export function PpfCalculator({
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/ppf" category="investments" />
+            <RelatedCalculators toolId="ppf" category="investments" />
         </div>
     );
 }

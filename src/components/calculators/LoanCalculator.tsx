@@ -360,7 +360,7 @@ export function LoanCalculator({
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/loan" category="loans" />
+            <RelatedCalculators toolId="home-loan" category="loans" />
         </div>
     );
 }

@@ -265,7 +265,7 @@ const HraCalculator = () => {
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/hra" category="income" />
+            <RelatedCalculators toolId="hra" category="income" />
         </div>
     );
 };

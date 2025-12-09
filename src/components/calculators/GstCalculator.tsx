@@ -173,7 +173,7 @@ export function GstCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/gst" category="income" />
+            <RelatedCalculators toolId="gst" category="income" />
         </div>
     );
 }

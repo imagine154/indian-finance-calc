@@ -289,7 +289,7 @@ export function SalaryCalculator({ initialCtc = 1200000, initialIsMetro = true }
                     </div>
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/salary" category="income" />
+            <RelatedCalculators toolId="salary" category="income" />
         </div>
     );
 }

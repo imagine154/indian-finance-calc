@@ -256,7 +256,7 @@ export function LumpsumCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/lumpsum" category="investments" />
+            <RelatedCalculators toolId="lumpsum" category="investments" />
         </div>
     );
 }

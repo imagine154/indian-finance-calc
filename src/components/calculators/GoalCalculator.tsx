@@ -293,7 +293,7 @@ export function GoalCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/goal" category="investments" />
+            <RelatedCalculators toolId="goal" category="investments" />
         </div >
     );
 }

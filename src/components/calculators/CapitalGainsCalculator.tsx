@@ -245,7 +245,7 @@ export function CapitalGainsCalculator() {
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/capital-gains" category="income" />
+            <RelatedCalculators toolId="capital-gains" category="income" />
         </div>
     );
 }

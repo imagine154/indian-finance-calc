@@ -345,7 +345,7 @@ export function SwpCalculator({
 
                 </div>
             </div>
-            <RelatedCalculators currentPath="/calculators/swp" category="investments" />
+            <RelatedCalculators toolId="swp" category="investments" />
         </div>
     );
 }
