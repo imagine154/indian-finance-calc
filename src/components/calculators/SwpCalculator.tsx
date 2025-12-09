@@ -7,10 +7,18 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 import Link from 'next/link';
 
-export function SwpCalculator() {
+interface SwpCalculatorProps {
+    initialTotalInvestment?: number;
+    initialWithdrawalAmount?: number;
+}
+
+export function SwpCalculator({
+    initialTotalInvestment = 5000000,
+    initialWithdrawalAmount = 25000
+}: SwpCalculatorProps) {
     // --- INPUTS ---
-    const [totalInvestment, setTotalInvestment] = useState(5000000);
-    const [withdrawalAmount, setWithdrawalAmount] = useState(25000);
+    const [totalInvestment, setTotalInvestment] = useState(initialTotalInvestment);
+    const [withdrawalAmount, setWithdrawalAmount] = useState(initialWithdrawalAmount);
     const [expectedReturn, setExpectedReturn] = useState(9);
     const [duration, setDuration] = useState(20);
 

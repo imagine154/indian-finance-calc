@@ -6,11 +6,21 @@ import { IndianRupee, TrendingUp, Calendar, Percent, PieChart as PieIcon } from 
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 
-export function FdCalculator() {
+interface FdCalculatorProps {
+    initialInvestmentAmount?: number;
+    initialInterestRate?: number;
+    initialDurationYears?: number;
+}
+
+export function FdCalculator({
+    initialInvestmentAmount = 100000,
+    initialInterestRate = 7,
+    initialDurationYears = 5
+}: FdCalculatorProps) {
     // --- INPUTS ---
-    const [investmentAmount, setInvestmentAmount] = useState(100000);
-    const [interestRate, setInterestRate] = useState(7);
-    const [durationYears, setDurationYears] = useState(5);
+    const [investmentAmount, setInvestmentAmount] = useState(initialInvestmentAmount);
+    const [interestRate, setInterestRate] = useState(initialInterestRate);
+    const [durationYears, setDurationYears] = useState(initialDurationYears);
     const [compoundingFrequency, setCompoundingFrequency] = useState<CompoundingFrequency>('Quarterly');
 
     const input: FdInput = {

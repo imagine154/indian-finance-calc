@@ -128,3 +128,27 @@ export function calculateLumpSum(
     returns: Math.round(returns),
   };
 }
+
+/**
+ * Calculate required Monthly SIP to reach a target amount
+ * @param targetAmount - Desired maturity amount
+ * @param annualRate - Expected annual return (%)
+ * @param years - Time horizon in years
+ * @returns Required monthly investment (rounded up)
+ */
+export function calculateRequiredSIP(
+  targetAmount: number,
+  annualRate: number,
+  years: number
+): number {
+  const monthlyRate = annualRate / 12 / 100;
+  const months = years * 12;
+
+  // Formula: P = FV / [ { (1+i)^n - 1 } / i * (1+i) ]
+  // The (1+i) at the end is for investment at the beginning of the month.
+
+  const factor = (Math.pow(1 + monthlyRate, months) - 1) / monthlyRate;
+  const monthlyInvestment = targetAmount / (factor * (1 + monthlyRate));
+
+  return Math.ceil(monthlyInvestment);
+}

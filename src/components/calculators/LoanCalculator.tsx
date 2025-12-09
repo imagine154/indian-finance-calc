@@ -11,11 +11,21 @@ const LoanResultChart = dynamic(() => import('@/components/charts/LoanResultChar
     loading: () => <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
 });
 
-export function LoanCalculator() {
+interface LoanCalculatorProps {
+    initialLoanAmount?: number;
+    initialInterestRate?: number;
+    initialTenure?: number;
+}
+
+export function LoanCalculator({
+    initialLoanAmount = 5000000,
+    initialInterestRate = 9,
+    initialTenure = 20
+}: LoanCalculatorProps) {
     // State
-    const [loanAmount, setLoanAmount] = useState(5000000);
-    const [interestRate, setInterestRate] = useState(9);
-    const [tenureYears, setTenureYears] = useState(20);
+    const [loanAmount, setLoanAmount] = useState(initialLoanAmount);
+    const [interestRate, setInterestRate] = useState(initialInterestRate);
+    const [tenureYears, setTenureYears] = useState(initialTenure);
 
     // Pre-payment State
     const [showPrepayment, setShowPrepayment] = useState(false);

@@ -6,10 +6,18 @@ import { IndianRupee, TrendingUp, Calendar, PiggyBank, Clock } from 'lucide-reac
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-export function PpfCalculator() {
+interface PpfCalculatorProps {
+    initialYearlyInvestment?: number;
+    initialDuration?: number;
+}
+
+export function PpfCalculator({
+    initialYearlyInvestment = 150000,
+    initialDuration = 15
+}: PpfCalculatorProps) {
     // --- INPUTS ---
-    const [yearlyInvestment, setYearlyInvestment] = useState(150000);
-    const [duration, setDuration] = useState(15);
+    const [yearlyInvestment, setYearlyInvestment] = useState(initialYearlyInvestment);
+    const [duration, setDuration] = useState(initialDuration);
     const [interestRate, setInterestRate] = useState(7.1);
 
     const input: PpfInput = {

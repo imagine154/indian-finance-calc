@@ -12,11 +12,16 @@ const SalaryResultChart = dynamic(() => import('@/components/charts/SalaryResult
     loading: () => <div className="h-[200px] w-full bg-slate-50 rounded-lg animate-pulse"></div>
 });
 
-export function SalaryCalculator() {
+interface SalaryCalculatorProps {
+    initialCtc?: number;
+    initialIsMetro?: boolean;
+}
+
+export function SalaryCalculator({ initialCtc = 1200000, initialIsMetro = true }: SalaryCalculatorProps) {
     // --- INPUTS ---
-    const [ctc, setCtc] = useState(1200000);
+    const [ctc, setCtc] = useState(initialCtc);
     const [basicPercentage, setBasicPercentage] = useState(50);
-    const [isMetro, setIsMetro] = useState(true); // Default to Metro (50% HRA) usually better for cities
+    const [isMetro, setIsMetro] = useState(initialIsMetro); // Default based on prop
 
     // Deductions / Structure
     const [vpfAmount, setVpfAmount] = useState(0);

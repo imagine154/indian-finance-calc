@@ -11,11 +11,21 @@ const SsyResultChart = dynamic(() => import('@/components/charts/SsyResultChart'
     loading: () => <div className="h-[300px] w-full flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
 });
 
-export function SsyCalculator() {
+interface SsyCalculatorProps {
+    initialInvestmentAmount?: number;
+    initialGirlAge?: number;
+    initialStartYear?: number;
+}
+
+export function SsyCalculator({
+    initialInvestmentAmount = 150000,
+    initialGirlAge = 5,
+    initialStartYear
+}: SsyCalculatorProps) {
     // State
-    const [girlAge, setGirlAge] = useState(5);
-    const [investmentAmount, setInvestmentAmount] = useState(150000);
-    const [startYear, setStartYear] = useState(new Date().getFullYear());
+    const [girlAge, setGirlAge] = useState(initialGirlAge);
+    const [investmentAmount, setInvestmentAmount] = useState(initialInvestmentAmount);
+    const [startYear, setStartYear] = useState(initialStartYear || new Date().getFullYear());
 
     // Education Plan State
     const [planEducation, setPlanEducation] = useState(false);

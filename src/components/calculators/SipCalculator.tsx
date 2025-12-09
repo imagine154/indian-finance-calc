@@ -18,11 +18,21 @@ const SipResultChart = dynamic(() => import('@/components/charts/SipResultChart'
     loading: () => <div className="w-full h-[250px] flex items-center justify-center bg-slate-50 rounded-lg animate-pulse"></div>
 });
 
-export function SipCalculator() {
+interface SipCalculatorProps {
+    initialInvestment?: number;
+    initialRate?: number;
+    initialDuration?: number;
+}
+
+export function SipCalculator({
+    initialInvestment = 5000,
+    initialRate = 12,
+    initialDuration = 10
+}: SipCalculatorProps) {
     // State for inputs
-    const [monthlyInvestment, setMonthlyInvestment] = useState(5000);
-    const [expectedReturn, setExpectedReturn] = useState(12);
-    const [timePeriod, setTimePeriod] = useState(10);
+    const [monthlyInvestment, setMonthlyInvestment] = useState(initialInvestment);
+    const [expectedReturn, setExpectedReturn] = useState(initialRate);
+    const [timePeriod, setTimePeriod] = useState(initialDuration);
     const [lumpsum, setLumpsum] = useState(0);
     const [stepUp, setStepUp] = useState(0);
 
