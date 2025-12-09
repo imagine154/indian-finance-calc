@@ -212,6 +212,13 @@ const categories = [
         desc: "Check if your SIPs meet your goals.",
         icon: <Microscope className="w-6 h-6 text-purple-600" />,
         iconBg: "bg-purple-100"
+      },
+      {
+        name: "Stock Average",
+        href: "/calculators/stock-average",
+        desc: "Average Down & Target Price.",
+        icon: <Target className="w-6 h-6 text-amber-600" />,
+        iconBg: "bg-amber-100"
       }
     ]
   },
