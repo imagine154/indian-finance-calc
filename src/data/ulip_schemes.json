@@ -1,0 +1,3137 @@
+[
+    {
+        "name": "SBI - Group Balanced Plus Fund",
+        "amc": "SBI Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "SBI - Group Balanced Plus Fund II",
+        "amc": "SBI Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "SBI - Group Debt Plus Fund",
+        "amc": "SBI Life",
+        "category": "Debt"
+    },
+    {
+        "name": "SBI - Group Debt Plus Fund II",
+        "amc": "SBI Life",
+        "category": "Debt"
+    },
+    {
+        "name": "SBI - Group Growth Plus Fund",
+        "amc": "SBI Life",
+        "category": "Equity"
+    },
+    {
+        "name": "SBI - Group Growth Plus Fund II",
+        "amc": "SBI Life",
+        "category": "Equity"
+    },
+    {
+        "name": "SBI - Group Short Term Plus Fund",
+        "amc": "SBI Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "SBI - Group Short Term Plus Fund II",
+        "amc": "SBI Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "SBI - Group Money Market Plus Fund",
+        "amc": "SBI Life",
+        "category": "Debt"
+    },
+    {
+        "name": "SBI - Group STO Plus Fund II",
+        "amc": "SBI Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "ICICI - BSE 500 Enhanced Value 50 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Bluechip Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Dynamic P/E Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Flexi Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Flexi Growth Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Flexi Growth Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Flexi Growth Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Focus 50 Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Group Equity Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Health Flexi Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Health Multiplier Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - India Consumption Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - India Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Life Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Maximise India Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Maximiser Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Maximiser Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Maximiser Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Maximiser Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Maximiser Fund V",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Mid Cap 150 Momentum 50 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Mid Cap Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Mid Cap Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - MidSmall Cap 400 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - MidSmallCap 400 Momentum Quality 100 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Multi Cap Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Multicap 50 25 25 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Multiplier Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Multiplier Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Multiplier Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Multiplier Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Nifty Alpha 50 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Opportunities Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Bluechip Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Dynamic P/E Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Flexi Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Flexi Growth Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension India Consumption Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension India Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Maximiser Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Maximiser Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Multi Cap Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Multiplier Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Multiplier Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension Opportunities Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension RICH Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Pension RICH Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - RICH Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - RICH Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - RICH Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - RICH Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Smallcap250 Momentum Quality 100 Index Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Sustainable Equity Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Value Enhancer Fund",
+        "amc": "ICICI Prudential",
+        "category": "Equity"
+    },
+    {
+        "name": "ICICI - Cash Plus Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Constant Maturity Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Discontinuance Fund - Pension",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Discontinued Fund - Life",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Easy Retirement Secure Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Debt Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Debt Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Short Term Debt Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Short Term Debt Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Short Term Debt Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Short Term Debt Fund Superannuation",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Capital Guarentee Debt fund III",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Corporate Bond Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Debt Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Debt Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Leave Encashment Income Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group SA Corporate Bond Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group SA Sovereign Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Short Term Debt Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Short Term Debt Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Short Term Debt Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Sovereign Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Superannuation Debt Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Group Superannuation Short Term Debt Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Health Preserver Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Health Protector Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - ICICI Pru Unclaimed Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Income Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Invest Shield Cash Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Life Secure Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Money Market Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Pension Income Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Pension Money Market Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Pension Preserver Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Pension Protector Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Pension Protector Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Pension Secure Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Preserver Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Preserver Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Preserver Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Protector Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Protector Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Protector Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Protector Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Secure Opportunities Fund",
+        "amc": "ICICI Prudential",
+        "category": "Debt"
+    },
+    {
+        "name": "ICICI - Active Asset Allocation Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Balanced Advantage Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Balancer Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Balancer Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Balancer Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Balancer Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Easy Retirement Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Easy Retirement SP Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Flexi Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Flexi Balanced Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Flexi Balanced Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Flexi Balanced Fund IV",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Balanced Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Balanced Plus Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Balanced Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Balanced Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Growth Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Capital Guarantee Growth Fund III",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Growth Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Leave Encashment Balance Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group SA Balanced Plus Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Superannuation Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Group Superannuation Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Health Balancer Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Health Flexi Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Highest NAV Fund B",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Invest Shield Fund - Life",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Invest Shield Fund - Pension",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Mid Cap Hybrid Growth Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Multi Cap Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - New Invest Shield Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pension Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pension Balancer Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pension Balancer Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pension Flexi Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pension Flexi Balanced Fund II",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pension Multi Cap Balanced Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Pinnacle Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Secure Plus Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Secure Plus Pension Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Secure Save Builder Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "ICICI - Secure Save Guarantee Fund",
+        "amc": "ICICI Prudential",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Classic Opportunities Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Frontline Equity Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Dynamic Floor Fund II",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Balanced Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Guarantee Fund",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Dynamic Bond Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Dynamic Gilt Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Dynamic Floating Rate Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Money Market Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Discontinued Policy Fund",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Mid Cap Advantage Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Manufacturing Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Nifty 500 Multicap Momentum Quality 50 Index Pension Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Nifty 500 Multicap Momentum Quality 50 Index Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Discontinued Policy Pension Fund",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Pension Growth Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Pension Floor Fund II",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Pension Balanced Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Pension Balanced Fund II",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Kotak Pension Bond Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Pension Gilt Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Pension Floating Rate Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Pension Money Market Fund II",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Opportunities Fund (AUM ` 64,969.22 Lakhs)",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Aggressive Growth Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Dynamic Growth Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Dynamic Floor Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Kotak Dynamic Balanced Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Kotak Guaranteed Growth Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Guaranteed Balanced Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Pension Classic Opportunities Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Pension Frontline Equity Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Pension Guarantee Fund",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Group Dynamic Floor Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Kotak Group Balanced Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Kotak Group Bond Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Group Gilt Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Group Floating Rate Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Group Secure Capital Fund",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Group Prudent Fund",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Kotak - Kotak Group Equity Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Group Pension Balanced Fund",
+        "amc": "Kotak Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Kotak - Kotak Group Pension Gilt Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Group Pension Bond Fund",
+        "amc": "Kotak Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Kotak - Kotak Group Pension Equity Fund",
+        "amc": "Kotak Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Kotak - Kotak Advantage Multiplier Fund II",
+        "amc": "Kotak Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Asset Allocation Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Balanced"
+    },
+    {
+        "name": "Bajaj - Asset Allocation Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Balanced"
+    },
+    {
+        "name": "Bajaj - Asset Allocation Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Balanced"
+    },
+    {
+        "name": "Bajaj - Asset Allocation Pension Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Balanced"
+    },
+    {
+        "name": "Bajaj - Cash Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Cash Plus Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Cash Plus Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Liquid Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Liquid Pension Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Debt Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Debt Plus Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Debt Plus Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Life Long Gain Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Bond Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Bond Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Bond Pension Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Long Term Debt Solution Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Equity Gain Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Plus Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Plus Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Premier Equity Gain Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Growth Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Growth Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Premier Equity Growth Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Growth Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Small Cap Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Flexi Cap Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Sustainable Equity Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Focused 25 Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Dynamic Asset Allocation Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Balanced"
+    },
+    {
+        "name": "Bajaj - Equity Midcap Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Midcap Plus Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Accelerator Mid Cap Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Accelerator Mid Cap Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Accelerator Midcap Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Index Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Premier Equity Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Index Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Equity Index Pension Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Blue Chip Equity Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Midcap Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - SmallCap Quality Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Nifty Alpha 50 Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Nifty 200 Alpha 30 Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - N ifty 200 Alpha 30 Index Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Nifty 200 Momentum 30 Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Nifty 500 Multicap Momentum\nQuality 50 Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Nifty 500 Multifactor 50 Index Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - NIFTY 500 MULTIFACTOR 50 INDEX\nPENSION FUND",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - BSE 500 Enhanced Value 50\nIndex fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - BSE 500 Enhanced Value 50\nIndex Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Pure Equity Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Pure Stock Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Pure Stock Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Pure Stock Pension Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Pure Stock Pension Fund II",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Assured Return Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Balanced Equity Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Equity"
+    },
+    {
+        "name": "Bajaj - Builder Bond Fund",
+        "amc": "Bajaj Allianz",
+        "category": "Debt"
+    },
+    {
+        "name": "Bajaj - Discontinue Pension Policy Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Discontinued Life Policy Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "Bajaj - Pension Builder Fund",
+        "amc": "Bajaj Allianz",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Mid Cap Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Virtue II (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Premier Multi-Cap Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Pension Premier Multi-Cap Fund (Open",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - CREST (THEMATIC FUND) (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Multiplier III Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Flexi Cap (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - India Opportunities Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Sustainable Equity Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Small Cap Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Bharat Manufacturing Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Pension Mid Cap Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Bharat Consumption Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Pension Consumption Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Nifty 500 Momentum 50 Index Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Balanced Opportunities Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Balanced"
+    },
+    {
+        "name": "PNB Metlife - Balancer II (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Balanced"
+    },
+    {
+        "name": "PNB Metlife - Bond Opportunities Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "PNB Metlife - Pension Bond Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "PNB Metlife - Preserver II (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "PNB Metlife - Protector II (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "PNB Metlife - Liquid Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "PNB Metlife - Discontinued Policy Fund (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Pension Discontinued Fund (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Multiplier II (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Virtue (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Value Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Pension Value Fund (Open Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Multiplier (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "Equity"
+    },
+    {
+        "name": "PNB Metlife - Accelerator (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Balancer (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "Balanced"
+    },
+    {
+        "name": "PNB Metlife - Moderator (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "ULIP"
+    },
+    {
+        "name": "PNB Metlife - Preserver (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "PNB Metlife - Protector (Closed Fund)",
+        "amc": "PNB Metlife",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Individual Life Funds",
+        "amc": "Tata AIA Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Tata AIA - Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Whole Life Mid Cap Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Large Cap Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Super Select Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Select Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Future Select Equity Fund.",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Top 200 Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Top 50 Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Infrastructure Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Multi Cap Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - India Consumption Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Emerging Opportunities Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Sustainable Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Small Cap Discovery Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - TATA AIA Flexi Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - TATA AIA Rising India Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Midcap Momentum Index Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Flexi Growth FD II",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - NIFTY ALPHA 50 INDEX",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Multicap Momentum Quality Index Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Income Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Whole Life Income Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Whole Life Short Term Fixed Income Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Short Term Fixed Income Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Bond Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Liquid Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Discontinued Policy Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Policyholders Unclaimed Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Whole Life Income Fund II",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Apex Supreme Investment Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Whole Life Aggressive Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Aggressive Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Whole Life Stable Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Balanced Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Stable Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Growth Maximizer Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Aggressive Flexi Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Stable Flexi Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - 110% Capital Guarantee Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Capital Guarantee Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Super 110% Capital Guarantee Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Growth Enabler Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Apex Supreme Return Lock-in Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Dynamic Advantage Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Tax Bonanza Consumption Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Top 200 Alpha 30 Index Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Momentum 50 Index Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Sector Leaders Index Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Sector Leaders Index Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Individual Pension Funds",
+        "amc": "Tata AIA Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Tata AIA - Future Equity Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Future Income Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Apex Pension 15 Investment Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Apex Pension 20 Investment Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Future Growth Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Future Balanced Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Future Capital Guarantee Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Apex Pension 20 Return Lock-In Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Apex Pension 20 Return Lock-in Fund II",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Discontinued Pension Policy Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Income Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Alpha 50 Index Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Super Select Equity Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Multicap Momentum Quality Index",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Tax Bonanza Consumption Pension",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Top 200 Alpha 30 Index Pension Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Group Funds",
+        "amc": "Tata AIA Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Tata AIA - Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Group Premier Equity Fund",
+        "amc": "Tata AIA Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Tata AIA - Pension Income Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Pension Bond Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Pension Liquid Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Pension Short Term Fixed Income",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Group Income Advantage Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Group Short Term Debt Fund",
+        "amc": "Tata AIA Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Tata AIA - Pension Balanced Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Pension Growth Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Pension Maxima Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Group Defensive Managed Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Group Growth Advantage Fund",
+        "amc": "Tata AIA Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Tata AIA - Total AUM",
+        "amc": "Tata AIA Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Balanced Managed Fund - Life",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Balanced Managed Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Defensive Managed Fund - Life",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Defensive Managed Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Growth Fund - Life",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Growth Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Liquid Fund - Life",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Liquid Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Secured Managed Fund - Life",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Secured Managed Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Equity Managed Fund - Life",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Equity Managed Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Stable Managed Fund - Life",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Stable Managed Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Balanced Managed Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Defensive Managed Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Equity Managed Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Growth Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Liquid Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Secured Managed Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Stable Managed Fund - Life - II",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Bond Opportunities Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Large Cap Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Manager's Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Mid Cap Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Money Plus Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Balanced Managed Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Defensive Managed Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Equity Managed Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Growth Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Liquid Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Secured Managed Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Stable Managed Fund - Pension - II",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - BlueChip Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Income Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Opportunities Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Vantage Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Balanced Fund",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Short Term Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Pension Super Plus Fund - 2012",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Bond Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Conservative Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Equity Plus Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Diversified Equity Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Pension Income Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Pension Equity Plus Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Capital Growth Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Capital Secure Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Discovery Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Equity Advantage Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Bond Plus Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Secure Advantage Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Sustainable Equity Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Policy Discontinued Fund - Life",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Policy Discontinued Fund - Pension",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Active Asset Allocation Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Guaranteed NAV Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Individual Balanced Fund",
+        "amc": "HDFC Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "HDFC - Individual Debt Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Individual Equity Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Individual Growth Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Individual Prime Equity Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Individual Prime Equity Pension Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Individual Preserver Pension Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Individual Preserver Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Individual Secure Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Pension Debt Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Pension Equity Fund",
+        "amc": "HDFC Life",
+        "category": "Equity"
+    },
+    {
+        "name": "HDFC - Pension Liquid Fund",
+        "amc": "HDFC Life",
+        "category": "Debt"
+    },
+    {
+        "name": "HDFC - Individual Midcap Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Large Cap Pension Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Flexi Cap Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Flexi Cap Pension Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Midcap Momentum Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Nifty Alpha 30 Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Top 500 Momentum 50 Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Top 500 Momentum 50 Pension Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Dynamic Advantage Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "HDFC - Dynamic Advantage Pension Fund",
+        "amc": "HDFC Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Future Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Future Plus - Income",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Future Plus - Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Future Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Jeevan Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Jeevan Plus - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Jeevan Plus - Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Jeevan Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Gratuity Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Gratuity Plus - Income",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Gratuity Plus - Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Gratuity Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Market Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Market Plus - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Market Plus - Balance",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Market Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Money Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Money Plus - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Money Plus - Balance",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Money Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Profit Plus_Bond Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Profit Plus_Secured Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Profit Plus_Balanced Fund",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Profit Plus_Growth Fund",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Market Plus 1 - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Market Plus 1 - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Market Plus 1 - Balance",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Market Plus 1 - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Money Plus 1 - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Money Plus 1 - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Money Plus 1 - Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Money Plus 1 - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Child Fortune Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Child Fortune Plus - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Child Fortune Plus - Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Child Fortune Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - LICI NIVESH/SIIP Bond Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - LICI NIVESH/SIIP Secured Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - LICI NIVESH/SIIP Balanced Fund",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - LICI NIVESH/SIIP Growth Fund",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Health Plus Fund",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Health Protection Plus Fund",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - New Endowment Plus Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - New Endowment Plus Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - New Endowment Plus Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - New Endowment Plus Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Flexi Plus Debt",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Flexi Plus Mixed",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Endowment Plus Bond Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Endowment Plus Secured Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Endowment Plus Balanced Fund",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Endowment Plus Growth Fund",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Pension Plus Debt Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Pension Plus Mixed Fund",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Jeevan Saathi Plus - Bond",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Jeevan Saathi Plus - Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Jeevan Saathi Plus - Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Jeevan Saathi Plus - Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Discontinued Policy Fund-Life",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Discontinued PolicyFnd Pension",
+        "amc": "LIC",
+        "category": "ULIP"
+    },
+    {
+        "name": "LIC - Index Plus Flexi Growth Fund",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Index Plus Flexi Smart Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - Fortune Plus_Bond Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Fortune Plus_Secured Fund",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - Fortune Plus_Balanced Fund",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - Fortune Plus_Growth Fund",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "LIC - New Pension Plus-Bonds",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - New Pension Plus-Secured",
+        "amc": "LIC",
+        "category": "Debt"
+    },
+    {
+        "name": "LIC - New Pension Plus-Balanced",
+        "amc": "LIC",
+        "category": "Balanced"
+    },
+    {
+        "name": "LIC - New Pension Plus-Growth",
+        "amc": "LIC",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - UL LIFE GROWTH SUPER FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - HIGH GROWTH FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - UL LIFE GROWTH FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - UL LIFE BALANCED FUND",
+        "amc": "Axis Bank",
+        "category": "Balanced"
+    },
+    {
+        "name": "Axis - UL LIFE CONSERVATIVE FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - UL LIFE SECURED FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - DYNAMIC OPPORTUINITIES FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - UL MONEY MARKET FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - GUARANTEED FUND- DYNAMIC",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - GUARANTEED FUND-INCOME",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - UL LIFE DIVERSIFIED EQUITY FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - UL MONEY MARKET II FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - UL SUSTAINABLE EQUITY FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - UL PURE GROWTH FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - UL LIFE DYNAMIC BOND FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - NIFTY SMALLCAP QUALITY INDEX FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - MIDCAP MOMENTUM INDEX FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - NIFTY ALPHA 50 FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - NIFTY 500 MOMENTUM 50 FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - NIFTY MOMENTUM QUALITY 50 FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - SUSTAINABLE WEALTH 50 INDEX FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - SMART INNOVATION FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - NIFTY 500 MULTIFACTOR 50 INDEX FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - NIFTY 500 MULTIFACTOR 50 INDEX PENSION FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - BSE 500 VALUE 50 INDEX FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - INDIA CONSUMPTION OPPORTUNITIES FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - BSE 500 DIVIDEND LEADERS 50 INDEX FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - DISCONTINUANCE FUND INDIVIDUAL",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - UL PENSION GROWTH SUPER FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - PENSION LIFE GROWTH FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - LIFEMAKER PENSION MAXIMISER FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - PENSION LIFE BALANCED FUND",
+        "amc": "Axis Bank",
+        "category": "Balanced"
+    },
+    {
+        "name": "Axis - LIFEMAKER PENSION PRESERVER FUND",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - PENSION LIFE CONSERVATIVE FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - PENSION LIFE SECURED FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - HIGH GROWTH PENSION FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - DISCONTINUANCE FUND PENSION",
+        "amc": "Axis Bank",
+        "category": "ULIP"
+    },
+    {
+        "name": "Axis - GR GRATUITY GROWTH FUND",
+        "amc": "Axis Bank",
+        "category": "Equity"
+    },
+    {
+        "name": "Axis - GR GRATUITY BALANCED FUND",
+        "amc": "Axis Bank",
+        "category": "Balanced"
+    },
+    {
+        "name": "Axis - GROUP GRATUITY BOND FUND.",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - GR GRATUITY CONSERVATIVE FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Axis - GROUP SUPERANNUATION CONSERVATIVE FUND",
+        "amc": "Axis Bank",
+        "category": "Debt"
+    },
+    {
+        "name": "Canara HSBC - INDIA MULTI-CAP EQUITY FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - EQUITY II FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - EMERGING LEADERS EQUITY FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - BALANCED PLUS FUND",
+        "amc": "Canara HSBC",
+        "category": "Balanced"
+    },
+    {
+        "name": "Canara HSBC - LARGE CAP ADVANTAGE FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - INDIA MANUFACTURING FUND",
+        "amc": "Canara HSBC",
+        "category": "ULIP"
+    },
+    {
+        "name": "Canara HSBC - EQUITY FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - LIQUID FUND",
+        "amc": "Canara HSBC",
+        "category": "Debt"
+    },
+    {
+        "name": "Canara HSBC - GROWTH PLUS FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - DEBT FUND",
+        "amc": "Canara HSBC",
+        "category": "Debt"
+    },
+    {
+        "name": "Canara HSBC - DEBT PLUS FUND",
+        "amc": "Canara HSBC",
+        "category": "Debt"
+    },
+    {
+        "name": "Canara HSBC - BALANCED FUND",
+        "amc": "Canara HSBC",
+        "category": "Balanced"
+    },
+    {
+        "name": "Canara HSBC - BALANCED II FUND",
+        "amc": "Canara HSBC",
+        "category": "Balanced"
+    },
+    {
+        "name": "Canara HSBC - PENSION GROWTH FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - GROWTH FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - MIDCAP MOMENTUM GROWTH INDEX FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - GROWTH II FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - PENSION BALANCED FUND",
+        "amc": "Canara HSBC",
+        "category": "Balanced"
+    },
+    {
+        "name": "Canara HSBC - MULTICAP MOMENTUM QUALITY INDEX FUND",
+        "amc": "Canara HSBC",
+        "category": "Equity"
+    },
+    {
+        "name": "Canara HSBC - NIFTY ALPHA 50 INDEX FUND",
+        "amc": "Canara HSBC",
+        "category": "ULIP"
+    },
+    {
+        "name": "Canara HSBC - NIFTY 500 MULTIFACTOR 50 INDEX FUND",
+        "amc": "Canara HSBC",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Liquid Plus",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Assure",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Income Advantage",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Income Advantage Guarantee",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Debt"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Protector",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Builder",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Balancer",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Enhancer",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Creator",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Balanced"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Magnifier",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Maximiser",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Maximiser Guarantee",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Super 20",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Multiplier",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Pure Equity",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Value Momentum",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Capped Nifty Index",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Asset Allocation",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - MNC",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Small Cap",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - ESG",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Nifty Alpha 50 Index Fund",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Nifty Midcap 150 Momentum 50 Index Fund",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Dividend Yield Fund",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Platinum Premier",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Platinum Advantage",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Titanium I",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Pension - Nourish",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Pension - Growth",
+        "amc": "Aditya Birla Sun Life",
+        "category": "Equity"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Pension - Enrich",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Linked Discontinued Policy Fund",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    },
+    {
+        "name": "Aditya Birla Sun Life - Pension Discontinued Policy Fund",
+        "amc": "Aditya Birla Sun Life",
+        "category": "ULIP"
+    }
+]

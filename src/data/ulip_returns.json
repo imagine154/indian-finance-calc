@@ -1,0 +1,4866 @@
+{
+    "SBI - Group Balanced Plus Fund": {
+        "1Y": 7.05,
+        "3Y": 9.33,
+        "5Y": 8.37,
+        "Inception": 10.17
+    },
+    "SBI - Group Balanced Plus Fund II": {
+        "1Y": 7.48,
+        "3Y": 9.49,
+        "5Y": 8.34,
+        "Inception": 9.28
+    },
+    "SBI - Group Debt Plus Fund": {
+        "1Y": 8.11,
+        "3Y": 8.48,
+        "5Y": 6.82,
+        "Inception": 8.91
+    },
+    "SBI - Group Debt Plus Fund II": {
+        "1Y": 7.12,
+        "3Y": 8.35,
+        "5Y": 6.75,
+        "Inception": 8.59
+    },
+    "SBI - Group Growth Plus Fund": {
+        "1Y": 6.99,
+        "3Y": 10.36,
+        "5Y": 10.58,
+        "Inception": 11.52
+    },
+    "SBI - Group Growth Plus Fund II": {
+        "1Y": 7.82,
+        "3Y": 10.65,
+        "5Y": 10.58,
+        "Inception": 9.85
+    },
+    "SBI - Group Short Term Plus Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "Inception": null
+    },
+    "SBI - Group Short Term Plus Fund II": {
+        "1Y": 7.47,
+        "3Y": 8.0,
+        "5Y": 5.85,
+        "Inception": 7.37
+    },
+    "SBI - Group Money Market Plus Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "Inception": null
+    },
+    "SBI - Group STO Plus Fund II": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "Inception": null
+    },
+    "ICICI - BSE 500 Enhanced Value 50 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -1.84
+    },
+    "ICICI - Bluechip Fund": {
+        "1Y": 9.2,
+        "3Y": 12.46,
+        "5Y": 15.32,
+        "7Y": 13.39,
+        "10Y": 12.23,
+        "Inception": 10.44
+    },
+    "ICICI - Dynamic P/E Fund": {
+        "1Y": 7.11,
+        "3Y": 9.38,
+        "5Y": 10.13,
+        "7Y": 8.72,
+        "10Y": 8.88,
+        "Inception": 8.62
+    },
+    "ICICI - Flexi Growth Fund": {
+        "1Y": 6.8,
+        "3Y": 15.13,
+        "5Y": 15.18,
+        "7Y": 11.19,
+        "10Y": 10.16,
+        "Inception": 10.42
+    },
+    "ICICI - Flexi Growth Fund II": {
+        "1Y": 8.82,
+        "3Y": 16.53,
+        "5Y": 16.57,
+        "7Y": 12.51,
+        "10Y": 11.34,
+        "Inception": 11.39
+    },
+    "ICICI - Flexi Growth Fund III": {
+        "1Y": 6.8,
+        "3Y": 14.96,
+        "5Y": 15.14,
+        "7Y": 11.12,
+        "10Y": 10.07,
+        "Inception": 10.46
+    },
+    "ICICI - Flexi Growth Fund IV": {
+        "1Y": 7.92,
+        "3Y": 16.07,
+        "5Y": 16.18,
+        "7Y": 12.14,
+        "10Y": 11.12,
+        "Inception": 10.58
+    },
+    "ICICI - Focus 50 Fund": {
+        "1Y": 9.0,
+        "3Y": 11.42,
+        "5Y": 14.39,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.98
+    },
+    "ICICI - Group Equity Fund II": {
+        "1Y": 10.05,
+        "3Y": 14.77,
+        "5Y": 16.93,
+        "7Y": 14.72,
+        "10Y": 11.48,
+        "Inception": 11.48
+    },
+    "ICICI - Health Flexi Growth Fund": {
+        "1Y": 7.66,
+        "3Y": 16.12,
+        "5Y": 16.13,
+        "7Y": 12.32,
+        "10Y": 10.93,
+        "Inception": 13.99
+    },
+    "ICICI - Health Multiplier Fund": {
+        "1Y": 9.02,
+        "3Y": 12.29,
+        "5Y": 15.18,
+        "7Y": 13.32,
+        "10Y": 12.06,
+        "Inception": 14.15
+    },
+    "ICICI - India Consumption Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.68
+    },
+    "ICICI - India Growth Fund": {
+        "1Y": 8.78,
+        "3Y": 14.61,
+        "5Y": 16.83,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.3
+    },
+    "ICICI - Life Growth Fund": {
+        "1Y": 8.01,
+        "3Y": 13.48,
+        "5Y": 15.86,
+        "7Y": 13.57,
+        "10Y": 10.65,
+        "Inception": 11.77
+    },
+    "ICICI - Maximise India Fund": {
+        "1Y": 7.01,
+        "3Y": 15.39,
+        "5Y": 16.35,
+        "7Y": 14.75,
+        "10Y": 12.55,
+        "Inception": 10.91
+    },
+    "ICICI - Maximiser Fund": {
+        "1Y": 8.71,
+        "3Y": 12.53,
+        "5Y": 15.56,
+        "7Y": 12.74,
+        "10Y": 11.03,
+        "Inception": 15.4
+    },
+    "ICICI - Maximiser Fund II": {
+        "1Y": 9.52,
+        "3Y": 13.6,
+        "5Y": 16.65,
+        "7Y": 13.81,
+        "10Y": 12.04,
+        "Inception": 14.94
+    },
+    "ICICI - Maximiser Fund III": {
+        "1Y": 8.63,
+        "3Y": 12.59,
+        "5Y": 15.57,
+        "7Y": 12.78,
+        "10Y": 11.12,
+        "Inception": 11.16
+    },
+    "ICICI - Maximiser Fund IV": {
+        "1Y": 9.47,
+        "3Y": 13.31,
+        "5Y": 16.38,
+        "7Y": 13.59,
+        "10Y": 11.89,
+        "Inception": 11.33
+    },
+    "ICICI - Maximiser Fund V": {
+        "1Y": 9.75,
+        "3Y": 13.76,
+        "5Y": 16.75,
+        "7Y": 13.79,
+        "10Y": 11.92,
+        "Inception": 13.07
+    },
+    "ICICI - Mid Cap 150 Momentum 50 Index Fund": {
+        "1Y": -1.7,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.51
+    },
+    "ICICI - Mid Cap Fund": {
+        "1Y": 6.49,
+        "3Y": 23.96,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 23.76
+    },
+    "ICICI - Mid Cap Index Fund": {
+        "1Y": 6.05,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 18.1
+    },
+    "ICICI - MidSmall Cap 400 Index Fund": {
+        "1Y": 1.3,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.77
+    },
+    "ICICI - MidSmallCap 400 Momentum Quality 100 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -8.08
+    },
+    "ICICI - Multi Cap Growth Fund": {
+        "1Y": 7.79,
+        "3Y": 15.73,
+        "5Y": 16.87,
+        "7Y": 13.15,
+        "10Y": 11.83,
+        "Inception": 11.62
+    },
+    "ICICI - Multicap 50 25 25 Index Fund": {
+        "1Y": 3.01,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.02
+    },
+    "ICICI - Multiplier Fund": {
+        "1Y": 8.09,
+        "3Y": 11.26,
+        "5Y": 14.14,
+        "7Y": 12.29,
+        "10Y": 11.11,
+        "Inception": 8.47
+    },
+    "ICICI - Multiplier Fund II": {
+        "1Y": 9.02,
+        "3Y": 12.3,
+        "5Y": 15.16,
+        "7Y": 13.31,
+        "10Y": 12.08,
+        "Inception": 10.1
+    },
+    "ICICI - Multiplier Fund III": {
+        "1Y": 8.03,
+        "3Y": 11.24,
+        "5Y": 14.08,
+        "7Y": 12.34,
+        "10Y": 11.23,
+        "Inception": 9.23
+    },
+    "ICICI - Multiplier Fund IV": {
+        "1Y": 9.0,
+        "3Y": 12.27,
+        "5Y": 15.13,
+        "7Y": 13.31,
+        "10Y": 12.11,
+        "Inception": 10.08
+    },
+    "ICICI - Nifty Alpha 50 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 2.63
+    },
+    "ICICI - Opportunities Fund": {
+        "1Y": 8.24,
+        "3Y": 15.91,
+        "5Y": 17.82,
+        "7Y": 15.05,
+        "10Y": 13.32,
+        "Inception": 12.13
+    },
+    "ICICI - Pension Bluechip Fund": {
+        "1Y": 9.22,
+        "3Y": 12.49,
+        "5Y": 15.36,
+        "7Y": 13.49,
+        "10Y": 12.3,
+        "Inception": 10.34
+    },
+    "ICICI - Pension Dynamic P/E Fund": {
+        "1Y": 7.21,
+        "3Y": 9.43,
+        "5Y": 10.06,
+        "7Y": 8.56,
+        "10Y": 8.78,
+        "Inception": 8.44
+    },
+    "ICICI - Pension Flexi Growth Fund": {
+        "1Y": 6.97,
+        "3Y": 15.43,
+        "5Y": 15.41,
+        "7Y": 12.49,
+        "10Y": 10.96,
+        "Inception": 10.82
+    },
+    "ICICI - Pension Flexi Growth Fund II": {
+        "1Y": 7.68,
+        "3Y": 16.13,
+        "5Y": 16.2,
+        "7Y": 13.42,
+        "10Y": 11.97,
+        "Inception": 11.82
+    },
+    "ICICI - Pension Growth Fund": {
+        "1Y": 8.6,
+        "3Y": 12.48,
+        "5Y": 14.78,
+        "7Y": 13.62,
+        "10Y": 10.85,
+        "Inception": 11.7
+    },
+    "ICICI - Pension India Consumption Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.39
+    },
+    "ICICI - Pension India Growth Fund": {
+        "1Y": 9.79,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.18
+    },
+    "ICICI - Pension Maximiser Fund": {
+        "1Y": 7.43,
+        "3Y": 12.89,
+        "5Y": 15.3,
+        "7Y": 13.63,
+        "10Y": 11.61,
+        "Inception": 16.09
+    },
+    "ICICI - Pension Maximiser Fund II": {
+        "1Y": 8.34,
+        "3Y": 13.89,
+        "5Y": 16.32,
+        "7Y": 14.67,
+        "10Y": 12.68,
+        "Inception": 15.46
+    },
+    "ICICI - Pension Multi Cap Growth Fund": {
+        "1Y": 8.28,
+        "3Y": 16.36,
+        "5Y": 16.54,
+        "7Y": 12.5,
+        "10Y": 11.39,
+        "Inception": 11.24
+    },
+    "ICICI - Pension Multiplier Fund": {
+        "1Y": 8.14,
+        "3Y": 11.33,
+        "5Y": 14.19,
+        "7Y": 12.29,
+        "10Y": 11.12,
+        "Inception": 8.5
+    },
+    "ICICI - Pension Multiplier Fund II": {
+        "1Y": 9.07,
+        "3Y": 12.3,
+        "5Y": 15.18,
+        "7Y": 13.33,
+        "10Y": 12.13,
+        "Inception": 9.53
+    },
+    "ICICI - Pension Opportunities Fund": {
+        "1Y": 8.22,
+        "3Y": 15.95,
+        "5Y": 17.93,
+        "7Y": 15.14,
+        "10Y": 13.44,
+        "Inception": 12.18
+    },
+    "ICICI - Pension RICH Fund": {
+        "1Y": 7.14,
+        "3Y": 14.81,
+        "5Y": 16.77,
+        "7Y": 13.97,
+        "10Y": 12.19,
+        "Inception": 11.45
+    },
+    "ICICI - Pension RICH Fund II": {
+        "1Y": 8.05,
+        "3Y": 15.81,
+        "5Y": 17.8,
+        "7Y": 15.01,
+        "10Y": 13.16,
+        "Inception": 12.34
+    },
+    "ICICI - RICH Fund": {
+        "1Y": 7.06,
+        "3Y": 14.77,
+        "5Y": 16.7,
+        "7Y": 13.95,
+        "10Y": 12.05,
+        "Inception": 10.59
+    },
+    "ICICI - RICH Fund II": {
+        "1Y": 8.09,
+        "3Y": 15.81,
+        "5Y": 17.76,
+        "7Y": 14.95,
+        "10Y": 13.02,
+        "Inception": 11.54
+    },
+    "ICICI - RICH Fund III": {
+        "1Y": 7.16,
+        "3Y": 14.73,
+        "5Y": 16.67,
+        "7Y": 13.88,
+        "10Y": 11.97,
+        "Inception": 10.6
+    },
+    "ICICI - RICH Fund IV": {
+        "1Y": 7.94,
+        "3Y": 15.75,
+        "5Y": 17.68,
+        "7Y": 14.88,
+        "10Y": 12.92,
+        "Inception": 11.49
+    },
+    "ICICI - Smallcap250 Momentum Quality 100 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 0.71
+    },
+    "ICICI - Sustainable Equity Fund": {
+        "1Y": 8.56,
+        "3Y": 14.41,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.27
+    },
+    "ICICI - Value Enhancer Fund": {
+        "1Y": 1.1,
+        "3Y": 19.2,
+        "5Y": 18.36,
+        "7Y": 14.58,
+        "10Y": null,
+        "Inception": 12.57
+    },
+    "ICICI - Cash Plus Fund": {
+        "1Y": 6.63,
+        "3Y": 7.07,
+        "5Y": 5.1,
+        "7Y": 6.81,
+        "10Y": 7.06,
+        "Inception": 7.32
+    },
+    "ICICI - Constant Maturity Fund": {
+        "1Y": 5.67,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.29
+    },
+    "ICICI - Discontinuance Fund - Pension": {
+        "1Y": 6.04,
+        "3Y": 6.14,
+        "5Y": 5.1,
+        "7Y": 5.29,
+        "10Y": 5.65,
+        "Inception": 5.87
+    },
+    "ICICI - Discontinued Fund - Life": {
+        "1Y": 6.33,
+        "3Y": 6.42,
+        "5Y": 5.21,
+        "7Y": 5.39,
+        "10Y": 5.76,
+        "Inception": 6.58
+    },
+    "ICICI - Easy Retirement Secure Fund": {
+        "1Y": 6.35,
+        "3Y": 6.86,
+        "5Y": 4.76,
+        "7Y": 6.46,
+        "10Y": 6.67,
+        "Inception": 7.46
+    },
+    "ICICI - Group Capital Guarantee Debt Fund": {
+        "1Y": 6.9,
+        "3Y": 7.17,
+        "5Y": 4.8,
+        "7Y": 6.49,
+        "10Y": 6.7,
+        "Inception": 8.79
+    },
+    "ICICI - Group Capital Guarantee Debt Fund II": {
+        "1Y": 5.61,
+        "3Y": 6.49,
+        "5Y": 4.49,
+        "7Y": 6.36,
+        "10Y": 6.5,
+        "Inception": 8.11
+    },
+    "ICICI - Group Capital Guarantee Short Term Debt Fund": {
+        "1Y": 4.67,
+        "3Y": 5.31,
+        "5Y": 4.37,
+        "7Y": 4.59,
+        "10Y": 5.03,
+        "Inception": 6.31
+    },
+    "ICICI - Group Capital Guarantee Short Term Debt Fund II": {
+        "1Y": 5.61,
+        "3Y": 5.68,
+        "5Y": 4.42,
+        "7Y": 4.68,
+        "10Y": 5.05,
+        "Inception": 6.43
+    },
+    "ICICI - Group Capital Guarantee Short Term Debt Fund III": {
+        "1Y": 5.63,
+        "3Y": 5.72,
+        "5Y": 4.45,
+        "7Y": 4.67,
+        "10Y": 5.04,
+        "Inception": 5.48
+    },
+    "ICICI - Group Capital Guarantee Short Term Debt Fund Superannuation": {
+        "1Y": 5.87,
+        "3Y": 5.93,
+        "5Y": 4.7,
+        "7Y": 4.93,
+        "10Y": 5.28,
+        "Inception": 6.43
+    },
+    "ICICI - Group Capital Guarentee Debt fund III": {
+        "1Y": 5.99,
+        "3Y": 6.59,
+        "5Y": 4.64,
+        "7Y": 6.42,
+        "10Y": 6.59,
+        "Inception": 7.44
+    },
+    "ICICI - Group Corporate Bond Fund": {
+        "1Y": 2.28,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 2.44
+    },
+    "ICICI - Group Debt Fund": {
+        "1Y": 5.95,
+        "3Y": 6.81,
+        "5Y": 4.93,
+        "7Y": 6.88,
+        "10Y": 7.0,
+        "Inception": 7.59
+    },
+    "ICICI - Group Debt Fund II": {
+        "1Y": 5.95,
+        "3Y": 6.85,
+        "5Y": 5.02,
+        "7Y": 6.89,
+        "10Y": 7.04,
+        "Inception": 7.99
+    },
+    "ICICI - Group Leave Encashment Income Fund": {
+        "1Y": 5.77,
+        "3Y": 6.89,
+        "5Y": 4.76,
+        "7Y": 6.63,
+        "10Y": 6.9,
+        "Inception": 7.37
+    },
+    "ICICI - Group SA Corporate Bond Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "ICICI - Group SA Sovereign Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "ICICI - Group Short Term Debt Fund": {
+        "1Y": 5.72,
+        "3Y": 5.83,
+        "5Y": 4.58,
+        "7Y": 4.83,
+        "10Y": 5.25,
+        "Inception": 6.32
+    },
+    "ICICI - Group Short Term Debt Fund II": {
+        "1Y": 5.11,
+        "3Y": 5.4,
+        "5Y": 4.27,
+        "7Y": 4.45,
+        "10Y": 4.86,
+        "Inception": 5.16
+    },
+    "ICICI - Group Short Term Debt Fund III": {
+        "1Y": 5.59,
+        "3Y": 5.78,
+        "5Y": 4.56,
+        "7Y": 4.77,
+        "10Y": 5.15,
+        "Inception": 5.48
+    },
+    "ICICI - Group Sovereign Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.78
+    },
+    "ICICI - Group Superannuation Debt Fund": {
+        "1Y": 5.83,
+        "3Y": 6.77,
+        "5Y": 4.79,
+        "7Y": 6.67,
+        "10Y": 6.82,
+        "Inception": 7.51
+    },
+    "ICICI - Group Superannuation Short Term Debt Fund": {
+        "1Y": 5.74,
+        "3Y": 5.83,
+        "5Y": 4.57,
+        "7Y": 4.83,
+        "10Y": 5.22,
+        "Inception": 6.31
+    },
+    "ICICI - Health Preserver Fund": {
+        "1Y": 6.27,
+        "3Y": 6.44,
+        "5Y": 5.26,
+        "7Y": 5.6,
+        "10Y": 6.03,
+        "Inception": 6.99
+    },
+    "ICICI - Health Protector Fund": {
+        "1Y": 7.26,
+        "3Y": 7.73,
+        "5Y": 5.63,
+        "7Y": 7.42,
+        "10Y": 7.66,
+        "Inception": 8.6
+    },
+    "ICICI - ICICI Pru Unclaimed Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "ICICI - Income Fund": {
+        "1Y": 6.24,
+        "3Y": 6.91,
+        "5Y": 4.94,
+        "7Y": 6.75,
+        "10Y": 6.99,
+        "Inception": 7.65
+    },
+    "ICICI - Invest Shield Cash Fund": {
+        "1Y": 6.62,
+        "3Y": 7.08,
+        "5Y": 5.0,
+        "7Y": 6.78,
+        "10Y": 7.03,
+        "Inception": 7.55
+    },
+    "ICICI - Life Secure Fund": {
+        "1Y": 5.61,
+        "3Y": 6.18,
+        "5Y": 4.12,
+        "7Y": 5.87,
+        "10Y": 6.16,
+        "Inception": 6.96
+    },
+    "ICICI - Money Market Fund": {
+        "1Y": 6.56,
+        "3Y": 6.59,
+        "5Y": 5.35,
+        "7Y": 5.6,
+        "10Y": 5.96,
+        "Inception": 6.83
+    },
+    "ICICI - Pension Income Fund": {
+        "1Y": 6.63,
+        "3Y": 7.13,
+        "5Y": 5.1,
+        "7Y": 7.11,
+        "10Y": 7.18,
+        "Inception": 7.74
+    },
+    "ICICI - Pension Money Market Fund": {
+        "1Y": 6.42,
+        "3Y": 6.52,
+        "5Y": 5.26,
+        "7Y": 5.52,
+        "10Y": 5.9,
+        "Inception": 6.83
+    },
+    "ICICI - Pension Preserver Fund": {
+        "1Y": 6.41,
+        "3Y": 6.52,
+        "5Y": 5.25,
+        "7Y": 5.5,
+        "10Y": 5.89,
+        "Inception": 7.04
+    },
+    "ICICI - Pension Protector Fund": {
+        "1Y": 6.37,
+        "3Y": 6.87,
+        "5Y": 4.69,
+        "7Y": 6.57,
+        "10Y": 6.66,
+        "Inception": 7.2
+    },
+    "ICICI - Pension Protector Fund II": {
+        "1Y": 6.94,
+        "3Y": 7.75,
+        "5Y": 5.77,
+        "7Y": 7.76,
+        "10Y": 7.87,
+        "Inception": 7.96
+    },
+    "ICICI - Pension Secure Fund": {
+        "1Y": 6.36,
+        "3Y": 6.99,
+        "5Y": 4.91,
+        "7Y": 6.65,
+        "10Y": 6.72,
+        "Inception": 7.34
+    },
+    "ICICI - Preserver Fund": {
+        "1Y": 6.46,
+        "3Y": 6.55,
+        "5Y": 5.28,
+        "7Y": 5.53,
+        "10Y": 5.92,
+        "Inception": 7.11
+    },
+    "ICICI - Preserver Fund III": {
+        "1Y": 6.46,
+        "3Y": 6.53,
+        "5Y": 5.25,
+        "7Y": 5.44,
+        "10Y": 5.85,
+        "Inception": 7.1
+    },
+    "ICICI - Preserver Fund IV": {
+        "1Y": 6.29,
+        "3Y": 6.48,
+        "5Y": 5.24,
+        "7Y": 5.48,
+        "10Y": 5.91,
+        "Inception": 7.1
+    },
+    "ICICI - Protector Fund": {
+        "1Y": 6.39,
+        "3Y": 6.81,
+        "5Y": 4.74,
+        "7Y": 6.51,
+        "10Y": 6.63,
+        "Inception": 7.17
+    },
+    "ICICI - Protector Fund II": {
+        "1Y": 6.97,
+        "3Y": 7.79,
+        "5Y": 5.79,
+        "7Y": 7.68,
+        "10Y": 7.96,
+        "Inception": 8.08
+    },
+    "ICICI - Protector Fund III": {
+        "1Y": 6.34,
+        "3Y": 6.84,
+        "5Y": 4.71,
+        "7Y": 6.5,
+        "10Y": 6.8,
+        "Inception": 7.49
+    },
+    "ICICI - Protector Fund IV": {
+        "1Y": 6.88,
+        "3Y": 7.64,
+        "5Y": 5.6,
+        "7Y": 7.53,
+        "10Y": 7.62,
+        "Inception": 8.3
+    },
+    "ICICI - Secure Opportunities Fund": {
+        "1Y": 7.6,
+        "3Y": 6.79,
+        "5Y": 4.99,
+        "7Y": 6.56,
+        "10Y": null,
+        "Inception": 6.62
+    },
+    "ICICI - Active Asset Allocation Balanced Fund": {
+        "1Y": 7.77,
+        "3Y": 10.56,
+        "5Y": 10.75,
+        "7Y": 10.58,
+        "10Y": null,
+        "Inception": 9.01
+    },
+    "ICICI - Balanced Advantage Fund": {
+        "1Y": 7.18,
+        "3Y": 13.57,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.68
+    },
+    "ICICI - Balancer Fund": {
+        "1Y": 6.32,
+        "3Y": 8.32,
+        "5Y": 7.84,
+        "7Y": 8.23,
+        "10Y": 7.71,
+        "Inception": 10.05
+    },
+    "ICICI - Balancer Fund II": {
+        "1Y": 7.83,
+        "3Y": 9.9,
+        "5Y": 9.41,
+        "7Y": 9.78,
+        "10Y": 9.24,
+        "Inception": 10.75
+    },
+    "ICICI - Balancer Fund III": {
+        "1Y": 6.28,
+        "3Y": 8.3,
+        "5Y": 7.84,
+        "7Y": 8.28,
+        "10Y": 7.72,
+        "Inception": 8.53
+    },
+    "ICICI - Balancer Fund IV": {
+        "1Y": 7.27,
+        "3Y": 9.74,
+        "5Y": 9.32,
+        "7Y": 9.88,
+        "10Y": 9.36,
+        "Inception": 9.76
+    },
+    "ICICI - Easy Retirement Balanced Fund": {
+        "1Y": 7.13,
+        "3Y": 8.7,
+        "5Y": 8.83,
+        "7Y": 9.3,
+        "10Y": 8.13,
+        "Inception": 9.0
+    },
+    "ICICI - Easy Retirement SP Balanced Fund": {
+        "1Y": 7.18,
+        "3Y": 9.18,
+        "5Y": 9.1,
+        "7Y": 9.43,
+        "10Y": 8.33,
+        "Inception": 8.94
+    },
+    "ICICI - Flexi Balanced Fund": {
+        "1Y": 5.89,
+        "3Y": 11.04,
+        "5Y": 10.09,
+        "7Y": 8.97,
+        "10Y": 8.33,
+        "Inception": 8.71
+    },
+    "ICICI - Flexi Balanced Fund II": {
+        "1Y": 7.61,
+        "3Y": 12.86,
+        "5Y": 11.84,
+        "7Y": 10.67,
+        "10Y": 10.02,
+        "Inception": 10.33
+    },
+    "ICICI - Flexi Balanced Fund III": {
+        "1Y": 6.04,
+        "3Y": 11.05,
+        "5Y": 10.14,
+        "7Y": 8.98,
+        "10Y": 8.39,
+        "Inception": 8.69
+    },
+    "ICICI - Flexi Balanced Fund IV": {
+        "1Y": 7.14,
+        "3Y": 12.89,
+        "5Y": 11.8,
+        "7Y": 10.64,
+        "10Y": 9.98,
+        "Inception": 9.82
+    },
+    "ICICI - Group Balanced Fund": {
+        "1Y": 6.65,
+        "3Y": 8.01,
+        "5Y": 6.6,
+        "7Y": 7.82,
+        "10Y": 7.5,
+        "Inception": 9.1
+    },
+    "ICICI - Group Balanced Fund II": {
+        "1Y": 6.69,
+        "3Y": 7.91,
+        "5Y": 6.52,
+        "7Y": 7.6,
+        "10Y": 7.32,
+        "Inception": 8.08
+    },
+    "ICICI - Group Balanced Plus Fund": {
+        "1Y": 5.44,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.3
+    },
+    "ICICI - Group Capital Guarantee Balanced Fund": {
+        "1Y": 5.57,
+        "3Y": 6.81,
+        "5Y": 5.44,
+        "7Y": 6.66,
+        "10Y": 6.38,
+        "Inception": 7.51
+    },
+    "ICICI - Group Capital Guarantee Balanced Fund II": {
+        "1Y": 6.22,
+        "3Y": 7.43,
+        "5Y": 6.05,
+        "7Y": 7.3,
+        "10Y": 6.99,
+        "Inception": 7.97
+    },
+    "ICICI - Group Capital Guarantee Balanced Fund III": {
+        "1Y": 6.45,
+        "3Y": 7.74,
+        "5Y": 6.33,
+        "7Y": 7.46,
+        "10Y": 7.16,
+        "Inception": 7.92
+    },
+    "ICICI - Group Capital Guarantee Growth Fund": {
+        "1Y": 5.62,
+        "3Y": 7.9,
+        "5Y": 7.23,
+        "7Y": 7.66,
+        "10Y": 6.77,
+        "Inception": 7.86
+    },
+    "ICICI - Group Capital Guarantee Growth Fund II": {
+        "1Y": 6.34,
+        "3Y": 8.56,
+        "5Y": 7.99,
+        "7Y": 8.49,
+        "10Y": 7.49,
+        "Inception": 8.3
+    },
+    "ICICI - Group Capital Guarantee Growth Fund III": {
+        "1Y": 7.24,
+        "3Y": 9.3,
+        "5Y": 8.77,
+        "7Y": 9.2,
+        "10Y": 8.28,
+        "Inception": 8.12
+    },
+    "ICICI - Group Growth Fund": {
+        "1Y": 8.03,
+        "3Y": 11.32,
+        "5Y": 11.6,
+        "7Y": 11.34,
+        "10Y": 9.96,
+        "Inception": 12.63
+    },
+    "ICICI - Group Growth Fund II": {
+        "1Y": 7.95,
+        "3Y": 11.12,
+        "5Y": 11.44,
+        "7Y": 11.25,
+        "10Y": 9.7,
+        "Inception": 10.39
+    },
+    "ICICI - Group Leave Encashment Balance Fund": {
+        "1Y": 6.34,
+        "3Y": 7.29,
+        "5Y": 6.14,
+        "7Y": 7.41,
+        "10Y": 7.23,
+        "Inception": 8.21
+    },
+    "ICICI - Group SA Balanced Plus Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "ICICI - Group Superannuation Balanced Fund": {
+        "1Y": 6.66,
+        "3Y": 7.96,
+        "5Y": 6.5,
+        "7Y": 7.67,
+        "10Y": 7.38,
+        "Inception": 9.04
+    },
+    "ICICI - Group Superannuation Growth Fund": {
+        "1Y": 8.22,
+        "3Y": 11.38,
+        "5Y": 11.58,
+        "7Y": 11.33,
+        "10Y": 9.89,
+        "Inception": 12.6
+    },
+    "ICICI - Health Balancer Fund": {
+        "1Y": 7.85,
+        "3Y": 9.92,
+        "5Y": 9.41,
+        "7Y": 9.73,
+        "10Y": 9.2,
+        "Inception": 10.52
+    },
+    "ICICI - Health Flexi Balanced Fund": {
+        "1Y": 7.44,
+        "3Y": 12.55,
+        "5Y": 11.67,
+        "7Y": 10.54,
+        "10Y": 9.93,
+        "Inception": 11.94
+    },
+    "ICICI - Highest NAV Fund B": {
+        "1Y": 3.71,
+        "3Y": 4.14,
+        "5Y": 3.01,
+        "7Y": 4.0,
+        "10Y": 4.66,
+        "Inception": 5.33
+    },
+    "ICICI - Invest Shield Fund - Life": {
+        "1Y": 7.21,
+        "3Y": 7.87,
+        "5Y": 6.49,
+        "7Y": 7.71,
+        "10Y": 7.59,
+        "Inception": 8.82
+    },
+    "ICICI - Invest Shield Fund - Pension": {
+        "1Y": 6.9,
+        "3Y": 7.92,
+        "5Y": 6.45,
+        "7Y": 7.54,
+        "10Y": 7.32,
+        "Inception": 8.69
+    },
+    "ICICI - Mid Cap Hybrid Growth Fund": {
+        "1Y": 6.69,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 22.39
+    },
+    "ICICI - Multi Cap Balanced Fund": {
+        "1Y": 7.59,
+        "3Y": 12.16,
+        "5Y": 11.9,
+        "7Y": 10.6,
+        "10Y": 9.78,
+        "Inception": 9.79
+    },
+    "ICICI - New Invest Shield Balanced Fund": {
+        "1Y": 7.0,
+        "3Y": 7.75,
+        "5Y": 6.5,
+        "7Y": 7.6,
+        "10Y": 7.72,
+        "Inception": 8.81
+    },
+    "ICICI - Pension Balanced Fund": {
+        "1Y": 8.13,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.19
+    },
+    "ICICI - Pension Balancer Fund": {
+        "1Y": 6.37,
+        "3Y": 8.37,
+        "5Y": 7.86,
+        "7Y": 8.49,
+        "10Y": 7.8,
+        "Inception": 9.88
+    },
+    "ICICI - Pension Balancer Fund II": {
+        "1Y": 7.7,
+        "3Y": 9.88,
+        "5Y": 9.41,
+        "7Y": 9.98,
+        "10Y": 9.28,
+        "Inception": 10.34
+    },
+    "ICICI - Pension Flexi Balanced Fund": {
+        "1Y": 6.08,
+        "3Y": 11.24,
+        "5Y": 10.11,
+        "7Y": 9.82,
+        "10Y": 8.86,
+        "Inception": 9.08
+    },
+    "ICICI - Pension Flexi Balanced Fund II": {
+        "1Y": 7.64,
+        "3Y": 12.83,
+        "5Y": 11.85,
+        "7Y": 11.47,
+        "10Y": 10.46,
+        "Inception": 10.45
+    },
+    "ICICI - Pension Multi Cap Balanced Fund": {
+        "1Y": 6.89,
+        "3Y": 12.27,
+        "5Y": 11.37,
+        "7Y": 10.23,
+        "10Y": 9.5,
+        "Inception": 9.35
+    },
+    "ICICI - Pinnacle Fund": {
+        "1Y": 4.14,
+        "3Y": 4.62,
+        "5Y": 3.61,
+        "7Y": 3.8,
+        "10Y": 4.85,
+        "Inception": 5.86
+    },
+    "ICICI - Secure Plus Fund": {
+        "1Y": 6.81,
+        "3Y": 7.79,
+        "5Y": 6.43,
+        "7Y": 7.74,
+        "10Y": 7.68,
+        "Inception": 7.48
+    },
+    "ICICI - Secure Plus Pension Fund": {
+        "1Y": 7.01,
+        "3Y": 7.93,
+        "5Y": 6.45,
+        "7Y": 7.51,
+        "10Y": 7.27,
+        "Inception": 7.2
+    },
+    "ICICI - Secure Save Builder Fund": {
+        "1Y": 8.73,
+        "3Y": 10.93,
+        "5Y": 12.4,
+        "7Y": 11.39,
+        "10Y": 10.74,
+        "Inception": 9.81
+    },
+    "ICICI - Secure Save Guarantee Fund": {
+        "1Y": 6.84,
+        "3Y": 8.28,
+        "5Y": 8.11,
+        "7Y": 8.6,
+        "10Y": 8.23,
+        "Inception": 7.9
+    },
+    "Kotak - Classic Opportunities Fund": {
+        "1Y": 4.7,
+        "3Y": 14.8,
+        "5Y": 17.0,
+        "7Y": 15.1,
+        "10Y": 13.7,
+        "Inception": 13.2
+    },
+    "Kotak - Frontline Equity Fund": {
+        "1Y": 3.5,
+        "3Y": 16.3,
+        "5Y": 18.7,
+        "7Y": 16.4,
+        "10Y": 14.6,
+        "Inception": 13.2
+    },
+    "Kotak - Dynamic Floor Fund II": {
+        "1Y": 5.5,
+        "3Y": 8.2,
+        "5Y": 7.2,
+        "7Y": 6.0,
+        "10Y": 6.7,
+        "Inception": 6.5
+    },
+    "Kotak - Balanced Fund": {
+        "1Y": 4.2,
+        "3Y": 11.6,
+        "5Y": 12.3,
+        "7Y": 11.7,
+        "10Y": 10.8,
+        "Inception": 10.5
+    },
+    "Kotak - Guarantee Fund": {
+        "1Y": 5.3,
+        "3Y": 8.7,
+        "5Y": 9.7,
+        "7Y": 8.5,
+        "10Y": 8.5,
+        "Inception": 8.0
+    },
+    "Kotak - Kotak Dynamic Bond Fund": {
+        "1Y": 5.7,
+        "3Y": 6.8,
+        "5Y": 4.9,
+        "7Y": 7.0,
+        "10Y": 7.1,
+        "Inception": 7.9
+    },
+    "Kotak - Kotak Dynamic Gilt Fund": {
+        "1Y": 4.5,
+        "3Y": 6.6,
+        "5Y": 4.7,
+        "7Y": 6.8,
+        "10Y": 7.0,
+        "Inception": 7.2
+    },
+    "Kotak - Kotak Dynamic Floating Rate Fund": {
+        "1Y": 6.0,
+        "3Y": 6.2,
+        "5Y": 4.8,
+        "7Y": 5.5,
+        "10Y": 5.7,
+        "Inception": 6.7
+    },
+    "Kotak - Money Market Fund": {
+        "1Y": 6.3,
+        "3Y": 6.3,
+        "5Y": 5.2,
+        "7Y": 5.4,
+        "10Y": 5.8,
+        "Inception": 6.6
+    },
+    "Kotak - Discontinued Policy Fund": {
+        "1Y": 6.1,
+        "3Y": 6.3,
+        "5Y": 5.0,
+        "7Y": 5.1,
+        "10Y": 5.5,
+        "Inception": 6.4
+    },
+    "Kotak - Kotak Mid Cap Advantage Fund": {
+        "1Y": 9.5,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 32.3
+    },
+    "Kotak - Kotak Manufacturing Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.6
+    },
+    "Kotak - Kotak Nifty 500 Multicap Momentum Quality 50 Index Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.4
+    },
+    "Kotak - Kotak Nifty 500 Multicap Momentum Quality 50 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.6
+    },
+    "Kotak - Kotak Discontinued Policy Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 1.9
+    },
+    "Kotak - Kotak Pension Growth Fund": {
+        "1Y": 7.2,
+        "3Y": 7.0,
+        "5Y": 6.0,
+        "7Y": 3.8,
+        "10Y": 5.3,
+        "Inception": 7.8
+    },
+    "Kotak - Pension Floor Fund II": {
+        "1Y": 8.4,
+        "3Y": 7.5,
+        "5Y": 6.7,
+        "7Y": 5.6,
+        "10Y": 6.4,
+        "Inception": 6.3
+    },
+    "Kotak - Kotak Pension Balanced Fund": {
+        "1Y": 7.7,
+        "3Y": 8.1,
+        "5Y": 6.4,
+        "7Y": 5.1,
+        "10Y": 6.1,
+        "Inception": 9.7
+    },
+    "Kotak - Pension Balanced Fund II": {
+        "1Y": 7.9,
+        "3Y": 9.2,
+        "5Y": 9.4,
+        "7Y": 9.6,
+        "10Y": 9.4,
+        "Inception": 9.5
+    },
+    "Kotak - Kotak Pension Bond Fund": {
+        "1Y": 6.6,
+        "3Y": 6.2,
+        "5Y": 4.7,
+        "7Y": 6.9,
+        "10Y": 7.0,
+        "Inception": 7.9
+    },
+    "Kotak - Kotak Pension Gilt Fund": {
+        "1Y": 4.8,
+        "3Y": 6.1,
+        "5Y": 4.8,
+        "7Y": 6.6,
+        "10Y": 7.0,
+        "Inception": 7.2
+    },
+    "Kotak - Kotak Pension Floating Rate Fund": {
+        "1Y": 5.8,
+        "3Y": 5.7,
+        "5Y": 4.4,
+        "7Y": 5.2,
+        "10Y": 5.5,
+        "Inception": 6.6
+    },
+    "Kotak - Pension Money Market Fund II": {
+        "1Y": 5.1,
+        "3Y": 5.6,
+        "5Y": 4.6,
+        "7Y": 4.8,
+        "10Y": 5.4,
+        "Inception": 6.3
+    },
+    "Kotak - Kotak Opportunities Fund (AUM ` 64,969.22 Lakhs)": {
+        "1Y": 4.2,
+        "3Y": 14.2,
+        "5Y": 16.3,
+        "7Y": 14.5,
+        "10Y": 13.0,
+        "Inception": 15.6
+    },
+    "Kotak - Kotak Aggressive Growth Fund": {
+        "1Y": 7.6,
+        "3Y": 13.3,
+        "5Y": 16.1,
+        "7Y": 14.1,
+        "10Y": 13.0,
+        "Inception": 15.1
+    },
+    "Kotak - Kotak Dynamic Growth Fund": {
+        "1Y": 3.7,
+        "3Y": 13.0,
+        "5Y": 14.8,
+        "7Y": 13.4,
+        "10Y": 12.2,
+        "Inception": 13.8
+    },
+    "Kotak - Dynamic Floor Fund": {
+        "1Y": 5.1,
+        "3Y": 7.7,
+        "5Y": 6.6,
+        "7Y": 5.6,
+        "10Y": 6.4,
+        "Inception": 7.7
+    },
+    "Kotak - Kotak Dynamic Balanced Fund": {
+        "1Y": 7.5,
+        "3Y": 9.9,
+        "5Y": 10.4,
+        "7Y": 10.0,
+        "10Y": 9.7,
+        "Inception": 11.9
+    },
+    "Kotak - Kotak Guaranteed Growth Fund": {
+        "1Y": 5.2,
+        "3Y": 8.1,
+        "5Y": 7.1,
+        "7Y": 4.8,
+        "10Y": 6.0,
+        "Inception": 10.3
+    },
+    "Kotak - Kotak Guaranteed Balanced Fund": {
+        "1Y": 5.4,
+        "3Y": 7.5,
+        "5Y": 6.5,
+        "7Y": 5.2,
+        "10Y": 6.2,
+        "Inception": 9.7
+    },
+    "Kotak - Pension Classic Opportunities Fund": {
+        "1Y": 9.3,
+        "3Y": 12.1,
+        "5Y": 14.4,
+        "7Y": 13.1,
+        "10Y": 12.3,
+        "Inception": 12.5
+    },
+    "Kotak - Pension Frontline Equity Fund": {
+        "1Y": 9.7,
+        "3Y": 12.0,
+        "5Y": 14.7,
+        "7Y": 13.5,
+        "10Y": 12.6,
+        "Inception": 12.4
+    },
+    "Kotak - Pension Guarantee Fund": {
+        "1Y": 5.5,
+        "3Y": 9.0,
+        "5Y": 9.8,
+        "7Y": 8.9,
+        "10Y": 8.8,
+        "Inception": 7.8
+    },
+    "Kotak - Kotak Group Dynamic Floor Fund": {
+        "1Y": 5.9,
+        "3Y": 6.5,
+        "5Y": 5.3,
+        "7Y": 5.0,
+        "10Y": 5.9,
+        "Inception": 6.0
+    },
+    "Kotak - Kotak Group Balanced Fund": {
+        "1Y": 4.3,
+        "3Y": 12.4,
+        "5Y": 13.0,
+        "7Y": 12.7,
+        "10Y": 11.7,
+        "Inception": 12.9
+    },
+    "Kotak - Kotak Group Bond Fund": {
+        "1Y": 6.1,
+        "3Y": 7.3,
+        "5Y": 5.3,
+        "7Y": 7.5,
+        "10Y": 7.6,
+        "Inception": 8.4
+    },
+    "Kotak - Kotak Group Gilt Fund": {
+        "1Y": 4.9,
+        "3Y": 7.0,
+        "5Y": 5.0,
+        "7Y": 7.1,
+        "10Y": 7.3,
+        "Inception": 7.5
+    },
+    "Kotak - Kotak Group Floating Rate Fund": {
+        "1Y": 6.7,
+        "3Y": 7.0,
+        "5Y": 5.4,
+        "7Y": 6.1,
+        "10Y": 6.3,
+        "Inception": 7.2
+    },
+    "Kotak - Kotak Group Secure Capital Fund": {
+        "1Y": 5.9,
+        "3Y": 7.1,
+        "5Y": 5.1,
+        "7Y": 7.3,
+        "10Y": 7.3,
+        "Inception": 8.1
+    },
+    "Kotak - Kotak Group Prudent Fund": {
+        "1Y": 5.3,
+        "3Y": 8.6,
+        "5Y": 7.4,
+        "7Y": 8.8,
+        "10Y": null,
+        "Inception": 8.9
+    },
+    "Kotak - Kotak Group Equity Fund": {
+        "1Y": 6.9,
+        "3Y": 10.8,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.2
+    },
+    "Kotak - Kotak Group Pension Balanced Fund": {
+        "1Y": 2.7,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.1
+    },
+    "Kotak - Kotak Group Pension Gilt Fund": {
+        "1Y": 4.2,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.2
+    },
+    "Kotak - Kotak Group Pension Bond Fund": {
+        "1Y": 5.4,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.0
+    },
+    "Kotak - Kotak Group Pension Equity Fund": {
+        "1Y": 2.9,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 16.5
+    },
+    "Kotak - Kotak Advantage Multiplier Fund II": {
+        "1Y": 3.6,
+        "3Y": 3.3,
+        "5Y": 1.8,
+        "7Y": 2.5,
+        "10Y": 2.6,
+        "Inception": 4.0
+    },
+    "Bajaj - Asset Allocation Fund": {
+        "1Y": 5.48,
+        "3Y": 10.12,
+        "5Y": 11.52,
+        "7Y": 10.29,
+        "10Y": 9.88,
+        "Inception": 9.96
+    },
+    "Bajaj - Asset Allocation Fund II": {
+        "1Y": 5.39,
+        "3Y": 10.1,
+        "5Y": 11.41,
+        "7Y": 10.65,
+        "10Y": 10.15,
+        "Inception": 10.67
+    },
+    "Bajaj - Asset Allocation Pension Fund": {
+        "1Y": 5.47,
+        "3Y": 9.7,
+        "5Y": 11.36,
+        "7Y": 10.37,
+        "10Y": 10.09,
+        "Inception": 10.02
+    },
+    "Bajaj - Asset Allocation Pension Fund II": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 3.71
+    },
+    "Bajaj - Cash Fund": {
+        "1Y": 4.18,
+        "3Y": 4.25,
+        "5Y": 3.11,
+        "7Y": 3.13,
+        "10Y": 3.58,
+        "Inception": 5.01
+    },
+    "Bajaj - Cash Plus Fund": {
+        "1Y": 6.11,
+        "3Y": 6.18,
+        "5Y": 5.06,
+        "7Y": 5.13,
+        "10Y": 5.6,
+        "Inception": 6.99
+    },
+    "Bajaj - Cash Plus Pension Fund": {
+        "1Y": 5.72,
+        "3Y": 6.0,
+        "5Y": 4.92,
+        "7Y": 4.96,
+        "10Y": 5.47,
+        "Inception": 7.07
+    },
+    "Bajaj - Liquid Fund": {
+        "1Y": 5.79,
+        "3Y": 6.04,
+        "5Y": 4.88,
+        "7Y": 4.52,
+        "10Y": 4.38,
+        "Inception": 6.4
+    },
+    "Bajaj - Liquid Pension Fund II": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 2.0
+    },
+    "Bajaj - Debt Fund": {
+        "1Y": 4.98,
+        "3Y": 5.91,
+        "5Y": 3.53,
+        "7Y": 4.63,
+        "10Y": 4.78,
+        "Inception": 5.53
+    },
+    "Bajaj - Debt Plus Fund": {
+        "1Y": 6.87,
+        "3Y": 7.78,
+        "5Y": 5.36,
+        "7Y": 6.53,
+        "10Y": 6.57,
+        "Inception": 7.44
+    },
+    "Bajaj - Debt Plus Pension Fund": {
+        "1Y": 6.4,
+        "3Y": 7.7,
+        "5Y": 5.21,
+        "7Y": 6.49,
+        "10Y": 6.95,
+        "Inception": 7.93
+    },
+    "Bajaj - Life Long Gain Fund": {
+        "1Y": 4.48,
+        "3Y": 5.76,
+        "5Y": 3.4,
+        "7Y": 4.75,
+        "10Y": 4.93,
+        "Inception": 5.02
+    },
+    "Bajaj - Bond Fund": {
+        "1Y": 6.6,
+        "3Y": 7.53,
+        "5Y": 5.33,
+        "7Y": 6.65,
+        "10Y": 6.83,
+        "Inception": 7.92
+    },
+    "Bajaj - Bond Pension Fund": {
+        "1Y": 6.02,
+        "3Y": 7.4,
+        "5Y": 5.1,
+        "7Y": 6.26,
+        "10Y": 6.18,
+        "Inception": 7.77
+    },
+    "Bajaj - Bond Pension Fund II": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -0.52
+    },
+    "Bajaj - Long Term Debt Solution Fund": {
+        "1Y": 6.35,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.13
+    },
+    "Bajaj - Equity Gain Fund": {
+        "1Y": 3.2,
+        "3Y": 9.87,
+        "5Y": 12.78,
+        "7Y": 11.12,
+        "10Y": 11.06,
+        "Inception": 14.1
+    },
+    "Bajaj - Equity Plus Fund": {
+        "1Y": 5.32,
+        "3Y": 11.51,
+        "5Y": 14.51,
+        "7Y": 12.79,
+        "10Y": 12.87,
+        "Inception": 15.4
+    },
+    "Bajaj - Equity Plus Pension Fund": {
+        "1Y": 4.08,
+        "3Y": 11.03,
+        "5Y": 14.37,
+        "7Y": 12.75,
+        "10Y": 12.71,
+        "Inception": 15.97
+    },
+    "Bajaj - Premier Equity Gain Fund": {
+        "1Y": 3.15,
+        "3Y": 9.94,
+        "5Y": 13.04,
+        "7Y": 11.58,
+        "10Y": 11.57,
+        "Inception": 12.71
+    },
+    "Bajaj - Equity Growth Fund": {
+        "1Y": 4.92,
+        "3Y": 11.34,
+        "5Y": 14.22,
+        "7Y": 12.44,
+        "10Y": 12.41,
+        "Inception": 12.12
+    },
+    "Bajaj - Equity Growth Fund II": {
+        "1Y": 5.34,
+        "3Y": 11.7,
+        "5Y": 14.65,
+        "7Y": 13.23,
+        "10Y": 13.12,
+        "Inception": 13.6
+    },
+    "Bajaj - Premier Equity Growth Fund": {
+        "1Y": 4.33,
+        "3Y": 10.28,
+        "5Y": 13.08,
+        "7Y": 11.31,
+        "10Y": 11.23,
+        "Inception": 11.35
+    },
+    "Bajaj - Equity Growth Pension Fund": {
+        "1Y": 4.45,
+        "3Y": 11.24,
+        "5Y": 14.55,
+        "7Y": 12.87,
+        "10Y": 12.83,
+        "Inception": 13.05
+    },
+    "Bajaj - Small Cap Fund": {
+        "1Y": 0.83,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 30.9
+    },
+    "Bajaj - Flexi Cap Fund": {
+        "1Y": 2.94,
+        "3Y": 15.4,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 17.23
+    },
+    "Bajaj - Sustainable Equity Fund": {
+        "1Y": 6.89,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 18.76
+    },
+    "Bajaj - Focused 25 Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.52
+    },
+    "Bajaj - Dynamic Asset Allocation Fund": {
+        "1Y": 6.99,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.43
+    },
+    "Bajaj - Equity Midcap Fund": {
+        "1Y": -5.21,
+        "3Y": 14.81,
+        "5Y": 17.67,
+        "7Y": 12.17,
+        "10Y": 11.77,
+        "Inception": 13.74
+    },
+    "Bajaj - Equity Midcap Plus Fund": {
+        "1Y": -3.82,
+        "3Y": 16.45,
+        "5Y": 19.54,
+        "7Y": 13.95,
+        "10Y": 13.43,
+        "Inception": 16.32
+    },
+    "Bajaj - Accelerator Mid Cap Fund": {
+        "1Y": -4.2,
+        "3Y": 15.82,
+        "5Y": 18.93,
+        "7Y": 13.9,
+        "10Y": 13.63,
+        "Inception": 14.56
+    },
+    "Bajaj - Accelerator Mid Cap Fund II": {
+        "1Y": -0.51,
+        "3Y": 17.45,
+        "5Y": 18.69,
+        "7Y": 14.72,
+        "10Y": 14.38,
+        "Inception": 14.33
+    },
+    "Bajaj - Accelerator Midcap Pension Fund": {
+        "1Y": -3.14,
+        "3Y": 17.06,
+        "5Y": 20.11,
+        "7Y": 14.46,
+        "10Y": 13.89,
+        "Inception": 15.22
+    },
+    "Bajaj - Equity Fund": {
+        "1Y": 6.06,
+        "3Y": 11.22,
+        "5Y": 15.19,
+        "7Y": 13.07,
+        "10Y": 11.92,
+        "Inception": 11.42
+    },
+    "Bajaj - Equity Index Fund": {
+        "1Y": 7.6,
+        "3Y": 12.88,
+        "5Y": 16.77,
+        "7Y": 14.75,
+        "10Y": 13.58,
+        "Inception": 14.29
+    },
+    "Bajaj - Equity Index Pension Fund": {
+        "1Y": 7.19,
+        "3Y": 12.77,
+        "5Y": 16.67,
+        "7Y": 14.75,
+        "10Y": 13.59,
+        "Inception": 13.88
+    },
+    "Bajaj - Premier Equity Fund": {
+        "1Y": 6.16,
+        "3Y": 11.32,
+        "5Y": 15.18,
+        "7Y": 13.03,
+        "10Y": 11.85,
+        "Inception": 10.86
+    },
+    "Bajaj - Equity Index Fund II": {
+        "1Y": 7.32,
+        "3Y": 12.39,
+        "5Y": 16.14,
+        "7Y": 14.25,
+        "10Y": 12.84,
+        "Inception": 11.64
+    },
+    "Bajaj - Equity Index Pension Fund II": {
+        "1Y": 6.98,
+        "3Y": 12.26,
+        "5Y": 16.27,
+        "7Y": 14.53,
+        "10Y": 13.37,
+        "Inception": 11.9
+    },
+    "Bajaj - Blue Chip Equity Fund": {
+        "1Y": 7.45,
+        "3Y": 12.63,
+        "5Y": 16.22,
+        "7Y": 14.39,
+        "10Y": 13.25,
+        "Inception": 10.87
+    },
+    "Bajaj - Midcap Index Fund": {
+        "1Y": 5.99,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.76
+    },
+    "Bajaj - SmallCap Quality Index Fund": {
+        "1Y": -14.02,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.06
+    },
+    "Bajaj - Nifty Alpha 50 Fund": {
+        "1Y": -5.95,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -8.94
+    },
+    "Bajaj - Nifty 200 Alpha 30 Index Fund": {
+        "1Y": -2.98,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -8.32
+    },
+    "Bajaj - N ifty 200 Alpha 30 Index Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.87
+    },
+    "Bajaj - Nifty 200 Momentum 30 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -7.24
+    },
+    "Bajaj - Nifty 500 Multicap Momentum\nQuality 50 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 18.41
+    },
+    "Bajaj - Nifty 500 Multifactor 50 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -0.81
+    },
+    "Bajaj - NIFTY 500 MULTIFACTOR 50 INDEX\nPENSION FUND": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 0.47
+    },
+    "Bajaj - BSE 500 Enhanced Value 50\nIndex fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 2.61
+    },
+    "Bajaj - BSE 500 Enhanced Value 50\nIndex Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 0.12
+    },
+    "Bajaj - Pure Equity Fund": {
+        "1Y": 3.82,
+        "3Y": 16.08,
+        "5Y": 17.31,
+        "7Y": 14.97,
+        "10Y": 13.74,
+        "Inception": 15.09
+    },
+    "Bajaj - Pure Stock Fund": {
+        "1Y": 3.0,
+        "3Y": 16.01,
+        "5Y": 16.64,
+        "7Y": 14.69,
+        "10Y": 13.76,
+        "Inception": 15.33
+    },
+    "Bajaj - Pure Stock Fund II": {
+        "1Y": 2.83,
+        "3Y": 15.06,
+        "5Y": 16.02,
+        "7Y": 13.72,
+        "10Y": null,
+        "Inception": 12.59
+    },
+    "Bajaj - Pure Stock Pension Fund": {
+        "1Y": -4.79,
+        "3Y": 12.12,
+        "5Y": 12.25,
+        "7Y": 11.09,
+        "10Y": 10.95,
+        "Inception": 13.73
+    },
+    "Bajaj - Pure Stock Pension Fund II": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 3.39
+    },
+    "Bajaj - Assured Return Fund": {
+        "1Y": 6.46,
+        "3Y": 6.98,
+        "5Y": 5.04,
+        "7Y": 5.84,
+        "10Y": 6.08,
+        "Inception": 6.7
+    },
+    "Bajaj - Balanced Equity Fund": {
+        "1Y": 6.91,
+        "3Y": 10.26,
+        "5Y": 10.39,
+        "7Y": 10.01,
+        "10Y": null,
+        "Inception": 9.28
+    },
+    "Bajaj - Builder Bond Fund": {
+        "1Y": 6.86,
+        "3Y": 6.54,
+        "5Y": 4.42,
+        "7Y": 5.95,
+        "10Y": null,
+        "Inception": 5.89
+    },
+    "Bajaj - Discontinue Pension Policy Fund": {
+        "1Y": 5.3,
+        "3Y": 6.07,
+        "5Y": 5.1,
+        "7Y": 5.05,
+        "10Y": 5.14,
+        "Inception": 5.05
+    },
+    "Bajaj - Discontinued Life Policy Fund": {
+        "1Y": 6.09,
+        "3Y": 6.33,
+        "5Y": 5.22,
+        "7Y": 5.08,
+        "10Y": 5.28,
+        "Inception": 5.24
+    },
+    "Bajaj - Pension Builder Fund": {
+        "1Y": 5.68,
+        "3Y": 7.73,
+        "5Y": 6.42,
+        "7Y": 7.04,
+        "10Y": 6.84,
+        "Inception": 6.74
+    },
+    "PNB Metlife - Mid Cap Fund (Open Fund)": {
+        "1Y": 1.1,
+        "3Y": 25.2,
+        "5Y": 28.7,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 20.9
+    },
+    "PNB Metlife - Virtue II (Open Fund)": {
+        "1Y": -2.7,
+        "3Y": 16.0,
+        "5Y": 19.2,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 13.2
+    },
+    "PNB Metlife - Premier Multi-Cap Fund (Open Fund)": {
+        "1Y": -1.4,
+        "3Y": 16.4,
+        "5Y": 20.6,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 17.1
+    },
+    "PNB Metlife - Pension Premier Multi-Cap Fund (Open": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.4
+    },
+    "PNB Metlife - CREST (THEMATIC FUND) (Open Fund)": {
+        "1Y": 1.1,
+        "3Y": 18.2,
+        "5Y": 21.1,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.8
+    },
+    "PNB Metlife - Multiplier III Fund (Open Fund)": {
+        "1Y": 4.7,
+        "3Y": 16.4,
+        "5Y": 19.3,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 14.2
+    },
+    "PNB Metlife - Flexi Cap (Open Fund)": {
+        "1Y": 8.0,
+        "3Y": 15.6,
+        "5Y": 17.6,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.5
+    },
+    "PNB Metlife - India Opportunities Fund (Open Fund)": {
+        "1Y": -1.0,
+        "3Y": 16.4,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 16.3
+    },
+    "PNB Metlife - Sustainable Equity Fund (Open Fund)": {
+        "1Y": 11.3,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 18.5
+    },
+    "PNB Metlife - Small Cap Fund (Open Fund)": {
+        "1Y": -4.7,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.0
+    },
+    "PNB Metlife - Bharat Manufacturing Fund (Open Fund)": {
+        "1Y": 6.7,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 2.9
+    },
+    "PNB Metlife - Pension Mid Cap Fund (Open Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 16.7
+    },
+    "PNB Metlife - Bharat Consumption Fund (Open Fund)": {
+        "1Y": 4.3,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.3
+    },
+    "PNB Metlife - Pension Consumption Fund (Open Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 0.3
+    },
+    "PNB Metlife - Nifty 500 Momentum 50 Index Fund (Open Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 22.8
+    },
+    "PNB Metlife - Balanced Opportunities Fund (Open Fund)": {
+        "1Y": 3.6,
+        "3Y": 16.5,
+        "5Y": 17.3,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.1
+    },
+    "PNB Metlife - Balancer II (Open Fund)": {
+        "1Y": 4.7,
+        "3Y": 10.8,
+        "5Y": 11.5,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.2
+    },
+    "PNB Metlife - Bond Opportunities Fund (Open Fund)": {
+        "1Y": 8.0,
+        "3Y": 9.6,
+        "5Y": 6.9,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.9
+    },
+    "PNB Metlife - Pension Bond Fund (Open Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 43.9
+    },
+    "PNB Metlife - Preserver II (Open Fund)": {
+        "1Y": 5.0,
+        "3Y": 7.1,
+        "5Y": 5.2,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.0
+    },
+    "PNB Metlife - Protector II (Open Fund)": {
+        "1Y": 5.4,
+        "3Y": 6.9,
+        "5Y": 5.7,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.2
+    },
+    "PNB Metlife - Liquid Fund (Open Fund)": {
+        "1Y": 5.3,
+        "3Y": 5.7,
+        "5Y": 4.5,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.6
+    },
+    "PNB Metlife - Discontinued Policy Fund (Closed Fund)": {
+        "1Y": 6.2,
+        "3Y": 6.3,
+        "5Y": 5.1,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.2
+    },
+    "PNB Metlife - Pension Discontinued Fund (Closed Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 3.1
+    },
+    "PNB Metlife - Multiplier II (Closed Fund)": {
+        "1Y": 7.0,
+        "3Y": 13.0,
+        "5Y": 16.7,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.6
+    },
+    "PNB Metlife - Virtue (Closed Fund)": {
+        "1Y": 2.0,
+        "3Y": 14.9,
+        "5Y": 16.5,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.4
+    },
+    "PNB Metlife - Value Fund (Open Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.6
+    },
+    "PNB Metlife - Pension Value Fund (Open Fund)": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 2.4
+    },
+    "PNB Metlife - Multiplier (Closed Fund)": {
+        "1Y": 7.8,
+        "3Y": 13.5,
+        "5Y": 17.0,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.2
+    },
+    "PNB Metlife - Accelerator (Closed Fund)": {
+        "1Y": 6.5,
+        "3Y": 9.6,
+        "5Y": 13.0,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.0
+    },
+    "PNB Metlife - Balancer (Closed Fund)": {
+        "1Y": 5.9,
+        "3Y": 8.4,
+        "5Y": 10.6,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.3
+    },
+    "PNB Metlife - Moderator (Closed Fund)": {
+        "1Y": 5.3,
+        "3Y": 7.2,
+        "5Y": 7.2,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.4
+    },
+    "PNB Metlife - Preserver (Closed Fund)": {
+        "1Y": 5.5,
+        "3Y": 6.6,
+        "5Y": 4.6,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.2
+    },
+    "PNB Metlife - Protector (Closed Fund)": {
+        "1Y": 5.8,
+        "3Y": 7.1,
+        "5Y": 6.0,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.4
+    },
+    "Tata AIA - Individual Life Funds": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Equity Fund": {
+        "1Y": 7.68,
+        "3Y": 19.61,
+        "5Y": 20.48,
+        "7Y": 18.07,
+        "10Y": 16.18,
+        "Inception": 15.5
+    },
+    "Tata AIA - Whole Life Mid Cap Equity Fund": {
+        "1Y": 7.01,
+        "3Y": 23.76,
+        "5Y": 23.0,
+        "7Y": 20.89,
+        "10Y": 17.95,
+        "Inception": 16.03
+    },
+    "Tata AIA - Large Cap Equity Fund": {
+        "1Y": 6.72,
+        "3Y": 16.32,
+        "5Y": 18.8,
+        "7Y": 17.71,
+        "10Y": 15.89,
+        "Inception": 12.04
+    },
+    "Tata AIA - Super Select Equity Fund": {
+        "1Y": -1.91,
+        "3Y": 13.46,
+        "5Y": 16.15,
+        "7Y": 14.55,
+        "10Y": 14.05,
+        "Inception": 13.81
+    },
+    "Tata AIA - Select Equity Fund": {
+        "1Y": -2.63,
+        "3Y": 14.12,
+        "5Y": 16.54,
+        "7Y": 14.96,
+        "10Y": 14.17,
+        "Inception": 15.68
+    },
+    "Tata AIA - Future Select Equity Fund.": {
+        "1Y": -2.22,
+        "3Y": 12.62,
+        "5Y": 15.41,
+        "7Y": 13.61,
+        "10Y": 13.41,
+        "Inception": 15.09
+    },
+    "Tata AIA - Top 200 Fund": {
+        "1Y": 6.39,
+        "3Y": 21.64,
+        "5Y": 24.08,
+        "7Y": 22.9,
+        "10Y": 19.19,
+        "Inception": 18.91
+    },
+    "Tata AIA - Top 50 Fund": {
+        "1Y": 7.12,
+        "3Y": 16.61,
+        "5Y": 18.49,
+        "7Y": 15.83,
+        "10Y": 14.61,
+        "Inception": 14.64
+    },
+    "Tata AIA - Infrastructure Fund": {
+        "1Y": 1.95,
+        "3Y": 17.98,
+        "5Y": 20.75,
+        "7Y": 17.6,
+        "10Y": 14.39,
+        "Inception": 11.08
+    },
+    "Tata AIA - Multi Cap Fund": {
+        "1Y": 3.21,
+        "3Y": 19.42,
+        "5Y": 23.21,
+        "7Y": 22.54,
+        "10Y": 20.99,
+        "Inception": 20.38
+    },
+    "Tata AIA - India Consumption Fund": {
+        "1Y": 7.74,
+        "3Y": 22.77,
+        "5Y": 23.85,
+        "7Y": 22.6,
+        "10Y": 20.72,
+        "Inception": 20.17
+    },
+    "Tata AIA - Emerging Opportunities Fund": {
+        "1Y": 7.01,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 27.2
+    },
+    "Tata AIA - Sustainable Equity Fund": {
+        "1Y": 3.8,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 20.32
+    },
+    "Tata AIA - Small Cap Discovery Fund": {
+        "1Y": 6.95,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 33.06
+    },
+    "Tata AIA - TATA AIA Flexi Growth Fund": {
+        "1Y": 8.71,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 17.57
+    },
+    "Tata AIA - TATA AIA Rising India Fund": {
+        "1Y": 8.12,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 13.99
+    },
+    "Tata AIA - Midcap Momentum Index Fund": {
+        "1Y": -0.18,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -0.41
+    },
+    "Tata AIA - Flexi Growth FD II": {
+        "1Y": 9.29,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.82
+    },
+    "Tata AIA - NIFTY ALPHA 50 INDEX": {
+        "1Y": -7.14,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -11.99
+    },
+    "Tata AIA - Multicap Momentum Quality Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -5.68
+    },
+    "Tata AIA - Income Fund": {
+        "1Y": 6.91,
+        "3Y": 7.47,
+        "5Y": 5.56,
+        "7Y": 7.29,
+        "10Y": 7.37,
+        "Inception": 7.03
+    },
+    "Tata AIA - Whole Life Income Fund": {
+        "1Y": 6.83,
+        "3Y": 7.56,
+        "5Y": 5.79,
+        "7Y": 7.52,
+        "10Y": 7.63,
+        "Inception": 7.79
+    },
+    "Tata AIA - Whole Life Short Term Fixed Income Fund": {
+        "1Y": 7.73,
+        "3Y": 7.17,
+        "5Y": 5.54,
+        "7Y": 6.4,
+        "10Y": 6.55,
+        "Inception": 7.07
+    },
+    "Tata AIA - Short Term Fixed Income Fund": {
+        "1Y": 7.3,
+        "3Y": 6.82,
+        "5Y": 5.21,
+        "7Y": 6.16,
+        "10Y": 6.29,
+        "Inception": 6.84
+    },
+    "Tata AIA - Bond Fund": {
+        "1Y": 7.01,
+        "3Y": 7.59,
+        "5Y": 5.65,
+        "7Y": 7.36,
+        "10Y": 7.45,
+        "Inception": 7.58
+    },
+    "Tata AIA - Liquid Fund": {
+        "1Y": 5.54,
+        "3Y": 5.73,
+        "5Y": 4.69,
+        "7Y": 4.78,
+        "10Y": 5.11,
+        "Inception": 5.97
+    },
+    "Tata AIA - Discontinued Policy Fund": {
+        "1Y": 6.11,
+        "3Y": 6.32,
+        "5Y": 5.19,
+        "7Y": 5.24,
+        "10Y": 5.68,
+        "Inception": 6.57
+    },
+    "Tata AIA - Policyholders Unclaimed Fund": {
+        "1Y": 6.3,
+        "3Y": 7.05,
+        "5Y": 5.8,
+        "7Y": 5.8,
+        "10Y": null,
+        "Inception": 6.01
+    },
+    "Tata AIA - Whole Life Income Fund II": {
+        "1Y": 6.41,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.48
+    },
+    "Tata AIA - Apex Supreme Investment Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Whole Life Aggressive Growth Fund": {
+        "1Y": 10.7,
+        "3Y": 19.55,
+        "5Y": 18.29,
+        "7Y": 17.22,
+        "10Y": 15.84,
+        "Inception": 13.14
+    },
+    "Tata AIA - Aggressive Growth Fund": {
+        "1Y": 7.44,
+        "3Y": 16.64,
+        "5Y": 17.02,
+        "7Y": 15.77,
+        "10Y": 14.56,
+        "Inception": 12.18
+    },
+    "Tata AIA - Growth Fund": {
+        "1Y": 5.98,
+        "3Y": 15.63,
+        "5Y": 16.31,
+        "7Y": 15.51,
+        "10Y": 14.19,
+        "Inception": 12.97
+    },
+    "Tata AIA - Whole Life Stable Growth Fund": {
+        "1Y": 8.59,
+        "3Y": 15.09,
+        "5Y": 13.51,
+        "7Y": 13.73,
+        "10Y": 12.61,
+        "Inception": 10.61
+    },
+    "Tata AIA - Balanced Fund": {
+        "1Y": 7.0,
+        "3Y": 12.59,
+        "5Y": 12.65,
+        "7Y": 12.51,
+        "10Y": 11.69,
+        "Inception": 10.67
+    },
+    "Tata AIA - Stable Growth Fund": {
+        "1Y": 4.59,
+        "3Y": 11.92,
+        "5Y": 11.88,
+        "7Y": 11.82,
+        "10Y": 11.18,
+        "Inception": 10.17
+    },
+    "Tata AIA - Growth Maximizer Fund": {
+        "1Y": 8.02,
+        "3Y": 13.99,
+        "5Y": 15.11,
+        "7Y": 14.64,
+        "10Y": 13.3,
+        "Inception": 9.27
+    },
+    "Tata AIA - Aggressive Flexi Fund": {
+        "1Y": 9.25,
+        "3Y": 14.13,
+        "5Y": 13.36,
+        "7Y": 13.11,
+        "10Y": 11.84,
+        "Inception": 10.16
+    },
+    "Tata AIA - Stable Flexi Fund": {
+        "1Y": 8.24,
+        "3Y": 10.38,
+        "5Y": 8.55,
+        "7Y": 9.15,
+        "10Y": 8.71,
+        "Inception": 8.11
+    },
+    "Tata AIA - 110% Capital Guarantee Fund": {
+        "1Y": 5.25,
+        "3Y": 6.76,
+        "5Y": 5.04,
+        "7Y": 6.21,
+        "10Y": 6.1,
+        "Inception": 6.0
+    },
+    "Tata AIA - Capital Guarantee Fund": {
+        "1Y": 6.45,
+        "3Y": 7.68,
+        "5Y": 5.89,
+        "7Y": 7.02,
+        "10Y": 7.04,
+        "Inception": 6.82
+    },
+    "Tata AIA - Super 110% Capital Guarantee Fund": {
+        "1Y": 7.09,
+        "3Y": 8.45,
+        "5Y": 6.55,
+        "7Y": 7.63,
+        "10Y": 7.5,
+        "Inception": 7.33
+    },
+    "Tata AIA - Growth Enabler Fund": {
+        "1Y": 8.48,
+        "3Y": 11.57,
+        "5Y": 11.53,
+        "7Y": 11.69,
+        "10Y": 10.63,
+        "Inception": 8.62
+    },
+    "Tata AIA - Apex Supreme Return Lock-in Fund": {
+        "1Y": -1.53,
+        "3Y": -0.21,
+        "5Y": 0.26,
+        "7Y": 1.91,
+        "10Y": 3.77,
+        "Inception": 5.39
+    },
+    "Tata AIA - Dynamic Advantage Fund": {
+        "1Y": 7.46,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 20.69
+    },
+    "Tata AIA - Tax Bonanza Consumption Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 17.63
+    },
+    "Tata AIA - Top 200 Alpha 30 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -1.69
+    },
+    "Tata AIA - Momentum 50 Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 1.92
+    },
+    "Tata AIA - Sector Leaders Index Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 1.23
+    },
+    "Tata AIA - Sector Leaders Index Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 1.43
+    },
+    "Tata AIA - Individual Pension Funds": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Future Equity Pension Fund": {
+        "1Y": 5.68,
+        "3Y": 18.11,
+        "5Y": 19.47,
+        "7Y": 17.53,
+        "10Y": 16.51,
+        "Inception": 13.2
+    },
+    "Tata AIA - Future Income Pension Fund": {
+        "1Y": 6.95,
+        "3Y": 7.56,
+        "5Y": 5.79,
+        "7Y": 7.56,
+        "10Y": 7.63,
+        "Inception": 7.74
+    },
+    "Tata AIA - Apex Pension 15 Investment Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Apex Pension 20 Investment Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Future Growth Pension Fund": {
+        "1Y": 7.6,
+        "3Y": 10.96,
+        "5Y": 10.39,
+        "7Y": 11.17,
+        "10Y": 10.48,
+        "Inception": 9.24
+    },
+    "Tata AIA - Future Balanced Pension Fund": {
+        "1Y": 7.62,
+        "3Y": 8.52,
+        "5Y": 7.17,
+        "7Y": 8.47,
+        "10Y": 8.16,
+        "Inception": 7.87
+    },
+    "Tata AIA - Future Capital Guarantee Pension Fund": {
+        "1Y": 6.57,
+        "3Y": 7.89,
+        "5Y": 6.18,
+        "7Y": 7.3,
+        "10Y": 7.18,
+        "Inception": 6.88
+    },
+    "Tata AIA - Apex Pension 20 Return Lock-In Fund": {
+        "1Y": 6.95,
+        "3Y": 8.31,
+        "5Y": 8.39,
+        "7Y": 8.7,
+        "10Y": 8.98,
+        "Inception": 8.92
+    },
+    "Tata AIA - Apex Pension 20 Return Lock-in Fund II": {
+        "1Y": 6.11,
+        "3Y": 7.87,
+        "5Y": 7.98,
+        "7Y": 8.53,
+        "10Y": 8.88,
+        "Inception": 8.29
+    },
+    "Tata AIA - Discontinued Pension Policy Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 3.41
+    },
+    "Tata AIA - Income Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.26
+    },
+    "Tata AIA - Alpha 50 Index Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.99
+    },
+    "Tata AIA - Super Select Equity Pension Fund": {
+        "1Y": -0.35,
+        "3Y": 13.14,
+        "5Y": 15.75,
+        "7Y": 14.42,
+        "10Y": 13.96,
+        "Inception": 13.59
+    },
+    "Tata AIA - Multicap Momentum Quality Index": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 19.93
+    },
+    "Tata AIA - Tax Bonanza Consumption Pension": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 17.48
+    },
+    "Tata AIA - Top 200 Alpha 30 Index Pension Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -1.52
+    },
+    "Tata AIA - Group Funds": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Group Premier Equity Fund": {
+        "1Y": 4.67,
+        "3Y": 18.3,
+        "5Y": 19.32,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 17.88
+    },
+    "Tata AIA - Pension Income Fund": {
+        "1Y": 6.39,
+        "3Y": 7.23,
+        "5Y": 5.47,
+        "7Y": 7.3,
+        "10Y": 7.48,
+        "Inception": 7.3
+    },
+    "Tata AIA - Pension Bond Fund": {
+        "1Y": 6.18,
+        "3Y": 7.13,
+        "5Y": 5.42,
+        "7Y": 7.24,
+        "10Y": 7.41,
+        "Inception": 7.8
+    },
+    "Tata AIA - Pension Liquid Fund": {
+        "1Y": 5.62,
+        "3Y": 5.76,
+        "5Y": 4.69,
+        "7Y": 4.8,
+        "10Y": 5.12,
+        "Inception": 6.13
+    },
+    "Tata AIA - Pension Short Term Fixed Income": {
+        "1Y": 7.38,
+        "3Y": 6.87,
+        "5Y": 5.26,
+        "7Y": 6.15,
+        "10Y": 6.29,
+        "Inception": 6.77
+    },
+    "Tata AIA - Group Income Advantage Fund": {
+        "1Y": 6.31,
+        "3Y": 7.32,
+        "5Y": 5.81,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.61
+    },
+    "Tata AIA - Group Short Term Debt Fund": {
+        "1Y": 5.83,
+        "3Y": 5.85,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.81
+    },
+    "Tata AIA - Pension Balanced Fund": {
+        "1Y": 5.93,
+        "3Y": 8.46,
+        "5Y": 6.91,
+        "7Y": 7.98,
+        "10Y": 7.79,
+        "Inception": 7.7
+    },
+    "Tata AIA - Pension Growth Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Pension Maxima Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "Tata AIA - Group Defensive Managed Fund": {
+        "1Y": 5.99,
+        "3Y": 8.89,
+        "5Y": 7.39,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.48
+    },
+    "Tata AIA - Group Growth Advantage Fund": {
+        "1Y": 5.85,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.81
+    },
+    "Tata AIA - Total AUM": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": null
+    },
+    "HDFC - Balanced Managed Fund - Life": {
+        "Inception": 11.31,
+        "10Y": 10.16,
+        "7Y": 10.4,
+        "5Y": 10.09,
+        "3Y": 9.82,
+        "1Y": 6.75
+    },
+    "HDFC - Balanced Managed Fund - Pension": {
+        "Inception": 11.26,
+        "10Y": 10.33,
+        "7Y": 10.31,
+        "5Y": 10.3,
+        "3Y": 9.81,
+        "1Y": 6.95
+    },
+    "HDFC - Defensive Managed Fund - Life": {
+        "Inception": 9.35,
+        "10Y": 8.86,
+        "7Y": 8.79,
+        "5Y": 7.67,
+        "3Y": 8.32,
+        "1Y": 6.12
+    },
+    "HDFC - Defensive Managed Fund - Pension": {
+        "Inception": 8.84,
+        "10Y": 8.82,
+        "7Y": 8.75,
+        "5Y": 7.63,
+        "3Y": 8.3,
+        "1Y": 6.05
+    },
+    "HDFC - Growth Fund - Life": {
+        "Inception": 14.83,
+        "10Y": 13.82,
+        "7Y": 14.98,
+        "5Y": 16.38,
+        "3Y": 13.71,
+        "1Y": 7.98
+    },
+    "HDFC - Growth Fund - Pension": {
+        "Inception": 14.62,
+        "10Y": 13.82,
+        "7Y": 14.99,
+        "5Y": 16.4,
+        "3Y": 13.73,
+        "1Y": 7.93
+    },
+    "HDFC - Liquid Fund - Life": {
+        "Inception": 6.57,
+        "10Y": 5.21,
+        "7Y": 4.86,
+        "5Y": 4.79,
+        "3Y": 5.99,
+        "1Y": 5.81
+    },
+    "HDFC - Liquid Fund - Pension": {
+        "Inception": 6.61,
+        "10Y": 5.21,
+        "7Y": 4.87,
+        "5Y": 4.81,
+        "3Y": 6.01,
+        "1Y": 5.81
+    },
+    "HDFC - Secured Managed Fund - Life": {
+        "Inception": 7.28,
+        "10Y": 7.24,
+        "7Y": 7.1,
+        "5Y": 5.41,
+        "3Y": 7.4,
+        "1Y": 6.73
+    },
+    "HDFC - Secured Managed Fund - Pension": {
+        "Inception": 7.19,
+        "10Y": 7.2,
+        "7Y": 7.02,
+        "5Y": 5.33,
+        "3Y": 7.32,
+        "1Y": 6.77
+    },
+    "HDFC - Equity Managed Fund - Life": {
+        "Inception": 12.77,
+        "10Y": 13.41,
+        "7Y": 14.22,
+        "5Y": 15.78,
+        "3Y": 13.1,
+        "1Y": 8.68
+    },
+    "HDFC - Equity Managed Fund - Pension": {
+        "Inception": 12.99,
+        "10Y": 14.03,
+        "7Y": 15.11,
+        "5Y": 17.13,
+        "3Y": 14.76,
+        "1Y": 9.22
+    },
+    "HDFC - Stable Managed Fund - Life": {
+        "Inception": 7.09,
+        "10Y": 6.13,
+        "7Y": 6.05,
+        "5Y": 5.39,
+        "3Y": 6.89,
+        "1Y": 7.39
+    },
+    "HDFC - Stable Managed Fund - Pension": {
+        "Inception": 7.07,
+        "10Y": 6.08,
+        "7Y": 6.04,
+        "5Y": 5.33,
+        "3Y": 6.83,
+        "1Y": 7.27
+    },
+    "HDFC - Balanced Managed Fund - Life - II": {
+        "Inception": 8.98,
+        "10Y": 9.58,
+        "7Y": 9.87,
+        "5Y": 9.56,
+        "3Y": 9.26,
+        "1Y": 6.24
+    },
+    "HDFC - Defensive Managed Fund - Life - II": {
+        "Inception": 8.46,
+        "10Y": 8.24,
+        "7Y": 8.13,
+        "5Y": 7.09,
+        "3Y": 7.75,
+        "1Y": 5.41
+    },
+    "HDFC - Equity Managed Fund - Life - II": {
+        "Inception": 10.91,
+        "10Y": 12.79,
+        "7Y": 13.66,
+        "5Y": 15.29,
+        "3Y": 12.61,
+        "1Y": 8.38
+    },
+    "HDFC - Growth Fund - Life - II": {
+        "Inception": 10.44,
+        "10Y": 13.21,
+        "7Y": 14.37,
+        "5Y": 15.8,
+        "3Y": 13.15,
+        "1Y": 7.39
+    },
+    "HDFC - Liquid Fund - Life - II": {
+        "Inception": 6.11,
+        "10Y": 4.67,
+        "7Y": 4.33,
+        "5Y": 4.25,
+        "3Y": 5.45,
+        "1Y": 5.27
+    },
+    "HDFC - Secured Managed Fund - Life - II": {
+        "Inception": 7.39,
+        "10Y": 6.69,
+        "7Y": 6.47,
+        "5Y": 4.77,
+        "3Y": 6.76,
+        "1Y": 6.17
+    },
+    "HDFC - Stable Managed Fund - Life - II": {
+        "Inception": 6.48,
+        "10Y": 5.54,
+        "7Y": 5.48,
+        "5Y": 4.85,
+        "3Y": 6.29,
+        "1Y": 6.73
+    },
+    "HDFC - Bond Opportunities Fund": {
+        "Inception": 6.43,
+        "10Y": 5.85,
+        "7Y": 5.69,
+        "5Y": 4.07,
+        "3Y": 5.89,
+        "1Y": 5.97
+    },
+    "HDFC - Large Cap Fund": {
+        "Inception": 11.48,
+        "10Y": 13.3,
+        "7Y": 14.63,
+        "5Y": 16.68,
+        "3Y": 13.94,
+        "1Y": 6.94
+    },
+    "HDFC - Manager's Fund": {
+        "Inception": 10.38,
+        "10Y": 10.16,
+        "7Y": 10.47,
+        "5Y": 11.57,
+        "3Y": 9.65,
+        "1Y": 4.86
+    },
+    "HDFC - Mid Cap Fund": {
+        "Inception": 14.72,
+        "10Y": 13.06,
+        "7Y": 13.63,
+        "5Y": 18.93,
+        "3Y": 13.41,
+        "1Y": 0.28
+    },
+    "HDFC - Money Plus Fund": {
+        "Inception": 5.34,
+        "10Y": 4.61,
+        "7Y": 4.49,
+        "5Y": 3.91,
+        "3Y": 5.49,
+        "1Y": 6.02
+    },
+    "HDFC - Balanced Managed Fund - Pension - II": {
+        "Inception": 11.26,
+        "10Y": 9.95,
+        "7Y": 9.91,
+        "5Y": 9.62,
+        "3Y": 9.16,
+        "1Y": 6.13
+    },
+    "HDFC - Defensive Managed Fund - Pension - II": {
+        "Inception": 9.31,
+        "10Y": 8.39,
+        "7Y": 8.29,
+        "5Y": 7.12,
+        "3Y": 7.68,
+        "1Y": 5.5
+    },
+    "HDFC - Equity Managed Fund - Pension - II": {
+        "Inception": 13.84,
+        "10Y": 13.38,
+        "7Y": 14.49,
+        "5Y": 16.48,
+        "3Y": 14.41,
+        "1Y": 9.14
+    },
+    "HDFC - Growth Fund - Pension - II": {
+        "Inception": 14.48,
+        "10Y": 13.13,
+        "7Y": 14.27,
+        "5Y": 15.76,
+        "3Y": 13.16,
+        "1Y": 7.43
+    },
+    "HDFC - Liquid Fund - Pension - II": {
+        "Inception": 6.04,
+        "10Y": 4.66,
+        "7Y": 4.31,
+        "5Y": 4.22,
+        "3Y": 5.41,
+        "1Y": 5.23
+    },
+    "HDFC - Secured Managed Fund - Pension - II": {
+        "Inception": 7.58,
+        "10Y": 6.72,
+        "7Y": 6.51,
+        "5Y": 4.78,
+        "3Y": 6.8,
+        "1Y": 6.11
+    },
+    "HDFC - Stable Managed Fund - Pension - II": {
+        "Inception": 6.47,
+        "10Y": 5.56,
+        "7Y": 5.5,
+        "5Y": 4.85,
+        "3Y": 6.32,
+        "1Y": 6.89
+    },
+    "HDFC - BlueChip Fund": {
+        "Inception": 11.14,
+        "10Y": 13.03,
+        "7Y": 13.7,
+        "5Y": 15.11,
+        "3Y": 12.35,
+        "1Y": 7.17
+    },
+    "HDFC - Income Fund": {
+        "Inception": 7.1,
+        "10Y": 6.35,
+        "7Y": 6.3,
+        "5Y": 4.67,
+        "3Y": 6.74,
+        "1Y": 6.29
+    },
+    "HDFC - Opportunities Fund": {
+        "Inception": 13.93,
+        "10Y": 14.92,
+        "7Y": 16.4,
+        "5Y": 19.27,
+        "3Y": 18.76,
+        "1Y": 4.68
+    },
+    "HDFC - Vantage Fund": {
+        "Inception": 9.61,
+        "10Y": 9.49,
+        "7Y": 9.08,
+        "5Y": 9.58,
+        "3Y": 9.33,
+        "1Y": 5.3
+    },
+    "HDFC - Balanced Fund": {
+        "Inception": 9.75,
+        "10Y": 10.44,
+        "7Y": 10.88,
+        "5Y": 11.28,
+        "3Y": 10.42,
+        "1Y": 6.82
+    },
+    "HDFC - Short Term Fund": {
+        "Inception": 6.38,
+        "10Y": 5.53,
+        "7Y": 5.63,
+        "5Y": 5.42,
+        "3Y": 7.51,
+        "1Y": 10.06
+    },
+    "HDFC - Pension Super Plus Fund - 2012": {
+        "Inception": 8.8,
+        "10Y": 8.61,
+        "7Y": 9.06,
+        "5Y": 10.48,
+        "3Y": 9.22,
+        "1Y": 5.24
+    },
+    "HDFC - Bond Fund": {
+        "Inception": 6.9,
+        "10Y": 6.4,
+        "7Y": 6.36,
+        "5Y": 4.8,
+        "3Y": 6.81,
+        "1Y": 6.12
+    },
+    "HDFC - Conservative Fund": {
+        "Inception": 6.48,
+        "10Y": 6.1,
+        "7Y": 6.06,
+        "5Y": 4.9,
+        "3Y": 6.7,
+        "1Y": 7.5
+    },
+    "HDFC - Equity Plus Fund": {
+        "Inception": 11.6,
+        "10Y": 12.92,
+        "7Y": 13.82,
+        "5Y": 15.47,
+        "3Y": 12.01,
+        "1Y": 8.25
+    },
+    "HDFC - Diversified Equity Fund": {
+        "Inception": 13.74,
+        "10Y": 14.24,
+        "7Y": 14.66,
+        "5Y": 15.8,
+        "3Y": 13.02,
+        "1Y": 7.36
+    },
+    "HDFC - Pension Income Fund": {
+        "Inception": 5.53,
+        "10Y": 5.72,
+        "7Y": 5.71,
+        "5Y": 4.07,
+        "3Y": 6.09,
+        "1Y": 5.62
+    },
+    "HDFC - Pension Equity Plus Fund": {
+        "Inception": 11.96,
+        "10Y": 12.38,
+        "7Y": 13.54,
+        "5Y": 15.21,
+        "3Y": 11.91,
+        "1Y": 7.89
+    },
+    "HDFC - Capital Growth Fund": {
+        "Inception": 12.09,
+        "10Y": null,
+        "7Y": 11.75,
+        "5Y": 11.97,
+        "3Y": 6.85,
+        "1Y": -4.77
+    },
+    "HDFC - Capital Secure Fund": {
+        "Inception": 5.12,
+        "10Y": null,
+        "7Y": 5.49,
+        "5Y": 4.08,
+        "3Y": 6.06,
+        "1Y": 5.4
+    },
+    "HDFC - Discovery Fund": {
+        "Inception": 22.36,
+        "10Y": null,
+        "7Y": 22.67,
+        "5Y": 24.95,
+        "3Y": 22.28,
+        "1Y": 8.68
+    },
+    "HDFC - Equity Advantage Fund": {
+        "Inception": 17.14,
+        "10Y": null,
+        "7Y": null,
+        "5Y": 17.86,
+        "3Y": 15.47,
+        "1Y": 6.47
+    },
+    "HDFC - Bond Plus Fund": {
+        "Inception": 6.97,
+        "10Y": null,
+        "7Y": null,
+        "5Y": 5.53,
+        "3Y": 7.08,
+        "1Y": 8.01
+    },
+    "HDFC - Secure Advantage Fund": {
+        "Inception": 6.85,
+        "10Y": null,
+        "7Y": null,
+        "5Y": 5.32,
+        "3Y": 6.99,
+        "1Y": 6.63
+    },
+    "HDFC - Sustainable Equity Fund": {
+        "Inception": 11.04,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": 12.96,
+        "1Y": 6.38
+    },
+    "HDFC - Policy Discontinued Fund - Life": {
+        "Inception": 6.46,
+        "10Y": 5.66,
+        "7Y": 5.39,
+        "5Y": 5.18,
+        "3Y": 6.34,
+        "1Y": 6.22
+    },
+    "HDFC - Policy Discontinued Fund - Pension": {
+        "Inception": 6.1,
+        "10Y": 5.62,
+        "7Y": 5.34,
+        "5Y": 5.27,
+        "3Y": 6.46,
+        "1Y": 6.55
+    },
+    "HDFC - Active Asset Allocation Fund": {
+        "Inception": 9.48,
+        "10Y": 10.14,
+        "7Y": 10.76,
+        "5Y": 11.32,
+        "3Y": 9.39,
+        "1Y": 7.13
+    },
+    "HDFC - Guaranteed NAV Fund": {
+        "Inception": 6.54,
+        "10Y": 6.9,
+        "7Y": 6.55,
+        "5Y": 8.99,
+        "3Y": 8.23,
+        "1Y": 5.98
+    },
+    "HDFC - Individual Balanced Fund": {
+        "Inception": 9.02,
+        "10Y": 8.65,
+        "7Y": 9.14,
+        "5Y": 8.61,
+        "3Y": 8.52,
+        "1Y": 6.45
+    },
+    "HDFC - Individual Debt Fund": {
+        "Inception": 7.76,
+        "10Y": 7.47,
+        "7Y": 7.22,
+        "5Y": 5.41,
+        "3Y": 7.22,
+        "1Y": 6.51
+    },
+    "HDFC - Individual Equity Fund": {
+        "Inception": 10.62,
+        "10Y": 11.85,
+        "7Y": 13.17,
+        "5Y": 15.06,
+        "3Y": 11.74,
+        "1Y": 8.04
+    },
+    "HDFC - Individual Growth Fund": {
+        "Inception": 10.07,
+        "10Y": 9.72,
+        "7Y": 10.27,
+        "5Y": 10.3,
+        "3Y": 9.59,
+        "1Y": 7.16
+    },
+    "HDFC - Individual Prime Equity Fund": {
+        "Inception": 10.03,
+        "10Y": 11.97,
+        "7Y": 13.32,
+        "5Y": 15.19,
+        "3Y": 11.77,
+        "1Y": 8.02
+    },
+    "HDFC - Individual Prime Equity Pension Fund": {
+        "Inception": 10.4,
+        "10Y": 12.67,
+        "7Y": 14.19,
+        "5Y": 16.28,
+        "3Y": 12.67,
+        "1Y": 8.36
+    },
+    "HDFC - Individual Preserver Pension Fund": {
+        "Inception": 8.23,
+        "10Y": 7.29,
+        "7Y": 7.13,
+        "5Y": 5.37,
+        "3Y": 7.27,
+        "1Y": 6.59
+    },
+    "HDFC - Individual Preserver Fund": {
+        "Inception": 8.23,
+        "10Y": 7.38,
+        "7Y": 7.13,
+        "5Y": 5.4,
+        "3Y": 7.33,
+        "1Y": 6.8
+    },
+    "HDFC - Individual Secure Fund": {
+        "Inception": 8.46,
+        "10Y": 8.14,
+        "7Y": 8.36,
+        "5Y": 7.29,
+        "3Y": 8.24,
+        "1Y": 6.29
+    },
+    "HDFC - Pension Debt Fund": {
+        "Inception": 8.15,
+        "10Y": 7.5,
+        "7Y": 7.24,
+        "5Y": 5.33,
+        "3Y": 7.05,
+        "1Y": 5.91
+    },
+    "HDFC - Pension Equity Fund": {
+        "Inception": 9.69,
+        "10Y": 12.0,
+        "7Y": 13.31,
+        "5Y": 14.82,
+        "3Y": 11.93,
+        "1Y": 8.17
+    },
+    "HDFC - Pension Liquid Fund": {
+        "Inception": 6.53,
+        "10Y": 5.46,
+        "7Y": 5.22,
+        "5Y": 5.1,
+        "3Y": 6.17,
+        "1Y": 5.92
+    },
+    "HDFC - Individual Midcap Fund": {
+        "Inception": 14.82,
+        "10Y": null,
+        "7Y": 17.93,
+        "5Y": 21.5,
+        "3Y": 23.03,
+        "1Y": 6.8
+    },
+    "HDFC - Large Cap Pension Fund": {
+        "Inception": 16.11,
+        "10Y": null,
+        "7Y": null,
+        "5Y": 14.83,
+        "3Y": 11.82,
+        "1Y": 9.07
+    },
+    "HDFC - Flexi Cap Fund": {
+        "Inception": 24.6,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": 6.26
+    },
+    "HDFC - Flexi Cap Pension Fund": {
+        "Inception": 13.43,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": 6.68
+    },
+    "HDFC - Midcap Momentum Fund": {
+        "Inception": 7.76,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": -2.23
+    },
+    "HDFC - Nifty Alpha 30 Fund": {
+        "Inception": -8.82,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": -2.73
+    },
+    "HDFC - Top 500 Momentum 50 Fund": {
+        "Inception": -8.17,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": -8.95
+    },
+    "HDFC - Top 500 Momentum 50 Pension Fund": {
+        "Inception": -11.44,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": null
+    },
+    "HDFC - Dynamic Advantage Fund": {
+        "Inception": 12.25,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": null
+    },
+    "HDFC - Dynamic Advantage Pension Fund": {
+        "Inception": 12.58,
+        "10Y": null,
+        "7Y": null,
+        "5Y": null,
+        "3Y": null,
+        "1Y": null
+    },
+    "LIC - Future Plus - Bond": {
+        "1Y": 9.15,
+        "3Y": 8.63,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.21
+    },
+    "LIC - Future Plus - Income": {
+        "1Y": 6.47,
+        "3Y": 8.79,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.65
+    },
+    "LIC - Future Plus - Balanced": {
+        "1Y": 5.21,
+        "3Y": 8.34,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.98
+    },
+    "LIC - Future Plus - Growth": {
+        "1Y": 6.54,
+        "3Y": 10.58,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.94
+    },
+    "LIC - Jeevan Plus - Bond": {
+        "1Y": 6.63,
+        "3Y": 7.23,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.21
+    },
+    "LIC - Jeevan Plus - Secured": {
+        "1Y": 8.18,
+        "3Y": 9.12,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.97
+    },
+    "LIC - Jeevan Plus - Balanced": {
+        "1Y": 7.53,
+        "3Y": 8.78,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.83
+    },
+    "LIC - Jeevan Plus - Growth": {
+        "1Y": 7.26,
+        "3Y": 10.08,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.75
+    },
+    "LIC - Gratuity Plus - Bond": {
+        "1Y": 6.73,
+        "3Y": 6.98,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.62
+    },
+    "LIC - Gratuity Plus - Income": {
+        "1Y": 9.31,
+        "3Y": 9.36,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.17
+    },
+    "LIC - Gratuity Plus - Balanced": {
+        "1Y": 7.41,
+        "3Y": 9.24,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.98
+    },
+    "LIC - Gratuity Plus - Growth": {
+        "1Y": 7.41,
+        "3Y": 10.14,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.77
+    },
+    "LIC - Market Plus - Bond": {
+        "1Y": 8.99,
+        "3Y": 8.2,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.36
+    },
+    "LIC - Market Plus - Secured": {
+        "1Y": 8.86,
+        "3Y": 9.56,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.45
+    },
+    "LIC - Market Plus - Balance": {
+        "1Y": 7.11,
+        "3Y": 8.12,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.09
+    },
+    "LIC - Market Plus - Growth": {
+        "1Y": 8.17,
+        "3Y": 11.76,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.33
+    },
+    "LIC - Money Plus - Bond": {
+        "1Y": 7.44,
+        "3Y": 7.41,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.84
+    },
+    "LIC - Money Plus - Secured": {
+        "1Y": 9.72,
+        "3Y": 9.73,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.53
+    },
+    "LIC - Money Plus - Balance": {
+        "1Y": 10.17,
+        "3Y": 11.14,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.34
+    },
+    "LIC - Money Plus - Growth": {
+        "1Y": 7.72,
+        "3Y": 11.42,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.41
+    },
+    "LIC - Profit Plus_Bond Fund": {
+        "1Y": 7.33,
+        "3Y": 7.55,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.19
+    },
+    "LIC - Profit Plus_Secured Fund": {
+        "1Y": 6.56,
+        "3Y": 10.87,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.59
+    },
+    "LIC - Profit Plus_Balanced Fund": {
+        "1Y": 3.62,
+        "3Y": 12.2,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.25
+    },
+    "LIC - Profit Plus_Growth Fund": {
+        "1Y": 8.0,
+        "3Y": 13.41,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.72
+    },
+    "LIC - Market Plus 1 - Bond": {
+        "1Y": 7.72,
+        "3Y": 7.67,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.77
+    },
+    "LIC - Market Plus 1 - Secured": {
+        "1Y": 6.6,
+        "3Y": 12.21,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.91
+    },
+    "LIC - Market Plus 1 - Balance": {
+        "1Y": 8.24,
+        "3Y": 12.55,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.38
+    },
+    "LIC - Market Plus 1 - Growth": {
+        "1Y": 6.54,
+        "3Y": 13.51,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.98
+    },
+    "LIC - Money Plus 1 - Bond": {
+        "1Y": 7.41,
+        "3Y": 7.72,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.83
+    },
+    "LIC - Money Plus 1 - Secured": {
+        "1Y": 7.09,
+        "3Y": 10.89,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.72
+    },
+    "LIC - Money Plus 1 - Balanced": {
+        "1Y": 10.55,
+        "3Y": 12.01,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.64
+    },
+    "LIC - Money Plus 1 - Growth": {
+        "1Y": 7.26,
+        "3Y": 15.19,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.13
+    },
+    "LIC - Child Fortune Plus - Bond": {
+        "1Y": 7.24,
+        "3Y": 7.59,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.63
+    },
+    "LIC - Child Fortune Plus - Secured": {
+        "1Y": 7.22,
+        "3Y": 9.86,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.6
+    },
+    "LIC - Child Fortune Plus - Balanced": {
+        "1Y": 7.22,
+        "3Y": 10.19,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.04
+    },
+    "LIC - Child Fortune Plus - Growth": {
+        "1Y": 8.24,
+        "3Y": 14.01,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.58
+    },
+    "LIC - LICI NIVESH/SIIP Bond Fund": {
+        "1Y": 6.46,
+        "3Y": 7.07,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.16
+    },
+    "LIC - LICI NIVESH/SIIP Secured Fund": {
+        "1Y": 6.68,
+        "3Y": 9.41,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.74
+    },
+    "LIC - LICI NIVESH/SIIP Balanced Fund": {
+        "1Y": 7.34,
+        "3Y": 10.44,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.22
+    },
+    "LIC - LICI NIVESH/SIIP Growth Fund": {
+        "1Y": 7.18,
+        "3Y": 11.18,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.45
+    },
+    "LIC - Health Plus Fund": {
+        "1Y": 8.0,
+        "3Y": 10.06,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.49
+    },
+    "LIC - Health Protection Plus Fund": {
+        "1Y": 8.0,
+        "3Y": 10.26,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.42
+    },
+    "LIC - New Endowment Plus Bond": {
+        "1Y": 7.29,
+        "3Y": 7.63,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.5
+    },
+    "LIC - New Endowment Plus Secured": {
+        "1Y": 8.3,
+        "3Y": 11.59,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.27
+    },
+    "LIC - New Endowment Plus Balanced": {
+        "1Y": 7.26,
+        "3Y": 13.04,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.91
+    },
+    "LIC - New Endowment Plus Growth": {
+        "1Y": 7.62,
+        "3Y": 13.03,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.37
+    },
+    "LIC - Flexi Plus Debt": {
+        "1Y": 7.0,
+        "3Y": 7.92,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.88
+    },
+    "LIC - Flexi Plus Mixed": {
+        "1Y": 7.22,
+        "3Y": 9.53,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.89
+    },
+    "LIC - Endowment Plus Bond Fund": {
+        "1Y": 7.79,
+        "3Y": 8.04,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.92
+    },
+    "LIC - Endowment Plus Secured Fund": {
+        "1Y": 7.74,
+        "3Y": 12.74,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.02
+    },
+    "LIC - Endowment Plus Balanced Fund": {
+        "1Y": 9.01,
+        "3Y": 13.05,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.34
+    },
+    "LIC - Endowment Plus Growth Fund": {
+        "1Y": 7.34,
+        "3Y": 13.19,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.57
+    },
+    "LIC - Pension Plus Debt Fund": {
+        "1Y": 7.79,
+        "3Y": 7.93,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.39
+    },
+    "LIC - Pension Plus Mixed Fund": {
+        "1Y": 7.72,
+        "3Y": 10.24,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.79
+    },
+    "LIC - Jeevan Saathi Plus - Bond": {
+        "1Y": 6.89,
+        "3Y": 7.12,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.52
+    },
+    "LIC - Jeevan Saathi Plus - Secured": {
+        "1Y": 7.22,
+        "3Y": 9.76,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.28
+    },
+    "LIC - Jeevan Saathi Plus - Balanced": {
+        "1Y": 7.18,
+        "3Y": 9.18,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.45
+    },
+    "LIC - Jeevan Saathi Plus - Growth": {
+        "1Y": 7.18,
+        "3Y": 10.76,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.33
+    },
+    "LIC - Discontinued Policy Fund-Life": {
+        "1Y": 7.21,
+        "3Y": 7.99,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.4
+    },
+    "LIC - Discontinued PolicyFnd Pension": {
+        "1Y": 7.04,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.89
+    },
+    "LIC - Index Plus Flexi Growth Fund": {
+        "1Y": 15.41,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 13.72
+    },
+    "LIC - Index Plus Flexi Smart Growth": {
+        "1Y": 16.6,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 14.13
+    },
+    "LIC - Fortune Plus_Bond Fund": {
+        "1Y": 6.34,
+        "3Y": 7.01,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.63
+    },
+    "LIC - Fortune Plus_Secured Fund": {
+        "1Y": 5.17,
+        "3Y": 10.23,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.82
+    },
+    "LIC - Fortune Plus_Balanced Fund": {
+        "1Y": 8.05,
+        "3Y": 11.34,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.03
+    },
+    "LIC - Fortune Plus_Growth Fund": {
+        "1Y": 7.22,
+        "3Y": 11.55,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.85
+    },
+    "LIC - New Pension Plus-Bonds": {
+        "1Y": 5.6,
+        "3Y": 6.8,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.73
+    },
+    "LIC - New Pension Plus-Secured": {
+        "1Y": 7.54,
+        "3Y": 9.04,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.92
+    },
+    "LIC - New Pension Plus-Balanced": {
+        "1Y": 7.17,
+        "3Y": 10.3,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.01
+    },
+    "LIC - New Pension Plus-Growth": {
+        "1Y": 7.4,
+        "3Y": 11.78,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.59
+    },
+    "Axis - UL LIFE GROWTH SUPER FUND": {
+        "1Y": 8.59,
+        "3Y": 13.85,
+        "5Y": 15.93,
+        "Inception": 12.33
+    },
+    "Axis - HIGH GROWTH FUND": {
+        "1Y": 8.25,
+        "3Y": 26.54,
+        "5Y": 26.4,
+        "Inception": 14.99
+    },
+    "Axis - UL LIFE GROWTH FUND": {
+        "1Y": 8.02,
+        "3Y": 10.7,
+        "5Y": 10.99,
+        "Inception": 12.11
+    },
+    "Axis - UL LIFE BALANCED FUND": {
+        "1Y": 7.68,
+        "3Y": 9.86,
+        "5Y": 8.75,
+        "Inception": 10.22
+    },
+    "Axis - UL LIFE CONSERVATIVE FUND": {
+        "1Y": 4.66,
+        "3Y": 7.84,
+        "5Y": 6.58,
+        "Inception": 8.67
+    },
+    "Axis - UL LIFE SECURED FUND": {
+        "1Y": 5.58,
+        "3Y": 7.24,
+        "5Y": 5.71,
+        "Inception": 7.56
+    },
+    "Axis - DYNAMIC OPPORTUINITIES FUND": {
+        "1Y": 8.02,
+        "3Y": 12.7,
+        "5Y": 11.96,
+        "Inception": 10.23
+    },
+    "Axis - UL MONEY MARKET FUND": {
+        "1Y": 5.37,
+        "3Y": 5.68,
+        "5Y": 4.55,
+        "Inception": 5.27
+    },
+    "Axis - GUARANTEED FUND- DYNAMIC": {
+        "1Y": 3.38,
+        "3Y": 7.32,
+        "5Y": 6.34,
+        "Inception": 6.88
+    },
+    "Axis - GUARANTEED FUND-INCOME": {
+        "1Y": 3.39,
+        "3Y": 5.91,
+        "5Y": 4.99,
+        "Inception": 6.26
+    },
+    "Axis - UL LIFE DIVERSIFIED EQUITY FUND": {
+        "1Y": 6.99,
+        "3Y": 19.03,
+        "5Y": 19.21,
+        "Inception": 23.18
+    },
+    "Axis - UL MONEY MARKET II FUND": {
+        "3Y": 6.01,
+        "5Y": 4.78,
+        "Inception": 4.54
+    },
+    "Axis - UL SUSTAINABLE EQUITY FUND": {
+        "1Y": 13.43,
+        "3Y": 17.72,
+        "Inception": 18.93
+    },
+    "Axis - UL PURE GROWTH FUND": {
+        "1Y": null,
+        "Inception": 19.95
+    },
+    "Axis - UL LIFE DYNAMIC BOND FUND": {
+        "1Y": 4.72,
+        "3Y": 6.87,
+        "5Y": 5.52,
+        "Inception": 5.72
+    },
+    "Axis - NIFTY SMALLCAP QUALITY INDEX FUND": {
+        "1Y": null,
+        "Inception": 14.37
+    },
+    "Axis - MIDCAP MOMENTUM INDEX FUND": {
+        "1Y": 0.33,
+        "Inception": 10.92
+    },
+    "Axis - NIFTY ALPHA 50 FUND": {
+        "1Y": null,
+        "Inception": null
+    },
+    "Axis - NIFTY 500 MOMENTUM 50 FUND": {
+        "1Y": null,
+        "Inception": null
+    },
+    "Axis - NIFTY MOMENTUM QUALITY 50 FUND": {
+        "1Y": null,
+        "Inception": null
+    },
+    "Axis - SUSTAINABLE WEALTH 50 INDEX FUND": {
+        "Inception": 1.1
+    },
+    "Axis - SMART INNOVATION FUND": {
+        "Inception": 12.04
+    },
+    "Axis - NIFTY 500 MULTIFACTOR 50 INDEX FUND": {
+        "Inception": 1.24
+    },
+    "Axis - NIFTY 500 MULTIFACTOR 50 INDEX PENSION FUND": {
+        "Inception": 0.17
+    },
+    "Axis - BSE 500 VALUE 50 INDEX FUND": {
+        "Inception": 7.8
+    },
+    "Axis - INDIA CONSUMPTION OPPORTUNITIES FUND": {
+        "Inception": null
+    },
+    "Axis - BSE 500 DIVIDEND LEADERS 50 INDEX FUND": {
+        "Inception": null
+    },
+    "Axis - DISCONTINUANCE FUND INDIVIDUAL": {
+        "3Y": 6.26,
+        "5Y": 5.21,
+        "Inception": 6.37
+    },
+    "Axis - UL PENSION GROWTH SUPER FUND": {
+        "1Y": 8.59,
+        "3Y": 17.73,
+        "5Y": 19.76,
+        "Inception": 10.81
+    },
+    "Axis - PENSION LIFE GROWTH FUND": {
+        "1Y": 8.02,
+        "3Y": 12.11,
+        "5Y": 12.45,
+        "Inception": 10.55
+    },
+    "Axis - LIFEMAKER PENSION MAXIMISER FUND": {
+        "1Y": 8.02,
+        "3Y": 11.05,
+        "5Y": 10.68,
+        "Inception": 10.46
+    },
+    "Axis - PENSION LIFE BALANCED FUND": {
+        "1Y": 7.68,
+        "3Y": 9.45,
+        "5Y": 9.42,
+        "Inception": 8.96
+    },
+    "Axis - LIFEMAKER PENSION PRESERVER FUND": {
+        "1Y": 3.74,
+        "3Y": 7.58,
+        "5Y": 6.45,
+        "Inception": 8.3
+    },
+    "Axis - PENSION LIFE CONSERVATIVE FUND": {
+        "1Y": 4.47,
+        "3Y": 7.83,
+        "5Y": 6.57,
+        "Inception": 7.89
+    },
+    "Axis - PENSION LIFE SECURED FUND": {
+        "1Y": 4.05,
+        "3Y": 6.59,
+        "5Y": 5.47,
+        "Inception": 7.22
+    },
+    "Axis - HIGH GROWTH PENSION FUND": {
+        "Inception": null
+    },
+    "Axis - DISCONTINUANCE FUND PENSION": {
+        "3Y": 6.18,
+        "5Y": 5.09,
+        "Inception": 6.34
+    },
+    "Axis - GR GRATUITY GROWTH FUND": {
+        "1Y": 8.02,
+        "3Y": 13.26,
+        "5Y": 12.97,
+        "Inception": 10.43
+    },
+    "Axis - GR GRATUITY BALANCED FUND": {
+        "1Y": 7.59,
+        "3Y": 9.95,
+        "5Y": 9.18,
+        "Inception": 9.69
+    },
+    "Axis - GROUP GRATUITY BOND FUND.": {
+        "1Y": 4.51,
+        "3Y": 7.31,
+        "5Y": 5.89,
+        "Inception": 7.33
+    },
+    "Axis - GR GRATUITY CONSERVATIVE FUND": {
+        "1Y": 5.5,
+        "3Y": 7.61,
+        "5Y": 6.0,
+        "Inception": 7.94
+    },
+    "Axis - GROUP SUPERANNUATION CONSERVATIVE FUND": {
+        "1Y": 4.27,
+        "3Y": 6.85,
+        "5Y": 5.48,
+        "Inception": 7.12
+    },
+    "Canara HSBC - INDIA MULTI-CAP EQUITY FUND": {
+        "1Y": 5.9,
+        "3Y": 14.1,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 13.5
+    },
+    "Canara HSBC - EQUITY II FUND": {
+        "1Y": 8.1,
+        "3Y": 11.7,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.7
+    },
+    "Canara HSBC - EMERGING LEADERS EQUITY FUND": {
+        "1Y": 6.4,
+        "3Y": 23.6,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 16.7
+    },
+    "Canara HSBC - BALANCED PLUS FUND": {
+        "1Y": 6.0,
+        "3Y": 9.5,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.3
+    },
+    "Canara HSBC - LARGE CAP ADVANTAGE FUND": {
+        "1Y": 8.8,
+        "3Y": 11.6,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 16.2
+    },
+    "Canara HSBC - INDIA MANUFACTURING FUND": {
+        "1Y": 7.7,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.3
+    },
+    "Canara HSBC - EQUITY FUND": {
+        "1Y": 7.6,
+        "3Y": 12.6,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.4
+    },
+    "Canara HSBC - LIQUID FUND": {
+        "1Y": 6.6,
+        "3Y": 6.4,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.1
+    },
+    "Canara HSBC - GROWTH PLUS FUND": {
+        "1Y": 8.6,
+        "3Y": 12.5,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.4
+    },
+    "Canara HSBC - DEBT FUND": {
+        "1Y": 6.4,
+        "3Y": 7.1,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.1
+    },
+    "Canara HSBC - DEBT PLUS FUND": {
+        "1Y": 5.2,
+        "3Y": 6.2,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.0
+    },
+    "Canara HSBC - BALANCED FUND": {
+        "1Y": 6.5,
+        "3Y": 9.6,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.3
+    },
+    "Canara HSBC - BALANCED II FUND": {
+        "1Y": 6.8,
+        "3Y": 9.9,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.8
+    },
+    "Canara HSBC - PENSION GROWTH FUND": {
+        "1Y": 6.1,
+        "3Y": 8.5,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.5
+    },
+    "Canara HSBC - GROWTH FUND": {
+        "1Y": 8.3,
+        "3Y": 12.4,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.0
+    },
+    "Canara HSBC - MIDCAP MOMENTUM GROWTH INDEX FUND": {
+        "1Y": 0.1,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.3
+    },
+    "Canara HSBC - GROWTH II FUND": {
+        "1Y": 8.4,
+        "3Y": 12.5,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.0
+    },
+    "Canara HSBC - PENSION BALANCED FUND": {
+        "1Y": 7.9,
+        "3Y": 6.8,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.8
+    },
+    "Canara HSBC - MULTICAP MOMENTUM QUALITY INDEX FUND": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.3
+    },
+    "Canara HSBC - NIFTY ALPHA 50 INDEX FUND": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.4
+    },
+    "Canara HSBC - NIFTY 500 MULTIFACTOR 50 INDEX FUND": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 0.4
+    },
+    "Aditya Birla Sun Life - Liquid Plus": {
+        "1Y": 6.33,
+        "3Y": 6.42,
+        "5Y": 5.21,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 6.46
+    },
+    "Aditya Birla Sun Life - Assure": {
+        "1Y": 7.66,
+        "3Y": 7.1,
+        "5Y": 5.55,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.01
+    },
+    "Aditya Birla Sun Life - Income Advantage": {
+        "1Y": 7.87,
+        "3Y": 7.79,
+        "5Y": 5.81,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.79
+    },
+    "Aditya Birla Sun Life - Income Advantage Guarantee": {
+        "1Y": 7.61,
+        "3Y": 7.51,
+        "5Y": 5.46,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 7.57
+    },
+    "Aditya Birla Sun Life - Protector": {
+        "1Y": 7.32,
+        "3Y": 7.91,
+        "5Y": 6.38,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.14
+    },
+    "Aditya Birla Sun Life - Builder": {
+        "1Y": 7.62,
+        "3Y": 8.51,
+        "5Y": 7.49,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.6
+    },
+    "Aditya Birla Sun Life - Balancer": {
+        "1Y": 6.86,
+        "3Y": 8.39,
+        "5Y": 7.98,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.5
+    },
+    "Aditya Birla Sun Life - Enhancer": {
+        "1Y": 7.05,
+        "3Y": 8.76,
+        "5Y": 8.3,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.24
+    },
+    "Aditya Birla Sun Life - Creator": {
+        "1Y": 7.38,
+        "3Y": 10.03,
+        "5Y": 10.51,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.45
+    },
+    "Aditya Birla Sun Life - Magnifier": {
+        "1Y": 5.44,
+        "3Y": 11.94,
+        "5Y": 14.81,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.79
+    },
+    "Aditya Birla Sun Life - Maximiser": {
+        "1Y": 5.07,
+        "3Y": 12.52,
+        "5Y": 15.76,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.12
+    },
+    "Aditya Birla Sun Life - Maximiser Guarantee": {
+        "1Y": 5.39,
+        "3Y": 11.94,
+        "5Y": 15.05,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.68
+    },
+    "Aditya Birla Sun Life - Super 20": {
+        "1Y": 8.16,
+        "3Y": 11.58,
+        "5Y": 14.78,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.56
+    },
+    "Aditya Birla Sun Life - Multiplier": {
+        "1Y": 3.43,
+        "3Y": 18.9,
+        "5Y": 20.85,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 13.57
+    },
+    "Aditya Birla Sun Life - Pure Equity": {
+        "1Y": -7.81,
+        "3Y": 11.94,
+        "5Y": 15.65,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 15.19
+    },
+    "Aditya Birla Sun Life - Value Momentum": {
+        "1Y": -2.01,
+        "3Y": 15.12,
+        "5Y": 18.26,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.46
+    },
+    "Aditya Birla Sun Life - Capped Nifty Index": {
+        "1Y": 7.97,
+        "3Y": 12.41,
+        "5Y": 16.05,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.56
+    },
+    "Aditya Birla Sun Life - Asset Allocation": {
+        "1Y": 6.21,
+        "3Y": 10.9,
+        "5Y": 10.19,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 11.14
+    },
+    "Aditya Birla Sun Life - MNC": {
+        "1Y": -4.2,
+        "3Y": 12.01,
+        "5Y": 11.15,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.0
+    },
+    "Aditya Birla Sun Life - Small Cap": {
+        "1Y": -3.71,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 12.64
+    },
+    "Aditya Birla Sun Life - ESG": {
+        "1Y": 7.49,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 14.24
+    },
+    "Aditya Birla Sun Life - Nifty Alpha 50 Index Fund": {
+        "1Y": -7.81,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -6.84
+    },
+    "Aditya Birla Sun Life - Nifty Midcap 150 Momentum 50 Index Fund": {
+        "1Y": -1.51,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -6.43
+    },
+    "Aditya Birla Sun Life - Dividend Yield Fund": {
+        "1Y": null,
+        "3Y": null,
+        "5Y": null,
+        "7Y": null,
+        "10Y": null,
+        "Inception": -0.2
+    },
+    "Aditya Birla Sun Life - Platinum Premier": {
+        "1Y": 3.53,
+        "3Y": 3.86,
+        "5Y": 2.89,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.89
+    },
+    "Aditya Birla Sun Life - Platinum Advantage": {
+        "1Y": 2.12,
+        "3Y": 2.53,
+        "5Y": 2.35,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.17
+    },
+    "Aditya Birla Sun Life - Titanium I": {
+        "1Y": 1.18,
+        "3Y": -0.78,
+        "5Y": -1.17,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 4.61
+    },
+    "Aditya Birla Sun Life - Pension - Nourish": {
+        "1Y": 7.41,
+        "3Y": 7.89,
+        "5Y": 6.64,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 8.17
+    },
+    "Aditya Birla Sun Life - Pension - Growth": {
+        "1Y": 7.45,
+        "3Y": 8.54,
+        "5Y": 8.01,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 9.71
+    },
+    "Aditya Birla Sun Life - Pension - Enrich": {
+        "1Y": 6.05,
+        "3Y": 8.71,
+        "5Y": 8.73,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 10.73
+    },
+    "Aditya Birla Sun Life - Linked Discontinued Policy Fund": {
+        "1Y": 5.83,
+        "3Y": 6.11,
+        "5Y": 5.04,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.54
+    },
+    "Aditya Birla Sun Life - Pension Discontinued Policy Fund": {
+        "1Y": 5.89,
+        "3Y": 6.14,
+        "5Y": 5.1,
+        "7Y": null,
+        "10Y": null,
+        "Inception": 5.54
+    }
+}

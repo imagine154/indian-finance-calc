@@ -21,7 +21,8 @@ import {
   Receipt,
   Flame,
   Microscope,
-  Crosshair
+  Crosshair,
+  Shield
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -171,6 +172,13 @@ const categories = [
         desc: "Browse & Filter 1500+ Funds.",
         icon: <Microscope className="w-6 h-6 text-teal-600" />,
         iconBg: "bg-teal-100"
+      },
+      {
+        name: "Explore ULIPs",
+        href: "/explore-ulip-funds",
+        desc: "Compare ULIP Returns.",
+        icon: <Shield className="w-6 h-6 text-rose-600" />,
+        iconBg: "bg-rose-100"
       },
       {
         name: "Investment Advisor",

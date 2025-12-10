@@ -61,6 +61,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
+            url: `${baseUrl}/explore-ulip-funds`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
             url: `${baseUrl}/calculators/lumpsum`,
             lastModified: new Date(),
             changeFrequency: 'monthly',

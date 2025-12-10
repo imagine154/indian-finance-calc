@@ -52,7 +52,20 @@ export const FUND_LOGOS: Record<string, string> = {
     "Unifi Mutual Fund": "/logos/unifi_mutual_fund.png",
     "Union Mutual Fund": "/logos/union_mutual_fund.png",
     "WhiteOak Capital Mutual Fund": "/logos/whiteoak_capital_mutual_fund.png",
-    "Zerodha Mutual Fund": "/logos/zerodha_mutual_fund.png"
+    "Zerodha Mutual Fund": "/logos/zerodha_mutual_fund.png",
+    // ULIP Providers (Mapped to Group/MF logos where applicable)
+    "SBI Life": "/logos/sbi_mutual_fund.png",
+    "ICICI Prudential": "/logos/icici_prudential_mutual_fund.png",
+    "Kotak Life": "/logos/kotak_mahindra_mutual_fund.png",
+    "HDFC Life": "/logos/hdfc_mutual_fund.png",
+    "Bajaj Allianz": "/logos/bajaj_finserv_mutual_fund.png",
+    "Tata AIA Life": "/logos/tata_mutual_fund.png",
+    "Max Life": "/logos/default-fund.png",
+    "PNB Metlife": "/logos/default-fund.png",
+    "Canara HSBC": "/logos/canara_robeco_mutual_fund.png",
+    "Aditya Birla Sun Life": "/logos/aditya_birla_sun_life_mutual_fund.png",
+    "Axis Bank": "/logos/axis_mutual_fund.png",
+    "LIC": "/logos/lic_mutual_fund.png"
 };
 
 export const DEFAULT_LOGO = "/logos/default-fund.png";
