@@ -3,12 +3,29 @@ import { Metadata } from 'next';
 import UlipExplorer from '@/components/explorers/UlipExplorer';
 
 export const metadata: Metadata = {
-    title: 'Explore ULIP Funds - Best Performing ULIPs in India | RupeeTools',
-    description: 'Compare past performance of Unit Linked Insurance Plans (ULIPs) from top insurers. Analyze 1Y, 3Y, 5Y and Inception returns.',
-    keywords: ['ULIP funds', 'ULIP performance', 'best ULIP funds', 'compare ULIPs', 'SBI Life ULIP', 'ICICI Pru ULIP', 'HDFC Life ULIP'],
+    title: 'Best ULIP Funds (2025) - Compare Past Returns & Performance | RupeeTools',
+    description: 'Track and compare historical returns of top Unit Linked Insurance Plans (ULIPs) in India. Analyze 1Y, 3Y, 5Y, and 10Y performance of funds from SBI Life, HDFC Life, ICICI Pru, Tata AIA, and more.',
+    keywords: [
+        'ULIP funds', 'ULIP performance', 'best ULIP funds 2025', 'compare ULIPs India',
+        'SBI Life ULIP returns', 'ICICI Pru ULIP fund performance', 'HDFC Life Click 2 Wealth',
+        'ULIP vs Mutual Funds', 'Tax saving investments 80C', 'Unit Linked Insurance Plan'
+    ],
     alternates: {
         canonical: 'https://rupeetools.in/explore-ulip-funds',
     },
+    openGraph: {
+        title: 'Best ULIP Funds Explorer (2025) | RupeeTools',
+        description: 'Compare 1Y, 3Y, 5Y & 10Y returns of top ULIP funds from SBI, HDFC, ICICI, and more. Free tool for smart investors.',
+        url: 'https://rupeetools.in/explore-ulip-funds',
+        siteName: 'RupeeTools',
+        locale: 'en_IN',
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Best ULIP Funds Explorer (2025) | RupeeTools',
+        description: 'Compare historical returns of top ULIP funds. Check 1Y to 10Y performance.',
+    }
 };
 
 export default function ExploreUlipPage() {
