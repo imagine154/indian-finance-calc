@@ -11,6 +11,7 @@ interface UlipFundProps {
             "1Y": number | null | undefined;
             "3Y": number | null | undefined;
             "5Y": number | null | undefined;
+            "10Y": number | null | undefined;
             "Inception": number | null | undefined;
         };
     };
@@ -66,7 +67,7 @@ const UlipFundCard: React.FC<UlipFundProps> = ({ fund }) => {
             </div>
 
             {/* Returns Grid */}
-            <div className="grid grid-cols-4 gap-2 mb-4 bg-slate-50 rounded-lg p-3">
+            <div className="grid grid-cols-4 gap-2 mb-3 bg-slate-50 rounded-lg p-3">
                 <div className="text-center border-r border-slate-200 last:border-0">
                     <div className="text-[10px] text-slate-500 mb-1">1Y</div>
                     <div className={`font-bold text-sm ${getReturnColor(fund.returns["1Y"])}`}>
@@ -86,11 +87,19 @@ const UlipFundCard: React.FC<UlipFundProps> = ({ fund }) => {
                     </div>
                 </div>
                 <div className="text-center">
-                    <div className="text-[10px] text-slate-500 mb-1">All</div>
-                    <div className={`font-bold text-sm ${getReturnColor(fund.returns["Inception"])}`}>
-                        {formatReturn(fund.returns["Inception"])}
+                    <div className="text-[10px] text-slate-500 mb-1">10Y</div>
+                    <div className={`font-bold text-sm ${getReturnColor(fund.returns["10Y"])}`}>
+                        {formatReturn(fund.returns["10Y"])}
                     </div>
                 </div>
+            </div>
+
+            {/* Inception Return Row */}
+            <div className="flex items-center justify-between px-3 py-2 bg-blue-50/50 rounded-lg mb-4 border border-blue-100/50">
+                <span className="text-xs text-slate-500 font-medium">Since Inception</span>
+                <span className={`font-bold text-sm ${getReturnColor(fund.returns["Inception"])}`}>
+                    {formatReturn(fund.returns["Inception"])}
+                </span>
             </div>
 
             {/* Stats & Tags (Reduced since we have less data for ULIPs) */}

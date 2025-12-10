@@ -15,6 +15,7 @@ interface UlipFund {
         "1Y": number | null;
         "3Y": number | null;
         "5Y": number | null;
+        "10Y": number | null;
         "Inception": number | null;
     };
 }
@@ -25,7 +26,7 @@ const UlipExplorer = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedAmc, setSelectedAmc] = useState<string>("All");
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
-    const [sortBy, setSortBy] = useState<"1Y" | "3Y" | "5Y" | "Inception">("3Y");
+    const [sortBy, setSortBy] = useState<"1Y" | "3Y" | "5Y" | "10Y" | "Inception">("3Y");
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
 
     // Merge Data
@@ -35,6 +36,7 @@ const UlipExplorer = () => {
                 "1Y": null,
                 "3Y": null,
                 "5Y": null,
+                "10Y": null,
                 "Inception": null
             };
             return {
@@ -161,6 +163,7 @@ const UlipExplorer = () => {
                             <option value="3Y">3Y Returns</option>
                             <option value="1Y">1Y Returns</option>
                             <option value="5Y">5Y Returns</option>
+                            <option value="10Y">10Y Returns</option>
                             <option value="Inception">Inception</option>
                         </select>
                         <ArrowDownUp className="w-3 h-3 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
