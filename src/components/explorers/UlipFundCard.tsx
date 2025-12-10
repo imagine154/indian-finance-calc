@@ -47,7 +47,7 @@ const UlipFundCard: React.FC<UlipFundProps> = ({ fund }) => {
                     />
                 </div>
                 <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-slate-900 leading-tight line-clamp-2 mb-1" title={fund.name}>
+                    <h3 className="font-semibold text-slate-900 leading-tight line-clamp-2 mb-1 h-11" title={fund.name}>
                         {fund.name}
                     </h3>
                     <div className="flex items-center gap-2">
