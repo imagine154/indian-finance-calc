@@ -19,9 +19,14 @@ export default function ExploreUlipPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                         <div>
-                            <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
-                                Explore ULIP Funds
-                            </h1>
+                            <div className="flex items-center gap-3 mb-4">
+                                <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-0">
+                                    Explore ULIP Funds
+                                </h1>
+                                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                    Data as of 30/11/2025
+                                </span>
+                            </div>
                             <p className="text-lg text-slate-600 max-w-3xl">
                                 Detailed performance analytics for Unit Linked Insurance Plans. Compare returns across equity, debt, and balanced funds from top insurers.
                             </p>
