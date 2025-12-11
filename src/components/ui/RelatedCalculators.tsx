@@ -13,7 +13,8 @@ import {
     Percent,
     ArrowRight,
     Lightbulb,
-    Target
+    Target,
+    Search
 } from "lucide-react";
 import { RECOMMENDATIONS, ToolId } from "@/config/recommendations";
 
@@ -28,6 +29,7 @@ const CALCULATORS: { id: ToolId; name: string; href: string; icon: any; category
     { id: 'swp', name: "SWP Calculator", href: "/calculators/swp", icon: Coins, category: "investments", description: "Regular withdrawals" },
     { id: 'sip-analyzer', name: "Mutual Fund Analyzer", href: "/calculators/mutual-fund-analyzer", icon: TrendingUp, category: "investments", description: "Analyze fund performance" },
     { id: 'goal', name: "Goal Planner", href: "/calculators/goal", icon: TrendingUp, category: "investments", description: "Plan financial goals" },
+    { id: 'explore-mutual-funds', name: "Explore Funds", href: "/explore-mutual-funds", icon: Search, category: "investments", description: "Discover top mutual funds" },
     // Govt Schemes
     { id: 'ppf', name: "PPF Calculator", href: "/calculators/ppf", icon: PiggyBank, category: "govt", description: "Public Provident Fund" },
     { id: 'pf', name: "EPF Calculator", href: "/calculators/pf", icon: PiggyBank, category: "govt", description: "Employee Provident Fund" },

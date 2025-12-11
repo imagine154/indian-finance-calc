@@ -3,7 +3,7 @@ export type ToolId =
     | 'home-loan' | 'balance-transfer' | 'sip' | 'lumpsum' | 'sip-analyzer'
     | 'goal' | 'swp' | 'fire' | 'freelance' | 'gst' | 'ssy'
     | 'position-size' | 'capital-gains' | 'investment-advisor' | 'apy' | 'mssc' | 'fd' | 'gratuity' | 'mutual-fund-analyzer'
-    | 'pivot-point' | 'stock-average';
+    | 'pivot-point' | 'stock-average' | 'explore-mutual-funds';
 
 interface Recommendation {
     id: ToolId;
@@ -27,14 +27,14 @@ export const RECOMMENDATIONS: Record<string, Recommendation[]> = {
         { id: 'income-tax', text: "Calculate Section 24 & 80C tax benefits." },
     ],
     'sip': [
+        { id: 'explore-mutual-funds', text: "Find top-rated funds for your SIP." },
         { id: 'sip-analyzer', text: "Analyze the probability of your returns." },
         { id: 'goal', text: "Is this investment enough for your dream goal?" },
-        { id: 'swp', text: "Plan your monthly income from this corpus." },
     ],
     'lumpsum': [
+        { id: 'explore-mutual-funds', text: "Find top-rated funds for your investment." },
         { id: 'sip-analyzer', text: "Analyze the probability of your returns." },
         { id: 'goal', text: "Is this investment enough for your dream goal?" },
-        { id: 'swp', text: "Plan your monthly income from this corpus." },
     ],
     'fire': [
         { id: 'swp', text: "Simulate your post-retirement withdrawals." },
@@ -60,5 +60,15 @@ export const RECOMMENDATIONS: Record<string, Recommendation[]> = {
     'pivot-point': [
         { id: 'position-size', text: "Calculate safe lot size for this trade." },
         { id: 'stock-average', text: "Plan your averaging entries." },
+    ],
+    'goal': [
+        { id: 'explore-mutual-funds', text: "Find funds to achieve this goal." },
+        { id: 'sip', text: "Start a monthly investment for this goal." },
+        { id: 'lumpsum', text: "Check if a one-time investment works better." },
+    ],
+    'investment-advisor': [
+        { id: 'explore-mutual-funds', text: "Find funds matching your risk profile." },
+        { id: 'goal', text: "Plan for specific financial goals." },
+        { id: 'sip', text: "Start investing based on this advice." },
     ],
 };
