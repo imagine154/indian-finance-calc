@@ -40,8 +40,12 @@ def create_slug(name):
     return slug
 
 def main():
-    input_file = 'src/data/groww_mutual_funds_cleaned.csv'
-    output_file = 'src/data/mutual-funds.json'
+    # Get the project root directory (one level up from this script)
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    
+    input_file = os.path.join(project_root, 'src', 'data', 'groww_mutual_funds_cleaned.csv')
+    output_file = os.path.join(project_root, 'src', 'data', 'mutual-funds.json')
     
     if not os.path.exists(input_file):
         print(f"Error: Input file {input_file} not found.")

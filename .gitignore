@@ -61,3 +61,10 @@ env/
 
 # Scripts cache
 scripts/cache/
+
+# Local Data Documentation
+DATA_UPDATE.md
+
+# Intermediate Data Files
+*.csv
+

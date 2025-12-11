@@ -5,10 +5,13 @@ import ast
 
 def convert_data():
     # Define paths
-    base_dir = os.getcwd()
-    schemes_csv = os.path.join(base_dir, "schemeswithcodes.csv")
-    returns_csv = os.path.join(base_dir, "precomputed_clean.csv")
-    output_dir = os.path.join(base_dir, "src", "data")
+    # Define paths
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    
+    schemes_csv = os.path.join(project_root, "schemeswithcodes.csv")
+    returns_csv = os.path.join(project_root, "precomputed_clean.csv")
+    output_dir = os.path.join(project_root, "src", "data")
 
     # Create output directory if it doesn't exist
     os.makedirs(output_dir, exist_ok=True)
