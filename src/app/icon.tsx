@@ -60,9 +60,9 @@ export default function Icon({ id }: { id: string }) {
                 >
                     <path d="M6 3h12" />
                     <path d="M6 8h12" />
-                    <path d="M9 13h12" />
+                    <path d="m6 13 8.5 8" />
+                    <path d="M6 13h3" />
                     <path d="M9 13c6.667 0 6.667-10 0-10" />
-                    <path d="M9 13l6.5 8" />
                 </svg>
             </div>
         ),
