@@ -30,9 +30,15 @@ export function generateImageMetadata() {
 export default function Icon({ id }: { id: string }) {
     const size = id === '32' ? 32 : id === '48' ? 48 : id === '192' ? 192 : 512
     const isSmall = size <= 48
-    const iconSize = isSmall ? size * 0.6 : size * 0.6 // Consistent ratio
-    const strokeWidth = isSmall ? 3 : 2.5 // Thicker stroke for small icons
-    const borderRadius = isSmall ? '6px' : size === 192 ? '24px' : '48px'
+
+    // Match Navbar: rounded-lg (8px) on 32px box is 25% radius.
+    // Icon size: w-5 (20px) on 32px box is 62.5%.
+    // Stroke: Default Lucide is 2.
+
+    const iconScale = 0.625 // 20/32
+    const iconSize = size * iconScale
+    const strokeWidth = 2
+    const borderRadius = size * 0.25 // Match rounded-lg proportions
 
     return new ImageResponse(
         (
