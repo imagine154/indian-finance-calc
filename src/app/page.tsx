@@ -203,6 +203,13 @@ const categories = [
         iconBg: "bg-blue-100"
       },
       {
+        name: "RD Calculator",
+        href: "/calculators/rd",
+        desc: "Recurring Deposit returns.",
+        icon: <PiggyBank className="w-6 h-6 text-teal-600" />,
+        iconBg: "bg-teal-100"
+      },
+      {
         name: "FIRE Calculator",
         href: "/calculators/fire",
         desc: "Lean, Fat & Coast FIRE.",

@@ -32,6 +32,7 @@ const navGroups = [
             { name: "SWP Calculator", href: "/calculators/swp" },
             { name: "Lumpsum", href: "/calculators/lumpsum" },
             { name: "FD Calculator", href: "/calculators/fd" },
+            { name: "RD Calculator", href: "/calculators/rd" },
 
         ]
     },

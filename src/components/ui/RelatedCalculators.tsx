@@ -30,6 +30,8 @@ const CALCULATORS: { id: ToolId; name: string; href: string; icon: any; category
     { id: 'sip-analyzer', name: "Mutual Fund Analyzer", href: "/calculators/mutual-fund-analyzer", icon: TrendingUp, category: "investments", description: "Analyze fund performance" },
     { id: 'goal', name: "Goal Planner", href: "/calculators/goal", icon: TrendingUp, category: "investments", description: "Plan financial goals" },
     { id: 'explore-mutual-funds', name: "Explore Funds", href: "/explore-mutual-funds", icon: Search, category: "investments", description: "Discover top mutual funds" },
+    { id: 'rd', name: "RD Calculator", href: "/calculators/rd", icon: PiggyBank, category: "investments", description: "Recurring Deposit" },
+    { id: 'fd', name: "FD Calculator", href: "/calculators/fd", icon: Landmark, category: "investments", description: "Fixed Deposit" },
     // Govt Schemes
     { id: 'ppf', name: "PPF Calculator", href: "/calculators/ppf", icon: PiggyBank, category: "govt", description: "Public Provident Fund" },
     { id: 'pf', name: "EPF Calculator", href: "/calculators/pf", icon: PiggyBank, category: "govt", description: "Employee Provident Fund" },

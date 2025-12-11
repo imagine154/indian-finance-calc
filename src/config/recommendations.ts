@@ -2,7 +2,7 @@ export type ToolId =
     | 'salary' | 'income-tax' | 'pf' | 'rent-vs-buy' | 'nps' | 'hra' | 'ppf'
     | 'home-loan' | 'balance-transfer' | 'sip' | 'lumpsum' | 'sip-analyzer'
     | 'goal' | 'swp' | 'fire' | 'freelance' | 'gst' | 'ssy'
-    | 'position-size' | 'capital-gains' | 'investment-advisor' | 'apy' | 'mssc' | 'fd' | 'gratuity' | 'mutual-fund-analyzer'
+    | 'position-size' | 'capital-gains' | 'investment-advisor' | 'apy' | 'mssc' | 'fd' | 'rd' | 'gratuity' | 'mutual-fund-analyzer'
     | 'pivot-point' | 'stock-average' | 'explore-mutual-funds';
 
 interface Recommendation {
@@ -11,6 +11,11 @@ interface Recommendation {
 }
 
 export const RECOMMENDATIONS: Record<string, Recommendation[]> = {
+    'rd': [
+        { id: 'fd', text: "Compare with Fixed Deposit returns." },
+        { id: 'sip', text: "See how SIPs compare with higher returns." },
+        { id: 'explore-mutual-funds', text: "Explore better returns with Mutual Funds." },
+    ],
     'salary': [
         { id: 'income-tax', text: "Check your tax liability on this salary." },
         { id: 'pf', text: "See how much your EPF will grow by retirement." },
