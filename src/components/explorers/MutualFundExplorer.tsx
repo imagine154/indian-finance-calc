@@ -45,6 +45,7 @@ const MutualFundExplorer = () => {
     const [activeTab, setActiveTab] = useState<"all" | "top" | "rated" | "managers">("all");
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
     const [selectedSubCategory, setSelectedSubCategory] = useState<string>("All");
+    const [selectedAMC, setSelectedAMC] = useState<string>("All"); // Added AMC State
     const [selectedRisk, setSelectedRisk] = useState<string>("All");
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
     const [sortBy, setSortBy] = useState<"rating" | "1Y" | "3Y" | "5Y">("3Y");
@@ -53,6 +54,12 @@ const MutualFundExplorer = () => {
     const categories = useMemo(() => {
         const cats = new Set(mutualFundsData.map(f => f.category));
         return ["All", ...Array.from(cats).sort()];
+    }, []);
+
+    // Extract unique AMCs
+    const amcs = useMemo(() => {
+        const amcList = new Set(mutualFundsData.map(f => f.amc));
+        return ["All", ...Array.from(amcList).sort()];
     }, []);
 
     // Extract sub-categories based on selected category
@@ -138,12 +145,17 @@ const MutualFundExplorer = () => {
             funds = funds.filter(f => f.subCategory === selectedSubCategory);
         }
 
-        // 4. Risk Filter
+        // 4. AMC Filter
+        if (selectedAMC !== "All") {
+            funds = funds.filter(f => f.amc === selectedAMC);
+        }
+
+        // 5. Risk Filter
         if (selectedRisk !== "All") {
             funds = funds.filter(f => f.risk === selectedRisk);
         }
 
-        // 5. Tab Logic & Sorting
+        // 6. Tab Logic & Sorting
         switch (activeTab) {
             case "top":
                 // Returns > 20% in 3Y
@@ -172,7 +184,7 @@ const MutualFundExplorer = () => {
         });
 
         return funds;
-    }, [searchQuery, selectedCategory, selectedSubCategory, selectedRisk, activeTab, managersData, sortBy]);
+    }, [searchQuery, selectedCategory, selectedSubCategory, selectedAMC, selectedRisk, activeTab, managersData, sortBy]);
 
     const visibleItems = filteredItems.slice(0, visibleCount);
 
@@ -257,6 +269,18 @@ const MutualFundExplorer = () => {
                         <ArrowDownUp className="w-3 h-3 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                     </div>
 
+                    {/* AMC Filter */}
+                    <div className="relative">
+                        <select
+                            value={selectedAMC}
+                            onChange={(e) => setSelectedAMC(e.target.value)}
+                            className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors max-w-[160px] truncate"
+                        >
+                            {amcs.map(a => <option key={a} value={a}>{a === "All" ? "All AMCs" : a}</option>)}
+                        </select>
+                        <ArrowDownUp className="w-3 h-3 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                    </div>
+
                     {/* Risk Filter */}
                     <div className="relative">
                         <select
@@ -324,6 +348,7 @@ const MutualFundExplorer = () => {
                             setSearchQuery("");
                             setSelectedCategory("All");
                             setSelectedRisk("All");
+                            setSelectedAMC("All");
                         }}
                         className="text-blue-600 text-sm font-medium hover:underline"
                     >
