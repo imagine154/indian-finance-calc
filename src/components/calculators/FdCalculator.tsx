@@ -5,6 +5,7 @@ import { calculateFD, type FdInput, type FdResult, type CompoundingFrequency } f
 import { IndianRupee, TrendingUp, Calendar, Percent, PieChart as PieIcon } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 interface FdCalculatorProps {
     initialInvestmentAmount?: number;
@@ -220,6 +221,14 @@ export function FdCalculator({
                             <p className="text-xs text-slate-500">
                                 * Interest calculated with {compoundingFrequency} compounding.
                             </p>
+
+                            <div className="mt-4 pt-4 border-t border-slate-100 w-full">
+                                <ShareResult
+                                    title="FD Calculation"
+                                    text={`My FD of ${formatCurrency(investmentAmount)} will grow to ${formatCurrency(result.maturityAmount)}! Check yours:`}
+                                    url={typeof window !== 'undefined' ? window.location.href : ''}
+                                />
+                            </div>
                         </div>
                     </div>
 

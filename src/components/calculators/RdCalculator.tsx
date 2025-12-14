@@ -5,6 +5,7 @@ import { calculateRD, type RdInput } from '@/core/logic/rd';
 import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingUp, Calendar, PiggyBank } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 const RdResultChart = dynamic(() => import('@/components/charts/RdResultChart'), {
     ssr: false,
@@ -183,6 +184,14 @@ export function RdCalculator() {
                                 <strong>Note:</strong> Interest is compounded quarterly as per standard Indian Recurring Deposit rules.
                                 Returns shown are indicative.
                             </p>
+                        </div>
+
+                        <div className="mt-6 pt-6 border-t border-slate-100">
+                            <ShareResult
+                                title="RD Calculation"
+                                text={`I can save ${formatCurrency(result.maturityAmount)} with a monthly RD of ${formatCurrency(monthlyInvestment)}! Calculate yours here:`}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
                         </div>
                     </div>
                 </div>

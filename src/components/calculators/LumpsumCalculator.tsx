@@ -5,6 +5,7 @@ import { calculateLumpsum, type LumpsumInput, type LumpsumResult } from '@/core/
 import { IndianRupee, TrendingUp, Calendar, Coins, Percent, Clock } from 'lucide-react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 export function LumpsumCalculator() {
     // --- INPUTS ---

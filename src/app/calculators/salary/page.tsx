@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { SalaryCalculator } from '@/components/calculators/SalaryCalculator';
-import { RelatedCalculators } from '@/components/ui/RelatedCalculators';
+
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function SalaryCalculatorPage() {
                     </ul>
                 </div>
 
-                <RelatedCalculators toolId="salary" />
+
 
                 <SoftwareAppJsonLd
                     name="In-hand Salary Calculator India"

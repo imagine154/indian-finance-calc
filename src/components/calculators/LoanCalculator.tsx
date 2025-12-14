@@ -5,6 +5,7 @@ import { calculateLoan, PrepaymentFrequency } from '@/core/logic/loan';
 import dynamic from 'next/dynamic';
 import { Wallet, Percent, Calendar, TrendingDown, Info, CheckCircle2 } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 const LoanResultChart = dynamic(() => import('@/components/charts/LoanResultChart'), {
     ssr: false,
@@ -313,6 +314,14 @@ export function LoanCalculator({
                         </div>
 
                         <LoanResultChart data={barData} formatCurrency={formatCurrency} />
+
+                        <div className="mt-6 pt-6 border-t border-slate-100">
+                            <ShareResult
+                                title="Loan EMI Calculation"
+                                text={`My Loan EMI is ${formatCurrency(result.monthlyEMI)} for ${formatCompact(loanAmount)}. Calculate yours:`}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
+                        </div>
                     </div>
 
                     {/* Monthly Schedule Table (Conditional) */}

@@ -2,18 +2,37 @@ import type { Metadata } from 'next';
 import { SipLumpsumWrapper } from '@/components/calculators/SipLumpsumWrapper';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
-export const metadata: Metadata = {
-    title: 'SIP & Lumpsum Calculator - Calculate Mutual Fund Returns',
-    description: 'Calculate returns for both SIP (Systematic Investment Plan) and Lumpsum investments. Visualize wealth growth and plan your financial goals.',
-    keywords: [
-        'SIP Calculator',
-        'Lumpsum Calculator',
-        'Mutual Fund Returns',
-        'SIP vs Lumpsum',
-        'Investment Planner',
-        'Wealth Calculator',
-    ],
-};
+export async function generateMetadata({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
+    const params = await searchParams;
+    const amount = Number(params.amount) || 5000;
+    const rate = Number(params.rate) || 12;
+    const years = Number(params.years) || 10;
+
+    // Create query string
+    const query = new URLSearchParams({
+        amount: amount.toString(),
+        rate: rate.toString(),
+        years: years.toString(),
+    }).toString();
+
+    const ogImageUrl = `/api/og/sip?${query}`;
+
+    return {
+        title: 'SIP & Lumpsum Calculator - Calculate Mutual Fund Returns',
+        description: 'Calculate returns for both SIP (Systematic Investment Plan) and Lumpsum investments. Visualize wealth growth and plan your financial goals.',
+        keywords: [
+            'SIP Calculator',
+            'Lumpsum Calculator',
+            'Mutual Fund Returns',
+            'SIP vs Lumpsum',
+            'Investment Planner',
+            'Wealth Calculator',
+        ],
+        openGraph: {
+            images: [ogImageUrl],
+        },
+    };
+}
 
 export default function SipCalculatorPage() {
     return (

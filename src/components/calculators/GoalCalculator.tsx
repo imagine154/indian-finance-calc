@@ -5,6 +5,7 @@ import { calculateGoalSIP } from '@/core/logic/goal';
 import dynamic from 'next/dynamic';
 import { Target, Calendar, TrendingUp, Wallet, ArrowRight, Info } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 const GoalResultChart = dynamic(() => import('@/components/charts/GoalResultChart'), {
     ssr: false,
@@ -288,6 +289,14 @@ export function GoalCalculator() {
                                 <div className="w-3 h-0.5 bg-red-500 border-t border-dashed border-red-500"></div>
                                 <span>Target Goal</span>
                             </div>
+                        </div>
+
+                        <div className="mt-6 pt-6 border-t border-slate-100">
+                            <ShareResult
+                                title="Goal Planning"
+                                text={`I need to save ${formatCurrency(result.monthlySIP)}/month to reach my goal of ${formatCompact(result.futureCost)}! Calculate yours:`}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
                         </div>
                     </div>
 

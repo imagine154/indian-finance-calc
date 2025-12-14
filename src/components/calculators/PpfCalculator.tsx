@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { calculatePPF, type PpfInput, type PpfResult } from '@/core/logic/ppf';
 import { IndianRupee, TrendingUp, Calendar, PiggyBank, Clock } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 interface PpfCalculatorProps {
@@ -227,6 +228,14 @@ export function PpfCalculator({
                                     />
                                 </AreaChart>
                             </ResponsiveContainer>
+                        </div>
+
+                        <div className="mt-6 pt-6 border-t border-slate-100">
+                            <ShareResult
+                                title="PPF Calculation"
+                                text={`My PPF investment of ${formatCurrency(yearlyInvestment)}/year will grow to ${formatCurrency(result.maturityAmount)}! Check yours:`}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
                         </div>
                     </div>
 

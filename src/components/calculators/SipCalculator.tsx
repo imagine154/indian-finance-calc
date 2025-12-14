@@ -12,6 +12,7 @@ import dynamic from 'next/dynamic';
 import { Target, TrendingUp, Wallet } from 'lucide-react';
 
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 const SipResultChart = dynamic(() => import('@/components/charts/SipResultChart'), {
     ssr: false,
@@ -288,6 +289,15 @@ export function SipCalculator({
                             </p>
                         </div>
                     )}
+
+                    {/* Share Section */}
+                    <div className="mt-6 pt-6 border-t border-slate-100">
+                        <ShareResult
+                            title="SIP Investment Analysis"
+                            text={`I can turn a monthly investment of ${formatCompact(monthlyInvestment)} into ${formatCompact(result.totalValue)} in ${timePeriod} years! Calculate yours here:`}
+                            url={typeof window !== 'undefined' ? window.location.href : ''}
+                        />
+                    </div>
                 </div>
             </div>
 

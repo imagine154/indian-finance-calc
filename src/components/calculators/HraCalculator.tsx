@@ -13,6 +13,7 @@ import {
 } from "recharts";
 import { calculateHRA, HraResult } from "@/core/logic/hra";
 import { RelatedCalculators } from "../ui/RelatedCalculators";
+import ShareResult from '@/components/common/ShareResult';
 
 const HraCalculator = () => {
     const [basicSalary, setBasicSalary] = useState<number>(500000);
@@ -261,6 +262,14 @@ const HraCalculator = () => {
                                     {result ? formatCurrency(result.breakdown.salaryCap) : "₹0"}
                                 </span>
                             </div>
+                        </div>
+
+                        <div className="mt-6 pt-6 border-t border-slate-200">
+                            <ShareResult
+                                title="HRA Exemption Calculator"
+                                text={`I can save taxes on ${formatCurrency(result ? result.exemptAmount : 0)} of HRA! Calculate your exemption:`}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
                         </div>
                     </div>
                 </div>
