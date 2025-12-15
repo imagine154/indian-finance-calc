@@ -84,11 +84,16 @@ const CoffeeCanPlanner = () => {
                                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">₹</span>
                                 <input
                                     type="number"
+                                    min={1000}
+                                    step={5000}
                                     value={lumpsum}
                                     onChange={(e) => setLumpsum(Number(e.target.value))}
                                     className="w-full pl-8 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-bold focus:ring-2 focus:ring-amber-500 outline-none"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-2 text-left font-medium">
+                                {formatCurrency(lumpsum)}
+                            </p>
                         </div>
 
                         <div>

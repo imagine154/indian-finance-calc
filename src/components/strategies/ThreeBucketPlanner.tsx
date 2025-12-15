@@ -64,7 +64,7 @@ const ThreeBucketPlanner = () => {
                                 className="w-full pl-10 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xl text-slate-900 focus:ring-2 focus:ring-teal-500 outline-none"
                             />
                         </div>
-                        <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                        <p className="text-xs text-slate-500 mt-2 text-left font-medium">
                             {formatCurrency(totalCorpus)}
                         </p>
                     </div>
@@ -83,7 +83,7 @@ const ThreeBucketPlanner = () => {
                                 className="w-full pl-10 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xl text-slate-900 focus:ring-2 focus:ring-teal-500 outline-none"
                             />
                         </div>
-                        <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                        <p className="text-xs text-slate-500 mt-2 text-left font-medium">
                             {formatCurrency(monthlyExpense)}
                         </p>
                     </div>

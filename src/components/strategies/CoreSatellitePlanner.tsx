@@ -104,11 +104,16 @@ const CoreSatellitePlanner = () => {
                                 <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold text-lg">₹</span>
                                 <input
                                     type="number"
+                                    min={1000}
+                                    step={5000}
                                     value={investmentAmount}
                                     onChange={(e) => setInvestmentAmount(Number(e.target.value))}
                                     className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 focus:ring-2 focus:ring-indigo-500 outline-none transition-all"
                                 />
                             </div>
+                            <p className="text-xs text-slate-500 mt-2 text-left font-medium">
+                                {formatCurrency(investmentAmount)}
+                            </p>
                         </div>
 
                         <div>
@@ -121,8 +126,8 @@ const CoreSatellitePlanner = () => {
                                         key={mode}
                                         onClick={() => setRiskProfile(mode)}
                                         className={`py-2 px-1 rounded-lg text-sm font-bold transition-all ${riskProfile === mode
-                                                ? 'bg-indigo-600 text-white shadow-md'
-                                                : 'bg-white border border-slate-200 text-slate-600 hover:bg-indigo-50'
+                                            ? 'bg-indigo-600 text-white shadow-md'
+                                            : 'bg-white border border-slate-200 text-slate-600 hover:bg-indigo-50'
                                             }`}
                                     >
                                         {mode}

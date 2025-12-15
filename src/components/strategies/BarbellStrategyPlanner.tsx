@@ -110,7 +110,7 @@ const BarbellStrategyPlanner = () => {
                                         className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 focus:ring-2 focus:ring-cyan-500 outline-none transition-all"
                                     />
                                 </div>
-                                <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                                <p className="text-xs text-slate-500 mt-2 text-left font-medium">
                                     {formatCurrency(totalCorpus)}
                                 </p>
                             </div>
