@@ -5,7 +5,13 @@ import { usePathname } from "next/navigation";
 import { IndianRupee, Menu, X, ChevronDown } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 
-const navGroups = [
+type NavGroup = {
+    label: string;
+    href?: string;
+    items: { name: string; href: string }[];
+};
+
+const navGroups: NavGroup[] = [
     {
         label: "Income & Tax",
         items: [
@@ -34,6 +40,18 @@ const navGroups = [
             { name: "FD Calculator", href: "/calculators/fd" },
             { name: "RD Calculator", href: "/calculators/rd" },
 
+        ]
+    },
+    {
+        label: "Strategies",
+        href: "/strategies",
+        items: [
+            { name: "Core & Satellite", href: "/strategies/core-satellite" },
+            { name: "3-Bucket Strategy", href: "/strategies/three-bucket" },
+            { name: "Coffee Can Investing", href: "/strategies/coffee-can" },
+            { name: "Barbell Strategy", href: "/strategies/barbell" },
+            { name: "Factor Investing", href: "/strategies/factor-investing" },
+            { name: "Magic Formula", href: "/strategies/magic-formula" },
         ]
     },
     {
@@ -114,7 +132,7 @@ export default function Navbar() {
                     <div className="hidden lg:flex items-center space-x-1">
                         {navGroups.map((group) => {
                             const isDropdownOpen = activeDropdown === group.label;
-                            const isActiveGroup = group.items.some(item => item.href === pathname);
+                            const isActiveGroup = group.items.some(item => item.href === pathname) || (group.href === pathname);
 
                             return (
                                 <div
@@ -123,15 +141,28 @@ export default function Navbar() {
                                     onMouseEnter={() => handleMouseEnter(group.label)}
                                     onMouseLeave={handleMouseLeave}
                                 >
-                                    <button
-                                        className={`flex items-center gap-1 px-3.5 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out ${isActiveGroup || isDropdownOpen
-                                            ? "bg-blue-50 text-blue-700 ring-1 ring-blue-200"
-                                            : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
-                                            }`}
-                                    >
-                                        {group.label}
-                                        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
-                                    </button>
+                                    {group.href ? (
+                                        <Link
+                                            href={group.href}
+                                            className={`flex items-center gap-1 px-3.5 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out ${isActiveGroup || isDropdownOpen
+                                                ? "bg-blue-50 text-blue-700 ring-1 ring-blue-200"
+                                                : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                                                }`}
+                                        >
+                                            {group.label}
+                                            <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
+                                        </Link>
+                                    ) : (
+                                        <button
+                                            className={`flex items-center gap-1 px-3.5 py-2 rounded-full text-sm font-medium transition-all duration-200 ease-in-out ${isActiveGroup || isDropdownOpen
+                                                ? "bg-blue-50 text-blue-700 ring-1 ring-blue-200"
+                                                : "text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                                                }`}
+                                        >
+                                            {group.label}
+                                            <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
+                                        </button>
+                                    )}
 
                                     {/* Dropdown Menu */}
                                     {isDropdownOpen && (
@@ -177,9 +208,17 @@ export default function Navbar() {
                     <div className="px-4 pt-2 pb-6 space-y-4">
                         {navGroups.map((group) => (
                             <div key={group.label} className="space-y-1">
-                                <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-2 mb-2">
-                                    {group.label}
-                                </h3>
+                                {group.href ? (
+                                    <Link href={group.href}>
+                                        <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-2 mb-2 hover:text-blue-600 cursor-pointer">
+                                            {group.label}
+                                        </h3>
+                                    </Link>
+                                ) : (
+                                    <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-2 mb-2">
+                                        {group.label}
+                                    </h3>
+                                )}
                                 <div className="grid grid-cols-1 gap-1">
                                     {group.items.map((item) => {
                                         const isActive = pathname === item.href;

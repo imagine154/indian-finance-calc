@@ -22,8 +22,30 @@ import {
   Flame,
   Microscope,
   Crosshair,
-  Shield
+  Shield,
+  Rocket,
+  ArrowRight,
+  Orbit,
+  Layers,
+  Trophy,
+  BarChart3,
+  Dumbbell,
+  Sparkles,
+  Wand2
 } from "lucide-react";
+
+import { STRATEGIES } from "@/config/strategies";
+
+// Map icons for Strategies
+const STRATEGY_ICONS: Record<string, React.ElementType> = {
+  'Orbit': Orbit,
+  'Layers': Layers,
+  'Trophy': Trophy,
+  'BarChart3': BarChart3,
+  'Dumbbell': Dumbbell,
+  'Sparkles': Sparkles,
+  'Wand2': Wand2,
+};
 
 export const metadata: Metadata = {
   title: 'RupeeTools - Best Indian Finance Calculators (SIP, Tax, Salary)',
@@ -322,7 +344,65 @@ export default function Home() {
           </div>
         </div>
 
+
         <div className="space-y-16">
+
+          {/* Featured Strategies Section */}
+          <section>
+            <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-2">
+              <div className="p-2 bg-slate-900 rounded-lg shadow-sm">
+                <Rocket className="w-6 h-6 text-white" />
+              </div>
+              <h2 className="text-2xl font-bold text-slate-800">
+                Pro Investment Strategies
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {STRATEGIES.slice(0, 3).map((strategy) => {
+                const Icon = STRATEGY_ICONS[strategy.icon] || BarChart3;
+                return (
+                  <Link
+                    key={strategy.id}
+                    href={strategy.href}
+                    className="group block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-200 border border-slate-200 hover:-translate-y-1 relative overflow-hidden"
+                  >
+                    <div className="flex justify-between items-start mb-4">
+                      <div className={`h-12 w-12 rounded-xl flex items-center justify-center transition-colors bg-slate-100 text-slate-600 group-hover:bg-slate-900 group-hover:text-white`}>
+                        <Icon className="w-6 h-6" />
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-wider bg-slate-100 text-slate-600 px-2 py-1 rounded-full">
+                        {strategy.riskLevel} Risk
+                      </span>
+                    </div>
+
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">
+                      {strategy.title}
+                    </h3>
+                    <p className="text-slate-500 text-sm leading-relaxed mb-4">
+                      {strategy.description}
+                    </p>
+                    <div className="flex items-center gap-1 text-sm font-bold text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0">
+                      View Strategy <ArrowRight className="w-4 h-4" />
+                    </div>
+                  </Link>
+                )
+              })}
+
+              {/* View All Card */}
+              <Link
+                href="/strategies"
+                className="group flex flex-col items-center justify-center p-6 bg-slate-50 rounded-xl border-2 border-dashed border-slate-300 hover:border-blue-300 hover:bg-blue-50 transition-all text-center"
+              >
+                <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center shadow-sm mb-3 group-hover:scale-110 transition-transform">
+                  <ArrowRight className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900">View All Strategies</h3>
+                <p className="text-sm text-slate-500">Explore Factor Investing, Magic Formula & more.</p>
+              </Link>
+            </div>
+          </section>
+
           {categories.map((category, index) => (
             <section key={index}>
               <div className="flex items-center gap-3 mb-6 border-b border-slate-200 pb-2">
