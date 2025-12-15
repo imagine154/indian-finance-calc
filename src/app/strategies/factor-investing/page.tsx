@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import FactorStrategyPlanner from '@/components/strategies/FactorStrategyPlanner';
 import { Activity, Zap, BarChart } from 'lucide-react';
 import { STRATEGIES } from '@/config/strategies';
+import { StrategyTools } from '@/components/strategies/StrategyTools';
 
 const strategy = STRATEGIES.find(s => s.id === 'smart-beta');
 
@@ -102,7 +103,9 @@ export default function FactorInvestingPage() {
                         </p>
                     </div>
                 </div>
+
+                <StrategyTools />
             </div>
         </main>
     );
-}
+};

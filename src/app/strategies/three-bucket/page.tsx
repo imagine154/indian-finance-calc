@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import ThreeBucketPlanner from '@/components/strategies/ThreeBucketPlanner';
 import { STRATEGIES } from '@/config/strategies';
+import { StrategyTools } from '@/components/strategies/StrategyTools';
 
 const strategy = STRATEGIES.find(s => s.id === 'three-bucket');
 
@@ -88,6 +89,8 @@ const ThreeBucketPage = () => {
                         </div>
                     </div>
                 </div>
+
+                <StrategyTools />
 
                 {/* Removed SoftwareAppJsonLd */}
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import CoreSatellitePlanner from '@/components/strategies/CoreSatellitePlanner';
 import { STRATEGIES } from '@/config/strategies';
+import { StrategyTools } from '@/components/strategies/StrategyTools';
 
 const strategy = STRATEGIES.find(s => s.id === 'core-satellite');
 
@@ -91,6 +92,8 @@ const CoreSatellitePage = () => {
                         </div>
                     </div>
                 </div>
+
+                <StrategyTools />
 
                 {/* Removed Tool specific JSON-LD in favor of HowTo */}
             </div>
