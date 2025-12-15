@@ -103,11 +103,16 @@ const BarbellStrategyPlanner = () => {
                                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">₹</span>
                                     <input
                                         type="number"
+                                        min={1000}
+                                        step={50000}
                                         value={totalCorpus}
                                         onChange={(e) => setTotalCorpus(Number(e.target.value))}
-                                        className="w-full pl-8 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-bold focus:ring-2 focus:ring-cyan-500 outline-none transition-all"
+                                        className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl font-bold text-slate-900 focus:ring-2 focus:ring-cyan-500 outline-none transition-all"
                                     />
                                 </div>
+                                <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                                    {formatCurrency(totalCorpus)}
+                                </p>
                             </div>
 
                             {/* Safety Allocation Slider */}

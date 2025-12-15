@@ -48,7 +48,7 @@ const ThreeBucketPlanner = () => {
 
             {/* Top Section: Inputs */}
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                     <div>
                         <label className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2 block">
                             Total Retirement Corpus
@@ -57,11 +57,16 @@ const ThreeBucketPlanner = () => {
                             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold text-lg">₹</span>
                             <input
                                 type="number"
+                                min={100000}
+                                step={100000}
                                 value={totalCorpus}
                                 onChange={(e) => setTotalCorpus(Number(e.target.value))}
                                 className="w-full pl-10 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xl text-slate-900 focus:ring-2 focus:ring-teal-500 outline-none"
                             />
                         </div>
+                        <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                            {formatCurrency(totalCorpus)}
+                        </p>
                     </div>
                     <div>
                         <label className="text-xs font-bold text-slate-500 uppercase tracking-wide mb-2 block">
@@ -71,11 +76,16 @@ const ThreeBucketPlanner = () => {
                             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold text-lg">₹</span>
                             <input
                                 type="number"
+                                min={1000}
+                                step={1000}
                                 value={monthlyExpense}
                                 onChange={(e) => setMonthlyExpense(Number(e.target.value))}
                                 className="w-full pl-10 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl font-bold text-xl text-slate-900 focus:ring-2 focus:ring-teal-500 outline-none"
                             />
                         </div>
+                        <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                            {formatCurrency(monthlyExpense)}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -156,8 +166,8 @@ const ThreeBucketPlanner = () => {
 
             {/* Bottom Section: Reality Check */}
             <div className={`rounded-xl p-4 md:p-6 border flex items-start gap-4 ${isUnderfunded
-                    ? 'bg-rose-100 border-rose-200 text-rose-900'
-                    : 'bg-emerald-100 border-emerald-200 text-emerald-900'
+                ? 'bg-rose-100 border-rose-200 text-rose-900'
+                : 'bg-emerald-100 border-emerald-200 text-emerald-900'
                 }`}>
                 <div className={`p-2 rounded-full ${isUnderfunded ? 'bg-rose-200' : 'bg-emerald-200'}`}>
                     {isUnderfunded ? <AlertTriangle className="w-5 h-5" /> : <CheckCircle2 className="w-5 h-5" />}

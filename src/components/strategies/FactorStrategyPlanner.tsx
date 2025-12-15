@@ -20,6 +20,12 @@ import {
     Tooltip
 } from 'recharts';
 
+const formatCurrency = (amount: number) => {
+    if (amount >= 10000000) return `₹${(amount / 10000000).toFixed(2)} Cr`;
+    if (amount >= 100000) return `₹${(amount / 100000).toFixed(2)} L`;
+    return `₹${amount.toLocaleString('en-IN')}`;
+};
+
 // --- Types & Constants ---
 
 type MarketView = 'Bullish' | 'Bearish' | 'Uncertain' | 'Recovery';
@@ -97,12 +103,6 @@ const FACTOR_INFO = {
         desc: "Stocks with lower price fluctuations.",
         funds: "Nifty Low Volatility 30 Index Funds"
     }
-};
-
-const formatCurrency = (amount: number) => {
-    if (amount >= 10000000) return `₹${(amount / 10000000).toFixed(2)} Cr`;
-    if (amount >= 100000) return `₹${(amount / 100000).toFixed(2)} L`;
-    return `₹${amount.toLocaleString('en-IN')}`;
 };
 
 // --- Component ---
@@ -183,11 +183,16 @@ const FactorStrategyPlanner = () => {
                                     <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-bold">₹</span>
                                     <input
                                         type="number"
+                                        min={1000}
+                                        step={5000}
                                         value={amount}
                                         onChange={(e) => setAmount(Number(e.target.value))}
-                                        className="w-full pl-8 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-bold focus:ring-2 focus:ring-violet-500 outline-none transition-all"
+                                        className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-slate-900 font-bold focus:ring-2 focus:ring-violet-500 outline-none transition-all"
                                     />
                                 </div>
+                                <p className="text-xs text-slate-500 mt-2 text-right font-medium">
+                                    {formatCurrency(amount)}
+                                </p>
                             </div>
                         </div>
                     </div>
