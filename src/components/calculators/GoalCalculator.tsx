@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import { Target, Calendar, TrendingUp, Wallet, ArrowRight, Info } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 import ShareResult from '@/components/common/ShareResult';
+import { SaveToDashboard } from "@/components/common/SaveToDashboard";
 
 const GoalResultChart = dynamic(() => import('@/components/charts/GoalResultChart'), {
     ssr: false,
@@ -291,12 +292,21 @@ export function GoalCalculator() {
                             </div>
                         </div>
 
-                        <div className="mt-6 pt-6 border-t border-slate-100">
-                            <ShareResult
-                                title="Goal Planning"
-                                text={`I need to save ${formatCurrency(result.monthlySIP)}/month to reach my goal of ${formatCompact(result.futureCost)}! Calculate yours:`}
-                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                        <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-3">
+                            <SaveToDashboard
+                                type="Goal"
+                                defaultTitle="Future Goal"
+                                targetAmount={targetAmount}
+                                currentAmount={result.monthlySIP}
+                                years={yearsToGoal}
                             />
+                            <div className="flex-1 min-w-[200px]">
+                                <ShareResult
+                                    title="Goal Planning"
+                                    text={`I need to save ${formatCurrency(result.monthlySIP)}/month to reach my goal of ${formatCompact(result.futureCost)}! Calculate yours:`}
+                                    url={typeof window !== 'undefined' ? window.location.href : ''}
+                                />
+                            </div>
                         </div>
                     </div>
 

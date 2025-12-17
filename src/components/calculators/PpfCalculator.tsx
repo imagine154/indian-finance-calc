@@ -5,6 +5,7 @@ import { calculatePPF, type PpfInput, type PpfResult } from '@/core/logic/ppf';
 import { IndianRupee, TrendingUp, Calendar, PiggyBank, Clock } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 import ShareResult from '@/components/common/ShareResult';
+import { SaveToDashboard } from "@/components/common/SaveToDashboard";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 interface PpfCalculatorProps {
@@ -230,12 +231,21 @@ export function PpfCalculator({
                             </ResponsiveContainer>
                         </div>
 
-                        <div className="mt-6 pt-6 border-t border-slate-100">
-                            <ShareResult
-                                title="PPF Calculation"
-                                text={`My PPF investment of ${formatCurrency(yearlyInvestment)}/year will grow to ${formatCurrency(result.maturityAmount)}! Check yours:`}
-                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                        <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-3">
+                            <SaveToDashboard
+                                type="PPF"
+                                defaultTitle="Public Provident Fund"
+                                targetAmount={result.maturityAmount}
+                                currentAmount={yearlyInvestment}
+                                years={duration}
                             />
+                            <div className="flex-1 min-w-[200px]">
+                                <ShareResult
+                                    title="PPF Calculation"
+                                    text={`My PPF investment of ${formatCurrency(yearlyInvestment)}/year will grow to ${formatCurrency(result.maturityAmount)}! Check yours:`}
+                                    url={typeof window !== 'undefined' ? window.location.href : ''}
+                                />
+                            </div>
                         </div>
                     </div>
 

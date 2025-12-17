@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import { IndianRupee, TrendingUp, Calendar, PiggyBank } from 'lucide-react';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 import ShareResult from '@/components/common/ShareResult';
+import { SaveToDashboard } from "@/components/common/SaveToDashboard";
 
 const RdResultChart = dynamic(() => import('@/components/charts/RdResultChart'), {
     ssr: false,
@@ -186,12 +187,21 @@ export function RdCalculator() {
                             </p>
                         </div>
 
-                        <div className="mt-6 pt-6 border-t border-slate-100">
-                            <ShareResult
-                                title="RD Calculation"
-                                text={`I can save ${formatCurrency(result.maturityAmount)} with a monthly RD of ${formatCurrency(monthlyInvestment)}! Calculate yours here:`}
-                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                        <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-3">
+                            <SaveToDashboard
+                                type="RD"
+                                defaultTitle="Recurring Deposit"
+                                targetAmount={result.maturityAmount}
+                                currentAmount={monthlyInvestment}
+                                years={timePeriodYears}
                             />
+                            <div className="flex-1 min-w-[200px]">
+                                <ShareResult
+                                    title="RD Calculation"
+                                    text={`I can save ${formatCurrency(result.maturityAmount)} with a monthly RD of ${formatCurrency(monthlyInvestment)}! Calculate yours here:`}
+                                    url={typeof window !== 'undefined' ? window.location.href : ''}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

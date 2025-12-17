@@ -6,6 +6,7 @@ import { IndianRupee, TrendingUp, Calendar, Coins, Percent, Clock } from 'lucide
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import { RelatedCalculators } from "../ui/RelatedCalculators";
 import ShareResult from '@/components/common/ShareResult';
+import { SaveToDashboard } from "@/components/common/SaveToDashboard";
 
 export function LumpsumCalculator() {
     // --- INPUTS ---
@@ -255,6 +256,23 @@ export function LumpsumCalculator() {
                         </div>
                     </div>
 
+                    {/* Share & Save Section */}
+                    <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-3">
+                        <SaveToDashboard
+                            type="Lumpsum"
+                            defaultTitle="Lumpsum Investment"
+                            targetAmount={result.maturityValue}
+                            currentAmount={investmentAmount}
+                            years={duration}
+                        />
+                        <div className="flex-1 min-w-[200px]">
+                            <ShareResult
+                                title="Lumpsum Investment Calculator"
+                                text={`My One-time investment of ${formatCurrency(investmentAmount)} will grow to ${formatCurrency(result.maturityValue)} in ${duration} years! Calculate yours here:`}
+                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
             <RelatedCalculators toolId="lumpsum" category="investments" />

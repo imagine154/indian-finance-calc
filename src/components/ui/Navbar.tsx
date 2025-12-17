@@ -81,6 +81,11 @@ const navGroups: NavGroup[] = [
             { name: "Position Size", href: "/calculators/position-size" },
             { name: "Stock Average", href: "/calculators/stock-average" },
         ]
+    },
+    {
+        label: "My Wealth",
+        href: "/dashboard",
+        items: []
     }
 ];
 
@@ -150,7 +155,9 @@ export default function Navbar() {
                                                 }`}
                                         >
                                             {group.label}
-                                            <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
+                                            {group.items.length > 0 && (
+                                                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
+                                            )}
                                         </Link>
                                     ) : (
                                         <button
@@ -165,7 +172,7 @@ export default function Navbar() {
                                     )}
 
                                     {/* Dropdown Menu */}
-                                    {isDropdownOpen && (
+                                    {isDropdownOpen && group.items.length > 0 && (
                                         <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-slate-100 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
                                             {group.items.map((item) => (
                                                 <Link
