@@ -32,6 +32,7 @@ const navGroups: NavGroup[] = [
             { name: "Explore Mutual Funds", href: "/explore-mutual-funds" },
             { name: "Explore ULIP Funds", href: "/explore-ulip-funds" },
             { name: "MF Analyzer", href: "/calculators/mutual-fund-analyzer" },
+            { name: "AMFI Flow Tracker", href: "/mutual-fund-flows" },
             { name: "SIP Analyzer", href: "/calculators/sip-analyzer" },
             { name: "Investment Advisor", href: "/calculators/investment-advisor" },
 

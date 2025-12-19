@@ -206,106 +206,104 @@ export function SipCalculator({
                         </div>
                     </div>
 
-                    {/* Summary Cards */}
-                    <div className="grid grid-cols-2 gap-4">
-                        <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-5 border border-blue-200">
-                            <p className="text-xs font-medium text-blue-700 mb-1">Invested Amount</p>
-                            <p className="text-2xl font-bold text-blue-900">
-                                {formatCompact(result.totalInvestment)}
-                            </p>
-                        </div>
-                        <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-5 border border-green-200">
-                            <p className="text-xs font-medium text-green-700 mb-1">Est. Returns</p>
-                            <p className="text-2xl font-bold text-green-900">
-                                {formatCompact(result.estimatedReturns)}
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Total Value Card */}
-                    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 text-white">
-                        <p className="text-sm font-medium text-slate-300 mb-2">Total Future Value</p>
-                        <p className="text-4xl font-bold mb-1">{formatCompact(result.totalValue)}</p>
-                        <p className="text-sm text-slate-400">
-                            after {timePeriod} {timePeriod === 1 ? 'year' : 'years'}
-                        </p>
-                    </div>
                 </div>
 
-                {/* Right Panel: Chart */}
-                <div className="lg:col-span-8 bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col">
-                    <h3 className="text-xl font-bold text-slate-800 mb-6">Investment Breakdown</h3>
+                {/* Right Panel: Results & Chart */}
+                <div className="lg:col-span-8 space-y-6">
 
-                    {/* Donut Chart */}
-                    <div className="flex-1 flex items-center justify-center">
-                        <SipResultChart data={chartData} formatCurrency={formatCurrency} />
-                    </div>
-
-                    {/* Legend */}
-                    <div className="space-y-3 mt-6">
-                        <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
-                            <div className="flex items-center gap-3">
-                                <div className="w-4 h-4 rounded-full bg-blue-600"></div>
-                                <span className="text-sm font-medium text-slate-700">Invested Amount</span>
+                    {/* Hero Card */}
+                    <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 text-white shadow-lg relative overflow-hidden">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-3xl"></div>
+                        <div className="relative z-10">
+                            <p className="text-blue-100 font-medium mb-1">Total Future Value</p>
+                            <h1 className="text-5xl font-bold mb-4">{formatCompact(result.totalValue)}</h1>
+                            <div className="flex flex-wrap gap-8 text-sm text-blue-50">
+                                <div className="flex flex-col">
+                                    <span className="text-blue-200 text-xs uppercase tracking-wider">Invested Amount</span>
+                                    <span className="font-bold text-xl">{formatCompact(result.totalInvestment)}</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-blue-200 text-xs uppercase tracking-wider">Est. Returns</span>
+                                    <span className="font-bold text-xl">{formatCompact(result.estimatedReturns)}</span>
+                                </div>
                             </div>
-                            <span className="text-sm font-bold text-blue-900">
-                                {formatCurrency(result.totalInvestment)}
-                            </span>
                         </div>
-                        <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
-                            <div className="flex items-center gap-3">
-                                <div className="w-4 h-4 rounded-full bg-green-600"></div>
-                                <span className="text-sm font-medium text-slate-700">Estimated Returns</span>
+                    </div>
+
+                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col">
+                        <h3 className="text-xl font-bold text-slate-800 mb-6">Investment Breakdown</h3>
+
+                        {/* Donut Chart */}
+                        <div className="flex-1 flex items-center justify-center">
+                            <SipResultChart data={chartData} formatCurrency={formatCurrency} />
+                        </div>
+
+                        {/* Legend */}
+                        <div className="space-y-3 mt-6">
+                            <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-4 h-4 rounded-full bg-blue-600"></div>
+                                    <span className="text-sm font-medium text-slate-700">Invested Amount</span>
+                                </div>
+                                <span className="text-sm font-bold text-blue-900">
+                                    {formatCurrency(result.totalInvestment)}
+                                </span>
                             </div>
-                            <span className="text-sm font-bold text-green-900">
-                                {formatCurrency(result.estimatedReturns)}
-                            </span>
+                            <div className="flex items-center justify-between p-3 bg-green-50 rounded-lg">
+                                <div className="flex items-center gap-3">
+                                    <div className="w-4 h-4 rounded-full bg-green-600"></div>
+                                    <span className="text-sm font-medium text-slate-700">Estimated Returns</span>
+                                </div>
+                                <span className="text-sm font-bold text-green-900">
+                                    {formatCurrency(result.estimatedReturns)}
+                                </span>
+                            </div>
                         </div>
-                    </div>
 
-                    {/* Wealth Gained Info */}
-                    <div className="mt-6 p-4 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-lg border border-emerald-200">
-                        <div className="flex items-center gap-2 mb-1">
-                            <TrendingUp className="w-5 h-5 text-emerald-600" />
-                            <span className="text-sm font-semibold text-emerald-900">Wealth Gained</span>
-                        </div>
-                        <p className="text-2xl font-bold text-emerald-700">
-                            {formatCompact(result.estimatedReturns)}
-                        </p>
-                        <p className="text-xs text-emerald-600 mt-1">
-                            {((result.estimatedReturns / result.totalInvestment) * 100).toFixed(1)}% growth on your investment
-                        </p>
-                    </div>
-
-                    {/* Step-Up Impact Card (Conditional) */}
-                    {stepUp > 0 && (
-                        <div className="mt-4 p-4 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg border border-indigo-200 animate-in fade-in slide-in-from-bottom-4">
+                        {/* Wealth Gained Info */}
+                        <div className="mt-6 p-4 bg-gradient-to-r from-emerald-50 to-teal-50 rounded-lg border border-emerald-200">
                             <div className="flex items-center gap-2 mb-1">
-                                <TrendingUp className="w-5 h-5 text-indigo-600" />
-                                <span className="text-sm font-semibold text-indigo-900">Power of Step-Up</span>
+                                <TrendingUp className="w-5 h-5 text-emerald-600" />
+                                <span className="text-sm font-semibold text-emerald-900">Wealth Gained</span>
                             </div>
-                            <p className="text-sm text-indigo-800">
-                                By increasing your SIP by <span className="font-bold">{stepUp}%</span> annually, you earned an extra{' '}
-                                <span className="font-bold text-indigo-700">{formatCompact(extraWealth)}</span>!
+                            <p className="text-2xl font-bold text-emerald-700">
+                                {formatCompact(result.estimatedReturns)}
+                            </p>
+                            <p className="text-xs text-emerald-600 mt-1">
+                                {((result.estimatedReturns / result.totalInvestment) * 100).toFixed(1)}% growth on your investment
                             </p>
                         </div>
-                    )}
 
-                    {/* Share & Save Section */}
-                    <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-3">
-                        <SaveToDashboard
-                            type="SIP"
-                            defaultTitle="My SIP Plan"
-                            targetAmount={result.totalValue}
-                            currentAmount={monthlyInvestment}
-                            years={timePeriod}
-                        />
-                        <div className="flex-1 min-w-[200px]">
-                            <ShareResult
-                                title="SIP Investment Analysis"
-                                text={`I can turn a monthly investment of ${formatCompact(monthlyInvestment)} into ${formatCompact(result.totalValue)} in ${timePeriod} years! Calculate yours here:`}
-                                url={typeof window !== 'undefined' ? window.location.href : ''}
+                        {/* Step-Up Impact Card (Conditional) */}
+                        {stepUp > 0 && (
+                            <div className="mt-4 p-4 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg border border-indigo-200 animate-in fade-in slide-in-from-bottom-4">
+                                <div className="flex items-center gap-2 mb-1">
+                                    <TrendingUp className="w-5 h-5 text-indigo-600" />
+                                    <span className="text-sm font-semibold text-indigo-900">Power of Step-Up</span>
+                                </div>
+                                <p className="text-sm text-indigo-800">
+                                    By increasing your SIP by <span className="font-bold">{stepUp}%</span> annually, you earned an extra{' '}
+                                    <span className="font-bold text-indigo-700">{formatCompact(extraWealth)}</span>!
+                                </p>
+                            </div>
+                        )}
+
+                        {/* Share & Save Section */}
+                        <div className="mt-6 pt-6 border-t border-slate-100 flex flex-wrap gap-3">
+                            <SaveToDashboard
+                                type="SIP"
+                                defaultTitle="My SIP Plan"
+                                targetAmount={result.totalValue}
+                                currentAmount={monthlyInvestment}
+                                years={timePeriod}
                             />
+                            <div className="flex-1 min-w-[200px]">
+                                <ShareResult
+                                    title="SIP Investment Analysis"
+                                    text={`I can turn a monthly investment of ${formatCompact(monthlyInvestment)} into ${formatCompact(result.totalValue)} in ${timePeriod} years! Calculate yours here:`}
+                                    url={typeof window !== 'undefined' ? window.location.href : ''}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

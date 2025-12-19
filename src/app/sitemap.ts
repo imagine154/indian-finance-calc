@@ -19,6 +19,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/mutual-fund-flows`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/calculators/income-tax`,
             lastModified: new Date(),
             changeFrequency: 'weekly', // Changes often with budget

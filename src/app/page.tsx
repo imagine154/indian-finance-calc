@@ -161,6 +161,13 @@ const categories = [
     icon: <TrendingUp className="w-6 h-6 text-indigo-600" />,
     calculators: [
       {
+        name: "AMFI Market Pulse",
+        href: "/mutual-fund-flows",
+        desc: "Monthly Inflow/Outflow data analysis.",
+        icon: <BarChart3 className="w-6 h-6 text-fuchsia-600" />,
+        iconBg: "bg-fuchsia-100"
+      },
+      {
         name: "SIP",
         href: "/calculators/sip",
         desc: "Mutual Fund returns with Step-Up.",
