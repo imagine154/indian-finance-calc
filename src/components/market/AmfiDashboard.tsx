@@ -106,14 +106,32 @@ const renderActiveShape = (props: any) => {
 };
 
 
+
+const SimpleTooltip = ({ children, content }: { children: React.ReactNode, content: string }) => {
+    return (
+        <div className="relative group">
+            {children}
+            <div className="absolute hidden group-hover:block bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-800 rounded whitespace-nowrap z-10 pointer-events-none shadow-md">
+                {content}
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-gray-800"></div>
+            </div>
+        </div>
+    );
+};
+
 export default function AmfiDashboard({ data }: AmfiDashboardProps) {
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
     const [viewMode, setViewMode] = useState<'flow' | 'aum'>('flow');
     const [mounted, setMounted] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         setMounted(true);
+        const checkMobile = () => setIsMobile(window.innerWidth < 1024); // lg breakpoint
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
     const onPieEnter = (_: any, index: number) => {
@@ -227,20 +245,22 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
                 {/* Controls */}
                 <div className="flex items-center gap-4">
                     <div className="bg-gray-100 p-1 rounded-lg flex space-x-1">
-                        <button
-                            onClick={() => setViewMode('flow')}
-                            className={`p-2 rounded-md transition-all ${viewMode === 'flow' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
-                            title="Flows View"
-                        >
-                            <BarChart2 className="w-4 h-4" />
-                        </button>
-                        <button
-                            onClick={() => setViewMode('aum')}
-                            className={`p-2 rounded-md transition-all ${viewMode === 'aum' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
-                            title="AUM View"
-                        >
-                            <PieChartIcon className="w-4 h-4" />
-                        </button>
+                        <SimpleTooltip content="Net Flows View">
+                            <button
+                                onClick={() => setViewMode('flow')}
+                                className={`p-2 rounded-md transition-all ${viewMode === 'flow' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                            >
+                                <BarChart2 className="w-4 h-4" />
+                            </button>
+                        </SimpleTooltip>
+                        <SimpleTooltip content="Asset Allocation View">
+                            <button
+                                onClick={() => setViewMode('aum')}
+                                className={`p-2 rounded-md transition-all ${viewMode === 'aum' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                            >
+                                <PieChartIcon className="w-4 h-4" />
+                            </button>
+                        </SimpleTooltip>
                     </div>
                 </div>
             </div>
@@ -286,10 +306,10 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
             </div>
 
             {/* Main Grid: Table + Chart */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-[600px]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 h-auto lg:h-[600px] min-h-[800px] lg:min-h-0">
 
                 {/* Left Table Panel */}
-                <div className="lg:col-span-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col overflow-hidden">
+                <div className="order-2 lg:order-1 lg:col-span-4 bg-white rounded-xl shadow-sm border border-gray-200 flex flex-col overflow-hidden h-[400px] lg:h-full">
                     <div className="p-3 border-b border-gray-100 bg-gray-50 flex justify-between items-center">
                         <h3 className="font-semibold text-gray-700 text-sm">Top Assets ({selectedCategory})</h3>
                         <span className="text-xs text-gray-400">By size</span>
@@ -311,7 +331,11 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
                                             <div className="text-[10px] sm:hidden text-gray-400 font-normal">{item.category}</div>
                                         </td>
                                         <td className="px-4 py-3 text-right text-gray-600 font-mono">
-                                            {Math.round(item.aum).toLocaleString()}
+                                            <div>{Math.round(item.aum).toLocaleString()}</div>
+                                            <div className={`text-[10px] flex items-center justify-end gap-1 mt-1 ${item.netFlow >= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>
+                                                {item.netFlow >= 0 ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
+                                                <span>{formatCr(Math.abs(item.netFlow))}</span>
+                                            </div>
                                         </td>
                                     </tr>
                                 ))}
@@ -325,7 +349,7 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
 
 
                 {/* Right Chart Panel */}
-                <div className="lg:col-span-8 bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col">
+                <div className="order-1 lg:order-2 lg:col-span-8 bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col h-[400px] lg:h-full">
                     <div className="flex justify-between items-center mb-2">
                         <h3 className="text-gray-500 text-sm font-medium uppercase tracking-wide">
                             {viewMode === 'flow' ? 'Net Flows by Scheme' : 'Asset Allocation (AUM)'}
@@ -374,8 +398,8 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
                                         data={aumChartData}
                                         cx="50%"
                                         cy="50%"
-                                        innerRadius={100}
-                                        outerRadius={160}
+                                        innerRadius={isMobile ? 60 : 100}
+                                        outerRadius={isMobile ? 100 : 160}
                                         fill="#3b82f6"
                                         dataKey="aum"
                                         onMouseEnter={onPieEnter}
