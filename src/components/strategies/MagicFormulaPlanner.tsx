@@ -34,7 +34,7 @@ const MagicFormulaPlanner = () => {
     const [alpha, setAlpha] = useState<number>(5); // Extra return over Nifty
 
     // --- Logic Engine ---
-    const { chartData, magicFinal, niftyFinal, diff } = useMemo(() => {
+    const { chartData } = useMemo(() => {
         const data = [];
         let magic = corpus;
         let nifty = corpus;
@@ -78,7 +78,7 @@ const MagicFormulaPlanner = () => {
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3">The Magic Formula</h2>
                 <p className="text-slate-500 max-w-2xl mx-auto">
-                    Based on Joel Greenblatt's proven algorithm. Systematically buy <strong>Good Companies</strong> (High Quality) at <strong>Cheap Prices</strong> (High Yield).
+                    Based on Joel Greenblatt&apos;s proven algorithm. Systematically buy <strong>Good Companies</strong> (High Quality) at <strong>Cheap Prices</strong> (High Yield).
                 </p>
             </div>
 

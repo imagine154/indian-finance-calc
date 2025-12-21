@@ -41,7 +41,7 @@ export const calculateSSY = (input: SsyInput): SsyResult => {
     let balance = 0;
     let totalInvested = 0;
     let educationFund = 0;
-    let totalInterestBeforeWithdrawal = 0; // To track interest part of the balance
+    const totalInterestBeforeWithdrawal = 0; // To track interest part of the balance
     const yearlyBreakdown: YearlyBreakdown[] = [];
 
     // SSY Rules

@@ -138,7 +138,7 @@ const FactorStrategyPlanner = () => {
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-3">Optimize for the Market Cycle</h2>
                 <p className="text-slate-500 max-w-2xl mx-auto">
-                    Don't just buy "The Market". Allocate dynamically to factors like Momentum, Value, and Quality based on current economic conditions.
+                    Don&apos;t just buy &quot;The Market&quot;. Allocate dynamically to factors like Momentum, Value, and Quality based on current economic conditions.
                 </p>
             </div>
 
@@ -203,7 +203,7 @@ const FactorStrategyPlanner = () => {
                             <Activity className="w-24 h-24" />
                         </div>
                         <h3 className="font-bold text-violet-300 mb-2 uppercase text-xs tracking-wider">Strategy Logic</h3>
-                        <p className="text-lg font-bold mb-2">"{marketView}" Approach</p>
+                        <p className="text-lg font-bold mb-2">&quot;{marketView}&quot; Approach</p>
                         <p className="text-sm text-violet-100/80 mb-4 leading-relaxed">{strategy.description}</p>
                         <div className="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 backdrop-blur-sm">
                             <Search className="w-3 h-3 text-emerald-300" />

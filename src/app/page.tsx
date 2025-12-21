@@ -31,7 +31,8 @@ import {
   BarChart3,
   Dumbbell,
   Sparkles,
-  Wand2
+  Wand2,
+  ScanSearch
 } from "lucide-react";
 
 import { STRATEGIES } from "@/config/strategies";
@@ -160,6 +161,13 @@ const categories = [
     title: "Investments & Planning",
     icon: <TrendingUp className="w-6 h-6 text-indigo-600" />,
     calculators: [
+      {
+        name: "Portfolio X-Ray",
+        href: "/portfolio-xray",
+        desc: "Upload CAS to check hidden commissions.",
+        icon: <ScanSearch className="w-6 h-6 text-rose-600" />,
+        iconBg: "bg-rose-100"
+      },
       {
         name: "AMFI Market Pulse",
         href: "/mutual-fund-flows",

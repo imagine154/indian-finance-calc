@@ -13,6 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         // --- High Priority Calculators ---
         {
+            url: `${baseUrl}/portfolio-xray`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
+            priority: 0.95, // Very high priority
+        },
+        {
             url: `${baseUrl}/calculators/salary`,
             lastModified: new Date(),
             changeFrequency: 'monthly',

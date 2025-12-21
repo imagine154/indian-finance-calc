@@ -1,7 +1,7 @@
 import React from 'react';
 import fs from 'fs';
 import path from 'path';
-import * as XLSX from 'xlsx';
+
 import AmfiDashboard from '@/components/market/AmfiDashboard';
 import { parseAmfiCsv, AmfiSchemeData } from '@/lib/amfi-parser';
 import { Metadata } from 'next';
@@ -25,28 +25,18 @@ export const metadata: Metadata = {
 
 export default function MutualFundFlowsPage() {
     // 1. Read the file
-    const filePath = path.join(process.cwd(), 'src/data/MCR_MonthlyReport.xls');
+    // Switched to CSV to avoid using vulnerable 'xlsx' package
+    const filePath = path.join(process.cwd(), 'src/data/MCR_MonthlyReport.csv');
     let data: AmfiSchemeData[] = [];
 
     try {
-        // Read the file as binary
-        const fileBuf = fs.readFileSync(filePath);
-
-        // Parse using xlsx
-        const workbook = XLSX.read(fileBuf, { type: 'buffer' });
-
-        // Assume the data is in the first sheet
-        const sheetName = workbook.SheetNames[0];
-        const sheet = workbook.Sheets[sheetName];
-
-        // Convert to CSV string to use our text parser
-        const csvContent = XLSX.utils.sheet_to_csv(sheet);
+        // Read the file as utf-8 text
+        const csvContent = fs.readFileSync(filePath, 'utf-8');
 
         // Parse
         data = parseAmfiCsv(csvContent);
     } catch (error) {
         console.error("Error loading AMFI data:", error);
-        // Fallback or empty state could be handled here
     }
 
     return (

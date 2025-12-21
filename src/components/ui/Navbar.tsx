@@ -26,6 +26,7 @@ const navGroups: NavGroup[] = [
     {
         label: "Investments",
         items: [
+            { name: "Portfolio X-Ray", href: "/portfolio-xray" },
             { name: "SIP Calculator", href: "/calculators/sip" },
             { name: "Goal Planner", href: "/calculators/goal" },
             { name: "FIRE Calculator", href: "/calculators/fire" },
@@ -111,8 +112,9 @@ export default function Navbar() {
 
     // Close mobile menu when route changes
     useEffect(() => {
-        setIsOpen(false);
-        setActiveDropdown(null);
+        if (isOpen) setIsOpen(false);
+        if (activeDropdown) setActiveDropdown(null);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pathname]);
 
     return (

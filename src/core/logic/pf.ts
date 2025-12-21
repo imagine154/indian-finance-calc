@@ -98,7 +98,7 @@ export function calculateEPFCorpus(input: EpfInput): EpfResult {
         // Or more accurately, simulate monthly.
 
         // Let's do monthly simulation for better precision within the year
-        let yearOpeningBalance = balance;
+        const yearOpeningBalance = balance;
 
         // Reset balance to opening for the clean annual formula application to avoid double counting if we did monthly above.
         // Let's use the standard approximation:

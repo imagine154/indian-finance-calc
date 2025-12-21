@@ -52,7 +52,7 @@ export function parseAmfiCsv(csvContent: string): AmfiSchemeData[] {
                 // Handle parentheses for negative numbers if present (Excel sometimes exports (100) as -100)
                 // Check for " (INR in crore)" text? Probably not in data cells.
                 // clean: remove commas
-                let clean = val.replace(/,/g, '').trim();
+                const clean = val.replace(/,/g, '').trim();
                 // If wrapped in parens (123.45), treat as negative? usually banking format, but standard CSV might just be -123.45.
                 // Let's stick to simple parseFloat first.
                 const num = parseFloat(clean);

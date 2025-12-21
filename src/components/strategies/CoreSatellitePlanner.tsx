@@ -135,7 +135,7 @@ const CoreSatellitePlanner = () => {
                                 ))}
                             </div>
                             <p className="text-xs text-slate-400 mt-2 text-center italic">
-                                "{STRATEGIES[riskProfile].description}"
+                                "&quot;{STRATEGIES[riskProfile].description}&quot;"
                             </p>
                         </div>
 

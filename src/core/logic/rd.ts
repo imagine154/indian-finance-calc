@@ -40,7 +40,7 @@ export const calculateRD = (input: RdInput): RdResult => {
     const rate = interestRate / 100;
 
     let totalMaturityAmount = 0;
-    let totalInvestment = monthlyInvestment * months;
+    const totalInvestment = monthlyInvestment * months;
 
     // Iterative approach: consistent with Indian Bank standards where interest is compounded quarterly.
     // For every monthly installment, we calculate the interest it earns until maturity.
@@ -115,8 +115,8 @@ export const calculateRD = (input: RdInput): RdResult => {
      * We'll run a parallel simulation effectively to snapshot the balance at years.
      */
 
-    let runningBalance = 0;
-    let runningInvested = 0;
+    const runningBalance = 0;
+    const runningInvested = 0;
 
     // We need to re-calculate "Balance at Year Y" correctly.
     // At year Y (month M=Y*12), what is the value?
@@ -125,7 +125,7 @@ export const calculateRD = (input: RdInput): RdResult => {
     for (let y = 1; y <= timePeriodYears; y++) {
         const monthsInYear = y * 12;
         let balanceAtYear = 0;
-        let investedAtYear = monthlyInvestment * monthsInYear;
+        const investedAtYear = monthlyInvestment * monthsInYear;
 
         // Calculate value of all installments paid up to this year, valued at this year end.
         for (let i = 0; i < monthsInYear; i++) {

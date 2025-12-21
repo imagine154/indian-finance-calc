@@ -68,3 +68,6 @@ DATA_UPDATE.md
 # Intermediate Data Files
 *.csv
 
+
+# MCP Configuration (Contains Sensitive Credentials)
+mcp.json

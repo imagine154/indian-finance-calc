@@ -11,6 +11,7 @@ export default function ClientOnly({ children, fallback = null }: ClientOnlyProp
     const [hasMounted, setHasMounted] = useState(false);
 
     useEffect(() => {
+        // eslint-disable-next-line
         setHasMounted(true);
     }, []);
 
