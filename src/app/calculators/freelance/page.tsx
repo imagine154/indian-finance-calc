@@ -1,5 +1,6 @@
 import { FreelanceCalculator } from '@/components/calculators/FreelanceCalculator';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
+import { PageHeader } from '@/components/ui/PageHeader';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -9,12 +10,10 @@ export const metadata: Metadata = {
 
 export default function FreelanceTaxPage() {
     return (
-        <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
+        <div className="min-h-screen bg-slate-50">
+            <PageHeader title="Freelancer Tax Calculator (44ADA)" />
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10">
-                    <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                        Freelancer Tax Calculator <span className="text-teal-600">(44ADA)</span>
-                    </h1>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         For Professionals (Developers, Designers, Consultants) with receipts up to ₹75 Lakhs.
                         Pay tax on only <span className="font-bold text-slate-800">50%</span> of your income.

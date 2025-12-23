@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HraCalculator from "@/components/calculators/HraCalculator";
+import { PageHeader } from '@/components/ui/PageHeader';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
@@ -17,12 +18,10 @@ export const metadata: Metadata = {
 
 export default function HraCalculatorPage() {
     return (
-        <main className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
+        <main className="min-h-screen bg-slate-50">
+            <PageHeader title="HRA Exemption Calculator" />
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10">
-                    <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        HRA Exemption Calculator
-                    </h1>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Calculate the tax-exempt portion of your House Rent Allowance (HRA)
                         under Section 10(13A).

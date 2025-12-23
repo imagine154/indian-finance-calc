@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { GstCalculator } from '@/components/calculators/GstCalculator';
+import { PageHeader } from '@/components/ui/PageHeader';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
@@ -13,12 +14,10 @@ export const metadata: Metadata = {
 
 export default function GstCalculatorPage() {
     return (
-        <main className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
+        <main className="min-h-screen bg-slate-50">
+            <PageHeader title="GST Calculator" />
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl mb-4">
-                        GST Calculator
-                    </h1>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Calculate Goods & Services Tax (GST) effortlessly. Add GST to your base price or remove GST from the total amount (Reverse Calculation).
                     </p>

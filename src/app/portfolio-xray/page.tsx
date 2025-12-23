@@ -2,6 +2,7 @@
 import { Metadata } from "next";
 import { CasAnalyzer } from "@/components/portfolio/CasAnalyzer"; // Check path
 import { ScanSearch, ShieldCheck, AlertTriangle } from "lucide-react";
+import { PageHeader } from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
     title: "Free Mutual Fund Portfolio Analyzer - Check Hidden Commissions | RupeeTools",
@@ -50,46 +51,43 @@ export default function PortfolioXrayPage() {
             />
 
             {/* Main Page Content */}
-            <main className="min-h-screen bg-slate-50 py-12 px-4 md:px-8">
-                <div className="max-w-4xl mx-auto space-y-8">
-                    {/* Header Section */}
-                    <div className="text-center space-y-4">
-                        <div className="inline-flex items-center justify-center p-3 bg-indigo-100 rounded-2xl mb-2">
-                            <ScanSearch className="w-8 h-8 text-indigo-600" />
-                        </div>
-                        <h1 className="text-3xl md:text-4xl font-bold text-slate-900">
-                            Portfolio <span className="text-indigo-600">X-Ray</span>
-                        </h1>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                            Are you losing money to hidden commissions? Upload your <strong>Summary CAS PDF</strong> (Detailed CAS not supported) to find out.
-                            <span className="block mt-2 text-sm font-semibold text-emerald-600 flex items-center justify-center gap-1">
+            <main className="min-h-screen bg-slate-50">
+                <PageHeader title="Portfolio X-Ray" />
+                <div className="py-12 px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-4xl mx-auto space-y-8">
+                        {/* Intro */}
+                        <div className="text-center">
+                            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                                Are you losing money to hidden commissions? Upload your <strong>Summary CAS PDF</strong> (Detailed CAS not supported) to find out.
+                            </p>
+                            <span className="block mt-4 text-sm font-semibold text-emerald-600 flex items-center justify-center gap-1">
                                 <ShieldCheck className="w-4 h-4" /> 100% Private. File never leaves your device.
                             </span>
-                        </p>
-                    </div>
-
-                    {/* The Tool */}
-                    <CasAnalyzer />
-
-                    {/* FAQ / Trust Section */}
-                    <div className="grid md:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
-                        <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                <ShieldCheck className="w-4 h-4 text-emerald-500" /> Is it safe?
-                            </h3>
-                            <p className="text-sm text-slate-500">Yes. The analysis runs entirely in your browser using JavaScript. We do not have a server database.</p>
                         </div>
-                        <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                <AlertTriangle className="w-4 h-4 text-amber-500" /> What is a Regular Plan?
-                            </h3>
-                            <p className="text-sm text-slate-500">A plan where a distributor earns ~1% commission from your investment every year, forever.</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
-                                <ScanSearch className="w-4 h-4 text-blue-500" /> How to get CAS?
-                            </h3>
-                            <p className="text-sm text-slate-500">Download your &quot;Consolidated Account Statement&quot; from CAMS Online or KFintech website.</p>
+
+                        {/* The Tool */}
+                        <CasAnalyzer />
+
+                        {/* FAQ / Trust Section */}
+                        <div className="grid md:grid-cols-3 gap-6 pt-10 border-t border-slate-200">
+                            <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                                <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                    <ShieldCheck className="w-4 h-4 text-emerald-500" /> Is it safe?
+                                </h3>
+                                <p className="text-sm text-slate-500">Yes. The analysis runs entirely in your browser using JavaScript. We do not have a server database.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                                <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                    <AlertTriangle className="w-4 h-4 text-amber-500" /> What is a Regular Plan?
+                                </h3>
+                                <p className="text-sm text-slate-500">A plan where a distributor earns ~1% commission from your investment every year, forever.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
+                                <h3 className="font-bold text-slate-800 mb-2 flex items-center gap-2">
+                                    <ScanSearch className="w-4 h-4 text-blue-500" /> How to get CAS?
+                                </h3>
+                                <p className="text-sm text-slate-500">Download your &quot;Consolidated Account Statement&quot; from CAMS Online or KFintech website.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

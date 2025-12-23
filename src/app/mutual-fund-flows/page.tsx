@@ -5,6 +5,7 @@ import path from 'path';
 import AmfiDashboard from '@/components/market/AmfiDashboard';
 import { parseAmfiCsv, AmfiSchemeData } from '@/lib/amfi-parser';
 import { Metadata } from 'next';
+import { PageHeader } from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
     title: "AMFI Mutual Fund Flows (Nov 2025) - Inflow/Outflow Tracker | RupeeTools",
@@ -57,8 +58,18 @@ export default function MutualFundFlowsPage() {
                     })
                 }}
             />
-            <div className="min-h-screen bg-gray-50 py-10">
-                <AmfiDashboard data={data} />
+            <div className="min-h-screen bg-slate-50">
+                <PageHeader title="Mutual Fund Flows (AMFI)" />
+                <div className="py-12 px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-7xl mx-auto">
+                        <div className="text-center mb-8">
+                            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                                Analyze the latest AMFI monthly data. Track net inflows and AUM changes across categories.
+                            </p>
+                        </div>
+                        <AmfiDashboard data={data} />
+                    </div>
+                </div>
             </div>
         </>
     );

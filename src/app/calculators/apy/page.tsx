@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import ApyCalculator from "@/components/calculators/ApyCalculator";
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
+import { PageHeader } from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
     title: "Atal Pension Yojana (APY) Calculator - Monthly Premium Chart 2025 | RupeeTools",
@@ -18,16 +19,8 @@ export const metadata: Metadata = {
 const ApyCalculatorPage = () => {
     return (
         <main className="min-h-screen bg-slate-50">
+            <PageHeader title="Atal Pension Yojana (APY) Calculator" />
             <div className="max-w-7xl mx-auto px-4 py-8">
-                <div className="text-center mb-10">
-                    <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        Atal Pension Yojana (APY) Calculator
-                    </h1>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Plan your retirement with the government-backed APY scheme.
-                        Calculate your monthly contribution to get a guaranteed pension of up to ₹5,000/month.
-                    </p>
-                </div>
 
                 <ApyCalculator />
 

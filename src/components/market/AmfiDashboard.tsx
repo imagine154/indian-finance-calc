@@ -230,38 +230,27 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
     }
 
     return (
-        <div className="w-full max-w-7xl mx-auto p-4 space-y-6">
+        <div className="w-full space-y-6">
 
-            {/* Header */}
-            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                <div>
-                    <h2 className="text-2xl font-bold flex items-center gap-2">
-                        <Activity className="w-6 h-6 text-blue-600" />
-                        Mutual Fund Flows <span className="text-gray-400 font-light text-xl">(Nov 2025)</span>
-                    </h2>
-                    <p className="text-sm text-gray-500 mt-1">Data Source: AMFI Monthly Cumulative Report</p>
-                </div>
-
-                {/* Controls */}
-                <div className="flex items-center gap-4">
-                    <div className="bg-gray-100 p-1 rounded-lg flex space-x-1">
-                        <SimpleTooltip content="Net Flows View">
-                            <button
-                                onClick={() => setViewMode('flow')}
-                                className={`p-2 rounded-md transition-all ${viewMode === 'flow' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
-                            >
-                                <BarChart2 className="w-4 h-4" />
-                            </button>
-                        </SimpleTooltip>
-                        <SimpleTooltip content="Asset Allocation View">
-                            <button
-                                onClick={() => setViewMode('aum')}
-                                className={`p-2 rounded-md transition-all ${viewMode === 'aum' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
-                            >
-                                <PieChartIcon className="w-4 h-4" />
-                            </button>
-                        </SimpleTooltip>
-                    </div>
+            {/* Controls */}
+            <div className="flex justify-end gap-4">
+                <div className="bg-gray-100 p-1 rounded-lg flex space-x-1">
+                    <SimpleTooltip content="Net Flows View">
+                        <button
+                            onClick={() => setViewMode('flow')}
+                            className={`p-2 rounded-md transition-all ${viewMode === 'flow' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                        >
+                            <BarChart2 className="w-4 h-4" />
+                        </button>
+                    </SimpleTooltip>
+                    <SimpleTooltip content="Asset Allocation View">
+                        <button
+                            onClick={() => setViewMode('aum')}
+                            className={`p-2 rounded-md transition-all ${viewMode === 'aum' ? 'bg-white shadow text-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                        >
+                            <PieChartIcon className="w-4 h-4" />
+                        </button>
+                    </SimpleTooltip>
                 </div>
             </div>
 

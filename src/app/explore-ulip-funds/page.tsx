@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import UlipExplorer from '@/components/explorers/UlipExplorer';
+import { PageHeader } from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
     title: 'Best ULIP Funds (2025) - Compare Past Returns & Performance | RupeeTools',
@@ -30,31 +31,19 @@ export const metadata: Metadata = {
 
 export default function ExploreUlipPage() {
     return (
-        <div className="min-h-screen bg-slate-50 pb-20">
-            {/* Hero Section */}
-            <div className="bg-white border-b border-slate-200">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                        <div>
-                            <div className="flex items-center gap-3 mb-4">
-                                <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-0">
-                                    Explore ULIP Funds
-                                </h1>
-                                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                                    Data as of 30/11/2025
-                                </span>
-                            </div>
-                            <p className="text-lg text-slate-600 max-w-3xl">
-                                Detailed performance analytics for Unit Linked Insurance Plans. Compare returns across equity, debt, and balanced funds from top insurers.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div className="min-h-screen bg-slate-50">
+            <PageHeader title="Explore ULIP Funds" badge="Data as of 30/11/2025" />
 
-            {/* Main Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-                <UlipExplorer />
+            <div className="py-12 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-8">
+                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                            Detailed performance analytics for Unit Linked Insurance Plans. Compare returns across equity, debt, and balanced funds from top insurers.
+                        </p>
+                    </div>
+
+                    <UlipExplorer />
+                </div>
             </div>
         </div>
     );

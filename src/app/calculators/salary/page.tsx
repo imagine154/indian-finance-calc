@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { SalaryCalculator } from '@/components/calculators/SalaryCalculator';
+import { PageHeader } from '@/components/ui/PageHeader';
 
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
@@ -10,12 +11,10 @@ export const metadata: Metadata = {
 
 export default function SalaryCalculatorPage() {
     return (
-        <main className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
+        <main className="min-h-screen bg-slate-50">
+            <PageHeader title="Take Home Salary Calculator" />
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10">
-                    <h1 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        Take Home Salary Calculator
-                    </h1>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Find out exactly how much hits your bank account. We break down your CTC into earnings, deductions, and taxes.
                     </p>

@@ -49,17 +49,10 @@ const PivotPointCalculator = () => {
         <div className="w-full max-w-7xl mx-auto font-sans">
 
             {/* Header / Intro */}
-            <div className="bg-amber-50 border border-amber-100 rounded-3xl p-6 mb-8 flex flex-col md:flex-row items-start md:items-center gap-4">
-                <div className="bg-amber-100 p-3 rounded-xl">
-                    <Crosshair className="w-8 h-8 text-amber-600" />
-                </div>
-                <div>
-                    <h2 className="text-2xl font-bold text-slate-900">Pivot Point Calculation</h2>
-                    <p className="text-slate-600 mt-1 max-w-2xl">
-                        Enter yesterday's High, Low, and Close prices to generate support & resistance levels for intraday trading.
-                        Identify key reversal zones using {inputs.method} pivots.
-                    </p>
-                </div>
+            <div className="mb-8 max-w-3xl">
+                <p className="text-slate-600 text-lg leading-relaxed">
+                    Enter yesterday's High, Low, and Close prices to generate support & resistance levels for intraday trading. Identify key reversal zones using {inputs.method} pivots.
+                </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -82,8 +75,8 @@ const PivotPointCalculator = () => {
                                             key={m}
                                             onClick={() => handleInputChange('method', m as PivotMethod)}
                                             className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors border ${inputs.method === m
-                                                    ? 'bg-amber-50 border-amber-200 text-amber-700'
-                                                    : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
+                                                ? 'bg-amber-50 border-amber-200 text-amber-700'
+                                                : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50'
                                                 }`}
                                         >
                                             {m}
@@ -239,6 +232,49 @@ const PivotPointCalculator = () => {
                     </div>
                 </div>
             </div>
+            {/* About Section */}
+            <div className="mt-12 bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                <h2 className="text-xl font-bold text-slate-900 mb-4">About Pivot Points</h2>
+                <div className="space-y-4 text-slate-600 text-sm leading-relaxed">
+                    <p>
+                        <strong className="text-slate-900">Pivot Points</strong> are significant support and resistance levels used by intraday traders to determine potential turning points in the market. They are calculated using the previous trading day's High, Low, and Close prices.
+                    </p>
+
+                    <h3 className="font-semibold text-slate-900 mt-4">Understanding the Levels</h3>
+                    <ul className="list-disc pl-5 space-y-2">
+                        <li>
+                            <strong className="text-amber-600">PP (Pivot Point):</strong> The central pivot. If the price is trading above this level, the sentiment is generally considered <strong>bullish</strong>. If below, it is <strong>bearish</strong>.
+                        </li>
+                        <li>
+                            <strong className="text-red-600">R1, R2, R3 (Resistances):</strong> Potential profit-booking or reversal zones for long positions. Breaking R3 often signals a strong breakout.
+                        </li>
+                        <li>
+                            <strong className="text-emerald-600">S1, S2, S3 (Supports):</strong> Potential buying zones. Breaking S3 often signals a strong breakdown.
+                        </li>
+                    </ul>
+
+                    <h3 className="font-semibold text-slate-900 mt-4">Calculation Methods</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <strong className="block text-slate-900 mb-1">Standard (Floor)</strong>
+                            <p className="text-xs">The most popular method. Uses a simple average of High, Low, and Close for the central pivot.</p>
+                        </div>
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <strong className="block text-slate-900 mb-1">Fibonacci</strong>
+                            <p className="text-xs">Based on Fibonacci retracement levels (38.2%, 61.8%). Popular among swing traders.</p>
+                        </div>
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <strong className="block text-slate-900 mb-1">Camarilla</strong>
+                            <p className="text-xs">Focuses on range trading. Excellent for identifying mean reversion trades when price opens between R3 and S3.</p>
+                        </div>
+                        <div className="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                            <strong className="block text-slate-900 mb-1">Woodie</strong>
+                            <p className="text-xs">Gives more weight to the Closing price of the previous session. Useful for markets that close strong.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <RelatedCalculators toolId="pivot-point" category="investments" />
         </div>
     );

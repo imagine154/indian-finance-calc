@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { CapitalGainsCalculator } from '@/components/calculators/CapitalGainsCalculator';
+import { PageHeader } from '@/components/ui/PageHeader';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
@@ -17,13 +18,10 @@ export const metadata: Metadata = {
 
 export default function CapitalGainsPage() {
     return (
-        <main className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
-                {/* Header */}
+        <main className="min-h-screen bg-slate-50">
+            <PageHeader title="Capital Gains Tax Calculator" />
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                        Capital Gains Tax Calculator
-                    </h1>
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Calculate your tax liability on Equity, Debt Funds, Real Estate, and Gold.
                         Updated for FY 2025-26 (New Budget Rules).

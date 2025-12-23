@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { TaxCompare } from '@/components/calculators/TaxCompare';
+import { PageHeader } from '@/components/ui/PageHeader';
 import { SoftwareAppJsonLd } from '@/components/seo/SoftwareAppJsonLd';
 
 export const metadata: Metadata = {
@@ -18,14 +19,11 @@ export const metadata: Metadata = {
 
 export default function IncomeTaxCalculatorPage() {
     return (
-        <main className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto">
-                {/* Header */}
+        <main className="min-h-screen bg-slate-50">
+            <PageHeader title="Income Tax Calculator" />
+            <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                        Income Tax Calculator
-                    </h1>
-                    <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Compare Old vs New Tax Regime for FY 2025-26. Enter your income and deductions to see which regime saves you more money.
                     </p>
                 </div>
