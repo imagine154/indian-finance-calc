@@ -32,7 +32,8 @@ import {
   Dumbbell,
   Sparkles,
   Wand2,
-  ScanSearch
+  ScanSearch,
+  Scissors
 } from "lucide-react";
 
 import { STRATEGIES } from "@/config/strategies";
@@ -58,6 +59,13 @@ const categories = [
     title: "Income & Tax",
     icon: <IndianRupee className="w-6 h-6 text-blue-600" />,
     calculators: [
+      {
+        name: "Tax Harvester",
+        href: "/tax-harvester",
+        desc: "Offset gains & save tax.",
+        icon: <Scissors className="w-6 h-6 text-rose-600" />,
+        iconBg: "bg-rose-100"
+      },
       {
         name: "Income Tax",
         href: "/calculators/income-tax",

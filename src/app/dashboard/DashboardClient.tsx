@@ -4,6 +4,7 @@
 import { useWealthStoreHydration, useWealthStore, selectNetWorth } from "@/store/useWealthStore";
 import { DashboardSkeleton } from "@/components/dashboard/DashboardSkeleton";
 import { WealthHero } from "@/components/dashboard/WealthHero";
+import { WealthTimeline } from "@/components/dashboard/WealthTimeline";
 import { AssetAllocationChart } from "@/components/dashboard/AssetAllocationChart";
 import { GoalsGrid } from "@/components/dashboard/GoalsGrid";
 import { Shield } from "lucide-react";
@@ -43,6 +44,9 @@ export function DashboardClient() {
 
                 {/* Hero Section */}
                 <WealthHero />
+
+                {/* Wealth Timeline */}
+                <WealthTimeline />
 
                 {/* Main Content Grid */}
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

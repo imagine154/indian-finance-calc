@@ -8,13 +8,14 @@ import { useState, useRef, useEffect } from "react";
 type NavGroup = {
     label: string;
     href?: string;
-    items: { name: string; href: string }[];
+    items: { name: string; href: string; badge?: string }[];
 };
 
 const navGroups: NavGroup[] = [
     {
         label: "Income & Tax",
         items: [
+            { name: "Tax Harvester", href: "/tax-harvester", badge: "NEW" }, // Added manually
             { name: "Salary Calculator", href: "/calculators/salary" },
             { name: "Income Tax", href: "/calculators/income-tax" },
             { name: "Freelance Tax", href: "/calculators/freelance" },
@@ -187,6 +188,11 @@ export default function Navbar() {
                                                         }`}
                                                 >
                                                     {item.name}
+                                                    {item.badge && (
+                                                        <span className="ml-2 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-600 uppercase tracking-wide">
+                                                            {item.badge}
+                                                        </span>
+                                                    )}
                                                 </Link>
                                             ))}
                                         </div>
