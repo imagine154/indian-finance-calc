@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://rupeetools.in'),
   title: 'RupeeTools - Indian Finance Calculators (Tax, SIP, Salary)',
   description: 'Free, accurate financial tools for Indians. Calculate Income Tax (FY 2025-26), Home Loan Pre-payment, SIP Returns, and Retirement Corpus.',
+  icons: {
+    icon: '/favicon-brand.svg',
+    shortcut: '/favicon-brand.svg',
+    apple: '/favicon-brand.svg',
+  },
 };
 
 export default function RootLayout({
