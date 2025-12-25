@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rupeetools.in'),
+  metadataBase: new URL('https://www.rupeetools.in'),
+  alternates: {
+    canonical: '/',
+  },
   title: 'RupeeTools - Indian Finance Calculators (Tax, SIP, Salary)',
   description: 'Free, accurate financial tools for Indians. Calculate Income Tax (FY 2025-26), Home Loan Pre-payment, SIP Returns, and Retirement Corpus.',
   icons: {

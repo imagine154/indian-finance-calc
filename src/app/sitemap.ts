@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     // 👇 CRITICAL: Must match your Google Search Console property exactly
-    const baseUrl = "https://rupeetools.in";
+    const baseUrl = "https://www.rupeetools.in";
 
     return [
         {
