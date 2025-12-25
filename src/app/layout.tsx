@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import { InstallPrompt } from "@/components/layout/InstallPrompt";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,19 @@ export const metadata: Metadata = {
     shortcut: '/favicon-brand.svg',
     apple: '/favicon-brand.svg',
   },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "RupeeTools",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2563eb",
 };
 
 export default function RootLayout({
@@ -45,6 +59,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <InstallPrompt />
         <Analytics />
       </body>
     </html>
