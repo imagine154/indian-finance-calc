@@ -60,7 +60,7 @@ export default function LoanCalculatorPage() {
                     <SoftwareAppJsonLd
                         name="Home Loan Prepayment Calculator"
                         description="Calculate Home Loan Prepayment savings. See how extra EMI payments reduce your tenure and interest."
-                        calculatorPath="/calculators/loan"
+                        calculatorPath="/calculators/home-loan"
                     />
                 </div>
             </div>
