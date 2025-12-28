@@ -347,6 +347,7 @@ const MutualFundExplorer = () => {
                         onClick={() => {
                             setSearchQuery("");
                             setSelectedCategory("All");
+                            setSelectedSubCategory("All");
                             setSelectedRisk("All");
                             setSelectedAMC("All");
                         }}
