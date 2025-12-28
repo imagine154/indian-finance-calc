@@ -87,8 +87,10 @@ const navGroups: NavGroup[] = [
     },
     {
         label: "My Wealth",
-        href: "/dashboard",
-        items: []
+        items: [
+            { name: "Dashboard", href: "/dashboard" },
+            { name: "Settings", href: "/dashboard/settings" },
+        ]
     }
 ];
 
