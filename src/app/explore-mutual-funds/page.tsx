@@ -5,8 +5,8 @@ import { PageHeader } from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
     title: 'Mutual Fund Explorer India - Compare & Screen 1500+ Funds | RupeeTools',
-    description: 'Find the best mutual funds in India. Filter by Returns, Rating, and Fund Manager. Updated data for Equity, Debt, and Hybrid funds.',
-    keywords: ['mutual fund screener', 'best mutual funds 2025', 'fund manager performance', 'compare mutual funds India', 'mutual fund ratings'],
+    description: 'Find the best mutual funds in India. Filter by Rolling Returns, Rating, and Fund Manager. Updated data for Equity, Debt, and Hybrid funds.',
+    keywords: ['mutual fund screener', 'best mutual funds 2025', 'rolling returns of mutual funds', 'fund manager performance', 'compare mutual funds India', 'mutual fund ratings'],
     alternates: {
         canonical: 'https://rupeetools.in/mutual-funds',
     },

@@ -71,3 +71,4 @@ DATA_UPDATE.md
 
 # MCP Configuration (Contains Sensitive Credentials)
 mcp.json
+missing_funds.json

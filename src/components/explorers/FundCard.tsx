@@ -1,6 +1,7 @@
 import React from 'react';
 import { Star, TrendingUp, Shield, Banknote } from 'lucide-react';
 import { FUND_LOGOS, DEFAULT_LOGO } from '@/data/fund-logos';
+import { InfoTooltip } from '../ui/InfoTooltip';
 
 interface FundProps {
     fund: {
@@ -13,9 +14,13 @@ interface FundProps {
             "1Y": number;
             "3Y": number;
             "5Y": number;
+            "10Y"?: number;
+            rolling?: number;
         };
         aum: number;
         managers: string[];
+        benchmark?: string;
+        alpha?: number;
     };
 }
 
@@ -29,7 +34,7 @@ const FundCard: React.FC<FundProps> = ({ fund }) => {
     };
 
     return (
-        <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+        <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
             {/* Header */}
             <div className="flex items-start gap-4 mb-4">
                 <div className="w-12 h-12 flex-shrink-0 rounded-lg border border-slate-100 p-1 bg-white flex items-center justify-center overflow-hidden">
@@ -43,7 +48,7 @@ const FundCard: React.FC<FundProps> = ({ fund }) => {
                     />
                 </div>
                 <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-slate-900 leading-tight line-clamp-2 mb-1" title={fund.name}>
+                    <h3 className="font-semibold text-slate-900 leading-tight line-clamp-2 mb-1 h-10" title={fund.name}>
                         {fund.name}
                     </h3>
                     <div className="flex items-center gap-2">
@@ -65,24 +70,64 @@ const FundCard: React.FC<FundProps> = ({ fund }) => {
                 </div>
             </div>
 
-            {/* Returns Grid */}
-            <div className="grid grid-cols-3 gap-2 mb-4 bg-slate-50 rounded-lg p-3">
+            {/* Benchmark Display - kept separate for clarity */}
+            {fund.benchmark && (
+                <div className="flex items-center gap-1.5 mb-2 px-1">
+                    <span className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Benchmark:</span>
+                    <span className="text-xs font-medium text-slate-700 truncate" title={fund.benchmark}>
+                        {fund.benchmark}
+                        <InfoTooltip content="The standard index (like Nifty 50) used to measure the fund's performance." />
+                    </span>
+                </div>
+            )}
+
+            {/* Unified Metrics Grid (2x3) */}
+            <div className="grid grid-cols-3 gap-y-3 gap-x-1 mb-4 bg-slate-50 rounded-lg p-2">
+                {/* Row 1: Standard Returns */}
                 <div className="text-center border-r border-slate-200 last:border-0">
                     <div className="text-xs text-slate-500 mb-1">1Y Return</div>
-                    <div className={`font-bold text-sm ${getReturnColor(fund.returns["1Y"])}`}>
+                    <div className={`font-bold text-xs ${getReturnColor(fund.returns["1Y"])}`}>
                         {fund.returns["1Y"].toFixed(1)}%
                     </div>
                 </div>
                 <div className="text-center border-r border-slate-200 last:border-0">
                     <div className="text-xs text-slate-500 mb-1">3Y Return</div>
-                    <div className={`font-bold text-sm ${getReturnColor(fund.returns["3Y"])}`}>
+                    <div className={`font-bold text-xs ${getReturnColor(fund.returns["3Y"])}`}>
                         {fund.returns["3Y"].toFixed(1)}%
                     </div>
                 </div>
                 <div className="text-center">
                     <div className="text-xs text-slate-500 mb-1">5Y Return</div>
-                    <div className={`font-bold text-sm ${getReturnColor(fund.returns["5Y"])}`}>
+                    <div className={`font-bold text-xs ${getReturnColor(fund.returns["5Y"])}`}>
                         {fund.returns["5Y"].toFixed(1)}%
+                    </div>
+                </div>
+
+                {/* Row 2: Advanced Metrics */}
+                <div className="text-center border-r border-slate-200 last:border-0 pt-1 border-t border-slate-200/50">
+                    <div className="text-xs text-slate-500 mb-1">10Y Return</div>
+                    <div className="font-bold text-xs text-slate-700">
+                        {fund.returns["10Y"] !== undefined ? `${fund.returns["10Y"].toFixed(1)}%` : '-'}
+                    </div>
+                </div>
+                <div className="text-center border-r border-slate-200 last:border-0 pt-1 border-t border-slate-200/50">
+                    <div className="text-xs text-slate-500 mb-1 flex items-center justify-center gap-1">
+                        Alpha
+                        <InfoTooltip content="The % outperformance of the fund over its benchmark. A positive Alpha indicates the fund manager added value." />
+                    </div>
+                    <div className={`font-bold text-xs ${fund.alpha !== undefined ? (fund.alpha >= 0 ? 'text-emerald-600' : 'text-red-500') : 'text-slate-700'}`}>
+                        {fund.alpha !== undefined ? (
+                            <>{fund.alpha > 0 ? '+' : ''}{fund.alpha.toFixed(2)}%</>
+                        ) : '-'}
+                    </div>
+                </div>
+                <div className="text-center pt-1 border-t border-slate-200/50">
+                    <div className="text-xs text-slate-500 mb-1 flex items-center justify-center gap-1 whitespace-nowrap">
+                        3Y Rolling
+                        <InfoTooltip content="A measure of consistency. Average return for every 3-year holding period in history." />
+                    </div>
+                    <div className="font-bold text-xs text-slate-700">
+                        {fund.returns.rolling !== undefined ? `${fund.returns.rolling.toFixed(1)}%` : '-'}
                     </div>
                 </div>
             </div>

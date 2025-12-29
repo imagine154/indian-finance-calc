@@ -19,12 +19,16 @@ interface Fund {
         "1Y": number;
         "3Y": number;
         "5Y": number;
+        "10Y"?: number;
+        rolling?: number;
     };
     expenseRatio: number;
     aum: number;
     nav: number;
     minSip: number;
     managers: string[];
+    benchmark?: string;
+    alpha?: number;
 }
 
 interface ManagerStats {
@@ -48,7 +52,7 @@ const MutualFundExplorer = () => {
     const [selectedAMC, setSelectedAMC] = useState<string>("All"); // Added AMC State
     const [selectedRisk, setSelectedRisk] = useState<string>("All");
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
-    const [sortBy, setSortBy] = useState<"rating" | "1Y" | "3Y" | "5Y">("3Y");
+    const [sortBy, setSortBy] = useState<"rating" | "1Y" | "3Y" | "5Y" | "rolling" | "10Y">("3Y");
 
     // Extract unique categories and risks for filters
     const categories = useMemo(() => {
@@ -158,8 +162,8 @@ const MutualFundExplorer = () => {
         // 6. Tab Logic & Sorting
         switch (activeTab) {
             case "top":
-                // Returns > 20% in 3Y
-                funds = funds.filter(f => f.returns["3Y"] > 20);
+                // Top performers based on Rolling Returns > 15
+                funds = funds.filter(f => (f.returns.rolling || 0) > 15);
                 break;
             case "rated":
                 // 4+ Stars
@@ -176,6 +180,10 @@ const MutualFundExplorer = () => {
                     return b.returns["3Y"] - a.returns["3Y"];
                 case "5Y":
                     return b.returns["5Y"] - a.returns["5Y"];
+                case "rolling":
+                    return (b.returns.rolling || 0) - (a.returns.rolling || 0);
+                case "10Y":
+                    return (b.returns["10Y"] || 0) - (a.returns["10Y"] || 0);
                 case "rating":
                 default:
                     // Default: Rating desc, then 3Y returns
@@ -305,8 +313,10 @@ const MutualFundExplorer = () => {
                                 className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors font-medium"
                             >
                                 <option value="rating">Highest Rated</option>
-                                <option value="1Y">1Y Returns</option>
                                 <option value="3Y">3Y Returns</option>
+                                <option value="rolling">3Y Rolling Returns</option>
+                                <option value="10Y">10Y Returns</option>
+                                <option value="1Y">1Y Returns</option>
                                 <option value="5Y">5Y Returns</option>
                             </select>
                             <ArrowDownUp className="w-3 h-3 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
