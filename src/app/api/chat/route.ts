@@ -31,7 +31,7 @@ async function generateWithModel(modelName: string, prompt: string) {
     const result = await model.generateContent({
         contents: [{ role: "user", parts: [{ text: prompt }] }],
         generationConfig: {
-            maxOutputTokens: 1000,
+            maxOutputTokens: 4000,
         },
     });
 
