@@ -37,7 +37,7 @@ export function InstallPrompt() {
     return (
         <button
             onClick={handleInstallClick}
-            className="fixed top-20 right-4 z-50 flex items-center gap-2 px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
+            className="fixed bottom-4 left-4 z-50 flex items-center gap-2 px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 text-sm"
             aria-label="Install App"
         >
             <span>📲</span>
