@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Search, Filter, ArrowDownUp, Loader2, Info } from 'lucide-react';
+import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import FundCard from './FundCard';
 import ManagerCard from './ManagerCard';
 import mutualFundsData from '@/data/mutual-funds.json';
@@ -45,14 +46,62 @@ interface ManagerStats {
 const ITEMS_PER_PAGE = 20;
 
 const MutualFundExplorer = () => {
-    const [searchQuery, setSearchQuery] = useState("");
-    const [activeTab, setActiveTab] = useState<"all" | "top" | "rated" | "managers">("all");
-    const [selectedCategory, setSelectedCategory] = useState<string>("All");
-    const [selectedSubCategory, setSelectedSubCategory] = useState<string>("All");
-    const [selectedAMC, setSelectedAMC] = useState<string>("All"); // Added AMC State
-    const [selectedRisk, setSelectedRisk] = useState<string>("All");
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+
+    // Read state from URL
+    const activeTab = searchParams.get('tab') || 'all';
+    const sortBy = (searchParams.get('sort') as "rating" | "1Y" | "3Y" | "5Y" | "rolling" | "10Y") || '3Y';
+    const searchQuery = searchParams.get('q') || '';
+    const selectedCategory = searchParams.get('category') || 'All';
+    const selectedSubCategory = searchParams.get('subCategory') || 'All';
+    const selectedAMC = searchParams.get('amc') || 'All';
+    const selectedRisk = searchParams.get('risk') || 'All';
+
     const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
-    const [sortBy, setSortBy] = useState<"rating" | "1Y" | "3Y" | "5Y" | "rolling" | "10Y">("3Y");
+
+    // Helper to update URL params
+    const updateParams = (updates: Record<string, string | null>) => {
+        const params = new URLSearchParams(searchParams.toString());
+        Object.entries(updates).forEach(([key, value]) => {
+            if (value === null || value === '' || value === 'All') {
+                params.delete(key);
+            } else {
+                params.set(key, value);
+            }
+        });
+        router.push(`${pathname}?${params.toString()}`, { scroll: false });
+    };
+
+    // Tab Change Handler
+    const handleTabChange = (newTab: string) => {
+        let newSort = '3Y'; // Default fallback
+
+        // Default Sort Logic per Tab
+        switch (newTab) {
+            case 'all':
+                newSort = '3Y';
+                break;
+            case 'top':
+                newSort = 'rolling';
+                break;
+            case 'rated':
+                newSort = 'rating';
+                break;
+            case 'managers':
+                // Manager sorting is internal typically, but if we track it in URL validation below...
+                break;
+        }
+
+        updateParams({
+            tab: newTab,
+            sort: newSort,
+            // Reset pagination
+        });
+        setVisibleCount(ITEMS_PER_PAGE);
+    };
+
 
     // Extract unique categories and risks for filters
     const categories = useMemo(() => {
@@ -186,8 +235,10 @@ const MutualFundExplorer = () => {
                     return (b.returns["10Y"] || 0) - (a.returns["10Y"] || 0);
                 case "rating":
                 default:
-                    // Default: Rating desc, then 3Y returns
-                    return b.rating - a.rating || b.returns["3Y"] - a.returns["3Y"];
+                    // For Top Performers (Rolling), if sort is invalid, default to Rolling, else Rating default
+                    return ((sortBy as string) === 'rolling')
+                        ? (b.returns.rolling || 0) - (a.returns.rolling || 0)
+                        : (b.rating - a.rating || b.returns["3Y"] - a.returns["3Y"]);
             }
         });
 
@@ -198,6 +249,18 @@ const MutualFundExplorer = () => {
 
     const handleLoadMore = () => {
         setVisibleCount(prev => prev + ITEMS_PER_PAGE);
+    };
+
+    const getSortLabel = (key: string) => {
+        const map: Record<string, string> = {
+            "rating": "Highest Rated",
+            "1Y": "1Y Returns",
+            "3Y": "3Y Returns",
+            "5Y": "5Y Returns",
+            "10Y": "10Y Returns",
+            "rolling": "3Y Rolling Returns"
+        };
+        return map[key] || "Relevance";
     };
 
     return (
@@ -215,10 +278,7 @@ const MutualFundExplorer = () => {
                     ].map((tab) => (
                         <button
                             key={tab.id}
-                            onClick={() => {
-                                setActiveTab(tab.id as any);
-                                setVisibleCount(ITEMS_PER_PAGE); // Reset pagination on tab change
-                            }}
+                            onClick={() => handleTabChange(tab.id)}
                             className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-all ${activeTab === tab.id
                                 ? "bg-white text-blue-600 shadow-sm"
                                 : "text-slate-500 hover:text-slate-700"
@@ -236,7 +296,7 @@ const MutualFundExplorer = () => {
                         type="text"
                         placeholder={(activeTab as string) === "managers" ? "Search managers..." : "Search funds or AMCs..."}
                         value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onChange={(e) => updateParams({ q: e.target.value })}
                         className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all"
                     />
                 </div>
@@ -254,10 +314,7 @@ const MutualFundExplorer = () => {
                     <div className="relative">
                         <select
                             value={selectedCategory}
-                            onChange={(e) => {
-                                setSelectedCategory(e.target.value);
-                                setSelectedSubCategory("All"); // Reset sub-category on category change
-                            }}
+                            onChange={(e) => updateParams({ category: e.target.value, subCategory: 'All' })}
                             className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors"
                         >
                             {categories.map(c => <option key={c} value={c}>{c === "All" ? "All Categories" : c}</option>)}
@@ -269,7 +326,7 @@ const MutualFundExplorer = () => {
                     <div className="relative">
                         <select
                             value={selectedSubCategory}
-                            onChange={(e) => setSelectedSubCategory(e.target.value)}
+                            onChange={(e) => updateParams({ subCategory: e.target.value })}
                             className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors max-w-[160px] truncate"
                         >
                             {subCategories.map(c => <option key={c} value={c}>{c === "All" ? "All Sub-Cats" : c}</option>)}
@@ -281,7 +338,7 @@ const MutualFundExplorer = () => {
                     <div className="relative">
                         <select
                             value={selectedAMC}
-                            onChange={(e) => setSelectedAMC(e.target.value)}
+                            onChange={(e) => updateParams({ amc: e.target.value })}
                             className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors max-w-[160px] truncate"
                         >
                             {amcs.map(a => <option key={a} value={a}>{a === "All" ? "All AMCs" : a}</option>)}
@@ -293,7 +350,7 @@ const MutualFundExplorer = () => {
                     <div className="relative">
                         <select
                             value={selectedRisk}
-                            onChange={(e) => setSelectedRisk(e.target.value)}
+                            onChange={(e) => updateParams({ risk: e.target.value })}
                             className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors"
                         >
                             {risks.map(r => <option key={r} value={r}>{r === "All" ? "All Risk Levels" : r}</option>)}
@@ -309,7 +366,7 @@ const MutualFundExplorer = () => {
                         <div className="relative">
                             <select
                                 value={sortBy}
-                                onChange={(e) => setSortBy(e.target.value as any)}
+                                onChange={(e) => updateParams({ sort: e.target.value })}
                                 className="appearance-none pl-3 pr-8 py-2 bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-lg text-sm text-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer transition-colors font-medium"
                             >
                                 <option value="rating">Highest Rated</option>
@@ -322,12 +379,20 @@ const MutualFundExplorer = () => {
                             <ArrowDownUp className="w-3 h-3 text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                         </div>
                     </div>
-
-                    <div className="ml-auto text-sm text-slate-500">
-                        Showing <span className="font-semibold text-slate-900">{visibleItems.length}</span> of {filteredItems.length} {(activeTab as string) === "managers" ? "managers" : "funds"}
-                    </div>
                 </div>
             )}
+
+            <div className="flex justify-between items-center text-sm text-slate-500">
+                <div>
+                    Showing <span className="font-semibold text-slate-900">{visibleItems.length}</span> of {filteredItems.length} {(activeTab as string) === "managers" ? "managers" : "funds"}
+                </div>
+                {(activeTab as string) !== "managers" && (
+                    <div className="bg-blue-50 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold flex items-center gap-1.5 border border-blue-100">
+                        <ArrowDownUp className="w-3 h-3" />
+                        Sorted by: {getSortLabel(sortBy)}
+                    </div>
+                )}
+            </div>
 
             {/* Helper Note for Managers Tab */}
             {activeTab === "managers" && (
@@ -355,11 +420,13 @@ const MutualFundExplorer = () => {
                     <div className="text-slate-400 mb-2">No results found matching your criteria</div>
                     <button
                         onClick={() => {
-                            setSearchQuery("");
-                            setSelectedCategory("All");
-                            setSelectedSubCategory("All");
-                            setSelectedRisk("All");
-                            setSelectedAMC("All");
+                            updateParams({
+                                q: '',
+                                category: 'All',
+                                subCategory: 'All',
+                                risk: 'All',
+                                amc: 'All'
+                            });
                         }}
                         className="text-blue-600 text-sm font-medium hover:underline"
                     >
