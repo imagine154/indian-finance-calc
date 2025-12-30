@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import { InstallPrompt } from "@/components/layout/InstallPrompt";
+import ChatWidget from "@/components/ChatWidget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -59,6 +60,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <ChatWidget />
         <InstallPrompt />
         <Analytics />
       </body>
