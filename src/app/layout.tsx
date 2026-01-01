@@ -25,9 +25,16 @@ export const metadata: Metadata = {
   title: 'RupeeTools - Indian Finance Calculators (Tax, SIP, Salary)',
   description: 'Free, accurate financial tools for Indians. Calculate Income Tax (FY 2025-26), Home Loan Pre-payment, SIP Returns, and Retirement Corpus.',
   icons: {
-    icon: '/favicon-brand.svg',
-    shortcut: '/favicon-brand.svg',
-    apple: '/favicon-brand.svg',
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon-brand.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   manifest: "/manifest.json",
   appleWebApp: {
