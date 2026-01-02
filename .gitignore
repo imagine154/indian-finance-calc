@@ -73,3 +73,5 @@ DATA_UPDATE.md
 # MCP Configuration (Contains Sensitive Credentials)
 mcp.json
 missing_funds.json
+lint_output.txt
+missing_log.txt

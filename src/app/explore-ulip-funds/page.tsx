@@ -12,12 +12,13 @@ export const metadata: Metadata = {
         'ULIP vs Mutual Funds', 'Tax saving investments 80C', 'Unit Linked Insurance Plan'
     ],
     alternates: {
-        canonical: 'https://rupeetools.in/explore-ulip-funds',
+        canonical: 'https://www.rupeetools.in/explore-ulip-funds',
     },
+    robots: 'index, follow',
     openGraph: {
-        title: 'Best ULIP Funds Explorer (2025) | RupeeTools',
-        description: 'Compare 1Y, 3Y, 5Y & 10Y returns of top ULIP funds from SBI, HDFC, ICICI, and more. Free tool for smart investors.',
-        url: 'https://rupeetools.in/explore-ulip-funds',
+        title: 'Explore ULIP Funds | RupeeTools',
+        description: 'Analyze ULIP fund performance, NAV, and returns across categories.',
+        url: 'https://www.rupeetools.in/explore-ulip-funds',
         siteName: 'RupeeTools',
         locale: 'en_IN',
         type: 'website',

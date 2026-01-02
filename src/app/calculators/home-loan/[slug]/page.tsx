@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
         title: scenario.metaTitle,
         description: scenario.metaDescription,
         alternates: {
-            canonical: `https://rupeetools.in/calculators/home-loan/${slug}`,
+            canonical: `https://www.rupeetools.in/calculators/home-loan/${slug}`,
         },
     };
 }

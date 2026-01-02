@@ -9,8 +9,8 @@ def convert_data():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     
-    schemes_csv = os.path.join(project_root, "schemeswithcodes.csv")
-    returns_csv = os.path.join(project_root, "precomputed_clean.csv")
+    schemes_csv = os.path.join(project_root, "src", "data", "schemeswithcodes.csv")
+    returns_csv = os.path.join(project_root, "src", "data", "precomputed_clean.csv")
     output_dir = os.path.join(project_root, "src", "data")
 
     # Create output directory if it doesn't exist

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: 'Calculate GST online. Add GST to base price or remove GST from total amount. Reverse GST calculator for 5%, 12%, 18%, and 28% rates.',
     keywords: ['GST calculator', 'reverse GST calculator', 'calculate GST on amount', 'inclusive vs exclusive GST', 'goods and service tax calculator'],
     alternates: {
-        canonical: 'https://rupeetools.in/calculators/gst',
+        canonical: 'https://www.rupeetools.in/calculators/gst',
     },
 };
 

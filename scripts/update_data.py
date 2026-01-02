@@ -17,8 +17,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
 
-INPUT_FILE = os.path.join(PROJECT_ROOT, "schemeswithcodes.csv")
-OUTPUT_FILE = os.path.join(PROJECT_ROOT, "precomputed_clean.csv")
+INPUT_FILE = os.path.join(PROJECT_ROOT, "src", "data", "schemeswithcodes.csv")
+OUTPUT_FILE = os.path.join(PROJECT_ROOT, "src", "data", "precomputed_clean.csv")
 CACHE_DIR = os.path.join(SCRIPT_DIR, "cache")
 MAX_WORKERS = 10
 MFAPI_BASE = "https://api.mfapi.in/mf/"

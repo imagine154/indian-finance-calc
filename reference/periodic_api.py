@@ -72,7 +72,7 @@ CORS(app, resources={
 # --------------------------------------------------------------------
 # Load master dataset once at startup (CSV fallback)
 # --------------------------------------------------------------------
-CSV_PATH = os.path.join(os.getcwd(), "schemeswithcodes.csv")
+CSV_PATH = os.path.join(os.getcwd(), "src", "data", "schemeswithcodes.csv")
 if not os.path.exists(CSV_PATH):
     raise FileNotFoundError(f"Required file missing: {CSV_PATH}")
 

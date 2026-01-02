@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: 'Calculate interest for MSSC scheme. 7.5% interest compounded quarterly for 2 years. Max investment ₹2 Lakhs.',
     keywords: ['MSSC calculator', 'mahila samman savings', '7.5% interest scheme', 'post office women scheme', 'women savings scheme'],
     alternates: {
-        canonical: 'https://rupeetools.in/calculators/mssc',
+        canonical: 'https://www.rupeetools.in/calculators/mssc',
     },
 };
 

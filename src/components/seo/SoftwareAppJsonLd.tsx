@@ -13,7 +13,7 @@ export const SoftwareAppJsonLd = ({
     name,
     description,
     calculatorPath,
-    imageUrl = "https://rupeetools.in/web-app-manifest-512x512.png", // Default logo
+    imageUrl = "https://www.rupeetools.in/web-app-manifest-512x512.png", // Default logo
     operatingSystem = "Web",
     applicationCategory = "FinanceApplication",
 }: SoftwareAppJsonLdProps) => {
@@ -24,7 +24,7 @@ export const SoftwareAppJsonLd = ({
         "description": description,
         "operatingSystem": operatingSystem,
         "applicationCategory": applicationCategory,
-        "url": `https://rupeetools.in${calculatorPath}`,
+        "url": `https://www.rupeetools.in${calculatorPath}`,
         "image": imageUrl,
         "offers": {
             "@type": "Offer",
