@@ -29,6 +29,7 @@ const navGroups: NavGroup[] = [
         items: [
             { name: "Portfolio X-Ray", href: "/portfolio-xray" },
             { name: "SIP Calculator", href: "/calculators/sip" },
+            { name: "XIRR Calculator", href: "/calculators/xirr", badge: "NEW" },
             { name: "Goal Planner", href: "/calculators/goal" },
             { name: "FIRE Calculator", href: "/calculators/fire" },
             { name: "Explore Mutual Funds", href: "/explore-mutual-funds" },
@@ -73,6 +74,7 @@ const navGroups: NavGroup[] = [
         label: "Loans",
         items: [
             { name: "Home Loan EMI", href: "/calculators/loan" },
+            { name: "Car Loan EMI", href: "/calculators/car-loan", badge: "NEW" },
             { name: "Rent vs Buy", href: "/calculators/rent-vs-buy" },
             { name: "Balance Transfer", href: "/calculators/balance-transfer" },
         ]

@@ -33,7 +33,8 @@ import {
   Sparkles,
   Wand2,
   ScanSearch,
-  Scissors
+  Scissors,
+  Car
 } from "lucide-react";
 
 import { STRATEGIES } from "@/config/strategies";
@@ -191,6 +192,13 @@ const categories = [
         iconBg: "bg-blue-100"
       },
       {
+        name: "XIRR Calculator",
+        href: "/calculators/xirr",
+        desc: "Return % of ongoing SIPs.",
+        icon: <Percent className="w-6 h-6 text-fuchsia-600" />,
+        iconBg: "bg-fuchsia-100"
+      },
+      {
         name: "Goal Planner",
         href: "/calculators/goal",
         desc: "Reverse SIP with inflation.",
@@ -278,10 +286,17 @@ const categories = [
     calculators: [
       {
         name: "Home Loan",
-        href: "/calculators/loan",
+        href: "/calculators/home-loan",
         desc: "EMI with pre-payment analysis.",
         icon: <HomeIcon className="w-6 h-6 text-purple-600" />,
         iconBg: "bg-purple-100"
+      },
+      {
+        name: "Car Loan",
+        href: "/calculators/car-loan",
+        desc: "EMI & Interest visualizer.",
+        icon: <Car className="w-6 h-6 text-blue-600" />,
+        iconBg: "bg-blue-100"
       },
       {
         name: "Rent vs Buy",

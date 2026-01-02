@@ -114,6 +114,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.7,
         },
+        // --- New Calculators ---
+        {
+            url: `${baseUrl}/calculators/car-loan`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/calculators/xirr`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
         // --- Other Calculators ---
         {
             url: `${baseUrl}/calculators/pf`,
