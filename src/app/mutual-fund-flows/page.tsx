@@ -8,17 +8,17 @@ import { Metadata } from 'next';
 import { PageHeader } from '@/components/ui/PageHeader';
 
 export const metadata: Metadata = {
-    title: "AMFI Mutual Fund Flows (Nov 2025) - Inflow/Outflow Tracker | RupeeTools",
+    title: "AMFI Mutual Fund Flows (Dec 2025) - Inflow/Outflow Tracker | RupeeTools",
     description: "Analyze the latest AMFI monthly data. See net inflows in Small Cap, Mid Cap, and Liquid Funds. Track the mood of Indian mutual fund investors.",
     keywords: [
         "amfi monthly data",
         "mutual fund inflow outflow",
         "best performing mutual fund category",
-        "nov 2025 amfi report",
+        "dec 2025 amfi report",
         "mutual fund aum data"
     ],
     openGraph: {
-        title: "Where is India Investing? AMFI Flow Tracker (Nov 2025)",
+        title: "Where is India Investing? AMFI Flow Tracker (Dec 2025)",
         description: "Visualizing the massive shift in Small Cap and Debt fund flows.",
         type: "article",
     }
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function MutualFundFlowsPage() {
     // 1. Read the file
     // Switched to CSV to avoid using vulnerable 'xlsx' package
-    const filePath = path.join(process.cwd(), 'src/data/MCR_MonthlyReport.csv');
+    const filePath = path.join(process.cwd(), 'src/data/MCR_MonthlyReport_Dec.csv');
     let data: AmfiSchemeData[] = [];
 
     try {
@@ -49,12 +49,12 @@ export default function MutualFundFlowsPage() {
                     __html: JSON.stringify({
                         "@context": "https://schema.org/",
                         "@type": "Dataset",
-                        "name": "AMFI Mutual Fund Flow Report - Nov 2025",
+                        "name": "AMFI Mutual Fund Flow Report - Dec 2025",
                         "description": "Monthly data of mutual fund inflows, outflows, and AUM in India.",
                         "url": "https://www.rupeetools.in/mutual-fund-flows",
                         "creator": { "@type": "Organization", "name": "Association of Mutual Funds in India (AMFI)" },
                         "variableMeasured": ["Inflow", "Outflow", "Net Assets"],
-                        "temporalCoverage": "2025-11-01/2025-11-30"
+                        "temporalCoverage": "2025-12-01/2025-12-31"
                     })
                 }}
             />
@@ -64,10 +64,10 @@ export default function MutualFundFlowsPage() {
                     <div className="max-w-7xl mx-auto">
                         <div className="text-center mb-8">
                             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                                Analyze the latest AMFI monthly data. Track net inflows and AUM changes across categories.
+                                Analyze the latest AMFI monthly data (Dec 2025). Track net inflows and AUM changes across categories.
                             </p>
                         </div>
-                        <AmfiDashboard data={data} />
+                        <AmfiDashboard data={data} reportMonth="Dec 2025" />
                     </div>
                 </div>
             </div>

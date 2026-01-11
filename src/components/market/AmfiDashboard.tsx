@@ -29,6 +29,7 @@ interface AmfiSchemeData {
 
 interface AmfiDashboardProps {
     data: AmfiSchemeData[];
+    reportMonth?: string;
 }
 
 // Vibrant Palette
@@ -119,7 +120,7 @@ const SimpleTooltip = ({ children, content }: { children: React.ReactNode, conte
     );
 };
 
-export default function AmfiDashboard({ data }: AmfiDashboardProps) {
+export default function AmfiDashboard({ data, reportMonth = "Nov 2025" }: AmfiDashboardProps) {
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
     const [viewMode, setViewMode] = useState<'flow' | 'aum'>('flow');
     const [mounted, setMounted] = useState(false);
@@ -455,7 +456,7 @@ export default function AmfiDashboard({ data }: AmfiDashboardProps) {
                     or selling (negative net flow) specific categories of funds.
                 </p>
                 <p className="text-gray-500 text-xs mt-3">
-                    Source: AMFI Monthly Cumulative Report (Nov 2025). Taking informed investment decisions requires analyzing long-term trends alongside monthly data.
+                    Source: AMFI Monthly Cumulative Report ({reportMonth}). Taking informed investment decisions requires analyzing long-term trends alongside monthly data.
                 </p>
             </div>
 

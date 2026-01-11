@@ -68,7 +68,7 @@ DATA_UPDATE.md
 
 # Intermediate Data Files
 *.csv
-!src/data/MCR_MonthlyReport.csv
+!src/data/MCR_MonthlyReport*.csv
 
 
 # MCP Configuration (Contains Sensitive Credentials)
