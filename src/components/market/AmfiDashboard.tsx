@@ -55,16 +55,16 @@ const CustomTooltip = ({ active, payload, separator }: any) => {
                 <div className="space-y-1">
                     {data.inflow !== undefined && (
                         <>
-                            <p className="text-emerald-600">Inflow: ₹{data.inflow.toLocaleString()} Cr</p>
-                            <p className="text-rose-600">Outflow: ₹{data.outflow.toLocaleString()} Cr</p>
+                            <p className="text-emerald-600">Inflow: ₹{data.inflow.toLocaleString('en-IN')} Cr</p>
+                            <p className="text-rose-600">Outflow: ₹{data.outflow.toLocaleString('en-IN')} Cr</p>
                             <div className="border-t border-gray-100 my-1 pt-1">
                                 <p className={`font-semibold ${data.netFlow >= 0 ? 'text-emerald-700' : 'text-rose-700'}`}>
-                                    Net: {data.netFlow >= 0 ? '+' : ''}₹{data.netFlow.toLocaleString()} Cr
+                                    Net: {data.netFlow >= 0 ? '+' : ''}₹{data.netFlow.toLocaleString('en-IN')} Cr
                                 </p>
                             </div>
                         </>
                     )}
-                    <p className="text-blue-600 font-medium mt-1">AUM: ₹{data.aum.toLocaleString()} Cr</p>
+                    <p className="text-blue-600 font-medium mt-1">AUM: ₹{data.aum.toLocaleString('en-IN')} Cr</p>
                 </div>
             </div>
         );
@@ -219,7 +219,7 @@ export default function AmfiDashboard({ data, reportMonth = "Nov 2025" }: AmfiDa
     }, [filteredData, data]);
 
 
-    const formatCr = (num: number) => `₹${Math.round(num).toLocaleString()} Cr`;
+    const formatCr = (num: number) => `₹${Math.round(num).toLocaleString('en-IN')} Cr`;
 
     if (!mounted) {
         return (
@@ -321,7 +321,7 @@ export default function AmfiDashboard({ data, reportMonth = "Nov 2025" }: AmfiDa
                                             <div className="text-[10px] sm:hidden text-gray-400 font-normal">{item.category}</div>
                                         </td>
                                         <td className="px-4 py-3 text-right text-gray-600 font-mono">
-                                            <div>{Math.round(item.aum).toLocaleString()}</div>
+                                            <div>{Math.round(item.aum).toLocaleString('en-IN')}</div>
                                             <div className={`text-[10px] flex items-center justify-end gap-1 mt-1 ${item.netFlow >= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>
                                                 {item.netFlow >= 0 ? <ArrowUpRight className="w-3 h-3" /> : <ArrowDownRight className="w-3 h-3" />}
                                                 <span>{formatCr(Math.abs(item.netFlow))}</span>
