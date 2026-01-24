@@ -234,6 +234,13 @@ const categories = [
         iconBg: "bg-rose-100"
       },
       {
+        name: "ETF Overlap",
+        href: "/etf-overlap",
+        desc: "Compare Holdings of 2 Indices.",
+        icon: <PieChart className="w-6 h-6 text-cyan-600" />,
+        iconBg: "bg-cyan-100"
+      },
+      {
         name: "Investment Advisor",
         href: "/calculators/investment-advisor",
         desc: "Asset allocation logic.",

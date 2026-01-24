@@ -13,6 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         // --- High Priority Calculators ---
         {
+            url: `${baseUrl}/etf-overlap`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
             url: `${baseUrl}/portfolio-xray`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
