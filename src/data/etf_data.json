@@ -3998,7 +3998,208 @@
         "name": "DIVOPPBEES"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "State Bank of India",
+        "weight": 10.11
+      },
+      {
+        "name": "ITC",
+        "weight": 9.76
+      },
+      {
+        "name": "Infosys",
+        "weight": 9.7
+      },
+      {
+        "name": "Tata Consultancy Services",
+        "weight": 8.22
+      },
+      {
+        "name": "Hindustan Unilever",
+        "weight": 5.16
+      },
+      {
+        "name": "HCL Technologies",
+        "weight": 4.3
+      },
+      {
+        "name": "NTPC",
+        "weight": 3.92
+      },
+      {
+        "name": "Shriram Finance",
+        "weight": 3.5
+      },
+      {
+        "name": "Power Grid Corporation of India",
+        "weight": 3.01
+      },
+      {
+        "name": "Vedanta",
+        "weight": 2.58
+      },
+      {
+        "name": "Tech Mahindra",
+        "weight": 2.54
+      },
+      {
+        "name": "Oil & Natural Gas Corporation",
+        "weight": 2.35
+      },
+      {
+        "name": "Coal India",
+        "weight": 2.28
+      },
+      {
+        "name": "Wipro",
+        "weight": 1.89
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 1.88
+      },
+      {
+        "name": "Bharat Petroleum Corporation",
+        "weight": 1.87
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 1.79
+      },
+      {
+        "name": "Indian Oil Corporation",
+        "weight": 1.56
+      },
+      {
+        "name": "Cummins India",
+        "weight": 1.51
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight": 1.38
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 1.37
+      },
+      {
+        "name": "Canara Bank",
+        "weight": 1.31
+      },
+      {
+        "name": "Power Finance Corporation",
+        "weight": 1.3
+      },
+      {
+        "name": "Ashok Leyland",
+        "weight": 1.29
+      },
+      {
+        "name": "Hindustan Petroleum Corporation",
+        "weight": 1.2
+      },
+      {
+        "name": "GAIL (India)",
+        "weight": 1.17
+      },
+      {
+        "name": "REC Limited",
+        "weight": 1.12
+      },
+      {
+        "name": "Mphasis",
+        "weight": 0.8
+      },
+      {
+        "name": "Union Bank of India",
+        "weight": 0.75
+      },
+      {
+        "name": "Indian Bank",
+        "weight": 0.74
+      },
+      {
+        "name": "NMDC",
+        "weight": 0.72
+      },
+      {
+        "name": "National Aluminium Co",
+        "weight": 0.71
+      },
+      {
+        "name": "Colgate-Palmolive (India)",
+        "weight": 0.69
+      },
+      {
+        "name": "Hindustan Zinc",
+        "weight": 0.67
+      },
+      {
+        "name": "NHPC",
+        "weight": 0.63
+      },
+      {
+        "name": "Oil India",
+        "weight": 0.58
+      },
+      {
+        "name": "Page Industries",
+        "weight": 0.57
+      },
+      {
+        "name": "Indian Railway Finance Corp",
+        "weight": 0.56
+      },
+      {
+        "name": "Steel Authority of India",
+        "weight": 0.53
+      },
+      {
+        "name": "Petronet LNG",
+        "weight": 0.53
+      },
+      {
+        "name": "Oracle Financial Services Software",
+        "weight": 0.46
+      },
+      {
+        "name": "Manappuram Finance",
+        "weight": 0.43
+      },
+      {
+        "name": "LIC Housing Finance",
+        "weight": 0.41
+      },
+      {
+        "name": "Indraprastha Gas",
+        "weight": 0.34
+      },
+      {
+        "name": "General Insurance Corporation of India",
+        "weight": 0.3
+      },
+      {
+        "name": "Housing & Urban Development Corporation",
+        "weight": 0.29
+      },
+      {
+        "name": "Indian Energy Exchange",
+        "weight": 0.27
+      },
+      {
+        "name": "CESC",
+        "weight": 0.27
+      },
+      {
+        "name": "Cyient",
+        "weight": 0.24
+      },
+      {
+        "name": "Castrol India",
+        "weight": 0.23
+      }
+    ]
   },
   "ETF - Nifty EV and New Age Automotive": {
     "etfs": [
@@ -4012,7 +4213,148 @@
         "name": "GROWWEV"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "Mahindra & Mahindra",
+        "weight": 8.12
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 7.98
+      },
+      {
+        "name": "KEI Industries",
+        "weight": 4.05
+      },
+      {
+        "name": "UNO Minda",
+        "weight": 4.01
+      },
+      {
+        "name": "Reliance Industries",
+        "weight": 4.0
+      },
+      {
+        "name": "Samvardhana Motherson International",
+        "weight": 3.99
+      },
+      {
+        "name": "Bosch",
+        "weight": 3.99
+      },
+      {
+        "name": "Bajaj Auto",
+        "weight": 3.96
+      },
+      {
+        "name": "Sona BLW Precision Forgings",
+        "weight": 3.95
+      },
+      {
+        "name": "CG Power & Industrial Solutions",
+        "weight": 3.92
+      },
+      {
+        "name": "Eicher Motors",
+        "weight": 3.85
+      },
+      {
+        "name": "KPIT Technologies",
+        "weight": 3.85
+      },
+      {
+        "name": "Tata Elxsi",
+        "weight": 3.7
+      },
+      {
+        "name": "Exide Industries",
+        "weight": 3.38
+      },
+      {
+        "name": "TVS Motor Company",
+        "weight": 3.34
+      },
+      {
+        "name": "Schaeffler India",
+        "weight": 3.2
+      },
+      {
+        "name": "Gujarat Fluorochemicals",
+        "weight": 3.17
+      },
+      {
+        "name": "Tata Motors Passenger Vehicles",
+        "weight": 2.94
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 2.87
+      },
+      {
+        "name": "Motherson Sumi Wiring India",
+        "weight": 2.53
+      },
+      {
+        "name": "L&T Technology Services",
+        "weight": 2.52
+      },
+      {
+        "name": "Tata Chemicals",
+        "weight": 2.46
+      },
+      {
+        "name": "Himadri Speciality Chemical",
+        "weight": 2.35
+      },
+      {
+        "name": "Amara Raja Energy & Mobility",
+        "weight": 2.29
+      },
+      {
+        "name": "Tata Technologies",
+        "weight": 2.27
+      },
+      {
+        "name": "Ashok Leyland",
+        "weight": 1.96
+      },
+      {
+        "name": "Bharat Forge",
+        "weight": 1.5
+      },
+      {
+        "name": "Hyundai Motor India",
+        "weight": 1.25
+      },
+      {
+        "name": "Tube Investments of India",
+        "weight": 1.07
+      },
+      {
+        "name": "Ather Energy",
+        "weight": 0.41
+      },
+      {
+        "name": "Force Motors",
+        "weight": 0.38
+      },
+      {
+        "name": "OLA Electric Mobility",
+        "weight": 0.24
+      },
+      {
+        "name": "Olectra Greentech",
+        "weight": 0.19
+      },
+      {
+        "name": "Jupiter Wagons",
+        "weight": 0.18
+      },
+      {
+        "name": "JBM Auto",
+        "weight": 0.1
+      }
+    ]
   },
   "ETF - Nifty Fin Services": {
     "etfs": [
@@ -4022,84 +4364,124 @@
     ],
     "stocks": [
       {
-        "name": "HDFC Bank",
-        "weight": 18.86
-      },
-      {
-        "name": "ICICI Bank",
-        "weight": 13.83
-      },
-      {
-        "name": "Axis Bank",
-        "weight": 10.16
-      },
-      {
-        "name": "State Bank of India",
-        "weight": 10.1
-      },
-      {
-        "name": "INE237A01028",
-        "weight": 9.87
-      },
-      {
         "name": "Bajaj Finance",
-        "weight": 7.99
+        "weight": 15.4
       },
       {
         "name": "Shriram Finance",
-        "weight": 4.26
+        "weight": 8.2
       },
       {
         "name": "Bajaj Finserv",
-        "weight": 3.56
+        "weight": 6.85
       },
       {
         "name": "BSE",
-        "weight": 3.28
+        "weight": 6.32
       },
       {
         "name": "JIO Financial Services",
-        "weight": 2.95
+        "weight": 5.68
       },
       {
         "name": "SBI Life Insurance Company",
-        "weight": 2.79
+        "weight": 5.37
       },
       {
         "name": "HDFC Life Insurance Company",
-        "weight": 2.46
+        "weight": 4.74
       },
       {
         "name": "Cholamandalam Investment & Finance Company",
-        "weight": 2.2
+        "weight": 4.23
+      },
+      {
+        "name": "PolicyBazaar - PB Fintech Ltd.",
+        "weight": 3.66
+      },
+      {
+        "name": "INE745G01035",
+        "weight": 3.34
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 3.2
+      },
+      {
+        "name": "Paytm - One97 Communications Ltd",
+        "weight": 3.1
       },
       {
         "name": "Power Finance Corporation",
-        "weight": 1.58
+        "weight": 3.04
       },
       {
         "name": "ICICI Lombard General Insurance Company",
-        "weight": 1.45
+        "weight": 2.79
       },
       {
         "name": "REC Limited",
-        "weight": 1.34
+        "weight": 2.62
+      },
+      {
+        "name": "Max Financial Services",
+        "weight": 2.59
       },
       {
         "name": "Muthoot Finance",
-        "weight": 1.25
+        "weight": 2.4
       },
       {
-        "name": "SBI Cards And Payment Services",
-        "weight": 0.8
+        "name": "360 One Wam",
+        "weight": 1.78
+      },
+      {
+        "name": "Aditya Birla Capital",
+        "weight": 1.61
       },
       {
         "name": "ICICI Prudential Life Insurance Company",
-        "weight": 0.72
+        "weight": 1.54
+      },
+      {
+        "name": "L&T Finance",
+        "weight": 1.52
+      },
+      {
+        "name": "SBI Cards And Payment Services",
+        "weight": 1.52
+      },
+      {
+        "name": "Central Depository Services (India)",
+        "weight": 1.51
+      },
+      {
+        "name": "Indian Railway Finance Corp",
+        "weight": 1.31
+      },
+      {
+        "name": "Life Insurance Corporation of India Ltd.",
+        "weight": 1.12
+      },
+      {
+        "name": "PNB Housing Finance",
+        "weight": 1.05
+      },
+      {
+        "name": "Computer Age Management Services",
+        "weight": 1.05
       },
       {
         "name": "LIC Housing Finance",
-        "weight": 0.59
+        "weight": 0.95
+      },
+      {
+        "name": "Angel One",
+        "weight": 0.89
+      },
+      {
+        "name": "Indian Energy Exchange",
+        "weight": 0.63
       }
     ]
   },
@@ -5439,7 +5821,408 @@
         "name": "MIDSMALL"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "BSE",
+        "weight": 4.93
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 4.78
+      },
+      {
+        "name": "INE745G01035",
+        "weight": 3.89
+      },
+      {
+        "name": "Cummins India",
+        "weight": 3.46
+      },
+      {
+        "name": "Muthoot Finance",
+        "weight": 3.3
+      },
+      {
+        "name": "AU Small Finance Bank",
+        "weight": 3.19
+      },
+      {
+        "name": "Federal Bank",
+        "weight": 3.09
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 2.74
+      },
+      {
+        "name": "Persistent Systems",
+        "weight": 2.58
+      },
+      {
+        "name": "Suzlon Energy",
+        "weight": 2.3
+      },
+      {
+        "name": "L&T Finance",
+        "weight": 2.27
+      },
+      {
+        "name": "GE Vernova T&D India",
+        "weight": 2.03
+      },
+      {
+        "name": "Dixon Technologies (India)",
+        "weight": 2.02
+      },
+      {
+        "name": "Coforge",
+        "weight": 1.91
+      },
+      {
+        "name": "Indian Bank",
+        "weight": 1.79
+      },
+      {
+        "name": "Marico",
+        "weight": 1.69
+      },
+      {
+        "name": "Polycab India",
+        "weight": 1.65
+      },
+      {
+        "name": "Indus Towers",
+        "weight": 1.65
+      },
+      {
+        "name": "Lupin",
+        "weight": 1.64
+      },
+      {
+        "name": "National Aluminium Co",
+        "weight": 1.43
+      },
+      {
+        "name": "Glenmark Pharmaceuticals",
+        "weight": 1.42
+      },
+      {
+        "name": "Colgate-Palmolive (India)",
+        "weight": 1.4
+      },
+      {
+        "name": "Radico Khaitan",
+        "weight": 1.39
+      },
+      {
+        "name": "City Union Bank",
+        "weight": 1.37
+      },
+      {
+        "name": "Central Depository Services (India)",
+        "weight": 1.23
+      },
+      {
+        "name": "MRF",
+        "weight": 1.21
+      },
+      {
+        "name": "Anand Rathi Wealth Ltd.",
+        "weight": 1.2
+      },
+      {
+        "name": "Alkem Laboratories",
+        "weight": 1.18
+      },
+      {
+        "name": "360 One Wam",
+        "weight": 1.11
+      },
+      {
+        "name": "APL Apollo Tubes",
+        "weight": 1.09
+      },
+      {
+        "name": "Hitachi Energy India",
+        "weight": 1.06
+      },
+      {
+        "name": "Manappuram Finance",
+        "weight": 1.05
+      },
+      {
+        "name": "Coromandel International",
+        "weight": 1.04
+      },
+      {
+        "name": "Mphasis",
+        "weight": 1.01
+      },
+      {
+        "name": "UNO Minda",
+        "weight": 0.98
+      },
+      {
+        "name": "NMDC",
+        "weight": 0.95
+      },
+      {
+        "name": "Aurobindo Pharma",
+        "weight": 0.93
+      },
+      {
+        "name": "Computer Age Management Services",
+        "weight": 0.92
+      },
+      {
+        "name": "KEI Industries",
+        "weight": 0.89
+      },
+      {
+        "name": "Hindustan Copper",
+        "weight": 0.88
+      },
+      {
+        "name": "Page Industries",
+        "weight": 0.86
+      },
+      {
+        "name": "Force Motors",
+        "weight": 0.83
+      },
+      {
+        "name": "SBI Cards And Payment Services",
+        "weight": 0.77
+      },
+      {
+        "name": "Nippon Life India Asset Management",
+        "weight": 0.75
+      },
+      {
+        "name": "Blue Star",
+        "weight": 0.75
+      },
+      {
+        "name": "Motherson Sumi Wiring India",
+        "weight": 0.72
+      },
+      {
+        "name": "PI Industries",
+        "weight": 0.71
+      },
+      {
+        "name": "Redington",
+        "weight": 0.7
+      },
+      {
+        "name": "Narayana Hrudayalaya",
+        "weight": 0.67
+      },
+      {
+        "name": "Neuland Laboratories",
+        "weight": 0.64
+      },
+      {
+        "name": "KPIT Technologies",
+        "weight": 0.62
+      },
+      {
+        "name": "HBL Engineering",
+        "weight": 0.61
+      },
+      {
+        "name": "Angel One",
+        "weight": 0.59
+      },
+      {
+        "name": "Oracle Financial Services Software",
+        "weight": 0.58
+      },
+      {
+        "name": "eClerx Services",
+        "weight": 0.57
+      },
+      {
+        "name": "Tata Elxsi",
+        "weight": 0.55
+      },
+      {
+        "name": "Dr Lal PathLabs",
+        "weight": 0.53
+      },
+      {
+        "name": "Motilal Oswal Financial Services",
+        "weight": 0.51
+      },
+      {
+        "name": "Indian Energy Exchange",
+        "weight": 0.48
+      },
+      {
+        "name": "The Great Eastern Shipping Company",
+        "weight": 0.48
+      },
+      {
+        "name": "Apar Industries",
+        "weight": 0.45
+      },
+      {
+        "name": "Bank of Maharashtra",
+        "weight": 0.45
+      },
+      {
+        "name": "Indraprastha Gas",
+        "weight": 0.44
+      },
+      {
+        "name": "Escorts",
+        "weight": 0.44
+      },
+      {
+        "name": "Godfrey Phillips India",
+        "weight": 0.43
+      },
+      {
+        "name": "Usha Martin",
+        "weight": 0.43
+      },
+      {
+        "name": "Castrol India",
+        "weight": 0.43
+      },
+      {
+        "name": "Affle 3i",
+        "weight": 0.41
+      },
+      {
+        "name": "Bharat Dynamics",
+        "weight": 0.39
+      },
+      {
+        "name": "L&T Technology Services",
+        "weight": 0.38
+      },
+      {
+        "name": "Garden Reach Shipbuilders & Engineers",
+        "weight": 0.37
+      },
+      {
+        "name": "Intellect Design Arena",
+        "weight": 0.37
+      },
+      {
+        "name": "Cochin Shipyard",
+        "weight": 0.37
+      },
+      {
+        "name": "Choice International",
+        "weight": 0.36
+      },
+      {
+        "name": "Himadri Speciality Chemical",
+        "weight": 0.36
+      },
+      {
+        "name": "Can Fin Homes",
+        "weight": 0.36
+      },
+      {
+        "name": "Welspun Corp",
+        "weight": 0.35
+      },
+      {
+        "name": "K.P.R. Mill",
+        "weight": 0.34
+      },
+      {
+        "name": "Data Patterns (India)",
+        "weight": 0.33
+      },
+      {
+        "name": "Astrazeneca Pharma India",
+        "weight": 0.33
+      },
+      {
+        "name": "Godawari Power and Ispat",
+        "weight": 0.32
+      },
+      {
+        "name": "Home First Finance Company India",
+        "weight": 0.32
+      },
+      {
+        "name": "Gillette India",
+        "weight": 0.31
+      },
+      {
+        "name": "Indiamart Intermesh",
+        "weight": 0.3
+      },
+      {
+        "name": "Nava",
+        "weight": 0.29
+      },
+      {
+        "name": "Gujarat Mineral Development Corporation",
+        "weight": 0.29
+      },
+      {
+        "name": "CreditAccess Grameen",
+        "weight": 0.29
+      },
+      {
+        "name": "CEAT",
+        "weight": 0.28
+      },
+      {
+        "name": "Zensar Technologies",
+        "weight": 0.28
+      },
+      {
+        "name": "Triveni Turbine",
+        "weight": 0.25
+      },
+      {
+        "name": "Aditya Birla Sun Life AMC",
+        "weight": 0.23
+      },
+      {
+        "name": "Mahanagar Gas",
+        "weight": 0.23
+      },
+      {
+        "name": "Sumitomo Chemical India",
+        "weight": 0.19
+      },
+      {
+        "name": "Newgen Software Technologies",
+        "weight": 0.18
+      },
+      {
+        "name": "Akzo Nobel India",
+        "weight": 0.18
+      },
+      {
+        "name": "LT Foods",
+        "weight": 0.17
+      },
+      {
+        "name": "Latent View Analytics",
+        "weight": 0.15
+      },
+      {
+        "name": "UTI Asset Management Company",
+        "weight": 0.15
+      },
+      {
+        "name": "BLS International Services",
+        "weight": 0.14
+      },
+      {
+        "name": "Kirloskar Brothers",
+        "weight": 0.14
+      }
+    ]
   },
   "ETF - Nifty MNC": {
     "etfs": [
@@ -7000,7 +7783,268 @@
         "name": "ESG"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "Reliance Industries",
+        "weight": 10.05
+      },
+      {
+        "name": "HDFC Bank",
+        "weight": 9.97
+      },
+      {
+        "name": "ICICI Bank",
+        "weight": 9.74
+      },
+      {
+        "name": "Bharti Airtel",
+        "weight": 5.96
+      },
+      {
+        "name": "Infosys",
+        "weight": 5.75
+      },
+      {
+        "name": "Axis Bank",
+        "weight": 3.7
+      },
+      {
+        "name": "Mahindra & Mahindra",
+        "weight": 3.36
+      },
+      {
+        "name": "Tata Consultancy Services",
+        "weight": 3.33
+      },
+      {
+        "name": "Bajaj Finance",
+        "weight": 2.66
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 2.22
+      },
+      {
+        "name": "Hindustan Unilever",
+        "weight": 2.09
+      },
+      {
+        "name": "Eternal (Zomato)",
+        "weight": 2.03
+      },
+      {
+        "name": "HCL Technologies",
+        "weight": 1.74
+      },
+      {
+        "name": "Titan Company",
+        "weight": 1.7
+      },
+      {
+        "name": "NTPC",
+        "weight": 1.59
+      },
+      {
+        "name": "Tata Steel",
+        "weight": 1.51
+      },
+      {
+        "name": "UltraTech Cement",
+        "weight": 1.42
+      },
+      {
+        "name": "Shriram Finance",
+        "weight": 1.42
+      },
+      {
+        "name": "Hindalco Industries",
+        "weight": 1.3
+      },
+      {
+        "name": "Asian Paints",
+        "weight": 1.27
+      },
+      {
+        "name": "Power Grid Corporation of India",
+        "weight": 1.22
+      },
+      {
+        "name": "Grasim Industries",
+        "weight": 1.1
+      },
+      {
+        "name": "Adani Ports and Special Economic Zone",
+        "weight": 1.03
+      },
+      {
+        "name": "Tech Mahindra",
+        "weight": 1.03
+      },
+      {
+        "name": "JIO Financial Services",
+        "weight": 0.98
+      },
+      {
+        "name": "Trent",
+        "weight": 0.96
+      },
+      {
+        "name": "Nestle India",
+        "weight": 0.94
+      },
+      {
+        "name": "SBI Life Insurance Company",
+        "weight": 0.93
+      },
+      {
+        "name": "TVS Motor Company",
+        "weight": 0.89
+      },
+      {
+        "name": "Cipla",
+        "weight": 0.86
+      },
+      {
+        "name": "HDFC Life Insurance Company",
+        "weight": 0.82
+      },
+      {
+        "name": "Max Healthcare Institute",
+        "weight": 0.79
+      },
+      {
+        "name": "Wipro",
+        "weight": 0.76
+      },
+      {
+        "name": "Bharat Petroleum Corporation",
+        "weight": 0.76
+      },
+      {
+        "name": "Apollo Hospitals Enterprise",
+        "weight": 0.74
+      },
+      {
+        "name": "Cholamandalam Investment & Finance Company",
+        "weight": 0.73
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 0.72
+      },
+      {
+        "name": "Tata Power Company",
+        "weight": 0.65
+      },
+      {
+        "name": "Indian Oil Corporation",
+        "weight": 0.63
+      },
+      {
+        "name": "Adani Enterprises",
+        "weight": 0.59
+      },
+      {
+        "name": "Adani Power",
+        "weight": 0.57
+      },
+      {
+        "name": "LTIMindtree",
+        "weight": 0.57
+      },
+      {
+        "name": "Avenue Supermarts",
+        "weight": 0.57
+      },
+      {
+        "name": "Info Edge (India)",
+        "weight": 0.53
+      },
+      {
+        "name": "Power Finance Corporation",
+        "weight": 0.53
+      },
+      {
+        "name": "Godrej Consumer Products",
+        "weight": 0.5
+      },
+      {
+        "name": "ICICI Lombard General Insurance Company",
+        "weight": 0.48
+      },
+      {
+        "name": "GAIL (India)",
+        "weight": 0.47
+      },
+      {
+        "name": "Pidilite Industries",
+        "weight": 0.47
+      },
+      {
+        "name": "REC Limited",
+        "weight": 0.45
+      },
+      {
+        "name": "CG Power & Industrial Solutions",
+        "weight": 0.45
+      },
+      {
+        "name": "DLF",
+        "weight": 0.45
+      },
+      {
+        "name": "Torrent Pharmaceuticals",
+        "weight": 0.41
+      },
+      {
+        "name": "Havells India",
+        "weight": 0.36
+      },
+      {
+        "name": "Adani Energy Solutions",
+        "weight": 0.36
+      },
+      {
+        "name": "Shree Cement",
+        "weight": 0.36
+      },
+      {
+        "name": "Ambuja Cements",
+        "weight": 0.34
+      },
+      {
+        "name": "Hyundai Motor India",
+        "weight": 0.33
+      },
+      {
+        "name": "Adani Green Energy",
+        "weight": 0.32
+      },
+      {
+        "name": "Bosch",
+        "weight": 0.32
+      },
+      {
+        "name": "ABB India",
+        "weight": 0.28
+      },
+      {
+        "name": "Siemens",
+        "weight": 0.27
+      },
+      {
+        "name": "Hindustan Zinc",
+        "weight": 0.27
+      },
+      {
+        "name": "JSW Energy",
+        "weight": 0.26
+      },
+      {
+        "name": "Bajaj Housing Finance",
+        "weight": 0.09
+      }
+    ]
   },
   "ETF - Nifty 100 EW": {
     "etfs": [
@@ -7426,7 +8470,128 @@
         "name": "LOWVOLIETF"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "ITC",
+        "weight": 4.41
+      },
+      {
+        "name": "HDFC Bank",
+        "weight": 4.34
+      },
+      {
+        "name": "ICICI Bank",
+        "weight": 4.16
+      },
+      {
+        "name": "State Bank of India",
+        "weight": 3.82
+      },
+      {
+        "name": "Hindustan Unilever",
+        "weight": 3.75
+      },
+      {
+        "name": "Nestle India",
+        "weight": 3.57
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 3.54
+      },
+      {
+        "name": "Reliance Industries",
+        "weight": 3.49
+      },
+      {
+        "name": "Asian Paints",
+        "weight": 3.49
+      },
+      {
+        "name": "SBI Life Insurance Company",
+        "weight": 3.47
+      },
+      {
+        "name": "Sun Pharmaceutical Industries",
+        "weight": 3.42
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 3.35
+      },
+      {
+        "name": "Cipla",
+        "weight": 3.35
+      },
+      {
+        "name": "Tata Consultancy Services",
+        "weight": 3.32
+      },
+      {
+        "name": "Titan Company",
+        "weight": 3.32
+      },
+      {
+        "name": "UltraTech Cement",
+        "weight": 3.27
+      },
+      {
+        "name": "Bharti Airtel",
+        "weight": 3.26
+      },
+      {
+        "name": "Apollo Hospitals Enterprise",
+        "weight": 3.25
+      },
+      {
+        "name": "Dr Reddy's Laboratories",
+        "weight": 3.23
+      },
+      {
+        "name": "Larsen & Toubro",
+        "weight": 3.2
+      },
+      {
+        "name": "INE237A01028",
+        "weight": 3.05
+      },
+      {
+        "name": "Bajaj Auto",
+        "weight": 3.05
+      },
+      {
+        "name": "Pidilite Industries",
+        "weight": 3.04
+      },
+      {
+        "name": "Torrent Pharmaceuticals",
+        "weight": 3.02
+      },
+      {
+        "name": "Shree Cement",
+        "weight": 3.01
+      },
+      {
+        "name": "Bosch",
+        "weight": 3.01
+      },
+      {
+        "name": "Bajaj Finserv",
+        "weight": 2.79
+      },
+      {
+        "name": "Infosys",
+        "weight": 2.68
+      },
+      {
+        "name": "Wipro",
+        "weight": 2.65
+      },
+      {
+        "name": "HCL Technologies",
+        "weight": 2.61
+      }
+    ]
   },
   "ETF - Nifty 100 Quality 30": {
     "etfs": [
@@ -12327,7 +13492,128 @@
         "name": "FLEXIADD"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "Nestle India",
+        "weight": 6.76
+      },
+      {
+        "name": "Asian Paints",
+        "weight": 6.74
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 6.72
+      },
+      {
+        "name": "Bharat Electronics",
+        "weight": 6.7
+      },
+      {
+        "name": "ITC",
+        "weight": 6.66
+      },
+      {
+        "name": "Hindustan Unilever",
+        "weight": 6.65
+      },
+      {
+        "name": "Tech Mahindra",
+        "weight": 6.59
+      },
+      {
+        "name": "HCL Technologies",
+        "weight": 6.53
+      },
+      {
+        "name": "Tata Consultancy Services",
+        "weight": 6.53
+      },
+      {
+        "name": "Infosys",
+        "weight": 6.52
+      },
+      {
+        "name": "Gujarat State Petronet",
+        "weight": 1.72
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 1.71
+      },
+      {
+        "name": "Cummins India",
+        "weight": 1.71
+      },
+      {
+        "name": "APL Apollo Tubes",
+        "weight": 1.7
+      },
+      {
+        "name": "Marico",
+        "weight": 1.69
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 1.69
+      },
+      {
+        "name": "Affle 3i",
+        "weight": 1.69
+      },
+      {
+        "name": "Karur Vysya Bank",
+        "weight": 1.68
+      },
+      {
+        "name": "Tube Investments of India",
+        "weight": 1.68
+      },
+      {
+        "name": "Cyient",
+        "weight": 1.67
+      },
+      {
+        "name": "JB Chemicals & Pharmaceuticals",
+        "weight": 1.67
+      },
+      {
+        "name": "Colgate-Palmolive (India)",
+        "weight": 1.66
+      },
+      {
+        "name": "Indian Energy Exchange",
+        "weight": 1.66
+      },
+      {
+        "name": "Coforge",
+        "weight": 1.66
+      },
+      {
+        "name": "Persistent Systems",
+        "weight": 1.66
+      },
+      {
+        "name": "Amara Raja Energy & Mobility",
+        "weight": 1.65
+      },
+      {
+        "name": "Computer Age Management Services",
+        "weight": 1.65
+      },
+      {
+        "name": "Dixon Technologies (India)",
+        "weight": 1.64
+      },
+      {
+        "name": "Central Depository Services (India)",
+        "weight": 1.63
+      },
+      {
+        "name": "Angel One",
+        "weight": 1.57
+      }
+    ]
   },
   "ETF - Nifty 500 Low Volatility 50": {
     "etfs": [
@@ -12335,7 +13621,208 @@
         "name": "GROWWLOVOL"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "Asian Paints",
+        "weight": 5.0
+      },
+      {
+        "name": "Bharti Airtel",
+        "weight": 4.96
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 4.95
+      },
+      {
+        "name": "Bajaj Finance",
+        "weight": 4.9
+      },
+      {
+        "name": "Tata Consultancy Services",
+        "weight": 4.85
+      },
+      {
+        "name": "Power Grid Corporation of India",
+        "weight": 4.31
+      },
+      {
+        "name": "Coal India",
+        "weight": 4.3
+      },
+      {
+        "name": "Bajaj Auto",
+        "weight": 3.52
+      },
+      {
+        "name": "Eicher Motors",
+        "weight": 3.46
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 3.41
+      },
+      {
+        "name": "HDFC Life Insurance Company",
+        "weight": 3.39
+      },
+      {
+        "name": "Dr Reddy's Laboratories",
+        "weight": 3.14
+      },
+      {
+        "name": "Apollo Hospitals Enterprise",
+        "weight": 3.06
+      },
+      {
+        "name": "Oil & Natural Gas Corporation",
+        "weight": 3.05
+      },
+      {
+        "name": "Tech Mahindra",
+        "weight": 3.01
+      },
+      {
+        "name": "TVS Motor Company",
+        "weight": 2.26
+      },
+      {
+        "name": "Federal Bank",
+        "weight": 2.23
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 2.08
+      },
+      {
+        "name": "Wipro",
+        "weight": 2.05
+      },
+      {
+        "name": "Divi's Laboratories",
+        "weight": 2.01
+      },
+      {
+        "name": "Tata Power Company",
+        "weight": 1.99
+      },
+      {
+        "name": "Indian Oil Corporation",
+        "weight": 1.94
+      },
+      {
+        "name": "Marico",
+        "weight": 1.78
+      },
+      {
+        "name": "Torrent Pharmaceuticals",
+        "weight": 1.69
+      },
+      {
+        "name": "Max Financial Services",
+        "weight": 1.45
+      },
+      {
+        "name": "United Spirits",
+        "weight": 1.37
+      },
+      {
+        "name": "ICICI Lombard General Insurance Company",
+        "weight": 1.37
+      },
+      {
+        "name": "Godrej Consumer Products",
+        "weight": 1.34
+      },
+      {
+        "name": "Dabur India",
+        "weight": 1.28
+      },
+      {
+        "name": "Alkem Laboratories",
+        "weight": 1.21
+      },
+      {
+        "name": "Ambuja Cements",
+        "weight": 1.2
+      },
+      {
+        "name": "Havells India",
+        "weight": 1.18
+      },
+      {
+        "name": "Bosch",
+        "weight": 1.08
+      },
+      {
+        "name": "ICICI Prudential Life Insurance Company",
+        "weight": 1.02
+      },
+      {
+        "name": "MRF",
+        "weight": 0.99
+      },
+      {
+        "name": "Colgate-Palmolive (India)",
+        "weight": 0.96
+      },
+      {
+        "name": "Zydus Lifesciences",
+        "weight": 0.75
+      },
+      {
+        "name": "Indian Railway Catering & Tourism Corporation",
+        "weight": 0.73
+      },
+      {
+        "name": "PI Industries",
+        "weight": 0.71
+      },
+      {
+        "name": "Page Industries",
+        "weight": 0.7
+      },
+      {
+        "name": "SBI Cards And Payment Services",
+        "weight": 0.68
+      },
+      {
+        "name": "Life Insurance Corporation of India Ltd.",
+        "weight": 0.68
+      },
+      {
+        "name": "Dalmia Bharat",
+        "weight": 0.57
+      },
+      {
+        "name": "ACC",
+        "weight": 0.47
+      },
+      {
+        "name": "Crompton Greaves Consumer Electricals",
+        "weight": 0.45
+      },
+      {
+        "name": "Ramco Cements Limited",
+        "weight": 0.4
+      },
+      {
+        "name": "Tata Chemicals",
+        "weight": 0.37
+      },
+      {
+        "name": "Motherson Sumi Wiring India",
+        "weight": 0.31
+      },
+      {
+        "name": "Tata Technologies",
+        "weight": 0.26
+      },
+      {
+        "name": "Star Health and Allied Insurance Company",
+        "weight": 0.24
+      }
+    ]
   },
   "ETF - Nifty 500 Momentum 50": {
     "etfs": [
@@ -12555,7 +14042,2008 @@
         "name": "MULTICAP"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "HDFC Bank",
+        "weight": 5.32
+      },
+      {
+        "name": "Reliance Industries",
+        "weight": 3.72
+      },
+      {
+        "name": "ICICI Bank",
+        "weight": 3.37
+      },
+      {
+        "name": "Bharti Airtel",
+        "weight": 2.06
+      },
+      {
+        "name": "Infosys",
+        "weight": 1.99
+      },
+      {
+        "name": "Larsen & Toubro",
+        "weight": 1.68
+      },
+      {
+        "name": "State Bank of India",
+        "weight": 1.43
+      },
+      {
+        "name": "ITC",
+        "weight": 1.36
+      },
+      {
+        "name": "Axis Bank",
+        "weight": 1.28
+      },
+      {
+        "name": "Mahindra & Mahindra",
+        "weight": 1.16
+      },
+      {
+        "name": "Tata Consultancy Services",
+        "weight": 1.15
+      },
+      {
+        "name": "INE237A01028",
+        "weight": 1.14
+      },
+      {
+        "name": "Bajaj Finance",
+        "weight": 0.92
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 0.77
+      },
+      {
+        "name": "Hindustan Unilever",
+        "weight": 0.72
+      },
+      {
+        "name": "INE745G01035",
+        "weight": 0.71
+      },
+      {
+        "name": "Eternal (Zomato)",
+        "weight": 0.7
+      },
+      {
+        "name": "BSE",
+        "weight": 0.7
+      },
+      {
+        "name": "Sun Pharmaceutical Industries",
+        "weight": 0.64
+      },
+      {
+        "name": "HCL Technologies",
+        "weight": 0.6
+      },
+      {
+        "name": "Titan Company",
+        "weight": 0.59
+      },
+      {
+        "name": "NTPC",
+        "weight": 0.55
+      },
+      {
+        "name": "Laurus Labs",
+        "weight": 0.54
+      },
+      {
+        "name": "Tata Steel",
+        "weight": 0.52
+      },
+      {
+        "name": "Bharat Electronics",
+        "weight": 0.5
+      },
+      {
+        "name": "UltraTech Cement",
+        "weight": 0.49
+      },
+      {
+        "name": "Shriram Finance",
+        "weight": 0.49
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 0.49
+      },
+      {
+        "name": "Hindalco Industries",
+        "weight": 0.45
+      },
+      {
+        "name": "Persistent Systems",
+        "weight": 0.44
+      },
+      {
+        "name": "Asian Paints",
+        "weight": 0.44
+      },
+      {
+        "name": "Federal Bank",
+        "weight": 0.43
+      },
+      {
+        "name": "Power Grid Corporation of India",
+        "weight": 0.42
+      },
+      {
+        "name": "Suzlon Energy",
+        "weight": 0.41
+      },
+      {
+        "name": "Bajaj Finserv",
+        "weight": 0.41
+      },
+      {
+        "name": "PolicyBazaar - PB Fintech Ltd.",
+        "weight": 0.4
+      },
+      {
+        "name": "Interglobe Aviation",
+        "weight": 0.4
+      },
+      {
+        "name": "Cummins India",
+        "weight": 0.39
+      },
+      {
+        "name": "JSW Steel",
+        "weight": 0.38
+      },
+      {
+        "name": "Grasim Industries",
+        "weight": 0.38
+      },
+      {
+        "name": "IndusInd Bank",
+        "weight": 0.37
+      },
+      {
+        "name": "IDFC First Bank",
+        "weight": 0.37
+      },
+      {
+        "name": "AU Small Finance Bank",
+        "weight": 0.36
+      },
+      {
+        "name": "Bajaj Auto",
+        "weight": 0.36
+      },
+      {
+        "name": "Coforge",
+        "weight": 0.36
+      },
+      {
+        "name": "Vedanta",
+        "weight": 0.36
+      },
+      {
+        "name": "Adani Ports and Special Economic Zone",
+        "weight": 0.36
+      },
+      {
+        "name": "Tech Mahindra",
+        "weight": 0.35
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 0.35
+      },
+      {
+        "name": "Eicher Motors",
+        "weight": 0.35
+      },
+      {
+        "name": "Indus Towers",
+        "weight": 0.35
+      },
+      {
+        "name": "Paytm - One97 Communications Ltd",
+        "weight": 0.34
+      },
+      {
+        "name": "JIO Financial Services",
+        "weight": 0.34
+      },
+      {
+        "name": "Swiggy",
+        "weight": 0.33
+      },
+      {
+        "name": "Trent",
+        "weight": 0.33
+      },
+      {
+        "name": "Ashok Leyland",
+        "weight": 0.33
+      },
+      {
+        "name": "Lupin",
+        "weight": 0.33
+      },
+      {
+        "name": "Oil & Natural Gas Corporation",
+        "weight": 0.33
+      },
+      {
+        "name": "Nestle India",
+        "weight": 0.32
+      },
+      {
+        "name": "Dixon Technologies (India)",
+        "weight": 0.32
+      },
+      {
+        "name": "Radico Khaitan",
+        "weight": 0.32
+      },
+      {
+        "name": "SBI Life Insurance Company",
+        "weight": 0.32
+      },
+      {
+        "name": "Central Depository Services (India)",
+        "weight": 0.32
+      },
+      {
+        "name": "Coal India",
+        "weight": 0.32
+      },
+      {
+        "name": "Hindustan Petroleum Corporation",
+        "weight": 0.31
+      },
+      {
+        "name": "Karur Vysya Bank",
+        "weight": 0.31
+      },
+      {
+        "name": "TVS Motor Company",
+        "weight": 0.31
+      },
+      {
+        "name": "Fortis Healthcare",
+        "weight": 0.3
+      },
+      {
+        "name": "Cipla",
+        "weight": 0.3
+      },
+      {
+        "name": "Hindustan Aeronautics",
+        "weight": 0.29
+      },
+      {
+        "name": "SRF",
+        "weight": 0.29
+      },
+      {
+        "name": "UPL",
+        "weight": 0.29
+      },
+      {
+        "name": "Max Financial Services",
+        "weight": 0.29
+      },
+      {
+        "name": "Divi's Laboratories",
+        "weight": 0.28
+      },
+      {
+        "name": "HDFC Life Insurance Company",
+        "weight": 0.28
+      },
+      {
+        "name": "Delhivery",
+        "weight": 0.27
+      },
+      {
+        "name": "Max Healthcare Institute",
+        "weight": 0.27
+      },
+      {
+        "name": "Tata Consumer Products",
+        "weight": 0.27
+      },
+      {
+        "name": "Dr Reddy's Laboratories",
+        "weight": 0.27
+      },
+      {
+        "name": "Navin Fluorine International",
+        "weight": 0.27
+      },
+      {
+        "name": "Tata Motors Passenger Vehicles",
+        "weight": 0.27
+      },
+      {
+        "name": "Muthoot Finance",
+        "weight": 0.26
+      },
+      {
+        "name": "Wipro",
+        "weight": 0.26
+      },
+      {
+        "name": "Bharat Petroleum Corporation",
+        "weight": 0.26
+      },
+      {
+        "name": "City Union Bank",
+        "weight": 0.26
+      },
+      {
+        "name": "Polycab India",
+        "weight": 0.26
+      },
+      {
+        "name": "Marico",
+        "weight": 0.26
+      },
+      {
+        "name": "Bharat Forge",
+        "weight": 0.25
+      },
+      {
+        "name": "Apollo Hospitals Enterprise",
+        "weight": 0.25
+      },
+      {
+        "name": "Cholamandalam Investment & Finance Company",
+        "weight": 0.25
+      },
+      {
+        "name": "GE Vernova T&D India",
+        "weight": 0.25
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 0.25
+      },
+      {
+        "name": "Yes Bank",
+        "weight": 0.25
+      },
+      {
+        "name": "GMR Airports",
+        "weight": 0.24
+      },
+      {
+        "name": "Bharat Heavy Electricals",
+        "weight": 0.24
+      },
+      {
+        "name": "RBL Bank",
+        "weight": 0.24
+      },
+      {
+        "name": "Sundaram Finance",
+        "weight": 0.24
+      },
+      {
+        "name": "Varun Beverages",
+        "weight": 0.24
+      },
+      {
+        "name": "Nykaa - FSN E-Commerce Ventures Ltd.",
+        "weight": 0.23
+      },
+      {
+        "name": "The Indian Hotels Company",
+        "weight": 0.23
+      },
+      {
+        "name": "APL Apollo Tubes",
+        "weight": 0.23
+      },
+      {
+        "name": "Phoenix Mills",
+        "weight": 0.22
+      },
+      {
+        "name": "Tata Power Company",
+        "weight": 0.22
+      },
+      {
+        "name": "Cholamandalam Financial Holdings",
+        "weight": 0.22
+      },
+      {
+        "name": "PNB Housing Finance",
+        "weight": 0.22
+      },
+      {
+        "name": "Computer Age Management Services",
+        "weight": 0.22
+      },
+      {
+        "name": "Indian Oil Corporation",
+        "weight": 0.22
+      },
+      {
+        "name": "Aurobindo Pharma",
+        "weight": 0.21
+      },
+      {
+        "name": "Hindustan Copper",
+        "weight": 0.21
+      },
+      {
+        "name": "Manappuram Finance",
+        "weight": 0.21
+      },
+      {
+        "name": "Alkem Laboratories",
+        "weight": 0.21
+      },
+      {
+        "name": "Mphasis",
+        "weight": 0.21
+      },
+      {
+        "name": "Authum Investment & Infrastructure",
+        "weight": 0.21
+      },
+      {
+        "name": "Adani Enterprises",
+        "weight": 0.2
+      },
+      {
+        "name": "Crompton Greaves Consumer Electricals",
+        "weight": 0.2
+      },
+      {
+        "name": "Redington",
+        "weight": 0.2
+      },
+      {
+        "name": "Voltas",
+        "weight": 0.2
+      },
+      {
+        "name": "Glenmark Pharmaceuticals",
+        "weight": 0.2
+      },
+      {
+        "name": "Adani Power",
+        "weight": 0.2
+      },
+      {
+        "name": "MRF",
+        "weight": 0.2
+      },
+      {
+        "name": "LTIMindtree",
+        "weight": 0.2
+      },
+      {
+        "name": "360 One Wam",
+        "weight": 0.2
+      },
+      {
+        "name": "Avenue Supermarts",
+        "weight": 0.2
+      },
+      {
+        "name": "Godrej Properties",
+        "weight": 0.19
+      },
+      {
+        "name": "Vodafone Idea",
+        "weight": 0.19
+      },
+      {
+        "name": "Union Bank of India",
+        "weight": 0.19
+      },
+      {
+        "name": "Bank of Baroda",
+        "weight": 0.19
+      },
+      {
+        "name": "Dabur India",
+        "weight": 0.19
+      },
+      {
+        "name": "Indian Bank",
+        "weight": 0.19
+      },
+      {
+        "name": "Vishal Mega Mart",
+        "weight": 0.19
+      },
+      {
+        "name": "Angel One",
+        "weight": 0.19
+      },
+      {
+        "name": "Samvardhana Motherson International",
+        "weight": 0.19
+      },
+      {
+        "name": "Krishna Institute of Medical Sciences",
+        "weight": 0.19
+      },
+      {
+        "name": "NMDC",
+        "weight": 0.19
+      },
+      {
+        "name": "JB Chemicals & Pharmaceuticals",
+        "weight": 0.19
+      },
+      {
+        "name": "Waaree Energies",
+        "weight": 0.18
+      },
+      {
+        "name": "Canara Bank",
+        "weight": 0.18
+      },
+      {
+        "name": "National Aluminium Co",
+        "weight": 0.18
+      },
+      {
+        "name": "Info Edge (India)",
+        "weight": 0.18
+      },
+      {
+        "name": "Power Finance Corporation",
+        "weight": 0.18
+      },
+      {
+        "name": "Tube Investments of India",
+        "weight": 0.18
+      },
+      {
+        "name": "KFin Technologies",
+        "weight": 0.18
+      },
+      {
+        "name": "Aster DM Healthcare",
+        "weight": 0.18
+      },
+      {
+        "name": "KEI Industries",
+        "weight": 0.18
+      },
+      {
+        "name": "Aditya Birla Capital",
+        "weight": 0.18
+      },
+      {
+        "name": "Colgate-Palmolive (India)",
+        "weight": 0.18
+      },
+      {
+        "name": "IIFL Finance",
+        "weight": 0.18
+      },
+      {
+        "name": "Prestige Estates Projects",
+        "weight": 0.17
+      },
+      {
+        "name": "Jindal Stainless",
+        "weight": 0.17
+      },
+      {
+        "name": "Coromandel International",
+        "weight": 0.17
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services",
+        "weight": 0.17
+      },
+      {
+        "name": "Poonawalla Fincorp Limited",
+        "weight": 0.17
+      },
+      {
+        "name": "Godrej Consumer Products",
+        "weight": 0.17
+      },
+      {
+        "name": "Amber Enterprises India",
+        "weight": 0.17
+      },
+      {
+        "name": "Bajaj Holdings & Investment",
+        "weight": 0.17
+      },
+      {
+        "name": "Gland Pharma",
+        "weight": 0.17
+      },
+      {
+        "name": "ICICI Prudential Life Insurance Company",
+        "weight": 0.17
+      },
+      {
+        "name": "PI Industries",
+        "weight": 0.17
+      },
+      {
+        "name": "Kalpataru Projects International",
+        "weight": 0.17
+      },
+      {
+        "name": "L&T Finance",
+        "weight": 0.17
+      },
+      {
+        "name": "SBI Cards And Payment Services",
+        "weight": 0.17
+      },
+      {
+        "name": "ICICI Lombard General Insurance Company",
+        "weight": 0.17
+      },
+      {
+        "name": "Ramco Cements Limited",
+        "weight": 0.17
+      },
+      {
+        "name": "Anand Rathi Wealth Ltd.",
+        "weight": 0.16
+      },
+      {
+        "name": "GAIL (India)",
+        "weight": 0.16
+      },
+      {
+        "name": "NHPC",
+        "weight": 0.16
+      },
+      {
+        "name": "Pidilite Industries",
+        "weight": 0.16
+      },
+      {
+        "name": "Torrent Power",
+        "weight": 0.16
+      },
+      {
+        "name": "Mankind Pharma",
+        "weight": 0.16
+      },
+      {
+        "name": "Bandhan Bank",
+        "weight": 0.16
+      },
+      {
+        "name": "Narayana Hrudayalaya",
+        "weight": 0.16
+      },
+      {
+        "name": "Neuland Laboratories",
+        "weight": 0.16
+      },
+      {
+        "name": "NBCC (India)",
+        "weight": 0.16
+      },
+      {
+        "name": "REC Limited",
+        "weight": 0.16
+      },
+      {
+        "name": "CG Power & Industrial Solutions",
+        "weight": 0.16
+      },
+      {
+        "name": "Kaynes Technology India",
+        "weight": 0.16
+      },
+      {
+        "name": "Sai Life Sciences",
+        "weight": 0.15
+      },
+      {
+        "name": "DLF",
+        "weight": 0.15
+      },
+      {
+        "name": "Motherson Sumi Wiring India",
+        "weight": 0.15
+      },
+      {
+        "name": "Biocon",
+        "weight": 0.15
+      },
+      {
+        "name": "Asahi India Glass",
+        "weight": 0.15
+      },
+      {
+        "name": "Brigade Enterprises",
+        "weight": 0.15
+      },
+      {
+        "name": "UNO Minda",
+        "weight": 0.15
+      },
+      {
+        "name": "Hitachi Energy India",
+        "weight": 0.15
+      },
+      {
+        "name": "Oil India",
+        "weight": 0.15
+      },
+      {
+        "name": "United Spirits",
+        "weight": 0.15
+      },
+      {
+        "name": "Punjab National Bank",
+        "weight": 0.15
+      },
+      {
+        "name": "JK Cement",
+        "weight": 0.15
+      },
+      {
+        "name": "Tata Chemicals",
+        "weight": 0.15
+      },
+      {
+        "name": "Wockhardt",
+        "weight": 0.15
+      },
+      {
+        "name": "INOX Wind",
+        "weight": 0.15
+      },
+      {
+        "name": "Page Industries",
+        "weight": 0.15
+      },
+      {
+        "name": "Blue Star",
+        "weight": 0.15
+      },
+      {
+        "name": "Dr Lal PathLabs",
+        "weight": 0.14
+      },
+      {
+        "name": "Himadri Speciality Chemical",
+        "weight": 0.14
+      },
+      {
+        "name": "Jubilant FoodWorks",
+        "weight": 0.14
+      },
+      {
+        "name": "Affle 3i",
+        "weight": 0.14
+      },
+      {
+        "name": "Torrent Pharmaceuticals",
+        "weight": 0.14
+      },
+      {
+        "name": "Supreme Industries",
+        "weight": 0.14
+      },
+      {
+        "name": "Sammaan Capital",
+        "weight": 0.14
+      },
+      {
+        "name": "Nuvama Wealth Management",
+        "weight": 0.14
+      },
+      {
+        "name": "ZF Commercial Vehicle Control Systems India",
+        "weight": 0.14
+      },
+      {
+        "name": "Sona BLW Precision Forgings",
+        "weight": 0.14
+      },
+      {
+        "name": "The Great Eastern Shipping Company",
+        "weight": 0.14
+      },
+      {
+        "name": "Tata Communications",
+        "weight": 0.14
+      },
+      {
+        "name": "Amara Raja Energy & Mobility",
+        "weight": 0.14
+      },
+      {
+        "name": "PTC Industries",
+        "weight": 0.14
+      },
+      {
+        "name": "Jindal Steel",
+        "weight": 0.14
+      },
+      {
+        "name": "Petronet LNG",
+        "weight": 0.14
+      },
+      {
+        "name": "Steel Authority of India",
+        "weight": 0.14
+      },
+      {
+        "name": "Timken India",
+        "weight": 0.13
+      },
+      {
+        "name": "Indian Railway Catering & Tourism Corporation",
+        "weight": 0.13
+      },
+      {
+        "name": "Ather Energy",
+        "weight": 0.13
+      },
+      {
+        "name": "Star Health and Allied Insurance Company",
+        "weight": 0.13
+      },
+      {
+        "name": "Indian Energy Exchange",
+        "weight": 0.13
+      },
+      {
+        "name": "Firstsource Solutions",
+        "weight": 0.13
+      },
+      {
+        "name": "Piramal Pharma",
+        "weight": 0.13
+      },
+      {
+        "name": "Welspun Corp",
+        "weight": 0.13
+      },
+      {
+        "name": "EID-Parry (India)",
+        "weight": 0.13
+      },
+      {
+        "name": "Rail Vikas Nigam",
+        "weight": 0.13
+      },
+      {
+        "name": "CESC",
+        "weight": 0.13
+      },
+      {
+        "name": "Five-Star Business Finance",
+        "weight": 0.13
+      },
+      {
+        "name": "HBL Engineering",
+        "weight": 0.13
+      },
+      {
+        "name": "Emami",
+        "weight": 0.13
+      },
+      {
+        "name": "Sundram Fasteners",
+        "weight": 0.13
+      },
+      {
+        "name": "Ipca Laboratories",
+        "weight": 0.13
+      },
+      {
+        "name": "Oberoi Realty",
+        "weight": 0.13
+      },
+      {
+        "name": "Elgi Equipments",
+        "weight": 0.13
+      },
+      {
+        "name": "Kirloskar Oil Engines",
+        "weight": 0.13
+      },
+      {
+        "name": "Havells India",
+        "weight": 0.13
+      },
+      {
+        "name": "Adani Energy Solutions",
+        "weight": 0.13
+      },
+      {
+        "name": "Shree Cement",
+        "weight": 0.12
+      },
+      {
+        "name": "KPIT Technologies",
+        "weight": 0.12
+      },
+      {
+        "name": "eClerx Services",
+        "weight": 0.12
+      },
+      {
+        "name": "Onesource Specialty Pharma",
+        "weight": 0.12
+      },
+      {
+        "name": "Reliance Power",
+        "weight": 0.12
+      },
+      {
+        "name": "Home First Finance Company India",
+        "weight": 0.12
+      },
+      {
+        "name": "Force Motors",
+        "weight": 0.12
+      },
+      {
+        "name": "Aptus Value Housing Finance India",
+        "weight": 0.12
+      },
+      {
+        "name": "Carborundum Universal",
+        "weight": 0.12
+      },
+      {
+        "name": "Kalyan Jewellers India",
+        "weight": 0.12
+      },
+      {
+        "name": "Atul",
+        "weight": 0.12
+      },
+      {
+        "name": "Balkrishna Industries",
+        "weight": 0.12
+      },
+      {
+        "name": "Patanjali Foods",
+        "weight": 0.12
+      },
+      {
+        "name": "ITC Hotels",
+        "weight": 0.12
+      },
+      {
+        "name": "Ambuja Cements",
+        "weight": 0.12
+      },
+      {
+        "name": "KEC International",
+        "weight": 0.12
+      },
+      {
+        "name": "Oracle Financial Services Software",
+        "weight": 0.12
+      },
+      {
+        "name": "Cyient",
+        "weight": 0.12
+      },
+      {
+        "name": "Container Corporation of India",
+        "weight": 0.12
+      },
+      {
+        "name": "Tata Elxsi",
+        "weight": 0.12
+      },
+      {
+        "name": "Craftsman Automation",
+        "weight": 0.12
+      },
+      {
+        "name": "Castrol India",
+        "weight": 0.12
+      },
+      {
+        "name": "PG Electroplast",
+        "weight": 0.12
+      },
+      {
+        "name": "Hyundai Motor India",
+        "weight": 0.11
+      },
+      {
+        "name": "Bank Of India",
+        "weight": 0.11
+      },
+      {
+        "name": "Aegis Logistics",
+        "weight": 0.11
+      },
+      {
+        "name": "Lloyds Metals & Energy",
+        "weight": 0.11
+      },
+      {
+        "name": "Astral",
+        "weight": 0.11
+      },
+      {
+        "name": "Dalmia Bharat",
+        "weight": 0.11
+      },
+      {
+        "name": "Gujarat State Petronet",
+        "weight": 0.11
+      },
+      {
+        "name": "Adani Green Energy",
+        "weight": 0.11
+      },
+      {
+        "name": "Aditya Birla Real Estate",
+        "weight": 0.11
+      },
+      {
+        "name": "Intellect Design Arena",
+        "weight": 0.11
+      },
+      {
+        "name": "Granules India",
+        "weight": 0.11
+      },
+      {
+        "name": "Jubilant Pharmova",
+        "weight": 0.11
+      },
+      {
+        "name": "Deepak Fertilisers And Petrochemicals Corporation",
+        "weight": 0.11
+      },
+      {
+        "name": "Cohance Lifesciences",
+        "weight": 0.11
+      },
+      {
+        "name": "Exide Industries",
+        "weight": 0.11
+      },
+      {
+        "name": "LIC Housing Finance",
+        "weight": 0.11
+      },
+      {
+        "name": "Bosch",
+        "weight": 0.1
+      },
+      {
+        "name": "Apollo Tyres",
+        "weight": 0.1
+      },
+      {
+        "name": "Jyoti CNC Automation",
+        "weight": 0.1
+      },
+      {
+        "name": "Lodha Developers",
+        "weight": 0.1
+      },
+      {
+        "name": "Anant Raj",
+        "weight": 0.1
+      },
+      {
+        "name": "Jaiprakash Power Ventures",
+        "weight": 0.1
+      },
+      {
+        "name": "Zee Entertainment Enterprises",
+        "weight": 0.1
+      },
+      {
+        "name": "Solar Industries India",
+        "weight": 0.1
+      },
+      {
+        "name": "Go Digit General Insurance",
+        "weight": 0.1
+      },
+      {
+        "name": "Adani Total Gas",
+        "weight": 0.1
+      },
+      {
+        "name": "Nippon Life India Asset Management",
+        "weight": 0.1
+      },
+      {
+        "name": "Eris Lifesciences",
+        "weight": 0.1
+      },
+      {
+        "name": "Schaeffler India",
+        "weight": 0.1
+      },
+      {
+        "name": "Usha Martin",
+        "weight": 0.1
+      },
+      {
+        "name": "Natco Pharma",
+        "weight": 0.1
+      },
+      {
+        "name": "AIA Engineering",
+        "weight": 0.1
+      },
+      {
+        "name": "Zensar Technologies",
+        "weight": 0.1
+      },
+      {
+        "name": "Gujarat Fluorochemicals",
+        "weight": 0.1
+      },
+      {
+        "name": "Kajaria Ceramics",
+        "weight": 0.1
+      },
+      {
+        "name": "Inventurus Knowledge Solutions",
+        "weight": 0.1
+      },
+      {
+        "name": "CEAT",
+        "weight": 0.1
+      },
+      {
+        "name": "Sagility",
+        "weight": 0.1
+      },
+      {
+        "name": "Berger Paints India",
+        "weight": 0.1
+      },
+      {
+        "name": "Lemon Tree Hotels",
+        "weight": 0.1
+      },
+      {
+        "name": "Nava",
+        "weight": 0.1
+      },
+      {
+        "name": "Can Fin Homes",
+        "weight": 0.1
+      },
+      {
+        "name": "Data Patterns (India)",
+        "weight": 0.1
+      },
+      {
+        "name": "Aarti Industries",
+        "weight": 0.1
+      },
+      {
+        "name": "Siemens",
+        "weight": 0.09
+      },
+      {
+        "name": "ABB India",
+        "weight": 0.09
+      },
+      {
+        "name": "Maharashtra Scooters",
+        "weight": 0.09
+      },
+      {
+        "name": "Abbott India",
+        "weight": 0.09
+      },
+      {
+        "name": "Pfizer",
+        "weight": 0.09
+      },
+      {
+        "name": "Hindustan Zinc",
+        "weight": 0.09
+      },
+      {
+        "name": "Chambal Fertilisers & Chemicals",
+        "weight": 0.09
+      },
+      {
+        "name": "JSW Energy",
+        "weight": 0.09
+      },
+      {
+        "name": "EIH",
+        "weight": 0.09
+      },
+      {
+        "name": "Apar Industries",
+        "weight": 0.09
+      },
+      {
+        "name": "HFCL",
+        "weight": 0.09
+      },
+      {
+        "name": "PVR Inox",
+        "weight": 0.09
+      },
+      {
+        "name": "Birlasoft",
+        "weight": 0.09
+      },
+      {
+        "name": "Garden Reach Shipbuilders & Engineers",
+        "weight": 0.09
+      },
+      {
+        "name": "Titagarh Rail Systems",
+        "weight": 0.09
+      },
+      {
+        "name": "Cochin Shipyard",
+        "weight": 0.09
+      },
+      {
+        "name": "Bharti Hexacom",
+        "weight": 0.09
+      },
+      {
+        "name": "Indraprastha Gas",
+        "weight": 0.09
+      },
+      {
+        "name": "BEML",
+        "weight": 0.09
+      },
+      {
+        "name": "Capri Global Capital",
+        "weight": 0.09
+      },
+      {
+        "name": "Bharat Dynamics",
+        "weight": 0.09
+      },
+      {
+        "name": "Sonata Software",
+        "weight": 0.09
+      },
+      {
+        "name": "Motilal Oswal Financial Services",
+        "weight": 0.09
+      },
+      {
+        "name": "CreditAccess Grameen",
+        "weight": 0.09
+      },
+      {
+        "name": "Indiamart Intermesh",
+        "weight": 0.08
+      },
+      {
+        "name": "Poly Medicure",
+        "weight": 0.08
+      },
+      {
+        "name": "Gillette India",
+        "weight": 0.08
+      },
+      {
+        "name": "CCL Products India",
+        "weight": 0.08
+      },
+      {
+        "name": "Rainbow Children's Medicare",
+        "weight": 0.08
+      },
+      {
+        "name": "Bank of Maharashtra",
+        "weight": 0.08
+      },
+      {
+        "name": "NCC",
+        "weight": 0.08
+      },
+      {
+        "name": "Swan Corp",
+        "weight": 0.08
+      },
+      {
+        "name": "Godawari Power and Ispat",
+        "weight": 0.08
+      },
+      {
+        "name": "Linde India",
+        "weight": 0.08
+      },
+      {
+        "name": "Sobha",
+        "weight": 0.08
+      },
+      {
+        "name": "Mahanagar Gas",
+        "weight": 0.08
+      },
+      {
+        "name": "Zydus Lifesciences",
+        "weight": 0.08
+      },
+      {
+        "name": "Syngene International",
+        "weight": 0.08
+      },
+      {
+        "name": "Escorts",
+        "weight": 0.08
+      },
+      {
+        "name": "Siemens Energy India",
+        "weight": 0.08
+      },
+      {
+        "name": "L&T Technology Services",
+        "weight": 0.08
+      },
+      {
+        "name": "OLA Electric Mobility",
+        "weight": 0.08
+      },
+      {
+        "name": "Brainbees Solutions",
+        "weight": 0.08
+      },
+      {
+        "name": "Zen Technologies",
+        "weight": 0.08
+      },
+      {
+        "name": "Indian Railway Finance Corp",
+        "weight": 0.08
+      },
+      {
+        "name": "Procter & Gamble Hygiene & Health Care",
+        "weight": 0.08
+      },
+      {
+        "name": "Chalet Hotels",
+        "weight": 0.08
+      },
+      {
+        "name": "Triveni Turbine",
+        "weight": 0.08
+      },
+      {
+        "name": "V-Guard Industries",
+        "weight": 0.08
+      },
+      {
+        "name": "Aditya Birla Lifestyle Brands",
+        "weight": 0.08
+      },
+      {
+        "name": "Deepak Nitrite",
+        "weight": 0.08
+      },
+      {
+        "name": "General Insurance Corporation of India",
+        "weight": 0.08
+      },
+      {
+        "name": "Choice International",
+        "weight": 0.08
+      },
+      {
+        "name": "JK Tyre & Industries",
+        "weight": 0.08
+      },
+      {
+        "name": "United Breweries",
+        "weight": 0.08
+      },
+      {
+        "name": "Thermax",
+        "weight": 0.08
+      },
+      {
+        "name": "Sapphire Foods India",
+        "weight": 0.08
+      },
+      {
+        "name": "Ajanta Pharma",
+        "weight": 0.08
+      },
+      {
+        "name": "Bata India",
+        "weight": 0.07
+      },
+      {
+        "name": "Housing & Urban Development Corporation",
+        "weight": 0.07
+      },
+      {
+        "name": "Devyani International",
+        "weight": 0.07
+      },
+      {
+        "name": "Shyam Metalics and Energy",
+        "weight": 0.07
+      },
+      {
+        "name": "Hexaware Technologies Limited",
+        "weight": 0.07
+      },
+      {
+        "name": "Jubilant Ingrevia",
+        "weight": 0.07
+      },
+      {
+        "name": "Gravita India",
+        "weight": 0.07
+      },
+      {
+        "name": "Godfrey Phillips India",
+        "weight": 0.07
+      },
+      {
+        "name": "Aditya Birla Sun Life AMC",
+        "weight": 0.07
+      },
+      {
+        "name": "JM Financial",
+        "weight": 0.07
+      },
+      {
+        "name": "Aavas Financiers",
+        "weight": 0.07
+      },
+      {
+        "name": "Bayer CropScience",
+        "weight": 0.07
+      },
+      {
+        "name": "Sun TV Network",
+        "weight": 0.07
+      },
+      {
+        "name": "Indian Renewable Energy Development Agency",
+        "weight": 0.07
+      },
+      {
+        "name": "Sumitomo Chemical India",
+        "weight": 0.07
+      },
+      {
+        "name": "Afcons Infrastructure",
+        "weight": 0.07
+      },
+      {
+        "name": "Ircon International",
+        "weight": 0.07
+      },
+      {
+        "name": "AWL Agri Business",
+        "weight": 0.07
+      },
+      {
+        "name": "Tata Technologies",
+        "weight": 0.07
+      },
+      {
+        "name": "Finolex Cables",
+        "weight": 0.07
+      },
+      {
+        "name": "K.P.R. Mill",
+        "weight": 0.07
+      },
+      {
+        "name": "Syrma SGS Technology",
+        "weight": 0.07
+      },
+      {
+        "name": "Whirlpool Of India",
+        "weight": 0.07
+      },
+      {
+        "name": "TBO Tek",
+        "weight": 0.07
+      },
+      {
+        "name": "Astrazeneca Pharma India",
+        "weight": 0.07
+      },
+      {
+        "name": "Engineers India",
+        "weight": 0.07
+      },
+      {
+        "name": "ACC",
+        "weight": 0.07
+      },
+      {
+        "name": "CRISIL",
+        "weight": 0.07
+      },
+      {
+        "name": "Techno Electric & Engineering Company",
+        "weight": 0.07
+      },
+      {
+        "name": "Newgen Software Technologies",
+        "weight": 0.07
+      },
+      {
+        "name": "Ramkrishna Forgings",
+        "weight": 0.07
+      },
+      {
+        "name": "Indegene",
+        "weight": 0.07
+      },
+      {
+        "name": "LT Foods",
+        "weight": 0.07
+      },
+      {
+        "name": "Life Insurance Corporation of India Ltd.",
+        "weight": 0.07
+      },
+      {
+        "name": "Mazagon Dock Shipbuilders",
+        "weight": 0.07
+      },
+      {
+        "name": "GlaxoSmithKline Pharmaceuticals",
+        "weight": 0.07
+      },
+      {
+        "name": "PCBL Chemical",
+        "weight": 0.07
+      },
+      {
+        "name": "HEG",
+        "weight": 0.07
+      },
+      {
+        "name": "Global Health",
+        "weight": 0.07
+      },
+      {
+        "name": "Vijaya Diagnostic Centre",
+        "weight": 0.06
+      },
+      {
+        "name": "Aadhar Housing Finance",
+        "weight": 0.06
+      },
+      {
+        "name": "Balrampur Chini Mills",
+        "weight": 0.06
+      },
+      {
+        "name": "NMDC Steel Ltd.",
+        "weight": 0.06
+      },
+      {
+        "name": "Netweb Technologies India",
+        "weight": 0.06
+      },
+      {
+        "name": "Premier Energies",
+        "weight": 0.06
+      },
+      {
+        "name": "Century Plyboards (India)",
+        "weight": 0.06
+      },
+      {
+        "name": "3M India",
+        "weight": 0.06
+      },
+      {
+        "name": "Metropolis Healthcare",
+        "weight": 0.06
+      },
+      {
+        "name": "DCM Shriram",
+        "weight": 0.06
+      },
+      {
+        "name": "Gujarat Mineral Development Corporation",
+        "weight": 0.06
+      },
+      {
+        "name": "Bikaji Foods International",
+        "weight": 0.06
+      },
+      {
+        "name": "Finolex Industries",
+        "weight": 0.06
+      },
+      {
+        "name": "Olectra Greentech",
+        "weight": 0.06
+      },
+      {
+        "name": "JSW Infrastructure",
+        "weight": 0.06
+      },
+      {
+        "name": "Sarda Energy & Minerals",
+        "weight": 0.06
+      },
+      {
+        "name": "Endurance Technologies",
+        "weight": 0.06
+      },
+      {
+        "name": "Tata Investment Corporation",
+        "weight": 0.06
+      },
+      {
+        "name": "RR Kabel",
+        "weight": 0.06
+      },
+      {
+        "name": "Reliance Infrastructure",
+        "weight": 0.06
+      },
+      {
+        "name": "UTI Asset Management Company",
+        "weight": 0.06
+      },
+      {
+        "name": "Alembic Pharmaceuticals",
+        "weight": 0.06
+      },
+      {
+        "name": "DOMS Industries",
+        "weight": 0.06
+      },
+      {
+        "name": "Niva Bupa Health Insurance Company",
+        "weight": 0.06
+      },
+      {
+        "name": "Jupiter Wagons",
+        "weight": 0.06
+      },
+      {
+        "name": "Minda Corporation",
+        "weight": 0.06
+      },
+      {
+        "name": "NTPC Green Energy",
+        "weight": 0.06
+      },
+      {
+        "name": "Vardhman Textiles",
+        "weight": 0.06
+      },
+      {
+        "name": "BASF India",
+        "weight": 0.06
+      },
+      {
+        "name": "Jammu & Kashmir Bank",
+        "weight": 0.06
+      },
+      {
+        "name": "Concord Biotech",
+        "weight": 0.06
+      },
+      {
+        "name": "Signatureglobal (India)",
+        "weight": 0.05
+      },
+      {
+        "name": "IRB Infrastructure Developers",
+        "weight": 0.05
+      },
+      {
+        "name": "Graphite India",
+        "weight": 0.05
+      },
+      {
+        "name": "NLC India",
+        "weight": 0.05
+      },
+      {
+        "name": "Elecon Engineering Company",
+        "weight": 0.05
+      },
+      {
+        "name": "Schneider Electric Infrastructure",
+        "weight": 0.05
+      },
+      {
+        "name": "Akzo Nobel India",
+        "weight": 0.05
+      },
+      {
+        "name": "Aditya Birla Fashion & Retail",
+        "weight": 0.05
+      },
+      {
+        "name": "Clean Science and Technology",
+        "weight": 0.05
+      },
+      {
+        "name": "Welspun Living",
+        "weight": 0.05
+      },
+      {
+        "name": "SBFC Finance",
+        "weight": 0.05
+      },
+      {
+        "name": "Kirloskar Brothers",
+        "weight": 0.05
+      },
+      {
+        "name": "Emcure Pharmaceuticals",
+        "weight": 0.05
+      },
+      {
+        "name": "Chennai Petroleum Corporation",
+        "weight": 0.05
+      },
+      {
+        "name": "Praj Industries",
+        "weight": 0.05
+      },
+      {
+        "name": "KSB",
+        "weight": 0.05
+      },
+      {
+        "name": "Honasa Consumer",
+        "weight": 0.05
+      },
+      {
+        "name": "Shipping Corporation of India",
+        "weight": 0.05
+      },
+      {
+        "name": "Dr. Agarwal's Health Care",
+        "weight": 0.05
+      },
+      {
+        "name": "Jindal SAW",
+        "weight": 0.05
+      },
+      {
+        "name": "BLS International Services",
+        "weight": 0.05
+      },
+      {
+        "name": "Action Construction Equipment",
+        "weight": 0.05
+      },
+      {
+        "name": "Jyothy Labs",
+        "weight": 0.05
+      },
+      {
+        "name": "Happiest Minds Technologies",
+        "weight": 0.05
+      },
+      {
+        "name": "Caplin Point Laboratories",
+        "weight": 0.05
+      },
+      {
+        "name": "Gujarat Gas",
+        "weight": 0.05
+      },
+      {
+        "name": "Tejas Networks",
+        "weight": 0.05
+      },
+      {
+        "name": "Central Bank of India",
+        "weight": 0.05
+      },
+      {
+        "name": "Nuvoco Vistas Corporation",
+        "weight": 0.04
+      },
+      {
+        "name": "Manyavar- Vedant Fashions Ltd.",
+        "weight": 0.04
+      },
+      {
+        "name": "IFCI",
+        "weight": 0.04
+      },
+      {
+        "name": "Leela Palaces Hotels & Resorts",
+        "weight": 0.04
+      },
+      {
+        "name": "Aegis Vopak Terminals",
+        "weight": 0.04
+      },
+      {
+        "name": "Honeywell Automation India",
+        "weight": 0.04
+      },
+      {
+        "name": "International Gemmological Institute (India)",
+        "weight": 0.04
+      },
+      {
+        "name": "Trident",
+        "weight": 0.04
+      },
+      {
+        "name": "Triveni Engineering & Industries",
+        "weight": 0.04
+      },
+      {
+        "name": "Latent View Analytics",
+        "weight": 0.04
+      },
+      {
+        "name": "Bombay Burmah Trading Corporation",
+        "weight": 0.04
+      },
+      {
+        "name": "RITES",
+        "weight": 0.04
+      },
+      {
+        "name": "Railtel Corporation of India",
+        "weight": 0.04
+      },
+      {
+        "name": "Blue Dart Express",
+        "weight": 0.04
+      },
+      {
+        "name": "Transformers & Rectifiers (India)",
+        "weight": 0.04
+      },
+      {
+        "name": "IDBI Bank",
+        "weight": 0.04
+      },
+      {
+        "name": "Cera Sanitaryware",
+        "weight": 0.04
+      },
+      {
+        "name": "CE Info Systems",
+        "weight": 0.04
+      },
+      {
+        "name": "ITI",
+        "weight": 0.04
+      },
+      {
+        "name": "Fertilisers & Chemicals Travancore",
+        "weight": 0.04
+      },
+      {
+        "name": "India Cements",
+        "weight": 0.04
+      },
+      {
+        "name": "Valor Estate",
+        "weight": 0.04
+      },
+      {
+        "name": "SJVN",
+        "weight": 0.03
+      },
+      {
+        "name": "RHI Magnesita India Ltd.",
+        "weight": 0.03
+      },
+      {
+        "name": "Indian Overseas Bank",
+        "weight": 0.03
+      },
+      {
+        "name": "Godrej Agrovet",
+        "weight": 0.03
+      },
+      {
+        "name": "Mangalore Refinery And Petrochemicals",
+        "weight": 0.03
+      },
+      {
+        "name": "Saregama India",
+        "weight": 0.03
+      },
+      {
+        "name": "Inox India",
+        "weight": 0.03
+      },
+      {
+        "name": "JBM Auto",
+        "weight": 0.03
+      },
+      {
+        "name": "JSW Cement",
+        "weight": 0.03
+      },
+      {
+        "name": "Bajaj Housing Finance",
+        "weight": 0.03
+      },
+      {
+        "name": "Tata Teleservices (Maharashtra)",
+        "weight": 0.03
+      },
+      {
+        "name": "Acme Solar Holdings",
+        "weight": 0.03
+      },
+      {
+        "name": "Maharashtra Seamless",
+        "weight": 0.03
+      },
+      {
+        "name": "Godrej Industries",
+        "weight": 0.03
+      },
+      {
+        "name": "Campus Activewear",
+        "weight": 0.03
+      },
+      {
+        "name": "Alkyl Amines Chemicals",
+        "weight": 0.03
+      },
+      {
+        "name": "Rashtriya Chemicals & Fertilizers",
+        "weight": 0.03
+      },
+      {
+        "name": "Alok Industries",
+        "weight": 0.02
+      },
+      {
+        "name": "Ventive Hospitality",
+        "weight": 0.02
+      },
+      {
+        "name": "New India Assurance Company",
+        "weight": 0.02
+      },
+      {
+        "name": "Blue Jet Healthcare",
+        "weight": 0.02
+      },
+      {
+        "name": "UCO Bank",
+        "weight": 0.02
+      },
+      {
+        "name": "Akums Drugs & Pharmaceuticals",
+        "weight": 0.02
+      },
+      {
+        "name": "MMTC",
+        "weight": 0.01
+      }
+    ]
   },
   "ETF - Nifty 500 Multicap Momentum Quality 50": {
     "etfs": [
@@ -12563,7 +16051,208 @@
         "name": "EMULTIMQ"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "Nestle India",
+        "weight": 5.09
+      },
+      {
+        "name": "Bharat Electronics",
+        "weight": 5.04
+      },
+      {
+        "name": "Hero MotoCorp",
+        "weight": 5.03
+      },
+      {
+        "name": "Eicher Motors",
+        "weight": 5.02
+      },
+      {
+        "name": "BSE",
+        "weight": 5.0
+      },
+      {
+        "name": "Bajaj Finance",
+        "weight": 4.95
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 4.91
+      },
+      {
+        "name": "INE745G01035",
+        "weight": 4.67
+      },
+      {
+        "name": "Asian Paints",
+        "weight": 4.6
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 4.32
+      },
+      {
+        "name": "Cummins India",
+        "weight": 4.14
+      },
+      {
+        "name": "Muthoot Finance",
+        "weight": 3.91
+      },
+      {
+        "name": "Canara Bank",
+        "weight": 3.59
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 3.29
+      },
+      {
+        "name": "Persistent Systems",
+        "weight": 3.09
+      },
+      {
+        "name": "LTIMindtree",
+        "weight": 2.62
+      },
+      {
+        "name": "GE Vernova T&D India",
+        "weight": 2.43
+      },
+      {
+        "name": "Dixon Technologies (India)",
+        "weight": 2.42
+      },
+      {
+        "name": "Marico",
+        "weight": 2.02
+      },
+      {
+        "name": "National Aluminium Co",
+        "weight": 1.63
+      },
+      {
+        "name": "Central Depository Services (India)",
+        "weight": 1.48
+      },
+      {
+        "name": "Anand Rathi Wealth Ltd.",
+        "weight": 1.45
+      },
+      {
+        "name": "360 One Wam",
+        "weight": 1.33
+      },
+      {
+        "name": "Manappuram Finance",
+        "weight": 1.26
+      },
+      {
+        "name": "Coromandel International",
+        "weight": 1.19
+      },
+      {
+        "name": "Solar Industries India",
+        "weight": 1.12
+      },
+      {
+        "name": "Computer Age Management Services",
+        "weight": 1.11
+      },
+      {
+        "name": "Hindustan Copper",
+        "weight": 0.98
+      },
+      {
+        "name": "Force Motors",
+        "weight": 0.96
+      },
+      {
+        "name": "Nippon Life India Asset Management",
+        "weight": 0.9
+      },
+      {
+        "name": "Motherson Sumi Wiring India",
+        "weight": 0.82
+      },
+      {
+        "name": "Narayana Hrudayalaya",
+        "weight": 0.8
+      },
+      {
+        "name": "HBL Engineering",
+        "weight": 0.72
+      },
+      {
+        "name": "Angel One",
+        "weight": 0.7
+      },
+      {
+        "name": "eClerx Services",
+        "weight": 0.68
+      },
+      {
+        "name": "Dr Lal PathLabs",
+        "weight": 0.63
+      },
+      {
+        "name": "Motilal Oswal Financial Services",
+        "weight": 0.61
+      },
+      {
+        "name": "Usha Martin",
+        "weight": 0.51
+      },
+      {
+        "name": "Castrol India",
+        "weight": 0.51
+      },
+      {
+        "name": "Godfrey Phillips India",
+        "weight": 0.51
+      },
+      {
+        "name": "Affle 3i",
+        "weight": 0.49
+      },
+      {
+        "name": "Garden Reach Shipbuilders & Engineers",
+        "weight": 0.44
+      },
+      {
+        "name": "Intellect Design Arena",
+        "weight": 0.43
+      },
+      {
+        "name": "Can Fin Homes",
+        "weight": 0.41
+      },
+      {
+        "name": "Astrazeneca Pharma India",
+        "weight": 0.39
+      },
+      {
+        "name": "Godawari Power and Ispat",
+        "weight": 0.38
+      },
+      {
+        "name": "Gillette India",
+        "weight": 0.36
+      },
+      {
+        "name": "Indiamart Intermesh",
+        "weight": 0.35
+      },
+      {
+        "name": "Gujarat Mineral Development Corporation",
+        "weight": 0.35
+      },
+      {
+        "name": "Mahanagar Gas",
+        "weight": 0.28
+      }
+    ]
   },
   "ETF - Nifty 500 Value 50": {
     "etfs": [
@@ -16210,7 +19899,128 @@
         "name": "ALPL30IETF"
       }
     ],
-    "stocks": []
+    "stocks": [
+      {
+        "name": "HDFC Bank",
+        "weight": 4.72
+      },
+      {
+        "name": "Maruti Suzuki India",
+        "weight": 4.3
+      },
+      {
+        "name": "ICICI Bank",
+        "weight": 4.26
+      },
+      {
+        "name": "SBI Life Insurance Company",
+        "weight": 4.26
+      },
+      {
+        "name": "State Bank of India",
+        "weight": 4.08
+      },
+      {
+        "name": "Britannia Industries",
+        "weight": 3.82
+      },
+      {
+        "name": "Eicher Motors",
+        "weight": 3.77
+      },
+      {
+        "name": "Reliance Industries",
+        "weight": 3.72
+      },
+      {
+        "name": "Bharti Airtel",
+        "weight": 3.69
+      },
+      {
+        "name": "Nestle India",
+        "weight": 3.6
+      },
+      {
+        "name": "Asian Paints",
+        "weight": 3.6
+      },
+      {
+        "name": "Titan Company",
+        "weight": 3.48
+      },
+      {
+        "name": "Bajaj Finance",
+        "weight": 3.43
+      },
+      {
+        "name": "Tata Consumer Products",
+        "weight": 3.33
+      },
+      {
+        "name": "HDFC Life Insurance Company",
+        "weight": 3.32
+      },
+      {
+        "name": "TVS Motor Company",
+        "weight": 3.25
+      },
+      {
+        "name": "Pidilite Industries",
+        "weight": 3.18
+      },
+      {
+        "name": "Federal Bank",
+        "weight": 3.09
+      },
+      {
+        "name": "INE237A01028",
+        "weight": 3.04
+      },
+      {
+        "name": "Max Financial Services",
+        "weight": 3.04
+      },
+      {
+        "name": "Bajaj Finserv",
+        "weight": 3.04
+      },
+      {
+        "name": "Sun Pharmaceutical Industries",
+        "weight": 3.01
+      },
+      {
+        "name": "Apollo Hospitals Enterprise",
+        "weight": 2.96
+      },
+      {
+        "name": "Dr Reddy's Laboratories",
+        "weight": 2.79
+      },
+      {
+        "name": "Torrent Pharmaceuticals",
+        "weight": 2.78
+      },
+      {
+        "name": "UltraTech Cement",
+        "weight": 2.77
+      },
+      {
+        "name": "Marico",
+        "weight": 2.74
+      },
+      {
+        "name": "Grasim Industries",
+        "weight": 2.63
+      },
+      {
+        "name": "Shree Cement",
+        "weight": 2.45
+      },
+      {
+        "name": "SBI Cards And Payment Services",
+        "weight": 1.78
+      }
+    ]
   },
   "ETF - Nifty Bank": {
     "etfs": [
@@ -18158,604 +21968,204 @@
     ],
     "stocks": [
       {
-        "name": "BSE",
-        "weight": 2.79
-      },
-      {
         "name": "Hero MotoCorp",
-        "weight": 1.94
+        "weight": 5.06
       },
       {
-        "name": "Persistent Systems",
-        "weight": 1.77
-      },
-      {
-        "name": "Federal Bank",
-        "weight": 1.71
-      },
-      {
-        "name": "Suzlon Energy",
-        "weight": 1.66
-      },
-      {
-        "name": "PolicyBazaar - PB Fintech Ltd.",
-        "weight": 1.62
-      },
-      {
-        "name": "Cummins India",
-        "weight": 1.56
-      },
-      {
-        "name": "IndusInd Bank",
-        "weight": 1.48
-      },
-      {
-        "name": "IDFC First Bank",
-        "weight": 1.47
-      },
-      {
-        "name": "AU Small Finance Bank",
-        "weight": 1.46
-      },
-      {
-        "name": "Coforge",
-        "weight": 1.45
-      },
-      {
-        "name": "HDFC Asset Management Company",
-        "weight": 1.41
-      },
-      {
-        "name": "Indus Towers",
-        "weight": 1.41
-      },
-      {
-        "name": "Paytm - One97 Communications Ltd",
-        "weight": 1.37
-      },
-      {
-        "name": "Swiggy",
-        "weight": 1.34
-      },
-      {
-        "name": "Ashok Leyland",
-        "weight": 1.33
-      },
-      {
-        "name": "Lupin",
-        "weight": 1.33
-      },
-      {
-        "name": "Dixon Technologies (India)",
-        "weight": 1.29
-      },
-      {
-        "name": "Hindustan Petroleum Corporation",
-        "weight": 1.24
-      },
-      {
-        "name": "Fortis Healthcare",
-        "weight": 1.2
-      },
-      {
-        "name": "SRF",
-        "weight": 1.16
-      },
-      {
-        "name": "UPL",
-        "weight": 1.16
-      },
-      {
-        "name": "Max Financial Services",
-        "weight": 1.14
+        "name": "BSE",
+        "weight": 4.91
       },
       {
         "name": "Muthoot Finance",
-        "weight": 1.06
+        "weight": 4.8
       },
       {
-        "name": "Polycab India",
-        "weight": 1.04
+        "name": "AU Small Finance Bank",
+        "weight": 4.52
       },
       {
-        "name": "Marico",
-        "weight": 1.03
+        "name": "Federal Bank",
+        "weight": 4.15
       },
       {
-        "name": "Bharat Forge",
-        "weight": 1.02
-      },
-      {
-        "name": "GE Vernova T&D India",
-        "weight": 1.01
-      },
-      {
-        "name": "Yes Bank",
-        "weight": 0.98
-      },
-      {
-        "name": "GMR Airports",
-        "weight": 0.97
-      },
-      {
-        "name": "Bharat Heavy Electricals",
-        "weight": 0.96
-      },
-      {
-        "name": "Sundaram Finance",
-        "weight": 0.94
-      },
-      {
-        "name": "Nykaa - FSN E-Commerce Ventures Ltd.",
-        "weight": 0.94
-      },
-      {
-        "name": "APL Apollo Tubes",
-        "weight": 0.9
-      },
-      {
-        "name": "Phoenix Mills",
-        "weight": 0.9
-      },
-      {
-        "name": "Aurobindo Pharma",
-        "weight": 0.86
-      },
-      {
-        "name": "Alkem Laboratories",
-        "weight": 0.84
-      },
-      {
-        "name": "Mphasis",
-        "weight": 0.83
-      },
-      {
-        "name": "Voltas",
-        "weight": 0.8
-      },
-      {
-        "name": "MRF",
-        "weight": 0.8
-      },
-      {
-        "name": "Glenmark Pharmaceuticals",
-        "weight": 0.8
-      },
-      {
-        "name": "360 One Wam",
-        "weight": 0.79
-      },
-      {
-        "name": "Godrej Properties",
-        "weight": 0.78
-      },
-      {
-        "name": "Union Bank of India",
-        "weight": 0.77
-      },
-      {
-        "name": "Vodafone Idea",
-        "weight": 0.77
-      },
-      {
-        "name": "Dabur India",
-        "weight": 0.77
-      },
-      {
-        "name": "Indian Bank",
-        "weight": 0.77
-      },
-      {
-        "name": "Vishal Mega Mart",
-        "weight": 0.75
-      },
-      {
-        "name": "NMDC",
-        "weight": 0.75
-      },
-      {
-        "name": "Waaree Energies",
-        "weight": 0.74
-      },
-      {
-        "name": "National Aluminium Co",
-        "weight": 0.73
-      },
-      {
-        "name": "Tube Investments of India",
-        "weight": 0.72
-      },
-      {
-        "name": "KEI Industries",
-        "weight": 0.71
-      },
-      {
-        "name": "Aditya Birla Capital",
-        "weight": 0.71
-      },
-      {
-        "name": "Colgate-Palmolive (India)",
-        "weight": 0.71
-      },
-      {
-        "name": "Prestige Estates Projects",
-        "weight": 0.7
-      },
-      {
-        "name": "Jindal Stainless",
-        "weight": 0.7
-      },
-      {
-        "name": "Coromandel International",
-        "weight": 0.7
-      },
-      {
-        "name": "Mahindra & Mahindra Financial Services",
-        "weight": 0.69
-      },
-      {
-        "name": "ICICI Prudential Life Insurance Company",
-        "weight": 0.68
-      },
-      {
-        "name": "PI Industries",
-        "weight": 0.68
+        "name": "Cummins India",
+        "weight": 3.99
       },
       {
         "name": "L&T Finance",
-        "weight": 0.67
+        "weight": 3.65
       },
       {
-        "name": "SBI Cards And Payment Services",
-        "weight": 0.67
+        "name": "Paytm - One97 Communications Ltd",
+        "weight": 3.56
       },
       {
-        "name": "NHPC",
-        "weight": 0.65
+        "name": "Ashok Leyland",
+        "weight": 3.34
       },
       {
-        "name": "Torrent Power",
-        "weight": 0.65
+        "name": "Max Financial Services",
+        "weight": 2.96
       },
       {
-        "name": "Mankind Pharma",
-        "weight": 0.64
+        "name": "Fortis Healthcare",
+        "weight": 2.89
       },
       {
-        "name": "Biocon",
-        "weight": 0.61
+        "name": "Aditya Birla Capital",
+        "weight": 2.89
       },
       {
-        "name": "UNO Minda",
-        "weight": 0.61
+        "name": "Nykaa - FSN E-Commerce Ventures Ltd.",
+        "weight": 2.79
+      },
+      {
+        "name": "UPL",
+        "weight": 2.75
+      },
+      {
+        "name": "IDFC First Bank",
+        "weight": 2.75
+      },
+      {
+        "name": "HDFC Asset Management Company",
+        "weight": 2.52
+      },
+      {
+        "name": "GMR Airports",
+        "weight": 2.43
+      },
+      {
+        "name": "Indian Bank",
+        "weight": 2.42
+      },
+      {
+        "name": "GE Vernova T&D India",
+        "weight": 2.37
+      },
+      {
+        "name": "Persistent Systems",
+        "weight": 2.21
+      },
+      {
+        "name": "Mahindra & Mahindra Financial Services",
+        "weight": 2.01
+      },
+      {
+        "name": "Hindustan Petroleum Corporation",
+        "weight": 1.88
+      },
+      {
+        "name": "Glenmark Pharmaceuticals",
+        "weight": 1.82
+      },
+      {
+        "name": "Coforge",
+        "weight": 1.8
+      },
+      {
+        "name": "SRF",
+        "weight": 1.75
+      },
+      {
+        "name": "Indus Towers",
+        "weight": 1.73
+      },
+      {
+        "name": "Polycab India",
+        "weight": 1.51
+      },
+      {
+        "name": "National Aluminium Co",
+        "weight": 1.42
+      },
+      {
+        "name": "MRF",
+        "weight": 1.4
+      },
+      {
+        "name": "Lupin",
+        "weight": 1.39
+      },
+      {
+        "name": "Vodafone Idea",
+        "weight": 1.35
       },
       {
         "name": "Hitachi Energy India",
-        "weight": 0.6
+        "weight": 1.24
       },
       {
-        "name": "Oil India",
-        "weight": 0.6
+        "name": "UNO Minda",
+        "weight": 1.19
+      },
+      {
+        "name": "Marico",
+        "weight": 1.19
+      },
+      {
+        "name": "Jindal Stainless",
+        "weight": 1.07
+      },
+      {
+        "name": "Coromandel International",
+        "weight": 1.04
       },
       {
         "name": "JK Cement",
-        "weight": 0.6
-      },
-      {
-        "name": "Page Industries",
-        "weight": 0.59
-      },
-      {
-        "name": "Blue Star",
-        "weight": 0.58
-      },
-      {
-        "name": "Jubilant FoodWorks",
-        "weight": 0.57
-      },
-      {
-        "name": "Supreme Industries",
-        "weight": 0.56
-      },
-      {
-        "name": "Sona BLW Precision Forgings",
-        "weight": 0.56
-      },
-      {
-        "name": "Tata Communications",
-        "weight": 0.56
-      },
-      {
-        "name": "Petronet LNG",
-        "weight": 0.55
-      },
-      {
-        "name": "Steel Authority of India",
-        "weight": 0.55
-      },
-      {
-        "name": "Indian Railway Catering & Tourism Corporation",
-        "weight": 0.54
-      },
-      {
-        "name": "Rail Vikas Nigam",
-        "weight": 0.53
-      },
-      {
-        "name": "Ipca Laboratories",
-        "weight": 0.51
-      },
-      {
-        "name": "Oberoi Realty",
-        "weight": 0.51
-      },
-      {
-        "name": "KPIT Technologies",
-        "weight": 0.5
-      },
-      {
-        "name": "Kalyan Jewellers India",
-        "weight": 0.49
-      },
-      {
-        "name": "Balkrishna Industries",
-        "weight": 0.48
-      },
-      {
-        "name": "Patanjali Foods",
-        "weight": 0.48
-      },
-      {
-        "name": "ITC Hotels",
-        "weight": 0.48
-      },
-      {
-        "name": "Oracle Financial Services Software",
-        "weight": 0.47
-      },
-      {
-        "name": "Container Corporation of India",
-        "weight": 0.47
-      },
-      {
-        "name": "Tata Elxsi",
-        "weight": 0.47
+        "weight": 1.02
       },
       {
         "name": "Bank Of India",
-        "weight": 0.45
+        "weight": 0.93
       },
       {
-        "name": "Lloyds Metals & Energy",
-        "weight": 0.44
+        "name": "Biocon",
+        "weight": 0.91
       },
       {
-        "name": "Astral",
-        "weight": 0.44
+        "name": "Sundaram Finance",
+        "weight": 0.89
       },
       {
-        "name": "Dalmia Bharat",
-        "weight": 0.44
+        "name": "APL Apollo Tubes",
+        "weight": 0.85
       },
       {
-        "name": "Exide Industries",
-        "weight": 0.43
-      },
-      {
-        "name": "LIC Housing Finance",
-        "weight": 0.42
-      },
-      {
-        "name": "Apollo Tyres",
-        "weight": 0.42
-      },
-      {
-        "name": "Adani Total Gas",
-        "weight": 0.41
+        "name": "SBI Cards And Payment Services",
+        "weight": 0.84
       },
       {
         "name": "Nippon Life India Asset Management",
-        "weight": 0.41
-      },
-      {
-        "name": "Schaeffler India",
-        "weight": 0.41
+        "weight": 0.67
       },
       {
         "name": "AIA Engineering",
-        "weight": 0.4
+        "weight": 0.6
       },
       {
-        "name": "Gujarat Fluorochemicals",
-        "weight": 0.4
+        "name": "Dalmia Bharat",
+        "weight": 0.47
       },
       {
         "name": "Berger Paints India",
+        "weight": 0.45
+      },
+      {
+        "name": "Bharti Hexacom",
+        "weight": 0.43
+      },
+      {
+        "name": "3M India",
+        "weight": 0.41
+      },
+      {
+        "name": "Indraprastha Gas",
         "weight": 0.4
       },
       {
         "name": "Abbott India",
-        "weight": 0.39
-      },
-      {
-        "name": "Apar Industries",
-        "weight": 0.37
-      },
-      {
-        "name": "Cochin Shipyard",
-        "weight": 0.36
-      },
-      {
-        "name": "Bharti Hexacom",
-        "weight": 0.36
-      },
-      {
-        "name": "Indraprastha Gas",
-        "weight": 0.35
-      },
-      {
-        "name": "Bharat Dynamics",
-        "weight": 0.35
-      },
-      {
-        "name": "Motilal Oswal Financial Services",
-        "weight": 0.34
-      },
-      {
-        "name": "Bank of Maharashtra",
-        "weight": 0.33
-      },
-      {
-        "name": "Linde India",
-        "weight": 0.33
-      },
-      {
-        "name": "Escorts",
-        "weight": 0.32
-      },
-      {
-        "name": "Syngene International",
-        "weight": 0.32
-      },
-      {
-        "name": "L&T Technology Services",
-        "weight": 0.32
-      },
-      {
-        "name": "Procter & Gamble Hygiene & Health Care",
-        "weight": 0.32
-      },
-      {
-        "name": "Deepak Nitrite",
-        "weight": 0.31
-      },
-      {
-        "name": "General Insurance Corporation of India",
-        "weight": 0.31
-      },
-      {
-        "name": "United Breweries",
-        "weight": 0.3
-      },
-      {
-        "name": "Thermax",
-        "weight": 0.3
-      },
-      {
-        "name": "Ajanta Pharma",
-        "weight": 0.3
-      },
-      {
-        "name": "Housing & Urban Development Corporation",
-        "weight": 0.3
-      },
-      {
-        "name": "Godfrey Phillips India",
-        "weight": 0.29
-      },
-      {
-        "name": "Hexaware Technologies Limited",
-        "weight": 0.29
-      },
-      {
-        "name": "Indian Renewable Energy Development Agency",
-        "weight": 0.29
-      },
-      {
-        "name": "AWL Agri Business",
-        "weight": 0.29
-      },
-      {
-        "name": "Tata Technologies",
-        "weight": 0.29
-      },
-      {
-        "name": "K.P.R. Mill",
-        "weight": 0.28
-      },
-      {
-        "name": "ACC",
-        "weight": 0.28
-      },
-      {
-        "name": "CRISIL",
-        "weight": 0.27
-      },
-      {
-        "name": "GlaxoSmithKline Pharmaceuticals",
-        "weight": 0.27
-      },
-      {
-        "name": "Global Health",
-        "weight": 0.26
-      },
-      {
-        "name": "3M India",
-        "weight": 0.26
-      },
-      {
-        "name": "Premier Energies",
-        "weight": 0.25
-      },
-      {
-        "name": "JSW Infrastructure",
-        "weight": 0.24
-      },
-      {
-        "name": "Endurance Technologies",
-        "weight": 0.24
-      },
-      {
-        "name": "Tata Investment Corporation",
-        "weight": 0.24
-      },
-      {
-        "name": "NTPC Green Energy",
-        "weight": 0.23
-      },
-      {
-        "name": "IRB Infrastructure Developers",
-        "weight": 0.22
-      },
-      {
-        "name": "NLC India",
-        "weight": 0.21
-      },
-      {
-        "name": "Honeywell Automation India",
-        "weight": 0.19
-      },
-      {
-        "name": "Gujarat Gas",
-        "weight": 0.18
-      },
-      {
-        "name": "IDBI Bank",
-        "weight": 0.15
-      },
-      {
-        "name": "Fertilisers & Chemicals Travancore",
-        "weight": 0.15
-      },
-      {
-        "name": "SJVN",
-        "weight": 0.14
-      },
-      {
-        "name": "Indian Overseas Bank",
-        "weight": 0.14
-      },
-      {
-        "name": "Godrej Industries",
-        "weight": 0.11
-      },
-      {
-        "name": "New India Assurance Company",
-        "weight": 0.1
-      },
-      {
-        "name": "UCO Bank",
-        "weight": 0.09
+        "weight": 0.38
       }
     ]
   },
@@ -19658,1004 +23068,404 @@
     ],
     "stocks": [
       {
-        "name": "Multi Commodity Exchange of India",
-        "weight": 2.83
-      },
-      {
-        "name": "Laurus Labs",
-        "weight": 2.14
-      },
-      {
-        "name": "Radico Khaitan",
-        "weight": 1.29
-      },
-      {
-        "name": "Central Depository Services (India)",
-        "weight": 1.28
-      },
-      {
-        "name": "Karur Vysya Bank",
-        "weight": 1.24
-      },
-      {
-        "name": "Delhivery",
-        "weight": 1.09
+        "name": "Anand Rathi Wealth Ltd.",
+        "weight": 3.05
       },
       {
         "name": "Navin Fluorine International",
-        "weight": 1.08
+        "weight": 3.05
+      },
+      {
+        "name": "Laurus Labs",
+        "weight": 3.04
+      },
+      {
+        "name": "INE745G01035",
+        "weight": 3.0
+      },
+      {
+        "name": "Radico Khaitan",
+        "weight": 2.97
       },
       {
         "name": "City Union Bank",
-        "weight": 1.04
+        "weight": 2.96
       },
       {
-        "name": "RBL Bank",
-        "weight": 0.95
-      },
-      {
-        "name": "PNB Housing Finance",
-        "weight": 0.89
-      },
-      {
-        "name": "Cholamandalam Financial Holdings",
-        "weight": 0.89
-      },
-      {
-        "name": "Computer Age Management Services",
-        "weight": 0.89
-      },
-      {
-        "name": "Hindustan Copper",
-        "weight": 0.85
+        "name": "Central Depository Services (India)",
+        "weight": 2.9
       },
       {
         "name": "Manappuram Finance",
-        "weight": 0.84
+        "weight": 2.8
       },
       {
-        "name": "Authum Investment & Infrastructure",
-        "weight": 0.83
+        "name": "Computer Age Management Services",
+        "weight": 2.45
       },
       {
-        "name": "Redington",
-        "weight": 0.81
-      },
-      {
-        "name": "Crompton Greaves Consumer Electricals",
-        "weight": 0.81
-      },
-      {
-        "name": "Angel One",
-        "weight": 0.75
-      },
-      {
-        "name": "Krishna Institute of Medical Sciences",
-        "weight": 0.75
-      },
-      {
-        "name": "JB Chemicals & Pharmaceuticals",
-        "weight": 0.74
-      },
-      {
-        "name": "KFin Technologies",
-        "weight": 0.72
-      },
-      {
-        "name": "IIFL Finance",
-        "weight": 0.71
-      },
-      {
-        "name": "Aster DM Healthcare",
-        "weight": 0.71
-      },
-      {
-        "name": "Poonawalla Fincorp Limited",
-        "weight": 0.69
-      },
-      {
-        "name": "Amber Enterprises India",
-        "weight": 0.69
-      },
-      {
-        "name": "Gland Pharma",
-        "weight": 0.68
-      },
-      {
-        "name": "Kalpataru Projects International",
-        "weight": 0.68
-      },
-      {
-        "name": "Anand Rathi Wealth Ltd.",
-        "weight": 0.66
-      },
-      {
-        "name": "Ramco Cements Limited",
-        "weight": 0.66
-      },
-      {
-        "name": "Neuland Laboratories",
-        "weight": 0.65
-      },
-      {
-        "name": "Narayana Hrudayalaya",
-        "weight": 0.64
-      },
-      {
-        "name": "Bandhan Bank",
-        "weight": 0.64
-      },
-      {
-        "name": "NBCC (India)",
-        "weight": 0.63
-      },
-      {
-        "name": "Kaynes Technology India",
-        "weight": 0.62
-      },
-      {
-        "name": "Sai Life Sciences",
-        "weight": 0.62
-      },
-      {
-        "name": "Brigade Enterprises",
-        "weight": 0.61
-      },
-      {
-        "name": "Motherson Sumi Wiring India",
-        "weight": 0.61
-      },
-      {
-        "name": "Asahi India Glass",
-        "weight": 0.61
-      },
-      {
-        "name": "Tata Chemicals",
-        "weight": 0.6
-      },
-      {
-        "name": "INOX Wind",
-        "weight": 0.59
-      },
-      {
-        "name": "Wockhardt",
-        "weight": 0.59
-      },
-      {
-        "name": "Affle 3i",
-        "weight": 0.57
-      },
-      {
-        "name": "Dr Lal PathLabs",
-        "weight": 0.57
-      },
-      {
-        "name": "Himadri Speciality Chemical",
-        "weight": 0.57
-      },
-      {
-        "name": "PTC Industries",
-        "weight": 0.56
-      },
-      {
-        "name": "ZF Commercial Vehicle Control Systems India",
-        "weight": 0.56
-      },
-      {
-        "name": "Nuvama Wealth Management",
-        "weight": 0.56
-      },
-      {
-        "name": "The Great Eastern Shipping Company",
-        "weight": 0.56
-      },
-      {
-        "name": "Sammaan Capital",
-        "weight": 0.56
-      },
-      {
-        "name": "Amara Raja Energy & Mobility",
-        "weight": 0.55
-      },
-      {
-        "name": "Timken India",
-        "weight": 0.54
-      },
-      {
-        "name": "Star Health and Allied Insurance Company",
-        "weight": 0.53
-      },
-      {
-        "name": "CESC",
-        "weight": 0.53
-      },
-      {
-        "name": "Ather Energy",
-        "weight": 0.53
-      },
-      {
-        "name": "Firstsource Solutions",
-        "weight": 0.53
-      },
-      {
-        "name": "Piramal Pharma",
-        "weight": 0.53
-      },
-      {
-        "name": "Indian Energy Exchange",
-        "weight": 0.53
-      },
-      {
-        "name": "EID-Parry (India)",
-        "weight": 0.53
-      },
-      {
-        "name": "Welspun Corp",
-        "weight": 0.53
-      },
-      {
-        "name": "Five-Star Business Finance",
-        "weight": 0.52
-      },
-      {
-        "name": "Emami",
-        "weight": 0.52
-      },
-      {
-        "name": "HBL Engineering",
-        "weight": 0.52
-      },
-      {
-        "name": "Sundram Fasteners",
-        "weight": 0.51
-      },
-      {
-        "name": "Elgi Equipments",
-        "weight": 0.51
-      },
-      {
-        "name": "Reliance Power",
-        "weight": 0.5
-      },
-      {
-        "name": "Kirloskar Oil Engines",
-        "weight": 0.5
-      },
-      {
-        "name": "Onesource Specialty Pharma",
-        "weight": 0.5
-      },
-      {
-        "name": "eClerx Services",
-        "weight": 0.5
-      },
-      {
-        "name": "Atul",
-        "weight": 0.49
-      },
-      {
-        "name": "Aptus Value Housing Finance India",
-        "weight": 0.49
-      },
-      {
-        "name": "Carborundum Universal",
-        "weight": 0.49
-      },
-      {
-        "name": "Home First Finance Company India",
-        "weight": 0.49
+        "name": "Hindustan Copper",
+        "weight": 2.34
       },
       {
         "name": "Force Motors",
-        "weight": 0.49
+        "weight": 2.2
       },
       {
-        "name": "KEC International",
-        "weight": 0.48
+        "name": "Motherson Sumi Wiring India",
+        "weight": 1.91
       },
       {
-        "name": "Cyient",
-        "weight": 0.47
+        "name": "Redington",
+        "weight": 1.85
       },
       {
-        "name": "Craftsman Automation",
-        "weight": 0.47
+        "name": "Narayana Hrudayalaya",
+        "weight": 1.79
       },
       {
-        "name": "PG Electroplast",
-        "weight": 0.46
+        "name": "IIFL Finance",
+        "weight": 1.79
       },
       {
-        "name": "Castrol India",
-        "weight": 0.46
+        "name": "Asahi India Glass",
+        "weight": 1.76
       },
       {
-        "name": "Aegis Logistics",
-        "weight": 0.45
+        "name": "Neuland Laboratories",
+        "weight": 1.7
       },
       {
-        "name": "Aditya Birla Real Estate",
-        "weight": 0.44
+        "name": "HBL Engineering",
+        "weight": 1.61
       },
       {
-        "name": "Gujarat State Petronet",
-        "weight": 0.44
+        "name": "Angel One",
+        "weight": 1.56
       },
       {
-        "name": "Intellect Design Arena",
-        "weight": 0.43
+        "name": "eClerx Services",
+        "weight": 1.51
       },
       {
-        "name": "Cohance Lifesciences",
-        "weight": 0.43
+        "name": "Gland Pharma",
+        "weight": 1.45
       },
       {
-        "name": "Jubilant Pharmova",
-        "weight": 0.43
+        "name": "Dr Lal PathLabs",
+        "weight": 1.42
       },
       {
-        "name": "Granules India",
-        "weight": 0.43
+        "name": "Indian Energy Exchange",
+        "weight": 1.27
       },
       {
-        "name": "Deepak Fertilisers And Petrochemicals Corporation",
-        "weight": 0.43
+        "name": "The Great Eastern Shipping Company",
+        "weight": 1.27
       },
       {
-        "name": "Jyoti CNC Automation",
-        "weight": 0.42
-      },
-      {
-        "name": "Jaiprakash Power Ventures",
-        "weight": 0.42
-      },
-      {
-        "name": "Anant Raj",
-        "weight": 0.42
-      },
-      {
-        "name": "Go Digit General Insurance",
-        "weight": 0.41
-      },
-      {
-        "name": "Zee Entertainment Enterprises",
-        "weight": 0.41
-      },
-      {
-        "name": "CEAT",
-        "weight": 0.4
+        "name": "Amber Enterprises India",
+        "weight": 1.25
       },
       {
         "name": "Usha Martin",
-        "weight": 0.4
+        "weight": 1.13
       },
       {
-        "name": "Zensar Technologies",
-        "weight": 0.4
+        "name": "Castrol India",
+        "weight": 1.13
       },
       {
-        "name": "Eris Lifesciences",
-        "weight": 0.4
+        "name": "Crompton Greaves Consumer Electricals",
+        "weight": 1.13
       },
       {
-        "name": "Natco Pharma",
-        "weight": 0.4
+        "name": "Emami",
+        "weight": 1.08
       },
       {
-        "name": "Kajaria Ceramics",
-        "weight": 0.4
+        "name": "Affle 3i",
+        "weight": 1.08
       },
       {
-        "name": "Sagility",
-        "weight": 0.4
-      },
-      {
-        "name": "Inventurus Knowledge Solutions",
-        "weight": 0.4
-      },
-      {
-        "name": "Can Fin Homes",
-        "weight": 0.39
-      },
-      {
-        "name": "Maharashtra Scooters",
-        "weight": 0.39
-      },
-      {
-        "name": "Lemon Tree Hotels",
-        "weight": 0.39
-      },
-      {
-        "name": "Nava",
-        "weight": 0.39
-      },
-      {
-        "name": "Data Patterns (India)",
-        "weight": 0.39
-      },
-      {
-        "name": "Aarti Industries",
-        "weight": 0.38
-      },
-      {
-        "name": "Pfizer",
-        "weight": 0.38
-      },
-      {
-        "name": "Chambal Fertilisers & Chemicals",
-        "weight": 0.36
-      },
-      {
-        "name": "Birlasoft",
-        "weight": 0.36
-      },
-      {
-        "name": "PVR Inox",
-        "weight": 0.36
+        "name": "NBCC (India)",
+        "weight": 1.06
       },
       {
         "name": "Garden Reach Shipbuilders & Engineers",
-        "weight": 0.36
+        "weight": 1.0
       },
       {
-        "name": "EIH",
-        "weight": 0.36
-      },
-      {
-        "name": "Titagarh Rail Systems",
-        "weight": 0.36
-      },
-      {
-        "name": "HFCL",
-        "weight": 0.36
-      },
-      {
-        "name": "Sonata Software",
-        "weight": 0.35
-      },
-      {
-        "name": "BEML",
-        "weight": 0.35
-      },
-      {
-        "name": "Capri Global Capital",
-        "weight": 0.35
-      },
-      {
-        "name": "Poly Medicure",
-        "weight": 0.34
-      },
-      {
-        "name": "CreditAccess Grameen",
-        "weight": 0.34
-      },
-      {
-        "name": "Gillette India",
-        "weight": 0.34
-      },
-      {
-        "name": "Indiamart Intermesh",
-        "weight": 0.34
-      },
-      {
-        "name": "CCL Products India",
-        "weight": 0.33
-      },
-      {
-        "name": "NCC",
-        "weight": 0.33
-      },
-      {
-        "name": "Rainbow Children's Medicare",
-        "weight": 0.33
-      },
-      {
-        "name": "Swan Corp",
-        "weight": 0.33
-      },
-      {
-        "name": "Sobha",
-        "weight": 0.32
-      },
-      {
-        "name": "OLA Electric Mobility",
-        "weight": 0.32
-      },
-      {
-        "name": "Godawari Power and Ispat",
-        "weight": 0.32
-      },
-      {
-        "name": "Mahanagar Gas",
-        "weight": 0.32
-      },
-      {
-        "name": "Brainbees Solutions",
-        "weight": 0.32
-      },
-      {
-        "name": "Aditya Birla Lifestyle Brands",
-        "weight": 0.31
-      },
-      {
-        "name": "V-Guard Industries",
-        "weight": 0.31
-      },
-      {
-        "name": "Chalet Hotels",
-        "weight": 0.31
-      },
-      {
-        "name": "Zen Technologies",
-        "weight": 0.31
-      },
-      {
-        "name": "Triveni Turbine",
-        "weight": 0.31
-      },
-      {
-        "name": "JK Tyre & Industries",
-        "weight": 0.3
-      },
-      {
-        "name": "Sapphire Foods India",
-        "weight": 0.3
-      },
-      {
-        "name": "Devyani International",
-        "weight": 0.3
-      },
-      {
-        "name": "Bata India",
-        "weight": 0.3
+        "name": "Intellect Design Arena",
+        "weight": 0.98
       },
       {
         "name": "Choice International",
-        "weight": 0.3
+        "weight": 0.96
       },
       {
-        "name": "Shyam Metalics and Energy",
-        "weight": 0.3
+        "name": "Himadri Speciality Chemical",
+        "weight": 0.96
       },
       {
-        "name": "Ircon International",
-        "weight": 0.29
+        "name": "Can Fin Homes",
+        "weight": 0.95
       },
       {
-        "name": "JM Financial",
-        "weight": 0.29
+        "name": "Welspun Corp",
+        "weight": 0.92
       },
       {
-        "name": "Aditya Birla Sun Life AMC",
-        "weight": 0.29
-      },
-      {
-        "name": "Sun TV Network",
-        "weight": 0.29
-      },
-      {
-        "name": "Afcons Infrastructure",
-        "weight": 0.29
-      },
-      {
-        "name": "Sumitomo Chemical India",
-        "weight": 0.29
-      },
-      {
-        "name": "Gravita India",
-        "weight": 0.29
-      },
-      {
-        "name": "Jubilant Ingrevia",
-        "weight": 0.29
-      },
-      {
-        "name": "Bayer CropScience",
-        "weight": 0.29
-      },
-      {
-        "name": "Aavas Financiers",
-        "weight": 0.29
-      },
-      {
-        "name": "Whirlpool Of India",
-        "weight": 0.28
-      },
-      {
-        "name": "Finolex Cables",
-        "weight": 0.28
-      },
-      {
-        "name": "TBO Tek",
-        "weight": 0.28
-      },
-      {
-        "name": "Syrma SGS Technology",
-        "weight": 0.28
+        "name": "Data Patterns (India)",
+        "weight": 0.88
       },
       {
         "name": "Astrazeneca Pharma India",
-        "weight": 0.28
+        "weight": 0.87
       },
       {
-        "name": "Engineers India",
-        "weight": 0.27
+        "name": "Godawari Power and Ispat",
+        "weight": 0.86
       },
       {
-        "name": "Ramkrishna Forgings",
-        "weight": 0.27
+        "name": "Home First Finance Company India",
+        "weight": 0.86
       },
       {
-        "name": "Indegene",
-        "weight": 0.27
+        "name": "Amara Raja Energy & Mobility",
+        "weight": 0.83
       },
       {
-        "name": "LT Foods",
-        "weight": 0.27
+        "name": "PNB Housing Finance",
+        "weight": 0.82
       },
       {
-        "name": "Techno Electric & Engineering Company",
-        "weight": 0.27
+        "name": "Gillette India",
+        "weight": 0.82
       },
       {
-        "name": "Newgen Software Technologies",
-        "weight": 0.27
+        "name": "Indiamart Intermesh",
+        "weight": 0.79
       },
       {
-        "name": "HEG",
-        "weight": 0.26
-      },
-      {
-        "name": "Vijaya Diagnostic Centre",
-        "weight": 0.26
-      },
-      {
-        "name": "PCBL Chemical",
-        "weight": 0.26
-      },
-      {
-        "name": "Netweb Technologies India",
-        "weight": 0.26
-      },
-      {
-        "name": "Aadhar Housing Finance",
-        "weight": 0.26
-      },
-      {
-        "name": "Balrampur Chini Mills",
-        "weight": 0.25
-      },
-      {
-        "name": "Century Plyboards (India)",
-        "weight": 0.25
-      },
-      {
-        "name": "NMDC Steel Ltd.",
-        "weight": 0.25
-      },
-      {
-        "name": "Metropolis Healthcare",
-        "weight": 0.25
-      },
-      {
-        "name": "DCM Shriram",
-        "weight": 0.25
+        "name": "Nava",
+        "weight": 0.78
       },
       {
         "name": "Gujarat Mineral Development Corporation",
-        "weight": 0.25
+        "weight": 0.77
       },
       {
-        "name": "Olectra Greentech",
-        "weight": 0.24
+        "name": "CreditAccess Grameen",
+        "weight": 0.77
       },
       {
-        "name": "Bikaji Foods International",
-        "weight": 0.24
+        "name": "Natco Pharma",
+        "weight": 0.76
       },
       {
-        "name": "Sarda Energy & Minerals",
-        "weight": 0.24
+        "name": "CEAT",
+        "weight": 0.76
       },
       {
-        "name": "RR Kabel",
-        "weight": 0.24
+        "name": "Firstsource Solutions",
+        "weight": 0.76
       },
       {
-        "name": "Reliance Infrastructure",
-        "weight": 0.24
+        "name": "Zensar Technologies",
+        "weight": 0.74
       },
       {
-        "name": "UTI Asset Management Company",
-        "weight": 0.24
+        "name": "PG Electroplast",
+        "weight": 0.72
       },
       {
-        "name": "Finolex Industries",
-        "weight": 0.24
+        "name": "Anant Raj",
+        "weight": 0.71
       },
       {
-        "name": "Jupiter Wagons",
-        "weight": 0.23
+        "name": "Kajaria Ceramics",
+        "weight": 0.71
       },
       {
-        "name": "Niva Bupa Health Insurance Company",
-        "weight": 0.23
+        "name": "CCL Products India",
+        "weight": 0.71
       },
       {
-        "name": "Minda Corporation",
-        "weight": 0.23
+        "name": "Capri Global Capital",
+        "weight": 0.7
       },
       {
-        "name": "Alembic Pharmaceuticals",
-        "weight": 0.23
+        "name": "Cyient",
+        "weight": 0.68
       },
       {
-        "name": "DOMS Industries",
-        "weight": 0.23
+        "name": "Eris Lifesciences",
+        "weight": 0.68
       },
       {
-        "name": "Concord Biotech",
-        "weight": 0.22
+        "name": "Triveni Turbine",
+        "weight": 0.66
       },
       {
-        "name": "BASF India",
-        "weight": 0.22
+        "name": "Chambal Fertilisers & Chemicals",
+        "weight": 0.62
       },
       {
-        "name": "Vardhman Textiles",
-        "weight": 0.22
+        "name": "Aditya Birla Sun Life AMC",
+        "weight": 0.61
       },
       {
-        "name": "Signatureglobal (India)",
-        "weight": 0.22
+        "name": "Mahanagar Gas",
+        "weight": 0.61
       },
       {
-        "name": "Jammu & Kashmir Bank",
-        "weight": 0.22
+        "name": "Sonata Software",
+        "weight": 0.6
       },
       {
-        "name": "Akzo Nobel India",
-        "weight": 0.21
+        "name": "Aegis Logistics",
+        "weight": 0.58
       },
       {
-        "name": "Schneider Electric Infrastructure",
-        "weight": 0.21
+        "name": "Birlasoft",
+        "weight": 0.57
       },
       {
-        "name": "Graphite India",
-        "weight": 0.21
+        "name": "Gravita India",
+        "weight": 0.56
       },
       {
-        "name": "Elecon Engineering Company",
-        "weight": 0.21
+        "name": "Poly Medicure",
+        "weight": 0.54
       },
       {
-        "name": "Aditya Birla Fashion & Retail",
-        "weight": 0.21
+        "name": "Sumitomo Chemical India",
+        "weight": 0.52
       },
       {
-        "name": "Clean Science and Technology",
-        "weight": 0.21
+        "name": "Metropolis Healthcare",
+        "weight": 0.51
       },
       {
-        "name": "Welspun Living",
-        "weight": 0.21
-      },
-      {
-        "name": "Emcure Pharmaceuticals",
-        "weight": 0.2
-      },
-      {
-        "name": "Praj Industries",
-        "weight": 0.2
+        "name": "Engineers India",
+        "weight": 0.5
       },
       {
         "name": "Chennai Petroleum Corporation",
-        "weight": 0.2
+        "weight": 0.5
       },
       {
-        "name": "KSB",
-        "weight": 0.2
+        "name": "BEML",
+        "weight": 0.48
       },
       {
-        "name": "Dr. Agarwal's Health Care",
-        "weight": 0.2
+        "name": "Newgen Software Technologies",
+        "weight": 0.48
       },
       {
-        "name": "Honasa Consumer",
-        "weight": 0.2
+        "name": "Titagarh Rail Systems",
+        "weight": 0.47
       },
       {
-        "name": "Shipping Corporation of India",
-        "weight": 0.2
+        "name": "Akzo Nobel India",
+        "weight": 0.47
       },
       {
-        "name": "SBFC Finance",
-        "weight": 0.2
+        "name": "Sarda Energy & Minerals",
+        "weight": 0.47
       },
       {
-        "name": "Kirloskar Brothers",
-        "weight": 0.2
+        "name": "LT Foods",
+        "weight": 0.47
       },
       {
-        "name": "Happiest Minds Technologies",
-        "weight": 0.19
+        "name": "Vijaya Diagnostic Centre",
+        "weight": 0.46
       },
       {
-        "name": "Jindal SAW",
-        "weight": 0.19
+        "name": "Jammu & Kashmir Bank",
+        "weight": 0.46
       },
       {
-        "name": "BLS International Services",
-        "weight": 0.19
+        "name": "Techno Electric & Engineering Company",
+        "weight": 0.44
       },
       {
-        "name": "Action Construction Equipment",
-        "weight": 0.19
-      },
-      {
-        "name": "Jyothy Labs",
-        "weight": 0.19
-      },
-      {
-        "name": "Caplin Point Laboratories",
-        "weight": 0.18
-      },
-      {
-        "name": "Manyavar- Vedant Fashions Ltd.",
-        "weight": 0.18
-      },
-      {
-        "name": "Central Bank of India",
-        "weight": 0.18
-      },
-      {
-        "name": "Tejas Networks",
-        "weight": 0.18
-      },
-      {
-        "name": "Nuvoco Vistas Corporation",
-        "weight": 0.18
-      },
-      {
-        "name": "IFCI",
-        "weight": 0.17
-      },
-      {
-        "name": "Aegis Vopak Terminals",
-        "weight": 0.17
-      },
-      {
-        "name": "International Gemmological Institute (India)",
-        "weight": 0.17
-      },
-      {
-        "name": "Leela Palaces Hotels & Resorts",
-        "weight": 0.17
-      },
-      {
-        "name": "Trident",
-        "weight": 0.17
-      },
-      {
-        "name": "Triveni Engineering & Industries",
-        "weight": 0.17
-      },
-      {
-        "name": "Bombay Burmah Trading Corporation",
-        "weight": 0.16
-      },
-      {
-        "name": "Railtel Corporation of India",
-        "weight": 0.16
-      },
-      {
-        "name": "RITES",
-        "weight": 0.16
+        "name": "NCC",
+        "weight": 0.41
       },
       {
         "name": "Latent View Analytics",
-        "weight": 0.16
+        "weight": 0.41
       },
       {
-        "name": "Blue Dart Express",
-        "weight": 0.16
+        "name": "Zen Technologies",
+        "weight": 0.41
       },
       {
-        "name": "India Cements",
-        "weight": 0.15
+        "name": "UTI Asset Management Company",
+        "weight": 0.39
+      },
+      {
+        "name": "Olectra Greentech",
+        "weight": 0.39
+      },
+      {
+        "name": "BLS International Services",
+        "weight": 0.38
+      },
+      {
+        "name": "Action Construction Equipment",
+        "weight": 0.38
+      },
+      {
+        "name": "Kirloskar Brothers",
+        "weight": 0.37
+      },
+      {
+        "name": "Elecon Engineering Company",
+        "weight": 0.36
+      },
+      {
+        "name": "Welspun Living",
+        "weight": 0.35
+      },
+      {
+        "name": "Jupiter Wagons",
+        "weight": 0.32
+      },
+      {
+        "name": "Ircon International",
+        "weight": 0.32
+      },
+      {
+        "name": "Railtel Corporation of India",
+        "weight": 0.28
       },
       {
         "name": "CE Info Systems",
-        "weight": 0.15
+        "weight": 0.28
       },
       {
-        "name": "Cera Sanitaryware",
-        "weight": 0.15
+        "name": "RITES",
+        "weight": 0.27
       },
       {
-        "name": "ITI",
-        "weight": 0.15
+        "name": "Praj Industries",
+        "weight": 0.26
       },
       {
-        "name": "Transformers & Rectifiers (India)",
-        "weight": 0.15
-      },
-      {
-        "name": "Mangalore Refinery And Petrochemicals",
-        "weight": 0.14
-      },
-      {
-        "name": "Valor Estate",
-        "weight": 0.14
-      },
-      {
-        "name": "RHI Magnesita India Ltd.",
-        "weight": 0.14
-      },
-      {
-        "name": "Godrej Agrovet",
-        "weight": 0.14
-      },
-      {
-        "name": "Inox India",
-        "weight": 0.13
-      },
-      {
-        "name": "JBM Auto",
-        "weight": 0.13
-      },
-      {
-        "name": "JSW Cement",
-        "weight": 0.13
+        "name": "Jindal SAW",
+        "weight": 0.23
       },
       {
         "name": "Saregama India",
-        "weight": 0.13
+        "weight": 0.2
       },
       {
-        "name": "Acme Solar Holdings",
-        "weight": 0.12
-      },
-      {
-        "name": "Tata Teleservices (Maharashtra)",
-        "weight": 0.12
-      },
-      {
-        "name": "Maharashtra Seamless",
-        "weight": 0.11
-      },
-      {
-        "name": "Campus Activewear",
-        "weight": 0.11
-      },
-      {
-        "name": "Alkyl Amines Chemicals",
-        "weight": 0.11
-      },
-      {
-        "name": "Rashtriya Chemicals & Fertilizers",
-        "weight": 0.1
-      },
-      {
-        "name": "Ventive Hospitality",
-        "weight": 0.1
-      },
-      {
-        "name": "Alok Industries",
-        "weight": 0.1
-      },
-      {
-        "name": "Blue Jet Healthcare",
-        "weight": 0.09
-      },
-      {
-        "name": "Akums Drugs & Pharmaceuticals",
-        "weight": 0.06
-      },
-      {
-        "name": "MMTC",
-        "weight": 0.05
+        "name": "Godrej Agrovet",
+        "weight": 0.16
       }
     ]
   },

@@ -60,14 +60,33 @@ def process_data():
         if clean_sheet_name in data:
             matched_segment = clean_sheet_name
         else:
-            # Try matching with or without "ETF - "
+            # Fuzzy match by normalizing both strings
+            # Remove spaces, colons, dashes, case-insensitive
+            def normalize(s):
+                return ''.join(e for e in s if e.isalnum()).lower()
+            
+            norm_sheet = normalize(clean_sheet_name)
+            
             for seg in data.keys():
-                if seg in clean_sheet_name or clean_sheet_name in seg:
-                     # Simple heuristic: if the sheet name is contained in the segment name or vice versa
-                     # But be careful about partial matches like "Nifty 50" vs "Nifty 500"
-                     if clean_sheet_name.replace('ETF - ', '') == seg.replace('ETF - ', ''):
-                         matched_segment = seg
-                         break
+                norm_seg = normalize(seg)
+                
+                # Check for exact normalized match
+                if norm_sheet == norm_seg:
+                    matched_segment = seg
+                    break
+                    
+                # Check if "ETF - " prefix was the only diff (already handled by normalization mostly)
+                # Check for "Momentum Quality" truncations seen in output
+                # e.g. Sheet: 'ETF - Nifty Midsmallcap400 Mome' vs Key: 'ETF - Nifty Midsmallcap400 Momentum Quality 100'
+                
+                if norm_sheet in norm_seg and len(norm_sheet) > 15: # Partial match for long names (sheet name truncated)
+                     matched_segment = seg
+                     break
+                
+                # Reverse check (unlikely for sheet name to be longer than full name, but possible)
+                if norm_seg in norm_sheet and len(norm_seg) > 15:
+                     matched_segment = seg
+                     break
         
         if matched_segment:
             print(f"Processing sheet '{sheet}' for segment '{matched_segment}'")

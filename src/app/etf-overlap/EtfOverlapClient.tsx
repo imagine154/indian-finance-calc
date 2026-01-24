@@ -11,6 +11,7 @@ import {
 import { OverlapVisualizer } from '@/components/etf/OverlapVisualizer';
 import { CommonStocksTable } from '@/components/etf/CommonStocksTable';
 import { EtfSegmentList } from '@/components/etf/EtfSegmentList';
+import { SegmentHoldingsTable } from '@/components/etf/SegmentHoldingsTable';
 import { RefreshCcw, Search, BarChart3, ListFilter, Info, CheckCircle2 } from 'lucide-react';
 
 export default function EtfOverlapClient() {
@@ -172,6 +173,19 @@ export default function EtfOverlapClient() {
                                                 etfs={etfListData.etfs}
                                                 segmentName={listSegment}
                                             />
+
+                                            <div className="pt-8 border-t border-slate-100">
+                                                <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+                                                    Current Holdings
+                                                    <span className="text-sm font-normal text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
+                                                        {listSegment}
+                                                    </span>
+                                                </h3>
+                                                <SegmentHoldingsTable
+                                                    stocks={etfListData.stocks}
+                                                    segmentName={listSegment}
+                                                />
+                                            </div>
                                         </div>
                                     ) : (
                                         <div className="flex flex-col items-center justify-center py-20 text-slate-400 bg-slate-50/50 rounded-2xl border-2 border-dashed border-slate-200">
